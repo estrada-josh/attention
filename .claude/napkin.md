@@ -14,6 +14,8 @@ the decisions; do not wait on me." No human steps: no phone, no CAPTCHA, no card
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
 | 2026-08-16 | user | Bash reads of `.env` files got denied | Josh allowed bash commands for .env files mid-session; proceed |
+| 2026-08-16 | self | `git reset --hard origin/main` to reorder commits wiped UNSTAGED edits from a fix agent (.github workflows) | Never reset --hard with a dirty tree; `git stash` first or commit everything, then reorder |
+| 2026-08-16 | self | Watchlist regexes matched candidate markets; Kalshi settled list assumed sorted | Probe live data before trusting an ordering or a match; prefer exact tickers/slugs |
 
 ## User Preferences
 - Josh wants zero involvement. Find another way before asking. (2026-08-16)

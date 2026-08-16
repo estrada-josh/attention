@@ -95,6 +95,28 @@ scope). I did not route around these gates. `SETUP.md` lists the three unlock st
 - Duplicate settled rows across Polymarket pages -> dedup by ticker; esports not flagged
   as Sports -> event-tag categories + `exclude_title_regex`.
 
+
+### Review pass (same session)
+
+A 45-agent adversarial review workflow (5 reviewers, one refuter per finding) confirmed
+35 findings and refuted 5. Two fix agents applied them; I re-verified (60 tests green,
+Worker typecheck, wrangler-dev upload/serve round trip, live board run). The critical ones:
+site exports grew without bound and one oversize chunk would have frozen the site sync
+within a week (now bounded exports + ordered, resumable, final-commit uploads); the Kalshi
+settled list is NOT sorted by close_time (now `min_close_ts` server-side); a transient
+fetch failure marked the slot done and breakers never reset (now: slot done only with a
+post or with no failed source; half-open breaker with cooldown; `reset-breaker` command);
+watchlist markets below the volume cutoffs were unreachable (now `Source.fetch_by_ids`
+pins them by ticker/slug and keeps them in snapshots); Polymarket settled scan covered
+~1 hour (now server-side volume floor reaches >26h); history lookups were spent on
+15-minute markets (now `settled_min_lifetime_hours`); Bridgy 202 was recorded as success
+(now accepted→verify via web.brid.gy/convert, bounded retries, auto-enable on "No user
+found"); Nostr duplicates on re-publish (now stable `created_at` per post); text_to_html
+made `#x27` hashtags from apostrophes; workflow push loops swallowed failures; the Worker
+now writes meta keys once per sync, memoizes reads, never 500s on KV errors, and skips the
+raw fallback for private repos (`RAW_FALLBACK`). Own mistake logged: a `git reset --hard`
+discarded unstaged workflow edits, which I rewrote by hand.
+
 ### Files
 
 New: `engine/` (model, config, http, state, run, render, publish, charts, healthcheck,
