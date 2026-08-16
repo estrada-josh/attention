@@ -9,7 +9,7 @@ under a minute. After that, nothing needs a human.
 
 ```
 gh auth refresh -h github.com -s workflow      # opens a device-code login in the browser
-git push origin main                             # pushes the local commit "ci: publish + healthcheck workflows"
+git push origin main                             # pushes the two local "ci:" workflow commits
 ```
 
 Verify: `gh workflow list --repo estrada-josh/attention` shows `publish` and `healthcheck`.
