@@ -1,0 +1,100 @@
+# OddsDrift — the first audience run by the attention engine.
+# Copy this folder to start a new audience: change names, domain, sources, shapes, channels.
+display_name: "OddsDrift (bot)"
+domain: oddsdrift.joshestrada.com
+site_url: https://oddsdrift.joshestrada.com
+description: "Automated tracker of prediction-market odds: the biggest 24h swings, upsets at settlement, a daily midterms board, and a weekly calibration scorecard. Data from the public Kalshi and Polymarket APIs. Not affiliated. Not investment advice."
+contact_email: oddsdrift@agentmail.to
+repo: estrada-josh/attention
+site_root: audiences/oddsdrift/site
+tags: [PredictionMarkets]
+nostr_pubkey_hex: c09cf90d14c41c2503647a7b85a31646daafb269a43ab9305361df8e99041d47   # npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27
+
+sources:
+  - type: kalshi
+    note: "public REST API, no key; multivariate parlay legs excluded (mve_filter=exclude)"
+  - type: polymarket
+    note: "public Gamma API, no key; top ~2,100 markets by 24h volume (API offset cap)"
+
+thresholds:
+  exclude_categories: [Sports]        # in-game props dominate volume; keep the feed about the world
+  exclude_title_regex: "Up or Down|Higher or Lower|\\b(CS2|Dota|LoL|Valorant|esports|EWC)\\b|\\bvs\\.?\\b"
+  min_hours_to_close: 12              # skip markets about to resolve (already-decided noise)
+  movers_min_points: 8
+  movers_top_n: 4
+  movers_min_rows: 2
+  min_volume_24h: { kalshi: 5000, polymarket: 10000 }
+  min_volume_24h_default: 5000
+  settled_min_volume: 10000
+  settled_top_n: 4
+  upset_yes_max_price: 0.15
+  upset_no_min_price: 0.85
+  venue_tags: { kalshi: Kalshi, polymarket: Polymarket }
+  store_exclude_categories: [Sports]  # never stored: keeps the git repo small; sports is not the feed's topic
+  snapshot_min_volume_24h: 250      # rows kept per snapshot (24h reference prices)
+  snapshot_min_open_interest: 1500
+  resolution_min_volume_24h: 100
+  snapshot_keep_days: 45
+  breaker_failures: 3
+
+shapes:
+  - { slot: am, type: movers, at: "13:17" }                       # 9:17 AM EDT / 8:17 AM EST
+  - { slot: pm, type: settled, at: "22:17" }                      # 6:17 PM EDT / 5:17 PM EST
+  - slot: board
+    type: watchlist
+    at: "17:17"                                                   # 1:17 PM EDT / 12:17 PM EST
+    days: [0, 1, 2, 3, 4, 5]                                      # Mon-Sat
+    until: "2026-11-03"
+    headline: "Midterms 2026 odds board"
+    countdown_to: "2026-11-03"
+    countdown_label: "Election Day"
+    tags: [Midterms2026, PredictionMarkets]
+    min_found: 2
+    watch:
+      - name: "Senate control (D)"
+        match:
+          - { venue: kalshi, ticker: CONTROLS-2026-D }
+          - { venue: polymarket, title_regex: "^Will the Democratic Party control the (U\\.S\\. )?Senate after the 2026" }
+      - name: "House control (D)"
+        match:
+          - { venue: kalshi, ticker: CONTROLH-2026-D }
+          - { venue: polymarket, ticker: will-the-democratic-party-control-the-house-after-the-2026-midterm-elections }
+      - name: "TX Senate (D)"
+        match:
+          - { venue: kalshi, ticker: SENATETX-26-D }
+          - { venue: polymarket, ticker: will-the-democrats-win-the-texas-senate-race-in-2026 }
+      - name: "MI Senate (D)"
+        match:
+          - { venue: kalshi, ticker: SENATEMI-26-D }
+          - { venue: polymarket, ticker: will-the-democrats-win-the-michigan-senate-race-in-2026 }
+      - name: "OH Senate (D)"
+        match:
+          - { venue: kalshi, ticker: SENATEOHS-26-D }
+          - { venue: polymarket, ticker: will-the-democrats-win-the-ohio-senate-race-in-2026 }
+      - name: "GA Senate (D)"
+        match:
+          - { venue: kalshi, ticker: SENATEGA-26-D }
+          - { venue: polymarket, title_regex: "^Will the Democrats win the Georgia Senate race in 2026" }
+      - name: "NC Senate (D)"
+        match:
+          - { venue: kalshi, ticker: SENATENC-26-D }
+          - { venue: polymarket, title_regex: "^Will the Democrats win the North Carolina Senate race in 2026" }
+      - name: "ME Senate (D)"
+        match:
+          - { venue: kalshi, ticker: SENATEME-26-D }
+          - { venue: polymarket, title_regex: "^Will the Democrats win the Maine Senate race in 2026" }
+  - { slot: sunday, type: scorecard, at: "15:17", days: [6], window_days: 7, min_resolved: 20 }
+
+channels:
+  - { type: bridgy }                     # -> Bluesky + fediverse via fed.brid.gy web-site bridge
+  - { type: nostr, relays: ["wss://relay.damus.io", "wss://nos.lol", "wss://relay.primal.net"] }
+  - { type: mastodon, enabled: false }   # turn on when MASTODON_INSTANCE/MASTODON_TOKEN exist
+
+follow_links:
+  - { label: "Bluesky", href: "https://bsky.app/profile/oddsdrift.joshestrada.com.web.brid.gy" }
+  - { label: "Fediverse", href: "https://fed.brid.gy/web/oddsdrift.joshestrada.com" }
+  - { label: "RSS", href: "https://oddsdrift.joshestrada.com/feed.xml" }
+  - { label: "GitHub", href: "https://github.com/estrada-josh/attention" }
+  - { label: "Nostr", href: "https://njump.me/npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27" }
+nav_links:
+  - { label: "Calibration", href: "/calibration" }

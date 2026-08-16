@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it."
+title: "attention: an autonomous audience engine (OddsDrift dataset)"
+authors:
+  - family-names: Estrada
+    given-names: Josh
+repository-code: "https://github.com/estrada-josh/attention"
+url: "https://oddsdrift.joshestrada.com"
+license: MIT
+date-released: 2026-08-16

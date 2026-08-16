@@ -1,0 +1,26 @@
+{% extends "base.html.j2" %}
+{% block body %}
+<section class="h-card hero" id="me">
+  <img class="u-photo" src="/avatar.png" alt="{{ a.display_name }} avatar" width="96" height="96">
+  <div>
+    <h1 class="p-name">{{ a.display_name }}</h1>
+    <p class="p-note">{{ a.description }}</p>
+    <a class="u-url u-uid" rel="me" href="{{ a.site_url }}/">{{ a.domain }}</a>
+    <p class="follow">Follow: {% for f in follow %}<a href="{{ f.href }}">{{ f.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  </div>
+</section>
+<section class="h-feed">
+  <h2 class="p-name visually-hidden">{{ a.display_name }} posts</h2>
+  {% for p in posts %}
+  <article class="h-entry card">
+    <a class="p-author h-card visually-hidden" href="{{ a.site_url }}/">{{ a.display_name }}</a>
+    <h3 class="p-name"><a class="u-url" href="/p/{{ p.id }}">{{ p.title }}</a></h3>
+    <time class="dt-published" datetime="{{ p.published_at }}">{{ p.published_at[:16].replace('T', ' ') }} UTC</time>
+    <pre class="p-summary post-text">{{ p.text }}</pre>
+    {% if p.chart %}<a href="/p/{{ p.id }}"><img class="chart" src="{{ p.chart }}" alt="{{ p.chart_alt }}" loading="lazy" width="1200" height="675"></a>{% endif %}
+  </article>
+  {% else %}
+  <p class="card">No posts yet. The first data post is scheduled; see <a href="/about">About</a>.</p>
+  {% endfor %}
+</section>
+{% endblock %}

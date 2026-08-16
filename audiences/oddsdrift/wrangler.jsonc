@@ -1,0 +1,25 @@
+// Cloudflare Worker config for the "oddsdrift" audience site.
+//
+// Run these commands from the repo root:
+//   npm install --prefix worker
+//   npx wrangler kv namespace create STATE      # paste the id below
+//   npx wrangler secret put SYNC_TOKEN --config audiences/oddsdrift/wrangler.jsonc
+//   npx wrangler deploy --config audiences/oddsdrift/wrangler.jsonc
+//
+// The Worker source is shared. See worker/README.md.
+{
+  "$schema": "../../worker/node_modules/wrangler/config-schema.json",
+  "name": "oddsdrift-site",
+  "main": "../../worker/src/index.ts",
+  "compatibility_date": "2026-08-01",
+  "routes": [{ "pattern": "oddsdrift.joshestrada.com", "custom_domain": true }],
+  "kv_namespaces": [{ "binding": "STATE", "id": "REPLACE_ME" }],
+  "vars": {
+    "REPO": "estrada-josh/attention",
+    "SITE_ROOT": "audiences/oddsdrift/site",
+    "DEFAULT_BRANCH": "main",
+    "SITE_URL": "https://oddsdrift.joshestrada.com",
+    "BRIDGY_WEB_ID": "oddsdrift.joshestrada.com"
+  },
+  "observability": { "enabled": true }
+}

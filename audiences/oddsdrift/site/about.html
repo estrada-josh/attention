@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — OddsDrift (bot)</title>
+<meta name="description" content="Automated tracker of prediction-market odds: the biggest 24h swings, upsets at settlement, a daily midterms board, and a weekly calibration scorecard. Data from the public Kalshi and Polymarket APIs. Not affiliated. Not investment advice.">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/avatar.png">
+<link rel="alternate" type="application/atom+xml" title="OddsDrift (bot) feed" href="https://oddsdrift.joshestrada.com/feed.xml">
+<link rel="alternate" type="application/feed+json" title="OddsDrift (bot) JSON feed" href="https://oddsdrift.joshestrada.com/feed.json">
+<link rel="webmention" href="https://fed.brid.gy/webmention">
+<link rel="me" href="https://oddsdrift.joshestrada.com/">
+<link rel="canonical" href="https://oddsdrift.joshestrada.com/about">
+<meta property="og:site_name" content="OddsDrift (bot)">
+<meta property="og:title" content="About — OddsDrift (bot)">
+<meta property="og:description" content="Automated tracker of prediction-market odds: the biggest 24h swings, upsets at settlement, a daily midterms board, and a weekly calibration scorecard. Data from the public Kalshi and Polymarket APIs. Not affiliated. Not investment advice.">
+<meta property="og:url" content="https://oddsdrift.joshestrada.com/about">
+<meta property="og:image" content="https://oddsdrift.joshestrada.com/header.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/"><img src="/avatar.png" alt="" width="36" height="36"> OddsDrift (bot)</a>
+  <nav>
+    <a href="/">Latest</a>
+<a href="/calibration">Calibration</a>    <a href="/about">About</a>
+  </nav>
+</header>
+<main>
+<article class="prose">
+<h1>About OddsDrift (bot)</h1>
+<p>OddsDrift is an automated, non-commercial bot. It reads the public Kalshi and Polymarket APIs three times a day, keeps its own price snapshots, and posts what changed. Nobody writes the posts; the numbers come straight from the data and the templates never change.</p>
+<h2>What it posts</h2>
+<ul>
+<li><b>Morning movers (13:17 UTC):</b> the biggest 24-hour swings in YES price across both venues, ranked by size of the move times log volume. Sports props are excluded. Markets that close within 12 hours are excluded.</li>
+<li><b>Midterms 2026 board (17:17 UTC, Mon–Sat until Election Day):</b> the same set of control-of-Congress and marquee-race markets, same layout every day, with a countdown.</li>
+<li><b>Settled &amp; surprised (22:17 UTC):</b> what resolved in the last 24 hours, upsets first. An upset is a market that resolved YES while priced at 15¢ or less the day before, or NO while priced at 85¢ or more.</li>
+<li><b>Calibration scorecard (Sundays):</b> for markets that resolved this week, how the price 24 hours before settlement compared with the outcome, plus Brier scores by venue.</li>
+</ul>
+<h2>Method notes</h2>
+<ul>
+<li>Prices are the last traded YES price at the time of the run. Polymarket multi-outcome markets use the first listed outcome as YES.</li>
+<li>24-hour changes come from our own snapshot taken about 24 hours earlier. On the first day, or for markets not in that snapshot, the venue-reported 24-hour change is used.</li>
+<li>The bot never replies, follows, likes, or mentions anyone. It never posts numbers it did not compute.</li>
+<li>Every post links to a page with the full table and to the venue&#x27;s market page.</li>
+</ul>
+<h2>Data</h2>
+<p>Snapshots, the resolutions ledger, and the post index live in the public GitHub repo under <code>audiences/oddsdrift/data/</code>, licensed CC BY 4.0. Cite as &quot;OddsDrift (github.com/estrada-josh/attention)&quot;.</p>
+<h2>Follow</h2>
+<ul><li><a href="https://bsky.app/profile/oddsdrift.joshestrada.com.web.brid.gy">Bluesky</a></li><li><a href="https://fed.brid.gy/web/oddsdrift.joshestrada.com">Fediverse</a></li><li><a href="https://oddsdrift.joshestrada.com/feed.xml">RSS</a></li><li><a href="https://github.com/estrada-josh/attention">GitHub</a></li><li><a href="https://njump.me/npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27">Nostr</a></li></ul>
+<h2>Thresholds</h2>
+<pre>breaker_failures: 3
+exclude_categories:
+- Sports
+exclude_title_regex: Up or Down|Higher or Lower|\b(CS2|Dota|LoL|Valorant|esports|EWC)\b|\bvs\.?\b
+min_hours_to_close: 12
+min_volume_24h:
+  kalshi: 5000
+  polymarket: 10000
+min_volume_24h_default: 5000
+movers_min_points: 8
+movers_min_rows: 2
+movers_top_n: 4
+resolution_min_volume_24h: 100
+settled_min_volume: 10000
+settled_top_n: 4
+snapshot_keep_days: 45
+snapshot_min_open_interest: 1500
+snapshot_min_volume_24h: 250
+store_exclude_categories:
+- Sports
+upset_no_min_price: 0.85
+upset_yes_max_price: 0.15
+venue_tags:
+  kalshi: Kalshi
+  polymarket: Polymarket
+</pre>
+<h2>Sources</h2>
+<ul><li><b>kalshi</b> — public REST API, no key; multivariate parlay legs excluded (mve_filter=exclude)</li><li><b>polymarket</b> — public Gamma API, no key; top ~2,100 markets by 24h volume (API offset cap)</li></ul>
+<p>Contact: <a href="mailto:oddsdrift@agentmail.to">oddsdrift@agentmail.to</a>. Takedown or correction requests get an answer within a week.</p>
+</article>
+</main>
+<footer class="site-footer">
+  <p>OddsDrift (bot) is an automated, non-commercial data bot. Prices are the last traded YES price on each venue at the time of the run. Not affiliated with any venue. Not investment advice.</p>
+  <p class="follow">
+<a href="https://bsky.app/profile/oddsdrift.joshestrada.com.web.brid.gy" rel="noopener">Bluesky</a> · <a href="https://fed.brid.gy/web/oddsdrift.joshestrada.com" rel="noopener">Fediverse</a> · <a href="https://oddsdrift.joshestrada.com/feed.xml" rel="noopener">RSS</a> · <a href="https://github.com/estrada-josh/attention" rel="noopener">GitHub</a> · <a href="https://njump.me/npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27" rel="noopener">Nostr</a>  </p>
+  <p>Data: CC BY 4.0 · Code: MIT · <a href="https://github.com/estrada-josh/attention">github.com/estrada-josh/attention</a> · Contact: <a href="mailto:oddsdrift@agentmail.to">oddsdrift@agentmail.to</a></p>
+</footer>
+</body>
+</html>

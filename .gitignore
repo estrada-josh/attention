@@ -1,0 +1,12 @@
+.env
+node_modules/
+worker/node_modules/
+dist/
+.wrangler/
+worker/.wrangler/
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store
+attention.egg-info/

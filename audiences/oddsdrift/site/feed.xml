@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>OddsDrift (bot)</title>
+  <subtitle>Automated tracker of prediction-market odds: the biggest 24h swings, upsets at settlement, a daily midterms board, and a weekly calibration scorecard. Data from the public Kalshi and Polymarket APIs. Not affiliated. Not investment advice.</subtitle>
+  <link href="https://oddsdrift.joshestrada.com/feed.xml" rel="self"/>
+  <link href="https://oddsdrift.joshestrada.com/"/>
+  <id>https://oddsdrift.joshestrada.com/</id>
+  <updated>2026-08-16T20:02:46Z</updated>
+  <author><name>OddsDrift (bot)</name><uri>https://oddsdrift.joshestrada.com/</uri></author>
+  <entry>
+    <title>Midterms 2026 odds board — Aug 16, 2026</title>
+    <link href="https://oddsdrift.joshestrada.com/p/2026-08-16-board"/>
+    <id>https://oddsdrift.joshestrada.com/p/2026-08-16-board</id>
+    <published>2026-08-16T20:02:46Z</published>
+    <updated>2026-08-16T20:02:46Z</updated>
+<category term="Midterms2026"/><category term="PredictionMarkets"/>    <summary type="text">Midterms 2026 odds board · 78 days to Election Day
+Senate control (D): K 49¢ (+0)
+House control (D): K 85¢ (+0) · P 88¢
+TX Senate (D): K 48¢ (-3) · P 52¢
+MI Senate (D): K 57¢ (+2) · P 56¢ (+2)
+OH Senate (D): K 51¢ (-3) · P 52¢ (-5)
+#Midterms2026 #PredictionMarkets</summary>
+    <content type="html">&lt;p&gt;Midterms 2026 odds board · 78 days to Election Day&lt;br&gt;
+Senate control (D): K 49¢ (+0)&lt;br&gt;
+House control (D): K 85¢ (+0) · P 88¢&lt;br&gt;
+TX Senate (D): K 48¢ (-3) · P 52¢&lt;br&gt;
+MI Senate (D): K 57¢ (+2) · P 56¢ (+2)&lt;br&gt;
+OH Senate (D): K 51¢ (-3) · P 52¢ (-5)&lt;br&gt;
+&lt;a href=&#34;/tag/midterms2026&#34;&gt;#Midterms2026&lt;/a&gt; &lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://oddsdrift.joshestrada.com/charts/2026-08-16-board.png&#34; alt=&#34;Midterms 2026 odds board · 78 days to Election Day
+Senate control (D): K 49¢ (+0)
+House control (D): K 85¢ (+0) · P 88¢
+TX Senate (D): K 48¢ (-3) · P 52¢
+MI Senate (D): K 57¢ (+2) · P 56¢ (+2)
+OH Senate (D): K 51¢ (-3) · P 52¢ (-5)
+#Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Settled &amp; surprised — Aug 16, 2026</title>
+    <link href="https://oddsdrift.joshestrada.com/p/2026-08-16-pm"/>
+    <id>https://oddsdrift.joshestrada.com/p/2026-08-16-pm</id>
+    <published>2026-08-16T19:57:17Z</published>
+    <updated>2026-08-16T19:57:17Z</updated>
+<category term="PredictionMarkets"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
+P · Another Frontier Math Problem Solved by Sep… → YES · was 97¢ 24h before · $23k
+P · Another Frontier Math Problem Solved by Dec… → YES · was 95¢ 24h before · $11k
+#PredictionMarkets #Polymarket</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+P · Another Frontier Math Problem Solved by Sep… → YES · was 97¢ 24h before · $23k&lt;br&gt;
+P · Another Frontier Math Problem Solved by Dec… → YES · was 95¢ 24h before · $11k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://oddsdrift.joshestrada.com/charts/2026-08-16-pm.png&#34; alt=&#34;Settled in the last 24h
+P · Another Frontier Math Problem Solved by Sep… → YES · was 97¢ 24h before · $23k
+P · Another Frontier Math Problem Solved by Dec… → YES · was 95¢ 24h before · $11k
+#PredictionMarkets #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Biggest odds swings — Aug 16, 2026</title>
+    <link href="https://oddsdrift.joshestrada.com/p/2026-08-16-am"/>
+    <id>https://oddsdrift.joshestrada.com/p/2026-08-16-am</id>
+    <published>2026-08-16T19:49:45Z</published>
+    <updated>2026-08-16T19:49:45Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
+P · Will &#34;Conversations with a Killer: The Charles… 5¢→92¢ (+88) · $19k
+K · Will Conversations with a Killer: The Charles M… 6¢→91¢ (+85) · $24k
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+P · Will &amp;quot;Conversations with a Killer: The Charles… 5¢→92¢ (+88) · $19k&lt;br&gt;
+K · Will Conversations with a Killer: The Charles M… 6¢→91¢ (+85) · $24k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://oddsdrift.joshestrada.com/charts/2026-08-16-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+P · Will &#34;Conversations with a Killer: The Charles… 5¢→92¢ (+88) · $19k
+K · Will Conversations with a Killer: The Charles M… 6¢→91¢ (+85) · $24k
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
+</feed>

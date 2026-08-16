@@ -1,0 +1,15 @@
+{% extends "base.html.j2" %}
+{% block title %}About — {{ a.display_name }}{% endblock %}
+{% block body %}
+<article class="prose">
+<h1>About {{ a.display_name }}</h1>
+{{ about_html | safe }}
+<h2>Follow</h2>
+<ul>{% for f in follow %}<li><a href="{{ f.href }}">{{ f.label }}</a></li>{% endfor %}</ul>
+<h2>Thresholds</h2>
+<pre>{{ thresholds_yaml }}</pre>
+<h2>Sources</h2>
+<ul>{% for s in sources %}<li><b>{{ s.name }}</b> — {{ s.note }}</li>{% endfor %}</ul>
+<p>Contact: <a href="mailto:{{ a.contact_email }}">{{ a.contact_email }}</a>. Takedown or correction requests get an answer within a week.</p>
+</article>
+{% endblock %}

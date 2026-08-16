@@ -1,0 +1,23 @@
+[project]
+name = "attention"
+version = "0.1.0"
+description = "Autonomous audience engine: pluggable data sources, content shapes, and channels."
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.32",
+  "jinja2>=3.1",
+  "matplotlib>=3.9",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "feedparser>=6", "mf2py>=2"]
+
+[tool.uv]
+package = true
+
+[tool.setuptools]
+packages = ["engine", "engine.sources", "engine.shapes", "engine.channels"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

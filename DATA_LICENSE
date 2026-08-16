@@ -1,0 +1,7 @@
+The datasets under audiences/*/data/ (snapshots, resolutions ledger, post index,
+metrics) are licensed under Creative Commons Attribution 4.0 International
+(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+Attribution: "OddsDrift / attention (github.com/estrada-josh/attention)".
+Underlying prices come from the public Kalshi and Polymarket APIs and remain
+subject to those venues' terms.

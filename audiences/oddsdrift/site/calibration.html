@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calibration — OddsDrift (bot)</title>
+<meta name="description" content="Automated tracker of prediction-market odds: the biggest 24h swings, upsets at settlement, a daily midterms board, and a weekly calibration scorecard. Data from the public Kalshi and Polymarket APIs. Not affiliated. Not investment advice.">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/avatar.png">
+<link rel="alternate" type="application/atom+xml" title="OddsDrift (bot) feed" href="https://oddsdrift.joshestrada.com/feed.xml">
+<link rel="alternate" type="application/feed+json" title="OddsDrift (bot) JSON feed" href="https://oddsdrift.joshestrada.com/feed.json">
+<link rel="webmention" href="https://fed.brid.gy/webmention">
+<link rel="me" href="https://oddsdrift.joshestrada.com/">
+<link rel="canonical" href="https://oddsdrift.joshestrada.com/calibration">
+<meta property="og:site_name" content="OddsDrift (bot)">
+<meta property="og:title" content="Calibration — OddsDrift (bot)">
+<meta property="og:description" content="Automated tracker of prediction-market odds: the biggest 24h swings, upsets at settlement, a daily midterms board, and a weekly calibration scorecard. Data from the public Kalshi and Polymarket APIs. Not affiliated. Not investment advice.">
+<meta property="og:url" content="https://oddsdrift.joshestrada.com/calibration">
+<meta property="og:image" content="https://oddsdrift.joshestrada.com/header.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/"><img src="/avatar.png" alt="" width="36" height="36"> OddsDrift (bot)</a>
+  <nav>
+    <a href="/">Latest</a>
+<a href="/calibration">Calibration</a>    <a href="/about">About</a>
+  </nav>
+</header>
+<main>
+<article class="prose">
+<h1>Calibration</h1>
+<p>For every market that resolved, we look at the YES price 24 hours before settlement (from our own snapshots) and compare it with the outcome. A perfectly calibrated venue resolves YES 70% of the time when priced at 70¢. Brier score: lower is better (0 = perfect, 0.25 = coin flip).</p>
+<p>Resolved markets with a 24h-before price: <b>0</b> (last 7 days: 0).</p>
+<h2>Running Brier score by venue</h2>
+<table><tr><th>Venue</th><th>n</th><th>Brier</th></tr>
+</table>
+<h2>Reliability table (all time)</h2>
+<table><tr><th>Priced (24h before)</th><th>n</th><th>Resolved YES</th><th>Rate</th></tr>
+</table>
+<p>Raw ledger: <a href="/data/resolutions.csv">resolutions.csv</a> (CC BY 4.0).</p>
+</article>
+</main>
+<footer class="site-footer">
+  <p>OddsDrift (bot) is an automated, non-commercial data bot. Prices are the last traded YES price on each venue at the time of the run. Not affiliated with any venue. Not investment advice.</p>
+  <p class="follow">
+<a href="https://bsky.app/profile/oddsdrift.joshestrada.com.web.brid.gy" rel="noopener">Bluesky</a> · <a href="https://fed.brid.gy/web/oddsdrift.joshestrada.com" rel="noopener">Fediverse</a> · <a href="https://oddsdrift.joshestrada.com/feed.xml" rel="noopener">RSS</a> · <a href="https://github.com/estrada-josh/attention" rel="noopener">GitHub</a> · <a href="https://njump.me/npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27" rel="noopener">Nostr</a>  </p>
+  <p>Data: CC BY 4.0 · Code: MIT · <a href="https://github.com/estrada-josh/attention">github.com/estrada-josh/attention</a> · Contact: <a href="mailto:oddsdrift@agentmail.to">oddsdrift@agentmail.to</a></p>
+</footer>
+</body>
+</html>

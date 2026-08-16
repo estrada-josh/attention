@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ a.display_name }}</title>
+  <subtitle>{{ a.description }}</subtitle>
+  <link href="{{ a.site_url }}/feed.xml" rel="self"/>
+  <link href="{{ a.site_url }}/"/>
+  <id>{{ a.site_url }}/</id>
+  <updated>{{ updated }}</updated>
+  <author><name>{{ a.display_name }}</name><uri>{{ a.site_url }}/</uri></author>
+  {% for p in posts %}
+  <entry>
+    <title>{{ p.title | e }}</title>
+    <link href="{{ a.site_url }}/p/{{ p.id }}"/>
+    <id>{{ a.site_url }}/p/{{ p.id }}</id>
+    <published>{{ p.published_at }}</published>
+    <updated>{{ p.published_at }}</updated>
+    {% for t in p.tags %}<category term="{{ t | e }}"/>{% endfor %}
+    <summary type="text">{{ p.text | e }}</summary>
+    <content type="html">{{ ('<p>' ~ p.text_html ~ '</p>' ~ (('<p><img src="' ~ a.site_url ~ p.chart ~ '" alt="' ~ (p.chart_alt | e) ~ '"></p>') if p.chart else '')) | e }}</content>
+  </entry>
+  {% endfor %}
+</feed>

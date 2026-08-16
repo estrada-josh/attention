@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ a.display_name }}{% endblock %}</title>
+<meta name="description" content="{% block desc %}{{ a.description }}{% endblock %}">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/avatar.png">
+<link rel="alternate" type="application/atom+xml" title="{{ a.display_name }} feed" href="{{ a.site_url }}/feed.xml">
+<link rel="alternate" type="application/feed+json" title="{{ a.display_name }} JSON feed" href="{{ a.site_url }}/feed.json">
+<link rel="webmention" href="https://fed.brid.gy/webmention">
+<link rel="me" href="{{ a.site_url }}/">
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:site_name" content="{{ a.display_name }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.desc() }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{% block ogimage %}{{ a.site_url }}/header.png{% endblock %}">
+<meta name="twitter:card" content="summary_large_image">
+{% block head %}{% endblock %}
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/"><img src="/avatar.png" alt="" width="36" height="36"> {{ a.display_name }}</a>
+  <nav>
+    <a href="/">Latest</a>
+    {% for l in nav %}<a href="{{ l.href }}">{{ l.label }}</a>{% endfor %}
+    <a href="/about">About</a>
+  </nav>
+</header>
+<main>
+{% block body %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <p>{{ a.display_name }} is an automated, non-commercial data bot. Prices are the last traded YES price on each venue at the time of the run. Not affiliated with any venue. Not investment advice.</p>
+  <p class="follow">
+    {% for f in follow %}<a href="{{ f.href }}" rel="{{ f.rel or 'noopener' }}">{{ f.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+  </p>
+  <p>Data: CC BY 4.0 · Code: MIT · <a href="https://github.com/{{ a.repo }}">github.com/{{ a.repo }}</a> · Contact: <a href="mailto:{{ a.contact_email }}">{{ a.contact_email }}</a></p>
+</footer>
+</body>
+</html>

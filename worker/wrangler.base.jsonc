@@ -1,0 +1,38 @@
+// TEMPLATE ONLY. Wrangler never reads this file.
+//
+// Each audience owns one config file at `audiences/<name>/wrangler.jsonc`.
+// Copy this template, then change `name`, `routes`, `kv_namespaces.id`,
+// and every value under `vars`.
+//
+// Deploy from the repo root:
+//   npm install --prefix worker
+//   npx wrangler kv namespace create STATE          # copy the id into this file
+//   npx wrangler secret put SYNC_TOKEN --config audiences/<name>/wrangler.jsonc
+//   npx wrangler deploy --config audiences/<name>/wrangler.jsonc
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  // Worker name. One Worker per audience.
+  "name": "AUDIENCE-site",
+
+  // Path to the shared Worker source, relative to THIS config file.
+  "main": "../../worker/src/index.ts",
+  "compatibility_date": "2026-08-01",
+
+  // A custom domain route. Cloudflare must hold the zone.
+  // `custom_domain: true` makes Cloudflare create the DNS record and the cert.
+  "routes": [{ "pattern": "AUDIENCE.example.com", "custom_domain": true }],
+
+  // KV holds the pinned commit SHA. Create the namespace first, then paste the id.
+  "kv_namespaces": [{ "binding": "STATE", "id": "REPLACE_ME" }],
+
+  "vars": {
+    "REPO": "owner/name",
+    "SITE_ROOT": "audiences/AUDIENCE/site",
+    "DEFAULT_BRANCH": "main",
+    "SITE_URL": "https://AUDIENCE.example.com",
+    "BRIDGY_WEB_ID": "AUDIENCE.example.com"
+  },
+
+  "observability": { "enabled": true }
+}

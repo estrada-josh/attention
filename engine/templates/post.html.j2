@@ -1,0 +1,22 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ p.title }} — {{ a.display_name }}{% endblock %}
+{% block desc %}{{ p.text.split('\n')[0] }}{% endblock %}
+{% block ogimage %}{% if p.chart %}{{ a.site_url }}{{ p.chart }}{% else %}{{ a.site_url }}/header.png{% endif %}{% endblock %}
+{% block body %}
+<article class="h-entry post">
+  <a class="p-author h-card" href="{{ a.site_url }}/"><img class="u-photo" src="/avatar.png" alt="" width="24" height="24"> <span class="p-name">{{ a.display_name }}</span></a>
+  <h1>{{ p.title }}</h1>  {# no p-name: Bridgy Fed bridges a nameless h-entry as a note with its full content #}
+  <a class="u-url" href="{{ a.site_url }}/p/{{ p.id }}"><time class="dt-published" datetime="{{ p.published_at }}">{{ p.published_at[:16].replace('T', ' ') }} UTC</time></a>
+  <div class="e-content">
+    <p class="post-text">{{ p.text_html | safe }}</p>
+  </div>
+  {% if p.chart %}<img class="u-photo chart" src="{{ a.site_url }}{{ p.chart }}" alt="{{ p.chart_alt }}" width="1200" height="675">{% endif %}
+  {% for t in p.tags %}<a class="p-category" href="/tag/{{ t | lower }}" hidden>{{ t }}</a>{% endfor %}
+  <a class="u-bridgy-fed" href="https://fed.brid.gy/" hidden aria-hidden="true"></a>
+  <section class="table-wrap">
+    <h2>Full table</h2>
+    {{ table_html | safe }}
+  </section>
+  <p class="meta">Method: <a href="/about">how these numbers are computed</a>. Data: <a href="/data/posts.json">posts.json</a> · <a href="https://github.com/{{ a.repo }}">repo</a>.</p>
+</article>
+{% endblock %}

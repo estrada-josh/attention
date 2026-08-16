@@ -1,0 +1,18 @@
+{% extends "base.html.j2" %}
+{% block title %}Calibration — {{ a.display_name }}{% endblock %}
+{% block body %}
+<article class="prose">
+<h1>Calibration</h1>
+<p>For every market that resolved, we look at the YES price 24 hours before settlement (from our own snapshots) and compare it with the outcome. A perfectly calibrated venue resolves YES 70% of the time when priced at 70¢. Brier score: lower is better (0 = perfect, 0.25 = coin flip).</p>
+<p>Resolved markets with a 24h-before price: <b>{{ n_all }}</b> (last 7 days: {{ n_week }}).</p>
+<h2>Running Brier score by venue</h2>
+<table><tr><th>Venue</th><th>n</th><th>Brier</th></tr>
+{% for v in venues %}<tr><td>{{ v.name }}</td><td>{{ v.n }}</td><td>{{ '%.3f' % v.brier if v.brier is not none else '—' }}</td></tr>{% endfor %}
+</table>
+<h2>Reliability table (all time)</h2>
+<table><tr><th>Priced (24h before)</th><th>n</th><th>Resolved YES</th><th>Rate</th></tr>
+{% for b in buckets %}<tr><td>{{ b.bucket }}</td><td>{{ b.n }}</td><td>{{ b.yes }}</td><td>{{ '%.0f%%' % (b.rate*100) if b.rate is not none else '—' }}</td></tr>{% endfor %}
+</table>
+<p>Raw ledger: <a href="/data/resolutions.csv">resolutions.csv</a> (CC BY 4.0).</p>
+</article>
+{% endblock %}

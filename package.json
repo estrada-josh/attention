@@ -1,0 +1,12 @@
+{
+  "name": "attention",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "nostr": "node engine/channels/nostr_publish.mjs"
+  },
+  "dependencies": {
+    "nostr-tools": "^2.0.0",
+    "ws": "^8.0.0"
+  }
+}

@@ -1,0 +1,47 @@
+{
+ "version": "https://jsonfeed.org/version/1.1",
+ "title": "OddsDrift (bot)",
+ "home_page_url": "https://oddsdrift.joshestrada.com/",
+ "feed_url": "https://oddsdrift.joshestrada.com/feed.json",
+ "description": "Automated tracker of prediction-market odds: the biggest 24h swings, upsets at settlement, a daily midterms board, and a weekly calibration scorecard. Data from the public Kalshi and Polymarket APIs. Not affiliated. Not investment advice.",
+ "icon": "https://oddsdrift.joshestrada.com/avatar.png",
+ "items": [
+  {
+   "id": "https://oddsdrift.joshestrada.com/p/2026-08-16-board",
+   "url": "https://oddsdrift.joshestrada.com/p/2026-08-16-board",
+   "title": "Midterms 2026 odds board \u2014 Aug 16, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 78 days to Election Day\nSenate control (D): K 49\u00a2 (+0)\nHouse control (D): K 85\u00a2 (+0) \u00b7 P 88\u00a2\nTX Senate (D): K 48\u00a2 (-3) \u00b7 P 52\u00a2\nMI Senate (D): K 57\u00a2 (+2) \u00b7 P 56\u00a2 (+2)\nOH Senate (D): K 51\u00a2 (-3) \u00b7 P 52\u00a2 (-5)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-08-16T20:02:46Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://oddsdrift.joshestrada.com/charts/2026-08-16-board.png"
+  },
+  {
+   "id": "https://oddsdrift.joshestrada.com/p/2026-08-16-pm",
+   "url": "https://oddsdrift.joshestrada.com/p/2026-08-16-pm",
+   "title": "Settled & surprised \u2014 Aug 16, 2026",
+   "content_text": "Settled in the last 24h\nP \u00b7 Another Frontier Math Problem Solved by Sep\u2026 \u2192 YES \u00b7 was 97\u00a2 24h before \u00b7 $23k\nP \u00b7 Another Frontier Math Problem Solved by Dec\u2026 \u2192 YES \u00b7 was 95\u00a2 24h before \u00b7 $11k\n#PredictionMarkets #Polymarket",
+   "date_published": "2026-08-16T19:57:17Z",
+   "tags": [
+    "PredictionMarkets",
+    "Polymarket"
+   ],
+   "image": "https://oddsdrift.joshestrada.com/charts/2026-08-16-pm.png"
+  },
+  {
+   "id": "https://oddsdrift.joshestrada.com/p/2026-08-16-am",
+   "url": "https://oddsdrift.joshestrada.com/p/2026-08-16-am",
+   "title": "Biggest odds swings \u2014 Aug 16, 2026",
+   "content_text": "Biggest odds swings, last 24h\nP \u00b7 Will \"Conversations with a Killer: The Charles\u2026 5\u00a2\u219292\u00a2 (+88) \u00b7 $19k\nK \u00b7 Will Conversations with a Killer: The Charles M\u2026 6\u00a2\u219291\u00a2 (+85) \u00b7 $24k\n#PredictionMarkets #Kalshi #Polymarket",
+   "date_published": "2026-08-16T19:49:45Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "image": "https://oddsdrift.joshestrada.com/charts/2026-08-16-am.png"
+  }
+ ]
+}
