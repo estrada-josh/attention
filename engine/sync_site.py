@@ -20,8 +20,8 @@ import requests
 
 from .config import load_audience
 
-CHUNK_FILES = 40
-CHUNK_BYTES = 3 * 1024 * 1024
+CHUNK_FILES = 30
+CHUNK_BYTES = 1024 * 1024
 
 
 def main(argv=None) -> int:

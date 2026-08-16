@@ -38,9 +38,9 @@ const SHA_PATTERN = /^[0-9a-f]{40}$/
 /** Largest sync hook body we read, in bytes. */
 const MAX_HOOK_BODY = 4096
 /** Largest upload body we read, in bytes (files are sent in chunks). */
-const MAX_UPLOAD_BODY = 8 * 1024 * 1024
+const MAX_UPLOAD_BODY = 2 * 1024 * 1024
 /** Most files in one upload request. Keeps CPU per request small. */
-const MAX_UPLOAD_FILES = 60
+const MAX_UPLOAD_FILES = 40
 /** KV key prefix for stored site files. */
 const FILE_PREFIX = 'file:'
 /** Edge cache seconds for a file served from KV. Uploads bump a version. */
