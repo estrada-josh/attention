@@ -31,12 +31,12 @@
     "2026-08-16-am": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-08-16T21:29:05+00:00",
+        "at": "2026-08-16T21:45:39+00:00",
+        "at_uri": "at://did:plc:u5nytek7da3v7y7doykzszet/app.bsky.feed.post/3mta5hhzwey52",
         "attempts": 1,
-        "body": "Added webmention 32050679601437774181 now",
-        "ok": false,
+        "ok": true,
         "source": "https://oddsdrift.joshestrada.com/p/2026-08-16-am",
-        "status": 202
+        "verified_at": "2026-08-16T21:45:39+00:00"
       },
       "nostr": {
         "at": "2026-08-16T21:29:06+00:00",
@@ -60,12 +60,12 @@
     "2026-08-16-board": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-08-16T21:30:28+00:00",
+        "at": "2026-08-16T21:45:40+00:00",
+        "at_uri": "at://did:plc:u5nytek7da3v7y7doykzszet/app.bsky.feed.post/3mta5haav7yo2",
         "attempts": 1,
-        "body": "Added webmention 30773151114908471021 now",
-        "ok": false,
+        "ok": true,
         "source": "https://oddsdrift.joshestrada.com/p/2026-08-16-board",
-        "status": 202
+        "verified_at": "2026-08-16T21:45:40+00:00"
       },
       "nostr": {
         "at": "2026-08-16T21:30:29+00:00",
@@ -85,12 +85,12 @@
     "2026-08-16-pm": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-08-16T21:29:47+00:00",
+        "at": "2026-08-16T21:45:40+00:00",
+        "at_uri": "at://did:plc:u5nytek7da3v7y7doykzszet/app.bsky.feed.post/3mta5hertlu52",
         "attempts": 1,
-        "body": "Added webmention 9001363071686778446 now",
-        "ok": false,
+        "ok": true,
         "source": "https://oddsdrift.joshestrada.com/p/2026-08-16-pm",
-        "status": 202
+        "verified_at": "2026-08-16T21:45:40+00:00"
       },
       "nostr": {
         "at": "2026-08-16T21:29:47+00:00",
