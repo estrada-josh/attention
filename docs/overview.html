@@ -1,0 +1,291 @@
+<title>OddsDrift &amp; the Attention Engine</title>
+<style>
+  :root {
+    --ground: #f4f6fa;
+    --surface: #ffffff;
+    --ink: #14203a;
+    --muted: #5b6578;
+    --line: #d7dde9;
+    --navy: #1b2d50;
+    --accent: #c97a0f;      /* amber, darkened for light ground */
+    --accent-soft: #fbefdc;
+    --up: #1f7a4d;
+    --down: #b23a2f;
+    --mono: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0f1626; --surface: #17213a; --ink: #e8ecf4; --muted: #9aa6bd;
+      --line: #2a3652; --navy: #dfe6f5; --accent: #ffab40; --accent-soft: #2b2a1f;
+      --up: #4fc38a; --down: #f08a7c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0f1626; --surface: #17213a; --ink: #e8ecf4; --muted: #9aa6bd;
+    --line: #2a3652; --navy: #dfe6f5; --accent: #ffab40; --accent-soft: #2b2a1f;
+    --up: #4fc38a; --down: #f08a7c;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.55; }
+  main { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+  h1, h2, h3 { text-wrap: balance; color: var(--navy); font-weight: 650; letter-spacing: -0.01em; }
+  h1 { font-size: 2.35rem; line-height: 1.12; margin: .3rem 0 .6rem; }
+  h2 { font-size: 1.45rem; margin: 3rem 0 .8rem; }
+  h3 { font-size: 1.1rem; margin: 1.6rem 0 .4rem; }
+  p { max-width: 68ch; margin: .6rem 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .eyebrow { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); font-weight: 600; margin: 0; }
+  .lede { font-size: 1.15rem; max-width: 62ch; color: var(--ink); }
+  .status { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .75rem; margin: 1.6rem 0 0; padding: 0; list-style: none; }
+  .status li { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .8rem .95rem; }
+  .status .k { display: block; font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-weight: 600; margin-bottom: .2rem; }
+  .status .v { font-family: var(--mono); font-size: .92rem; word-break: break-all; }
+  .dot { display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; background: var(--up); margin-right: .4rem; vertical-align: middle; }
+  figure { margin: 1.4rem 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1rem .6rem; overflow-x: auto; }
+  figure svg { display: block; width: 100%; height: auto; min-width: 640px; }
+  figcaption { font-size: .9rem; color: var(--muted); margin-top: .5rem; max-width: 72ch; }
+  ol.steps { padding-left: 1.2rem; max-width: 68ch; }
+  ol.steps li { margin: .45rem 0; }
+  .shapes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: .9rem; margin-top: 1rem; }
+  .shape { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.05rem; display: flex; flex-direction: column; gap: .5rem; }
+  .shape h3 { margin: 0; font-size: 1.02rem; }
+  .shape .when { font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .shape pre { margin: 0; font-family: var(--mono); font-size: .82rem; line-height: 1.45; white-space: pre-wrap; background: var(--ground); border-radius: 8px; padding: .65rem .75rem; color: var(--ink); }
+  .shape p { font-size: .92rem; margin: 0; color: var(--muted); }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .table-wrap { overflow-x: auto; margin-top: .8rem; }
+  th, td { text-align: left; padding: .55rem .75rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .76rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  td.num, th.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  code { font-family: var(--mono); font-size: .88em; background: var(--accent-soft); padding: .08em .35em; border-radius: 4px; }
+  pre.block { font-family: var(--mono); font-size: .84rem; line-height: 1.5; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; overflow-x: auto; margin: .8rem 0; }
+  .callout { border-left: 3px solid var(--accent); background: var(--accent-soft); padding: .8rem 1rem; border-radius: 0 10px 10px 0; max-width: 72ch; margin: 1.2rem 0; }
+  .callout p { margin: .3rem 0; }
+  ul.tight { padding-left: 1.2rem; max-width: 70ch; }
+  ul.tight li { margin: .35rem 0; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem; margin: 1rem 0 0; }
+  .fact { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .75rem .9rem; }
+  .fact .n { font-size: 1.6rem; font-weight: 650; color: var(--navy); font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .fact .l { font-size: .8rem; color: var(--muted); }
+  footer { margin-top: 4rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+  @media (prefers-reduced-motion: no-preference) { a { transition: color .15s; } }
+</style>
+
+<main>
+  <p class="eyebrow">Built 2026-08-16 · autonomous · running now</p>
+  <h1>OddsDrift &amp; the Attention Engine</h1>
+  <p class="lede">A machine that builds an audience without a human in the loop. The engine (<code>attention</code>) is generic — pluggable data sources, post shapes, and publishing channels. OddsDrift is its first audience: an automated tracker of prediction-market odds that posts three times a day to Bluesky, the fediverse, Nostr, and its own site with RSS.</p>
+
+  <ul class="status" aria-label="Live surfaces">
+    <li><span class="k">Site + feeds</span><span class="v"><span class="dot"></span><a href="https://odds-drift.com">odds-drift.com</a></span></li>
+    <li><span class="k">Bluesky</span><span class="v"><span class="dot"></span><a href="https://bsky.app/profile/odds-drift.com">@odds-drift.com</a></span></li>
+    <li><span class="k">Fediverse</span><span class="v"><span class="dot"></span>@odds-drift.com@web.brid.gy</span></li>
+    <li><span class="k">Nostr</span><span class="v"><span class="dot"></span>NIP-05 _@odds-drift.com</span></li>
+    <li><span class="k">Code + data (CC BY 4.0)</span><span class="v"><span class="dot"></span><a href="https://github.com/estrada-josh/attention">github.com/estrada-josh/attention</a></span></li>
+    <li><span class="k">Contact inbox</span><span class="v">oddsdrift@agentmail.to</span></li>
+  </ul>
+
+  <h2>Why this shape</h2>
+  <p>The constraint was total autonomy: no phone number, no CAPTCHA, no card, no logins. That ruled out the obvious channels — X needs a phone and a paid API, Bluesky's own signup needs phone or CAPTCHA, every sizeable community PDS is invite-gated, and Mastodon.social forbids AI-only accounts. The research (12 agents, live-verified) surfaced the one path that needs zero accounts: <strong>Bridgy Fed's web-site bridge</strong> turns any site with the right markup into a followable Bluesky and fediverse account with one HTTP request. Add Nostr (a keypair, no signup), a site with feeds, and GitHub Actions as the only free scheduler, and the whole loop runs from public infrastructure.</p>
+  <p>The topic won a judged bake-off (three strategists, three judges): prediction-market odds are public, keyless, change hourly, are quotable, and no bot covers them well. Content is deterministic — templates plus arithmetic on data — so it stays honest without an LLM.</p>
+
+  <h2>How it works</h2>
+  <figure>
+    <svg viewBox="0 0 980 470" role="img" aria-label="Data flow: Kalshi and Polymarket APIs are read by the engine running on GitHub Actions cron; the engine commits data and a rendered site to the git repo, uploads the site to a Cloudflare Worker's KV, and sends webmentions to Bridgy Fed, which bridges each post to Bluesky and the fediverse; the engine also publishes notes to Nostr relays; readers reach the site and RSS through the Worker.">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <g fill="none" stroke="currentColor" stroke-width="1.4" font-family="Avenir Next, Segoe UI, system-ui, sans-serif" font-size="12.5">
+        <!-- sources -->
+        <rect x="20" y="40" width="150" height="54" rx="8"/>
+        <text x="95" y="62" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Kalshi API</text>
+        <text x="95" y="80" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">public, no key</text>
+        <rect x="20" y="120" width="150" height="54" rx="8"/>
+        <text x="95" y="142" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Polymarket API</text>
+        <text x="95" y="160" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">public, no key</text>
+
+        <!-- engine -->
+        <rect x="270" y="30" width="230" height="154" rx="10" stroke-width="2"/>
+        <text x="385" y="56" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">engine · GitHub Actions cron</text>
+        <text x="385" y="80" text-anchor="middle" fill="currentColor" stroke="none">fetch → 24h change vs own snapshot</text>
+        <text x="385" y="100" text-anchor="middle" fill="currentColor" stroke="none">shape → post text ≤ 280 chars + chart</text>
+        <text x="385" y="120" text-anchor="middle" fill="currentColor" stroke="none">render site (h-entry, Atom, JSON)</text>
+        <text x="385" y="140" text-anchor="middle" fill="currentColor" stroke="none">commit → upload → publish</text>
+        <text x="385" y="164" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">3 slots/day · idempotent per slot</text>
+
+        <line x1="170" y1="67" x2="268" y2="80" marker-end="url(#arrow)"/>
+        <line x1="170" y1="147" x2="268" y2="130" marker-end="url(#arrow)"/>
+        <text x="215" y="58" text-anchor="middle" fill="currentColor" stroke="none" opacity=".75">open + settled markets</text>
+
+        <!-- git repo -->
+        <rect x="270" y="240" width="230" height="70" rx="8"/>
+        <text x="385" y="266" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">git repo (public)</text>
+        <text x="385" y="286" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">snapshots · ledger · posts · site/ · state</text>
+        <line x1="385" y1="184" x2="385" y2="238" marker-end="url(#arrow)"/>
+        <text x="395" y="216" fill="currentColor" stroke="none" opacity=".75">commits data + site</text>
+
+        <!-- worker -->
+        <rect x="600" y="30" width="200" height="90" rx="8"/>
+        <text x="700" y="56" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Cloudflare Worker + KV</text>
+        <text x="700" y="76" text-anchor="middle" fill="currentColor" stroke="none">odds-drift.com</text>
+        <text x="700" y="96" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">serves pages, feeds, charts</text>
+        <line x1="500" y1="75" x2="598" y2="75" marker-end="url(#arrow)"/>
+        <text x="549" y="66" text-anchor="middle" fill="currentColor" stroke="none" opacity=".75">uploads changed files</text>
+
+        <!-- bridgy -->
+        <rect x="600" y="160" width="200" height="70" rx="8" stroke="#c97a0f" stroke-width="2"/>
+        <text x="700" y="186" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Bridgy Fed (web bridge)</text>
+        <text x="700" y="206" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">no account needed</text>
+        <line x1="500" y1="150" x2="598" y2="185" marker-end="url(#arrow)"/>
+        <text x="546" y="180" text-anchor="middle" fill="currentColor" stroke="none" opacity=".75">webmention per post</text>
+        <line x1="700" y1="120" x2="700" y2="158" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+        <text x="712" y="143" fill="currentColor" stroke="none" opacity=".75">fetches h-entry + image</text>
+
+        <!-- bluesky / fediverse -->
+        <rect x="850" y="140" width="115" height="46" rx="8"/>
+        <text x="907" y="159" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Bluesky</text>
+        <text x="907" y="176" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">@odds-drift.com</text>
+        <rect x="850" y="200" width="115" height="46" rx="8"/>
+        <text x="907" y="219" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Fediverse</text>
+        <text x="907" y="236" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">@…@web.brid.gy</text>
+        <line x1="800" y1="185" x2="848" y2="166" marker-end="url(#arrow)"/>
+        <line x1="800" y1="205" x2="848" y2="220" marker-end="url(#arrow)"/>
+
+        <!-- nostr -->
+        <rect x="600" y="270" width="200" height="54" rx="8"/>
+        <text x="700" y="292" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Nostr relays</text>
+        <text x="700" y="310" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">damus · nos.lol · primal</text>
+        <line x1="500" y1="170" x2="598" y2="290" marker-end="url(#arrow)"/>
+        <text x="520" y="252" fill="currentColor" stroke="none" opacity=".75">signed note</text>
+
+        <!-- readers -->
+        <rect x="850" y="40" width="115" height="70" rx="8"/>
+        <text x="907" y="64" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Readers</text>
+        <text x="907" y="82" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">web · RSS · JSON</text>
+        <text x="907" y="98" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">data downloads</text>
+        <line x1="800" y1="75" x2="848" y2="75" marker-end="url(#arrow)"/>
+
+        <!-- healthcheck -->
+        <rect x="20" y="380" width="480" height="60" rx="8" stroke-dasharray="5 4"/>
+        <text x="260" y="404" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">healthcheck · GitHub Actions daily</text>
+        <text x="260" y="424" text-anchor="middle" fill="currentColor" stroke="none" opacity=".7">site alive? posts fresh? followers/stars → metrics.csv · opens an issue after 2 bad days</text>
+        <line x1="385" y1="310" x2="385" y2="378" marker-end="url(#arrow)"/>
+        <text x="395" y="350" fill="currentColor" stroke="none" opacity=".75">reads state</text>
+      </g>
+    </svg>
+    <figcaption>One run: the engine reads both venues, builds one post for the due slot, renders the site, commits everything, uploads the changed files to the Worker's KV, then sends one webmention per post to Bridgy Fed (which fetches the page and mirrors it to Bluesky and the fediverse) and one signed note to Nostr. Nothing here needs a login.</figcaption>
+  </figure>
+
+  <ol class="steps">
+    <li><strong>Fetch.</strong> ~80k open Kalshi markets (parlay legs excluded) and the top ~2,100 Polymarket markets by 24h volume, plus everything that settled in the last 26h. Watchlist markets below the volume cutoffs are fetched by ticker/slug.</li>
+    <li><strong>Enrich.</strong> 24h change comes from the engine's own snapshot taken ~24h earlier; the venue-reported change is only a fallback. Prices 24h before settlement come from snapshots or from the venues' history endpoints.</li>
+    <li><strong>Shape.</strong> The due slot's shape picks rows by threshold, ranks them, writes ≤ 280 characters of templated text, and renders a 1200×675 chart with alt text.</li>
+    <li><strong>Publish.</strong> The post page carries microformats2 (h-entry, e-content, u-photo, a link to fed.brid.gy). Bridgy accepts the webmention, then the engine verifies delivery through Bridgy's convert endpoint before it marks the post done. Nostr notes use a stable <code>created_at</code> so re-runs never duplicate.</li>
+    <li><strong>Remember.</strong> The git repo is the storage of record: slim per-run snapshots, a resolutions ledger, the post index, publish records, daily metrics. Slots are idempotent; a transient failure leaves the slot open for the :47 retry tick.</li>
+  </ol>
+
+  <h2>What it posts</h2>
+  <div class="shapes">
+    <div class="shape">
+      <h3>Morning movers</h3>
+      <span class="when">daily 13:17 UTC · 9:17 AM EDT / 8:17 AM EST</span>
+      <pre>Biggest odds swings, last 24h
+P · Will "Conversations with a Killer: The Charles… 5¢→92¢ (+88) · $19k
+K · Will Conversations with a Killer: The Charles M… 6¢→94¢ (+88) · $24k
+#PredictionMarkets #Kalshi #Polymarket</pre>
+      <p>Non-sports markets, ≥ 8-point move, venue volume floors ($5k / $10k), ≥ 12h to close, ranked by |Δ| × log volume, one market per event. Records over 30 days get flagged.</p>
+    </div>
+    <div class="shape">
+      <h3>Midterms 2026 board</h3>
+      <span class="when">Mon–Sat 17:17 UTC · 1:17 PM EDT / 12:17 PM EST · until Nov 3</span>
+      <pre>Midterms 2026 odds board · 78 days to Election Day
+Senate (D): K 48¢ (+0) · P 52¢
+House (D): K 85¢ (-1) · P 88¢
+TX Sen (D): K 49¢ (-2) · P 52¢
+MI Sen (D): K 57¢ (+1) · P 56¢ (+1)
+OH Sen (D): K 51¢ (-3) · P 52¢ (-5)
+#Midterms2026 #PredictionMarkets</pre>
+      <p>Same seven markets in the same order every day (control of Senate/House, TX, MI, OH, GA, ME); the chart and page show all, the text shows what fits.</p>
+    </div>
+    <div class="shape">
+      <h3>Settled &amp; surprised</h3>
+      <span class="when">daily 22:17 UTC · 6:17 PM EDT / 5:17 PM EST</span>
+      <pre>Settled in the last 24h
+P · Another Frontier Math Problem Solved by Sep… → YES · was 97¢ 24h before · $23k
+P · Another Frontier Math Problem Solved by Dec… → YES · was 95¢ 24h before · $11k
+#PredictionMarkets #Polymarket</pre>
+      <p>Upsets first: resolved YES at ≤ 15¢ the day before, or NO at ≥ 85¢. Markets younger than 30h (5-minute crypto, hourly weather) are excluded because "the day before" does not exist for them.</p>
+    </div>
+    <div class="shape">
+      <h3>Calibration scorecard</h3>
+      <span class="when">Sundays 15:17 UTC · 11:17 AM EDT / 10:17 AM EST</span>
+      <pre>Calibration scorecard, week 34
+Resolved: 41 K, 27 P
+Priced ≥90¢ the day before: 34/36 resolved YES
+Priced ≤10¢: 2/29 resolved YES
+Weekly Brier: K 0.061 · P 0.074 (running …)
+odds-drift.com/calibration</pre>
+      <p>Activates once the ledger holds ≥ 20 resolutions with a day-before price (about a week in). The /calibration page keeps the running table and links the CC BY ledger.</p>
+    </div>
+  </div>
+
+  <h2>What runs when</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Job</th><th class="num">UTC</th><th class="num">EDT / EST</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>publish · movers</td><td class="num">13:17 (+ :47 retry)</td><td class="num">9:17 AM / 8:17 AM</td><td>late ticks still post within a 4-hour grace window</td></tr>
+        <tr><td>publish · midterms board</td><td class="num">17:17 (+ :47)</td><td class="num">1:17 PM / 12:17 PM</td><td>Mon–Sat, until 2026-11-03</td></tr>
+        <tr><td>publish · settled</td><td class="num">22:17 (+ :47)</td><td class="num">6:17 PM / 5:17 PM</td><td>daily</td></tr>
+        <tr><td>publish · scorecard</td><td class="num">Sun 15:17 (+ :47)</td><td class="num">11:17 AM / 10:17 AM</td><td>weekly Brier + reliability table</td></tr>
+        <tr><td>healthcheck</td><td class="num">14:30</td><td class="num">10:30 AM / 9:30 AM</td><td>metrics row; GitHub issue after 2 failing days; re-arms the schedule</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Guardrails</h2>
+  <ul class="tight">
+    <li><strong>Honest by construction.</strong> No LLM writes copy. Every number is computed from the APIs and linked to the venue's market page and to a page with the full table. Bot disclosure sits on every surface; the bot never replies, follows, likes, or mentions.</li>
+    <li><strong>Fails loudly, not silently.</strong> Schema drift or a dead source blocks the post; breakers open after three failed runs and half-open after a cooldown; the healthcheck watches post freshness, not just "did the job run".</li>
+    <li><strong>Small footprint.</strong> Free tiers only: GitHub Actions minutes, Cloudflare Workers Free (10 ms CPU — the Worker just serves KV), KV under 100 writes/day, snapshots trimmed to seven columns and non-sports rows.</li>
+    <li><strong>Reviewed.</strong> A 45-agent adversarial review (five reviewers, one refuter per finding) confirmed 35 defects before launch — including one that would have frozen the site within a week — all fixed and re-verified with 60 tests, a Worker typecheck, and live runs.</li>
+  </ul>
+
+  <h2>Reusing it for the next audience</h2>
+  <p>Everything audience-specific lives in one folder. The engine never mentions OddsDrift.</p>
+  <pre class="block">audiences/&lt;name&gt;/audience.yml   # names, domain, sources, shapes + UTC times, channels, thresholds, links
+audiences/&lt;name&gt;/about.md       # method page
+audiences/&lt;name&gt;/assets/        # avatar.png, header.png
+audiences/&lt;name&gt;/wrangler.jsonc # its Worker (domain, KV id, vars)
+engine/sources/  engine/shapes/  engine/channels/   # add a module + register it to add a source, post type, or platform</pre>
+  <ol class="steps">
+    <li>Copy <code>audiences/oddsdrift/</code>, edit <code>audience.yml</code> (topic sources, post shapes, times, channels, domain), swap the assets.</li>
+    <li>Add the new slot times to the cron list in <code>publish.yml</code> (the workflow warns when a slot has no matching cron entry).</li>
+    <li>Create a KV namespace, set <code>SYNC_TOKEN</code>, <code>wrangler deploy</code> the site to its domain.</li>
+    <li>Enable the bridge: <code>curl -X POST -d "url=&lt;domain&gt;" https://fed.brid.gy/web-site</code> — then run the workflow once. New platforms are one channel module each; a Mastodon channel and an API signup helper (<code>tools/mastodon.mjs</code>, email via AgentMail) already exist, switched off.</li>
+  </ol>
+
+  <h2>What was built, in numbers</h2>
+  <div class="facts">
+    <div class="fact"><div class="n">2</div><div class="l">data sources (Kalshi, Polymarket)</div></div>
+    <div class="fact"><div class="n">4</div><div class="l">post shapes</div></div>
+    <div class="fact"><div class="n">3</div><div class="l">publishing channels live (+1 ready)</div></div>
+    <div class="fact"><div class="n">60</div><div class="l">unit tests, zero network</div></div>
+    <div class="fact"><div class="n">35</div><div class="l">review findings fixed pre-launch</div></div>
+    <div class="fact"><div class="n">0</div><div class="l">accounts created (one inbox, one keypair)</div></div>
+  </div>
+
+  <div class="callout">
+    <p><strong>What to watch this week.</strong> The first scheduled tick is 13:17 UTC (9:17 AM EDT) on Aug 17. Day 2 is when the engine's own snapshots take over the 24h math, so movers should fill all four lines. Follower and star counts land daily in <code>audiences/oddsdrift/data/metrics.csv</code>. Bridgy's status page for the site is <a href="https://fed.brid.gy/web/odds-drift.com">fed.brid.gy/web/odds-drift.com</a>.</p>
+    <p><strong>Phase 2 (after ~14 stable days).</strong> A native Mastodon account, an email digest, cross-venue gap posts once the pairing has zero false matches, and a second audience on a different topic.</p>
+  </div>
+
+  <footer>
+    Where things live: <code>README.md</code> (engine), <code>SETUP.md</code> (runbook), <code>DEVLOG.md</code> (the full build story, decisions, and review), <code>audiences/oddsdrift/about.md</code> (public method page). Repo: github.com/estrada-josh/attention.
+  </footer>
+</main>
