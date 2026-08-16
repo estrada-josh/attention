@@ -30,6 +30,7 @@ def main(argv=None) -> int:
     ap.add_argument("--sha", default=None)
     ap.add_argument("--full", action="store_true", help="ignore the remote manifest; upload everything")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--base", default=None, help="override the Worker base URL (e.g. http://127.0.0.1:8787 for wrangler dev)")
     a = ap.parse_args(argv)
     aud = load_audience(a.audience)
     token = os.environ.get("SYNC_TOKEN")
@@ -37,7 +38,7 @@ def main(argv=None) -> int:
         print("SYNC_TOKEN not set", file=sys.stderr)
         return 1
     h = {"Authorization": f"Bearer {token}", "User-Agent": "attention-sync/0.1"}
-    base = aud.site_url.rstrip("/")
+    base = (a.base or aud.site_url).rstrip("/")
 
     remote: dict[str, str] = {}
     if not a.full:
