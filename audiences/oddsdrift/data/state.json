@@ -12,6 +12,21 @@
     }
   },
   "created": "2026-08-16T19:49:45.840184+00:00",
+  "healthcheck": {
+    "consecutive_failures": 0,
+    "last": {
+      "bsky_followers": 0,
+      "bsky_posts": 3,
+      "date": "2026-08-16",
+      "gh_forks": 0,
+      "gh_stars": 0,
+      "gh_watchers": 0,
+      "posts_total": 3,
+      "problems": "",
+      "repo_size_kb": 2301,
+      "site_ok": true
+    }
+  },
   "last_run": {
     "at": "2026-08-16T21:43:24.003534+00:00",
     "failed_sources": [],
