@@ -28,17 +28,24 @@ def publish(audience: Audience, only_post: str | None = None, dry_run: bool = Fa
             continue
         rec = published.setdefault(post["id"], {})
         for ch in channels:
-            if rec.get(ch.name, {}).get("ok"):
+            prev = rec.get(ch.name) or {}
+            if prev.get("ok"):
+                continue
+            if prev.get("gave_up"):
+                # The channel stopped trying for this post. Do not loop forever.
                 continue
             if dry_run:
                 log.info("DRY: would publish %s via %s", post["id"], ch.name)
                 continue
             log.info("publishing %s via %s", post["id"], ch.name)
             try:
-                res = ch.publish(audience, post, dict(os.environ))
+                res = ch.publish(audience, post, dict(os.environ), prev=prev)
             except Exception as e:  # noqa: BLE001
                 res = {"ok": False, "error": f"{type(e).__name__}: {e}"}
             res["at"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+            # A channel may report a one-time account action. Keep it in state.
+            if res.get("bridgy_enabled_at"):
+                state["bridgy_enabled_at"] = res["bridgy_enabled_at"]
             rec[ch.name] = res
             results.setdefault(post["id"], {})[ch.name] = res
             store.save_state(state)

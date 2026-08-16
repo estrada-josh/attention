@@ -6,7 +6,15 @@ from datetime import timedelta
 from typing import Optional
 
 from ..model import Post
-from .base import Context, Shape, cents, clip, fit_text, money, pts, score_move
+from .base import Context, Shape, cents, clip, delta_pts, fit_lines, money, score_move
+
+
+def title_key(r) -> str:
+    """A venue-independent key for the same question on two venues.
+    Lowercase, drop a leading "will", keep letters and digits only."""
+    t = f"{r.title} {r.subtitle}".lower()
+    t = re.sub(r"^\s*will\s+", "", t)
+    return re.sub(r"[^a-z0-9]+", "", t)[:60]
 
 
 class MoversShape(Shape):
@@ -37,14 +45,18 @@ class MoversShape(Shape):
                 continue
             out.append(r)
         out.sort(key=lambda r: score_move(r.change_24h, r.volume_24h or 0), reverse=True)
-        # one market per event, keeps the list diverse
-        seen_events = set()
+        # One market per event, and one market per question across venues: the
+        # same market on Kalshi and Polymarket must not fill two of four slots.
+        seen_events: set = set()
+        seen_titles: set = set()
         dedup = []
         for r in out:
             key = (r.venue, r.event_ticker or r.ticker)
-            if key in seen_events:
+            tkey = title_key(r)
+            if key in seen_events or tkey in seen_titles:
                 continue
             seen_events.add(key)
+            seen_titles.add(tkey)
             dedup.append(r)
         return dedup
 
@@ -64,14 +76,19 @@ class MoversShape(Shape):
         hist[:] = recent + [{"date": ctx.now.strftime("%Y-%m-%d"), "max_abs": biggest}]
 
         header = "Biggest odds swings, last 24h"
-        lines = []
-        for r in top:
-            label = ctx.labels.get(r.venue, r.venue[:1].upper())
-            name = clip(r.title + (f" — {r.subtitle}" if r.subtitle else ""), 48)
-            lines.append(f"{label} · {name} {cents(r.prev_24h_price)}→{cents(r.yes_price)} ({pts(r.change_24h)}) · {money(r.volume_24h)}")
+
+        def make_lines(clip_n: int) -> list[str]:
+            out = []
+            for r in top:
+                label = ctx.labels.get(r.venue, r.venue[:1].upper())
+                name = clip(r.title + (f" — {r.subtitle}" if r.subtitle else ""), clip_n)
+                out.append(f"{label} · {name} {cents(r.prev_24h_price)}→{cents(r.yes_price)} "
+                           f"({delta_pts(r.prev_24h_price, r.yes_price)}) · {money(r.volume_24h)}")
+            return out
         foot_lines = []
         if record:
-            foot_lines.append(f"Largest 24h swing in 30 days: {pts(max(top, key=lambda r: abs(r.change_24h)).change_24h)}")
+            big = max(top, key=lambda r: abs(r.change_24h))
+            foot_lines.append(f"Largest 24h swing in 30 days: {delta_pts(big.prev_24h_price, big.yes_price)}")
         tags = list(ctx.audience.tags[:1])
         venues = {r.venue for r in top}
         for v in sorted(venues):
@@ -79,7 +96,7 @@ class MoversShape(Shape):
             if t and len(tags) < 3:
                 tags.append(t)
         foot_lines.append(" ".join(f"#{t}" for t in tags))
-        text = fit_text(header, lines, "\n".join(foot_lines))
+        text = fit_lines(header, make_lines, "\n".join(foot_lines), what=f"movers {ctx.slot}")
         pid = f"{ctx.now.strftime('%Y-%m-%d')}-{ctx.slot}"
         table = [{
             "venue": r.venue, "label": ctx.labels.get(r.venue, ""), "ticker": r.ticker,

@@ -2,9 +2,9 @@
 //
 // Run these commands from the repo root:
 //   npm install --prefix worker
-//   npx wrangler kv namespace create STATE      # paste the id below
-//   npx wrangler secret put SYNC_TOKEN --config audiences/oddsdrift/wrangler.jsonc
-//   npx wrangler deploy --config audiences/oddsdrift/wrangler.jsonc
+//   npx --prefix worker wrangler kv namespace create STATE      # paste the id below
+//   npx --prefix worker wrangler secret put SYNC_TOKEN --config audiences/oddsdrift/wrangler.jsonc
+//   npx --prefix worker wrangler deploy --config audiences/oddsdrift/wrangler.jsonc
 //
 // The Worker source is shared. See worker/README.md.
 {
@@ -19,7 +19,11 @@
     "SITE_ROOT": "audiences/oddsdrift/site",
     "DEFAULT_BRANCH": "main",
     "SITE_URL": "https://oddsdrift.joshestrada.com",
-    "BRIDGY_WEB_ID": "oddsdrift.joshestrada.com"
+    "BRIDGY_WEB_ID": "oddsdrift.joshestrada.com",
+
+    // "true" only when the GitHub repo is public. A private repo makes the
+    // raw.githubusercontent.com fallback answer 404 for every KV miss.
+    "RAW_FALLBACK": "false"
   },
   "observability": { "enabled": true }
 }

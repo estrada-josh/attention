@@ -29,22 +29,40 @@ secret `SYNC_TOKEN` (`gh secret list`). If you lost it: generate a new one with
 
 Verify: `curl -sI https://oddsdrift.joshestrada.com/health.json | head -1` returns 200.
 
-## 3. First run + bridge (the pipeline does the rest)
+## 3. Bridge the site FIRST, then run the pipeline
+
+Order matters. `POST /webmention` returns 400 "No user found for domain" when the site was
+never enabled, so the first post would fail and Bridgy Fed would bridge the feed instead.
 
 ```
+curl -sS -X POST -d "url=oddsdrift.joshestrada.com" https://fed.brid.gy/web-site
 gh workflow run publish.yml -f audience=oddsdrift -f slot=am -f force=true
 gh run watch
-curl -sS -X POST -d "url=oddsdrift.joshestrada.com" https://fed.brid.gy/web-site
 ```
 
-The first run fetches data, builds a post, uploads the site to the Worker, and publishes
+`/web-site` creates the Bridgy Fed user and polls `feed.xml` once. Entries that already sit
+in the feed get bridged from that poll; the first workflow run then sends an Update for them.
+Every entry carries `activity:object-type = note`, so a feed-poll entry becomes a note, not
+an article.
+
+The run fetches data, builds a post, uploads the site to the Worker, and publishes
 (Bridgy webmention + Nostr). Bridgy Fed then creates `@oddsdrift.joshestrada.com.web.brid.gy`
 on Bluesky. Check: `https://bsky.app/profile/oddsdrift.joshestrada.com.web.brid.gy` and
 `https://fed.brid.gy/web/oddsdrift.joshestrada.com` (status page names any markup fix).
 
+Optional, custom Bluesky handle. The `/.well-known/atproto-did` redirect alone does not
+change the handle. The account stays `@oddsdrift.joshestrada.com.web.brid.gy` until you open
+`https://fed.brid.gy/web/oddsdrift.joshestrada.com` and press the set-handle button next to
+the Bluesky account. Verify with `curl -sL https://oddsdrift.joshestrada.com/.well-known/atproto-did`
+(it prints `did:plc:...`) and `https://bsky-debug.app/handle?handle=oddsdrift.joshestrada.com`.
+After the switch, update `follow_links` in `audiences/oddsdrift/audience.yml`, which holds the
+handle as literal text.
+
 Optional, recommended: make the repo public so the CC BY data is citable and GitHub becomes
 a channel: `gh repo edit estrada-josh/attention --visibility public --accept-visibility-change-consequences`.
-The Worker also falls back to raw.githubusercontent.com when the repo is public.
+The Worker can then also fall back to raw.githubusercontent.com. That fallback is off while
+the repo is private: set `"RAW_FALLBACK": "true"` in `audiences/oddsdrift/wrangler.jsonc` and
+redeploy after the repo becomes public. The site itself does not need it; every file is in KV.
 
 Optional: to let future Claude Code sessions do these steps hands-off, allow
 `Bash(npx wrangler *)`, `Bash(npx --prefix worker wrangler *)`, and `Bash(gh *)` in

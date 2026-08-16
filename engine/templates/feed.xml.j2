@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:activity="http://activitystrea.ms/spec/1.0/">
   <title>{{ a.display_name }}</title>
   <subtitle>{{ a.description }}</subtitle>
   <link href="{{ a.site_url }}/feed.xml" rel="self"/>
@@ -12,6 +12,9 @@
     <title>{{ p.title | e }}</title>
     <link href="{{ a.site_url }}/p/{{ p.id }}"/>
     <id>{{ a.site_url }}/p/{{ p.id }}</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
     <published>{{ p.published_at }}</published>
     <updated>{{ p.published_at }}</updated>
     {% for t in p.tags %}<category term="{{ t | e }}"/>{% endfor %}

@@ -2,19 +2,23 @@
   "breakers": {
     "kalshi": {
       "disabled": false,
+      "disabled_at": null,
       "failures": 0
     },
     "polymarket": {
       "disabled": false,
+      "disabled_at": null,
       "failures": 0
     }
   },
   "created": "2026-08-16T19:49:45.840184+00:00",
   "last_run": {
-    "at": "2026-08-16T20:02:46.302444+00:00",
-    "open_rows": 82282,
+    "at": "2026-08-16T21:17:28.137967+00:00",
+    "failed_sources": [],
+    "no_post_reason": null,
+    "open_rows": 81201,
     "post": "2026-08-16-board",
-    "settled_rows": 11278,
+    "settled_rows": 75262,
     "slot": "board"
   },
   "movers_history": [
@@ -25,7 +29,7 @@
   ],
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
-    "2026-08-16-board": "2026-08-16T20:02:46.302444+00:00",
+    "2026-08-16-board": "2026-08-16T21:17:28.137967+00:00",
     "2026-08-16-pm": "2026-08-16T19:57:17.254106+00:00"
   }
 }

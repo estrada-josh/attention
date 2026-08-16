@@ -22,6 +22,14 @@ class Source:
         """Markets that settled/closed at or after `since`."""
         raise NotImplementedError
 
+    def fetch_by_ids(self, ids: list[str]) -> list[MarketRow]:
+        """Open markets for these venue ids, fetched one by one.
+
+        A list scan can miss a thin or long-dated market. The engine calls this
+        for watchlist markets that the list scan did not return. Optional.
+        """
+        return []
+
     def market_url(self, row: MarketRow) -> str:
         return row.url
 

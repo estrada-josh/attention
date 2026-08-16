@@ -18,7 +18,7 @@ log = logging.getLogger("engine.channels.mastodon")
 class MastodonChannel(Channel):
     name = "mastodon"
 
-    def publish(self, audience, post: dict, env: dict) -> dict:
+    def publish(self, audience, post: dict, env: dict, prev: dict | None = None) -> dict:
         inst = env.get("MASTODON_INSTANCE") or os.environ.get("MASTODON_INSTANCE") or self.cfg.get("instance")
         tok = env.get("MASTODON_TOKEN") or os.environ.get("MASTODON_TOKEN")
         if not (inst and tok):
@@ -36,9 +36,12 @@ class MastodonChannel(Channel):
                 else:
                     log.warning("media upload failed %s %s", r.status_code, r.text[:200])
         status = post["text"] + f"\n\n{audience.site_url}/p/{post['id']}"
-        data = {"status": status[:500], "visibility": "public", "language": "en"}
-        for i, m in enumerate(media_ids):
-            data[f"media_ids[{i}]"] = m
+        # Rack reads "media_ids[0]=x" as a Hash and Mastodon then drops it.
+        # Only the repeated "media_ids[]" form arrives as an Array.
+        data = [("status", status[:500]), ("visibility", "public"), ("language", "en")]
+        data += [("media_ids[]", m) for m in media_ids]
+        if post.get("chart") and not media_ids:
+            log.warning("chart exists but no media id; the toot goes out as text only")
         r = requests.post(f"https://{inst}/api/v1/statuses", headers={**h, "Idempotency-Key": f"{audience.name}-{post['id']}"},
                           data=data, timeout=60)
         ok = r.status_code == 200

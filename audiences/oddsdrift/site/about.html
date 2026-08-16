@@ -50,10 +50,11 @@
 <h2>Follow</h2>
 <ul><li><a href="https://bsky.app/profile/oddsdrift.joshestrada.com.web.brid.gy">Bluesky</a></li><li><a href="https://fed.brid.gy/web/oddsdrift.joshestrada.com">Fediverse</a></li><li><a href="https://oddsdrift.joshestrada.com/feed.xml">RSS</a></li><li><a href="https://github.com/estrada-josh/attention">GitHub</a></li><li><a href="https://njump.me/npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27">Nostr</a></li></ul>
 <h2>Thresholds</h2>
-<pre>breaker_failures: 3
+<pre>breaker_cooldown_hours: 12
+breaker_failures: 3
 exclude_categories:
 - Sports
-exclude_title_regex: Up or Down|Higher or Lower|\b(CS2|Dota|LoL|Valorant|esports|EWC)\b|\bvs\.?\b
+exclude_title_regex: Up or Down|Higher or Lower|price up in next|next \d+ mins|\b(CS2|Dota|LoL|Valorant|esports|EWC)\b|\bvs\.?\b
 min_hours_to_close: 12
 min_volume_24h:
   kalshi: 5000
@@ -63,8 +64,10 @@ movers_min_points: 8
 movers_min_rows: 2
 movers_top_n: 4
 resolution_min_volume_24h: 100
+settled_min_lifetime_hours: 30
 settled_min_volume: 10000
 settled_top_n: 4
+slot_grace_minutes: 240
 snapshot_keep_days: 45
 snapshot_min_open_interest: 1500
 snapshot_min_volume_24h: 250
@@ -77,7 +80,7 @@ venue_tags:
   polymarket: Polymarket
 </pre>
 <h2>Sources</h2>
-<ul><li><b>kalshi</b> — public REST API, no key; multivariate parlay legs excluded (mve_filter=exclude)</li><li><b>polymarket</b> — public Gamma API, no key; top ~2,100 markets by 24h volume (API offset cap)</li></ul>
+<ul><li><b>kalshi</b> — public REST API, no key; multivariate parlay legs excluded (mve_filter=exclude)</li><li><b>polymarket</b> — public Gamma API, no key; top ~2,100 markets by 24h volume (API offset cap); watchlist markets are fetched by slug</li></ul>
 <p>Contact: <a href="mailto:oddsdrift@agentmail.to">oddsdrift@agentmail.to</a>. Takedown or correction requests get an answer within a week.</p>
 </article>
 </main>

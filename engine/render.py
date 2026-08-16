@@ -1,14 +1,18 @@
 """Render the static site for one audience into audiences/<name>/site/.
 
 Output: index.html, p/<id>.html, about.html, calibration.html, feed.xml,
-feed.json, data/posts.json, data/resolutions.csv (copy), sitemap.xml,
-style.css, avatar.png/header.png (from assets), .well-known/nostr.json.
+feed.json, sitemap.xml, style.css, avatar.png/header.png (from assets),
+.well-known/nostr.json, data/posts.json, data/resolutions.csv.
+The data exports are bounded: data/posts.json holds the last 50 posts and
+data/resolutions.csv the last 90 days. The repo keeps the full history.
 The site is plain HTML with microformats2 so Bridgy Fed can bridge it.
 """
 from __future__ import annotations
 
+import csv
 import html
 import json
+import logging
 import re
 import shutil
 from collections import defaultdict
@@ -21,7 +25,22 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from .config import Audience
 from .state import Store
 
+log = logging.getLogger("engine.render")
+
 TEMPLATES = Path(__file__).parent / "templates"
+
+# The site exports must stay small. They ride the KV upload path, which caps a
+# single file well under 2 MB (see engine/sync_site.py MAX_FILE_BYTES).
+# The repo under audiences/<name>/data/ keeps the full history.
+SITE_POSTS_LIMIT = 50
+# Fields the public post export needs. "rows" and "extra" stay out: the table
+# is already on the post page, and "extra" holds internal chart settings.
+SITE_POST_FIELDS = ("id", "slot", "shape", "title", "text", "published_at", "tags", "chart", "chart_alt")
+SITE_RESOLUTIONS_DAYS = 90
+# Two hard bounds under the day window. One bad settled_at value, or a busy
+# day, must never push the export past the upload limit.
+SITE_RESOLUTIONS_MAX_ROWS = 5000
+SITE_RESOLUTIONS_MAX_BYTES = 1_000_000
 
 
 def _env() -> Environment:
@@ -29,10 +48,20 @@ def _env() -> Environment:
                        trim_blocks=True, lstrip_blocks=True)
 
 
+# A hashtag must start with a letter. The tag never follows a word character,
+# a slash, or an "&". The "&" guard keeps an HTML entity out of the match.
+HASHTAG_RE = re.compile(r"(?<![\w/&])#([^\W\d_]\w*)")
+
+
 def text_to_html(text: str, site_url: str) -> str:
-    """Escape, link hashtags and bare domains, keep line breaks."""
-    out = html.escape(text)
-    out = re.sub(r"(?<![\w/])#(\w+)", lambda m: f'<a href="/tag/{m.group(1).lower()}">#{m.group(1)}</a>', out)
+    """Escape, link hashtags and bare domains, keep line breaks.
+
+    The result goes into element content only, never into an attribute.
+    Therefore quote=False keeps an apostrophe as an apostrophe. An escaped
+    apostrophe (&#x27;) would otherwise become the bogus hashtag #x27.
+    """
+    out = html.escape(text, quote=False)
+    out = HASHTAG_RE.sub(lambda m: f'<a href="/tag/{m.group(1).lower()}">#{m.group(1)}</a>', out)
     dom = re.escape(site_url.replace("https://", ""))
     out = re.sub(rf"(?<![\w/]){dom}(/[\w\-/]*)?", lambda m: f'<a href="{site_url}{m.group(1) or ""}">{m.group(0)}</a>', out)
     return out.replace("\n", "<br>\n")
@@ -114,6 +143,55 @@ def calibration_data(store: Store, now):
     return {"venues": venues, "buckets": bl, "n_all": sum(len(x) for x in per_venue.values()), "n_week": n_week}
 
 
+def site_posts_export(posts: list[dict], site_url: str, limit: int = SITE_POSTS_LIMIT) -> list[dict]:
+    """Return the newest `limit` posts with only the fields the export needs."""
+    out = []
+    for p in posts[:limit]:
+        item = {k: p.get(k) for k in SITE_POST_FIELDS}
+        item["url"] = f"{site_url}/p/{p['id']}"
+        out.append(item)
+    return out
+
+
+def _res_cutoff(now, days: int) -> str:
+    return (now - timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def write_site_resolutions(src: Path, dst: Path, now, days: int = SITE_RESOLUTIONS_DAYS,
+                           max_rows: int = SITE_RESOLUTIONS_MAX_ROWS,
+                           max_bytes: int = SITE_RESOLUTIONS_MAX_BYTES) -> int:
+    """Write a bounded slice of the resolutions ledger. Return the row count.
+
+    The slice holds the newest rows that settled within `days` days, capped by
+    `max_rows` and by `max_bytes`. Rows keep the order of the source file.
+    A row with an unreadable settled_at counts as old and drops out.
+    """
+    with open(src, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        fields = list(reader.fieldnames or [])
+        rows = list(reader)
+    cutoff = _res_cutoff(now, days)
+    fresh = [r for r in rows if (r.get("settled_at") or r.get("recorded_at") or "") >= cutoff]
+    kept: list[dict] = []
+    size = 0
+    for r in reversed(fresh):  # newest first, so the cap drops the oldest rows
+        cost = sum(len(str(r.get(k) or "")) for k in fields) + len(fields) + 1
+        if len(kept) >= max_rows or size + cost > max_bytes:
+            break
+        kept.append(r)
+        size += cost
+    kept.reverse()
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    with open(dst, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
+        w.writeheader()
+        for r in kept:
+            w.writerow(r)
+    if len(kept) < len(rows):
+        log.info("site resolutions.csv: kept %d of %d rows (last %d days)", len(kept), len(rows), days)
+    return len(kept)
+
+
 def render_site(audience: Audience, now) -> Path:
     env = _env()
     store = Store(audience.data_dir)
@@ -163,9 +241,10 @@ def render_site(audience: Audience, now) -> Path:
                   for p in posts[:30]],
     }
     (site / "feed.json").write_text(json.dumps(feed_json, indent=1))
-    (site / "data" / "posts.json").write_text(json.dumps(posts, indent=1))
+    (site / "data" / "posts.json").write_text(
+        json.dumps(site_posts_export(posts, audience.site_url), indent=1))
     if store.resolutions_path.exists():
-        shutil.copy(store.resolutions_path, site / "data" / "resolutions.csv")
+        write_site_resolutions(store.resolutions_path, site / "data" / "resolutions.csv", now)
     urls = [audience.site_url + "/", audience.site_url + "/about", audience.site_url + "/calibration"] + \
            [f"{audience.site_url}/p/{p['id']}" for p in posts]
     (site / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +

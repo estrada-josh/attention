@@ -4,9 +4,9 @@
  * One audience site is a static folder in a GitHub repo (public or private).
  * GitHub Actions rebuilds the folder and commits it. Then Actions uploads
  * the changed files to this Worker (POST /hooks/upload) which stores them in
- * KV. Requests are served from KV first. When a file is not in KV and the
- * repo is public, the Worker proxies raw.githubusercontent.com pinned to the
- * SHA sent by POST /hooks/sync.
+ * KV. Requests are served from KV first. When a file is not in KV and the var
+ * RAW_FALLBACK is "true" (public repo only), the Worker proxies
+ * raw.githubusercontent.com pinned to the SHA the upload sent.
  *
  * The pin matters. raw.githubusercontent.com caches a branch name for about
  * 5 minutes. A commit SHA is immutable, so raw serves it at once. The SHA also
@@ -31,6 +31,12 @@ export interface Env {
   SITE_URL: string
   /** Bare domain for Bridgy Fed, for example "oddsdrift.joshestrada.com". */
   BRIDGY_WEB_ID: string
+  /**
+   * "true" turns on the raw.githubusercontent.com fallback. Set it only when
+   * the repo is public. A private repo always answers 404, so the fetch only
+   * costs latency and a subrequest.
+   */
+  RAW_FALLBACK?: string
 }
 
 /** A full git commit SHA. */
@@ -43,6 +49,10 @@ const MAX_UPLOAD_BODY = 2 * 1024 * 1024
 const MAX_UPLOAD_FILES = 40
 /** KV key prefix for stored site files. */
 const FILE_PREFIX = 'file:'
+/** How long one isolate reuses the cached {ref, version} pair, in ms. */
+const META_MEMO_MS = 30_000
+/** Edge cache seconds for a 404. A new upload bumps the version and clears it. */
+const TTL_NOT_FOUND = 60
 /** Edge cache seconds for a file served from KV. Uploads bump a version. */
 const TTL_KV = 300
 /** Edge cache seconds for a pinned commit SHA. The content cannot change. */
@@ -152,14 +162,43 @@ function textResponse(body: string, status: number): Response {
   })
 }
 
+interface SiteMeta {
+  /** Commit SHA or branch name. It goes into an upstream URL, so it is validated. */
+  ref: string
+  /** Cache buster. Every upload writes a new value. */
+  version: string
+}
+
 /**
- * Read the pinned SHA from KV. Fall back to the default branch.
- * The value goes into an upstream URL, so validate it before use.
+ * The last {ref, version} pair this isolate read, with the time of the read.
+ * Every request needs the pair. Without the memo each request costs 2 KV reads,
+ * even a request the edge cache answers.
  */
-async function readRef(env: Env): Promise<string> {
-  const stored = await env.STATE.get('sha')
-  if (stored && SHA_PATTERN.test(stored)) return stored
-  return env.DEFAULT_BRANCH
+let metaMemo: { at: number; value: SiteMeta } | null = null
+
+/**
+ * Read the pinned SHA and the cache version from KV.
+ * The memo holds the pair for META_MEMO_MS. KV itself caches a read at the
+ * edge for 60 s, so the memo adds no staleness that KV did not add already.
+ * A failed read falls back to the default branch and is never memoized.
+ */
+async function readMeta(env: Env): Promise<SiteMeta> {
+  const now = Date.now()
+  if (metaMemo !== null && now - metaMemo.at < META_MEMO_MS) return metaMemo.value
+  try {
+    const [sha, version] = await Promise.all([env.STATE.get('sha'), env.STATE.get('version')])
+    const value: SiteMeta = {
+      ref: sha !== null && SHA_PATTERN.test(sha) ? sha : env.DEFAULT_BRANCH,
+      version: version ?? ''
+    }
+    metaMemo = { at: now, value }
+    return value
+  } catch (error) {
+    // KV is down or over the daily read cap. Serve what we can. Never throw:
+    // an uncaught KV error turns every page into a 500.
+    console.error('kv meta read failed', error)
+    return { ref: env.DEFAULT_BRANCH, version: '' }
+  }
 }
 
 /**
@@ -195,16 +234,30 @@ interface UploadFile {
 }
 
 /**
- * Handle POST /hooks/upload. Body: {"files":[{path,b64,sha256}], "delete":[path], "sha":"<commit>"}.
- * Files go to KV under "file:<path>". The manifest (path -> sha256) is merged.
- * The client sends only changed files (it diffs against GET /hooks/manifest).
+ * Handle POST /hooks/upload. One sync sends several requests.
+ *
+ * Content request: {"files":[{path,b64,sha256}]}. It writes file keys only.
+ * Final request:   {"files":[], "delete":[path], "manifest":{path:sha256},
+ *                   "sha":"<commit>", "final":true}. It writes the meta keys
+ *                   `manifest`, `synced_at`, `version`, and `sha`.
+ *
+ * The meta keys move on the final request only. KV allows one write per second
+ * per key, so a meta write in every chunk can fail with 429 in the middle of a
+ * sync. The client sends the full merged manifest, so the Worker never has to
+ * read-modify-write the manifest key either.
  */
 async function handleUpload(request: Request, env: Env): Promise<Response> {
   if (!env.SYNC_TOKEN) return jsonResponse({ error: 'sync_not_configured' }, 503)
   if (!authorized(request, env)) return jsonResponse({ error: 'unauthorized' }, 401)
   const declared = Number(request.headers.get('content-length') ?? '0')
   if (declared > MAX_UPLOAD_BODY) return jsonResponse({ error: 'bad_request', detail: 'body too large' }, 400)
-  let body: { files?: UploadFile[]; delete?: string[]; sha?: string }
+  let body: {
+    files?: UploadFile[]
+    delete?: string[]
+    sha?: string
+    manifest?: Record<string, string>
+    final?: boolean
+  }
   try {
     body = JSON.parse(await request.text())
   } catch {
@@ -212,35 +265,94 @@ async function handleUpload(request: Request, env: Env): Promise<Response> {
   }
   const files = Array.isArray(body.files) ? body.files : []
   const deletes = Array.isArray(body.delete) ? body.delete : []
+  const isFinal = body.final === true
   if (files.length > MAX_UPLOAD_FILES) return jsonResponse({ error: 'bad_request', detail: 'too many files' }, 400)
 
-  const manifest: Record<string, string> = JSON.parse((await env.STATE.get('manifest')) ?? '{}')
-  const written: string[] = []
-  for (const f of files) {
-    if (typeof f.path !== 'string' || !f.path.startsWith('/') || isUnsafePath(f.path) || typeof f.b64 !== 'string') continue
-    const bytes = fromBase64(f.b64)
-    await env.STATE.put(FILE_PREFIX + f.path, bytes, { metadata: { ct: contentTypeFor(f.path), sha256: f.sha256 ?? '' } })
-    manifest[f.path] = f.sha256 ?? ''
-    written.push(f.path)
+  const written: Record<string, string> = {}
+  const deleted: string[] = []
+  try {
+    for (const f of files) {
+      if (typeof f.path !== 'string' || !f.path.startsWith('/') || isUnsafePath(f.path) || typeof f.b64 !== 'string') continue
+      const bytes = fromBase64(f.b64)
+      await env.STATE.put(FILE_PREFIX + f.path, bytes, { metadata: { ct: contentTypeFor(f.path), sha256: f.sha256 ?? '' } })
+      written[f.path] = f.sha256 ?? ''
+    }
+    if (isFinal) {
+      for (const p of deletes) {
+        if (typeof p !== 'string' || !p.startsWith('/') || isUnsafePath(p)) continue
+        await env.STATE.delete(FILE_PREFIX + p)
+        deleted.push(p)
+      }
+    }
+  } catch (error) {
+    // A KV write failed (rate limit, quota, outage). Report what landed so the
+    // client can resend the rest. An uncaught throw would return a bare 500.
+    console.error('kv upload write failed', error)
+    return jsonResponse(
+      { error: 'kv_write_failed', detail: String(error), written: Object.keys(written).length, deleted: deleted.length },
+      500,
+      { 'cache-control': 'no-store' }
+    )
   }
-  for (const p of deletes) {
-    if (typeof p !== 'string' || !p.startsWith('/') || isUnsafePath(p)) continue
-    await env.STATE.delete(FILE_PREFIX + p)
-    delete manifest[p]
+
+  if (!isFinal) {
+    return jsonResponse({ ok: true, final: false, written: Object.keys(written).length }, 200, { 'cache-control': 'no-store' })
   }
-  await env.STATE.put('manifest', JSON.stringify(manifest))
+
   const syncedAt = new Date().toISOString()
-  if (typeof body.sha === 'string' && SHA_PATTERN.test(body.sha)) await env.STATE.put('sha', body.sha)
-  await env.STATE.put('synced_at', syncedAt)
-  // A new version key makes the edge cache miss for every path.
-  await env.STATE.put('version', syncedAt)
-  return jsonResponse({ ok: true, written: written.length, deleted: deletes.length, manifest_size: Object.keys(manifest).length, synced_at: syncedAt }, 200, { 'cache-control': 'no-store' })
+  try {
+    const manifest = await mergedManifest(env, body.manifest, written, deleted)
+    await env.STATE.put('manifest', JSON.stringify(manifest))
+    if (typeof body.sha === 'string' && SHA_PATTERN.test(body.sha)) await env.STATE.put('sha', body.sha)
+    await env.STATE.put('synced_at', syncedAt)
+    // A new version key makes the edge cache miss for every path.
+    await env.STATE.put('version', syncedAt)
+    // This isolate must not serve the old version for the next 30 s.
+    metaMemo = null
+    return jsonResponse(
+      { ok: true, final: true, written: Object.keys(written).length, deleted: deleted.length, manifest_size: Object.keys(manifest).length, synced_at: syncedAt },
+      200,
+      { 'cache-control': 'no-store' }
+    )
+  } catch (error) {
+    console.error('kv meta write failed', error)
+    metaMemo = null
+    return jsonResponse(
+      { error: 'kv_write_failed', detail: String(error), written: Object.keys(written).length, deleted: deleted.length },
+      500,
+      { 'cache-control': 'no-store' }
+    )
+  }
+}
+
+/**
+ * Pick the manifest to store. The client normally sends the full merged map.
+ * A client that does not send one gets the old read-modify-write behaviour.
+ */
+async function mergedManifest(
+  env: Env,
+  sent: Record<string, string> | undefined,
+  written: Record<string, string>,
+  deleted: string[]
+): Promise<Record<string, string>> {
+  if (typeof sent === 'object' && sent !== null && !Array.isArray(sent)) return sent
+  const manifest: Record<string, string> = JSON.parse((await env.STATE.get('manifest')) ?? '{}')
+  for (const [path, sha256] of Object.entries(written)) manifest[path] = sha256
+  for (const path of deleted) delete manifest[path]
+  return manifest
 }
 
 /** Handle GET /hooks/manifest: the path -> sha256 map of files stored in KV. */
 async function handleManifest(request: Request, env: Env): Promise<Response> {
   if (!authorized(request, env)) return jsonResponse({ error: 'unauthorized' }, 401)
-  const manifest = (await env.STATE.get('manifest')) ?? '{}'
+  let manifest: string
+  try {
+    manifest = (await env.STATE.get('manifest')) ?? '{}'
+  } catch (error) {
+    // The client treats a non-200 as "no manifest" and uploads every file.
+    console.error('kv manifest read failed', error)
+    return jsonResponse({ error: 'kv_unavailable' }, 503, { 'cache-control': 'no-store' })
+  }
   return new Response(manifest, { status: 200, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } })
 }
 
@@ -281,34 +393,62 @@ async function handleSync(request: Request, env: Env): Promise<Response> {
   }
 
   const syncedAt = new Date().toISOString()
-  // An unpin removes the key. Then readRef falls back to the default branch.
+  // An unpin removes the key. Then readMeta falls back to the default branch.
   if (isCommit) {
     await env.STATE.put('sha', sha as string)
   } else {
     await env.STATE.delete('sha')
   }
   await env.STATE.put('synced_at', syncedAt)
+  // This isolate must not serve the old ref for the next 30 s.
+  metaMemo = null
 
   return jsonResponse({ ok: true, sha, synced_at: syncedAt }, 200, { 'cache-control': 'no-store' })
 }
 
 /** Handle GET /health.json. It reports the SHA the site serves right now. */
 async function handleHealth(env: Env): Promise<Response> {
-  const [ref, syncedAt] = await Promise.all([readRef(env), env.STATE.get('synced_at')])
+  const headers = { 'cache-control': 'no-store', 'access-control-allow-origin': '*' }
+  let sha: string | null
+  let syncedAt: string | null
+  try {
+    ;[sha, syncedAt] = await Promise.all([env.STATE.get('sha'), env.STATE.get('synced_at')])
+  } catch (error) {
+    // KV is down or over quota. Say so with 503. Never throw: an uncaught KV
+    // error would make the health endpoint itself a 500 with no detail.
+    console.error('kv health read failed', error)
+    return jsonResponse({ ok: false, error: 'kv_unavailable' }, 503, headers)
+  }
   return jsonResponse(
     {
       ok: true,
-      sha: ref,
+      sha: sha !== null && SHA_PATTERN.test(sha) ? sha : env.DEFAULT_BRANCH,
       synced_at: syncedAt,
       repo: env.REPO,
       site_root: env.SITE_ROOT
     },
     200,
-    { 'cache-control': 'no-store', 'access-control-allow-origin': '*' }
+    headers
   )
 }
 
-/** Proxy one static file from raw.githubusercontent.com. */
+/** Build the 404 page. It is cached for a minute so a scan costs little. */
+function notFoundResponse(): Response {
+  return new Response(NOT_FOUND_HTML, {
+    status: 404,
+    headers: {
+      'content-type': 'text/html; charset=utf-8',
+      'cache-control': `public, max-age=${TTL_NOT_FOUND}`
+    }
+  })
+}
+
+/** Percent-encode a decoded path again, one segment at a time. */
+function encodePath(path: string): string {
+  return path.split('/').map(encodeURIComponent).join('/')
+}
+
+/** Serve one static file: KV first, then the optional raw.githubusercontent proxy. */
 async function handleStatic(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
   const url = new URL(request.url)
 
@@ -316,10 +456,10 @@ async function handleStatic(request: Request, env: Env, ctx: ExecutionContext): 
     return textResponse('Bad request.', 400)
   }
 
-  const [ref, version] = await Promise.all([readRef(env), env.STATE.get('version')])
+  const { ref, version } = await readMeta(env)
   const isPinned = SHA_PATTERN.test(ref)
   const ttl = isPinned ? TTL_PINNED : TTL_BRANCH
-  const cacheKey = cacheKeyFor(request, `${ref}:${version ?? ''}`)
+  const cacheKey = cacheKeyFor(request, `${ref}:${version}`)
   const cache = caches.default
 
   const hit = await cache.match(cacheKey)
@@ -327,11 +467,19 @@ async function handleStatic(request: Request, env: Env, ctx: ExecutionContext): 
     return request.method === 'HEAD' ? new Response(null, { status: hit.status, headers: hit.headers }) : hit
   }
 
-  const filePath = mapPath(url.pathname)
+  // The KV key holds the raw UTF-8 path, not the percent-encoded one.
+  // isUnsafePath already rejected a path with broken escapes.
+  const filePath = mapPath(decodeURIComponent(url.pathname))
 
   // 1) KV copy uploaded by the pipeline (works for private repos).
-  const stored = await env.STATE.getWithMetadata<{ ct?: string }>(FILE_PREFIX + filePath, { type: 'arrayBuffer' })
-  if (stored.value) {
+  let stored: KVNamespaceGetWithMetadataResult<ArrayBuffer, { ct?: string }> | null = null
+  try {
+    stored = await env.STATE.getWithMetadata<{ ct?: string }>(FILE_PREFIX + filePath, { type: 'arrayBuffer' })
+  } catch (error) {
+    // KV is down or over quota. Fall through to the proxy, or to a 404.
+    console.error('kv file read failed', error)
+  }
+  if (stored !== null && stored.value !== null) {
     const headers = new Headers({
       'content-type': stored.metadata?.ct ?? contentTypeFor(filePath),
       'cache-control': `public, max-age=${TTL_KV}`,
@@ -343,10 +491,17 @@ async function handleStatic(request: Request, env: Env, ctx: ExecutionContext): 
     return request.method === 'HEAD' ? new Response(null, { status: 200, headers }) : response
   }
 
-  // 2) Fallback: raw.githubusercontent.com (public repos only).
+  // 2) Fallback: raw.githubusercontent.com. It works for a public repo only,
+  // so it stays off unless RAW_FALLBACK is "true".
+  if (env.RAW_FALLBACK !== 'true') {
+    const response = notFoundResponse()
+    ctx.waitUntil(cache.put(cacheKey, response.clone()))
+    return request.method === 'HEAD' ? new Response(null, { status: 404, headers: response.headers }) : response
+  }
+
   // Strip stray slashes from SITE_ROOT. filePath always starts with "/".
   const siteRoot = env.SITE_ROOT.replace(/^\/+|\/+$/g, '')
-  const upstreamUrl = `https://raw.githubusercontent.com/${env.REPO}/${ref}/${siteRoot}${filePath}`
+  const upstreamUrl = `https://raw.githubusercontent.com/${env.REPO}/${ref}/${siteRoot}${encodePath(filePath)}`
 
   let upstream: Response
   try {
@@ -356,10 +511,9 @@ async function handleStatic(request: Request, env: Env, ctx: ExecutionContext): 
   }
 
   if (upstream.status === 404) {
-    return new Response(NOT_FOUND_HTML, {
-      status: 404,
-      headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' }
-    })
+    const response = notFoundResponse()
+    ctx.waitUntil(cache.put(cacheKey, response.clone()))
+    return request.method === 'HEAD' ? new Response(null, { status: 404, headers: response.headers }) : response
   }
   if (upstream.status !== 200) {
     // 5xx, 429, or anything else from raw. The client should retry, not cache.

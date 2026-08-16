@@ -14,6 +14,7 @@ import gzip
 import io
 import json
 import logging
+import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -42,6 +43,14 @@ class Store:
         self.dir = data_dir
         self.dir.mkdir(parents=True, exist_ok=True)
         (self.dir / "snapshots").mkdir(exist_ok=True)
+        # Per-run caches. One run asks for a reference price tens of thousands of
+        # times; without these, every ask re-globs a directory and gunzips a file.
+        self._list_cache: dict[str, list[tuple[datetime, Path]]] = {}
+        self._price_cache: dict[Path, dict[str, float]] = {}
+
+    def _drop_caches(self) -> None:
+        self._list_cache.clear()
+        self._price_cache.clear()
 
     # ---------------------------------------------------------- state.json
     @property
@@ -63,6 +72,8 @@ class Store:
         return d
 
     def save_snapshot(self, venue: str, rows: list[MarketRow], when: datetime) -> Path:
+        """Write one snapshot file. Writes to a temp file first, then renames, so
+        a killed run cannot leave a truncated .csv.gz behind."""
         path = self.snapshot_dir(venue) / f"{_ts_tag(when)}.csv.gz"
         buf = io.StringIO()
         w = csv.DictWriter(buf, fieldnames=SNAP_FIELDS)
@@ -70,27 +81,48 @@ class Store:
         for r in rows:
             d = r.to_dict()
             w.writerow({k: (round(d[k], 4) if isinstance(d[k], float) else d[k]) for k in SNAP_FIELDS})
-        with gzip.open(path, "wt", encoding="utf-8") as f:
+        tmp = path.with_suffix(path.suffix + ".tmp")
+        with gzip.open(tmp, "wt", encoding="utf-8") as f:
             f.write(buf.getvalue())
+        os.replace(tmp, path)
+        self._drop_caches()
         return path
 
     def list_snapshots(self, venue: str) -> list[tuple[datetime, Path]]:
+        if venue in self._list_cache:
+            return self._list_cache[venue]
         out = []
         for p in self.snapshot_dir(venue).glob("*.csv.gz"):
             try:
                 out.append((parse_ts(p.name.split(".")[0]), p))
             except ValueError:
                 continue
-        return sorted(out)
+        self._list_cache[venue] = sorted(out)
+        return self._list_cache[venue]
 
     def load_snapshot(self, path: Path) -> list[MarketRow]:
         venue = path.parent.name
         with gzip.open(path, "rt", encoding="utf-8") as f:
             return [MarketRow.from_dict({"venue": venue, "title": "", **d}) for d in csv.DictReader(f)]
 
-    def snapshot_at_or_before(self, venue: str, when: datetime,
-                              max_age: timedelta | None = None) -> tuple[datetime, list[MarketRow]] | None:
-        """The newest snapshot taken at or before `when` (optionally not older than max_age)."""
+    def snapshot_prices(self, path: Path) -> dict[str, float]:
+        """ticker -> yes_price for one snapshot file, read once per run.
+        A damaged file yields an empty map instead of an exception, because the
+        caller treats a source exception as a breaker failure."""
+        if path in self._price_cache:
+            return self._price_cache[path]
+        prices: dict[str, float] = {}
+        try:
+            for r in self.load_snapshot(path):
+                if r.yes_price is not None:
+                    prices[r.ticker] = r.yes_price
+        except (OSError, EOFError, gzip.BadGzipFile) as e:
+            log.error("snapshot %s unreadable (%s); treating it as empty", path.name, e)
+        self._price_cache[path] = prices
+        return prices
+
+    def _newest_at_or_before(self, venue: str, when: datetime,
+                             max_age: timedelta | None) -> tuple[datetime, Path] | None:
         best = None
         for ts, p in self.list_snapshots(venue):
             if ts <= when:
@@ -99,7 +131,23 @@ class Store:
             return None
         if max_age is not None and when - best[0] > max_age:
             return None
+        return best
+
+    def snapshot_at_or_before(self, venue: str, when: datetime,
+                              max_age: timedelta | None = None) -> tuple[datetime, list[MarketRow]] | None:
+        """The newest snapshot taken at or before `when` (optionally not older than max_age)."""
+        best = self._newest_at_or_before(venue, when, max_age)
+        if best is None:
+            return None
         return best[0], self.load_snapshot(best[1])
+
+    def price_map_at_or_before(self, venue: str, when: datetime,
+                               max_age: timedelta | None = None) -> tuple[datetime, dict[str, float]] | None:
+        """The newest snapshot at or before `when`, as a cached ticker -> price map."""
+        best = self._newest_at_or_before(venue, when, max_age)
+        if best is None:
+            return None
+        return best[0], self.snapshot_prices(best[1])
 
     def prune_snapshots(self, keep_days: int = 45) -> int:
         cutoff = datetime.now(timezone.utc) - timedelta(days=keep_days)
@@ -111,6 +159,8 @@ class Store:
                 if ts < cutoff:
                     p.unlink()
                     n += 1
+        if n:
+            self._drop_caches()
         return n
 
     # ------------------------------------------------------------ resolutions

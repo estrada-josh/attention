@@ -6,9 +6,9 @@
 //
 // Deploy from the repo root:
 //   npm install --prefix worker
-//   npx wrangler kv namespace create STATE          # copy the id into this file
-//   npx wrangler secret put SYNC_TOKEN --config audiences/<name>/wrangler.jsonc
-//   npx wrangler deploy --config audiences/<name>/wrangler.jsonc
+//   npx --prefix worker wrangler kv namespace create STATE          # copy the id into this file
+//   npx --prefix worker wrangler secret put SYNC_TOKEN --config audiences/<name>/wrangler.jsonc
+//   npx --prefix worker wrangler deploy --config audiences/<name>/wrangler.jsonc
 {
   "$schema": "node_modules/wrangler/config-schema.json",
 
@@ -31,7 +31,11 @@
     "SITE_ROOT": "audiences/AUDIENCE/site",
     "DEFAULT_BRANCH": "main",
     "SITE_URL": "https://AUDIENCE.example.com",
-    "BRIDGY_WEB_ID": "AUDIENCE.example.com"
+    "BRIDGY_WEB_ID": "AUDIENCE.example.com",
+
+    // "true" only when the GitHub repo is public. A private repo makes the
+    // raw.githubusercontent.com fallback answer 404 for every KV miss.
+    "RAW_FALLBACK": "false"
   },
 
   "observability": { "enabled": true }

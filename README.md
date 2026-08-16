@@ -22,7 +22,9 @@ polymarket    settled     served by a tiny Cloudflare Worker             nostr
 - **Render** (`engine/render.py`) writes the site with h-card / h-feed / h-entry markup.
 - **Channels** (`engine/channels/`) publish a live post: Bridgy Fed webmention, Nostr note, Mastodon status.
 - **Scheduler**: GitHub Actions (`.github/workflows/publish.yml`). Storage of record: this git repo.
-- **Site**: `worker/` — a Cloudflare Worker that serves `audiences/<name>/site/` at a custom domain.
+- **Site**: `worker/` — a Cloudflare Worker that serves `audiences/<name>/site/` at a custom
+  domain. The pipeline uploads the changed files into KV (`engine/sync_site.py`), so the repo
+  may stay private. See `worker/README.md` for the upload contract.
 
 ## Run locally
 
@@ -39,10 +41,16 @@ uv run pytest
 
 1. Copy `audiences/oddsdrift/` to `audiences/<name>/`. Edit `audience.yml`: names, domain,
    sources, shapes (slots + UTC times), channels, thresholds, follow links. Replace `assets/`.
-2. Add the new slot times to the cron list in `.github/workflows/publish.yml`.
+2. Add the new slot times to the cron list in `.github/workflows/publish.yml`. A slot with no
+   matching cron entry never posts; `uv run pytest` fails on that, and the workflow warns.
 3. Deploy the site: copy `audiences/oddsdrift/wrangler.jsonc`, change name/domain/`SITE_ROOT`,
-   create a KV namespace, set `SYNC_TOKEN`, `npx wrangler deploy --config audiences/<name>/wrangler.jsonc`.
-4. Bridge it: `curl -X POST -d "url=<domain>" https://fed.brid.gy/web-site`.
+   create a KV namespace, set `SYNC_TOKEN` (every audience Worker shares the one Actions
+   secret `SYNC_TOKEN`), `npx --prefix worker wrangler deploy --config audiences/<name>/wrangler.jsonc`.
+4. Bridge it BEFORE the first run: `curl -X POST -d "url=<domain>" https://fed.brid.gy/web-site`.
+   A webmention for a domain Bridgy Fed does not know yet returns 400 "No user found".
+   The Bluesky handle stays `<domain>.web.brid.gy` until you press the set-handle button on
+   `https://fed.brid.gy/web/<domain>`; the `/.well-known/atproto-did` redirect alone does not
+   change it. `audience.yml` holds the handle as literal text in `follow_links`.
 5. Add a source, shape, or channel by dropping a module in the matching folder and registering it.
 
 ## Principles

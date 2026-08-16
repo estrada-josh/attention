@@ -11,12 +11,15 @@ Config (in audience.yml under the shape):
 """
 from __future__ import annotations
 
+import logging
 import re
 from datetime import datetime, timezone
 from typing import Optional
 
 from ..model import Post
-from .base import Context, Shape, cents, fit_text, pts
+from .base import Context, Shape, cents, delta_pts, fit_text, pts
+
+log = logging.getLogger("engine.shapes.watchlist")
 
 
 class WatchlistShape(Shape):
@@ -41,8 +44,10 @@ class WatchlistShape(Shape):
             hits = []
             for m in w.get("match") or []:
                 r = self._find(ctx.open_rows, m)
-                if r is not None:
-                    hits.append(r)
+                if r is None:
+                    log.warning("watchlist %r: no row for match %s", w.get("name"), m)
+                    continue
+                hits.append(r)
             if hits:
                 found.append((w, hits))
         if len(found) < int(self.cfg.get("min_found", 2)):
@@ -59,13 +64,20 @@ class WatchlistShape(Shape):
             parts = []
             for r in hits:
                 label = ctx.labels.get(r.venue, r.venue[:1].upper())
-                parts.append(f"{label} {cents(r.yes_price)}" + (f" ({pts(r.change_24h)})" if r.change_24h is not None else ""))
+                if r.prev_24h_price is not None:
+                    move = delta_pts(r.prev_24h_price, r.yes_price)
+                elif r.change_24h is not None:
+                    move = pts(r.change_24h)
+                else:
+                    move = None
+                parts.append(f"{label} {cents(r.yes_price)}" + (f" ({move})" if move else ""))
                 table.append({"name": w["name"], "venue": r.venue, "label": label, "ticker": r.ticker,
                               "title": r.title, "subtitle": r.subtitle, "now": r.yes_price,
-                              "delta": r.change_24h, "url": r.url, "volume_24h": r.volume_24h})
+                              "prev": r.prev_24h_price, "delta": r.change_24h, "url": r.url,
+                              "volume_24h": r.volume_24h})
             lines.append(f"{w['name']}: " + " · ".join(parts))
         tags = list(self.cfg.get("tags") or ctx.audience.tags[:2])
-        text = fit_text(headline, lines, " ".join(f"#{t}" for t in tags))
+        text = fit_text(headline, lines, " ".join(f"#{t}" for t in tags), what=f"watchlist {ctx.slot}")
         pid = f"{ctx.now.strftime('%Y-%m-%d')}-{ctx.slot}"
         return Post(
             id=pid, slot=ctx.slot, shape=self.name,

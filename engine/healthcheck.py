@@ -80,14 +80,37 @@ def main(argv=None) -> int:
         problems.append("feed.xml missing")
 
     state = store.load_state()
-    last = (state.get("last_run") or {}).get("at")
+    hc_cfg = aud.raw.get("healthcheck") or {}
+    last_run = state.get("last_run") or {}
+    last = last_run.get("at")
     if last:
         age_h = (now - datetime.fromisoformat(last)).total_seconds() / 3600
-        if age_h > 30:
+        if age_h > float(hc_cfg.get("max_run_age_hours", 30)):
             problems.append(f"last run {age_h:.0f}h ago")
     for name, b in (state.get("breakers") or {}).items():
         if b.get("disabled"):
-            problems.append(f"source breaker open: {name}")
+            since = b.get("disabled_at")
+            problems.append(f"source breaker open: {name} (since {since or 'unknown'})")
+
+    # A run that stores snapshots but never posts keeps last_run fresh, so the
+    # age of the newest POST is the signal that the feed stopped.
+    posts = store.load_posts()
+    max_post_age = float(hc_cfg.get("max_post_age_hours", 30))
+    if posts:
+        newest = max(p["published_at"] for p in posts)
+        post_age_h = (now - datetime.fromisoformat(newest.replace("Z", "+00:00"))).total_seconds() / 3600
+        if post_age_h > max_post_age:
+            reason = last_run.get("no_post_reason") or "unknown"
+            problems.append(f"newest post {post_age_h:.0f}h old (limit {max_post_age:.0f}h); "
+                            f"last run reason: {reason}")
+    else:
+        problems.append("no posts at all")
+
+    # Three closed slots in a row with no post means the shapes stopped qualifying.
+    slots = state.get("slots_done") or {}
+    recent = [slots[k] for k in sorted(slots)[-3:]]
+    if len(recent) == 3 and all("(no post)" in v or "(skipped)" in v for v in recent):
+        problems.append("last 3 slots produced no post: " + "; ".join(sorted(slots)[-3:]))
 
     handle = aud.raw.get("bluesky_handle") or f"{aud.domain}.web.brid.gy"
     bsky = bsky_profile(handle)

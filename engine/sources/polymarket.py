@@ -11,7 +11,14 @@ Verified 2026-08-16:
       sportsMarketType, gameStartTime, events[{slug,title}].
   GET .../markets?closed=true&order=closedTime&ascending=false&limit=100
       -> resolved markets newest first; umaResolutionStatus="resolved";
-      outcomePrices ["1","0"] means outcomes[0] won.
+      outcomePrices ["1","0"] means outcomes[0] won. ~2,100 markets close per
+      hour, so the offset cap covers ~1 h unless the query also filters by
+      volume: volume_num_min=<usd> is server-side (verified 2026-08-16:
+      volume_num_min=10000 reaches ~31 h back). Closed markets often report
+      volume24hr=null, so the settled scan filters on total volume, not on 24h
+      volume.
+  GET .../markets?slug=<slug> -> that one market, whatever its volume. Used to
+      fetch watchlist markets that are below the top-2,100-by-volume list.
 """
 from __future__ import annotations
 
@@ -55,6 +62,9 @@ class PolymarketSource(Source):
         self.page_sleep = float(cfg.get("page_sleep", 0.4))
         self.max_pages = int(cfg.get("max_pages", 21))   # offset > 2000 -> 422
         self.min_volume_24h_stop = float(cfg.get("min_volume_24h_stop", 500))
+        # settled scan: server-side total-volume floor (the offset cap covers
+        # only ~1 h of settlements without it)
+        self.settled_volume_min = float(cfg.get("settled_volume_min", 10000))
         self._event_cat: dict[str, str] = {}      # event slug -> category (from event tags)
         self._events_loaded = False
 
@@ -134,6 +144,7 @@ class PolymarketSource(Source):
             open_interest=None,
             liquidity=_f(m.get("liquidityNum")),
             close_time=m.get("endDate"),
+            open_time=m.get("startDate") or m.get("createdAt"),
             url=url,
             status=status,
             result=result,
@@ -191,30 +202,49 @@ class PolymarketSource(Source):
         return rows
 
     def fetch_settled(self, since: datetime) -> list[MarketRow]:
+        """Resolved markets with closedTime >= `since`.
+
+        The offset cap is 2,100 rows, and ~2,100 markets close per hour, so the
+        scan asks the server for markets above `settled_volume_min` total
+        volume. That is a superset of the rows the settled shape can use.
+        """
         cutoff = since.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")
         rows = []
         offset = 0
+        reached = False
+        last_ct = ""
         for page in range(self.max_pages):
             d = self.http.get_json(f"{self.base}/markets", {
                 "closed": "true", "order": "closedTime", "ascending": "false",
+                "volume_num_min": self.settled_volume_min,
                 "limit": 100, "offset": offset})
             if not d:
+                reached = True
                 break
             stop = False
             for m in d:
                 ct = (m.get("closedTime") or "").replace(" ", "T")
+                if ct:
+                    last_ct = ct
                 if ct and ct < cutoff:
                     stop = True
+                    reached = True
                     break
                 if (m.get("umaResolutionStatus") or "") != "resolved":
                     continue
                 r = self._row(m, "settled")
                 if r.result and r.ticker not in {x.ticker for x in rows}:
                     rows.append(r)
+            if len(d) < 100:
+                reached = True
             if stop or len(d) < 100:
                 break
             offset += len(d)
             time.sleep(self.page_sleep)
+        if not reached:
+            log.warning("polymarket: settled scan hit the offset cap at closedTime %s "
+                        "before it reached the cutoff %s; older settlements are missing",
+                        last_ct, cutoff)
         # categories for the settled markets that could be posted (bounded lookups)
         budget = int(self.cfg.get("settled_category_lookups", 60))
         for r in sorted(rows, key=lambda x: x.volume_24h or 0, reverse=True):
@@ -223,5 +253,16 @@ class PolymarketSource(Source):
             if r.category == "" and r.event_ticker:
                 r.category = self._event_category(r.event_ticker)
                 budget -= 1
-        log.info("polymarket: %d settled since %s", len(rows), cutoff)
+        log.info("polymarket: %d settled since %s (volume >= %s)", len(rows), cutoff, self.settled_volume_min)
+        return rows
+
+    def fetch_by_ids(self, ids: list[str]) -> list[MarketRow]:
+        """The named markets by slug, one request each."""
+        rows = []
+        for slug in ids:
+            d = self.http.get_json(f"{self.base}/markets", {"slug": slug}, tries=2)
+            for m in d or []:
+                rows.append(self._row(m, "open"))
+            time.sleep(self.page_sleep)
+        log.info("polymarket: fetched %d/%d markets by slug", len(rows), len(ids))
         return rows

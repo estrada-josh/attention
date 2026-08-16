@@ -1,12 +1,15 @@
 """Shape contract. A shape turns a Context into one Post (or None = skip)."""
 from __future__ import annotations
 
+import logging
 import math
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import Optional
+from typing import Callable, Optional
 
 from ..model import MarketRow, Post
+
+log = logging.getLogger("engine.shapes")
 
 
 @dataclass
@@ -53,6 +56,19 @@ def pts(delta: Optional[float]) -> str:
     return f"{d:+d}"
 
 
+def delta_pts(prev: Optional[float], now: Optional[float]) -> str:
+    """The move in points, computed from the ROUNDED endpoints.
+
+    cents() rounds each price before we print it, so subtracting the raw prices
+    can disagree with the two numbers on screen (5¢ -> 92¢ printed as +88).
+    Rounding first and subtracting keeps the text self-consistent.
+    """
+    if prev is None or now is None:
+        return "—"
+    d = round(now * 100) - round(prev * 100)
+    return f"{d:+d}"
+
+
 def money(v: Optional[float]) -> str:
     if v is None:
         return "—"
@@ -68,14 +84,50 @@ def clip(s: str, n: int) -> str:
     return s if len(s) <= n else s[: n - 1].rstrip() + "…"
 
 
-def fit_text(header: str, lines: list[str], footer: str, limit: int = 280) -> str:
-    """Join header + as many lines as fit + footer, staying under `limit` chars."""
+def fit_text(header: str, lines: list[str], footer: str, limit: int = 280,
+             what: str = "post") -> str:
+    """Join header + as many lines as fit + footer, staying under `limit` chars.
+
+    Dropping a line hides a configured item, so the drop is logged.
+    """
     keep = list(lines)
     while True:
         text = "\n".join([header, *keep, footer]).strip()
         if len(text) <= limit or not keep:
+            if len(keep) < len(lines):
+                log.warning("%s: dropped %d of %d lines to fit %d chars",
+                            what, len(lines) - len(keep), len(lines), limit)
             return text
         keep.pop()
+
+
+def fit_lines(header: str, make_lines: Callable[[int], list[str]], footer: str,
+              clips: tuple[int, ...] = (48, 36, 28), limit: int = 280,
+              what: str = "post") -> str:
+    """Same as fit_text, but shorten the titles before dropping whole lines.
+
+    `make_lines(clip)` rebuilds every line with titles clipped to `clip` chars.
+    A shorter title still names the market; a dropped line hides it entirely.
+    Of the clips that keep the most lines, this returns the longest one, so a
+    shorter title is only used when it buys another line.
+    """
+    best_text, best_kept, total = "", -1, 0
+    for clip_n in clips:
+        lines = make_lines(clip_n)
+        total = len(lines)
+        keep = list(lines)
+        text = "\n".join([header, *keep, footer]).strip()
+        while keep and len(text) > limit:
+            keep.pop()
+            text = "\n".join([header, *keep, footer]).strip()
+        if len(keep) > best_kept:
+            best_text, best_kept = text, len(keep)
+        if best_kept == total:
+            break                    # a shorter title cannot buy another line
+    if best_kept < total:
+        log.warning("%s: dropped %d of %d lines to fit %d chars",
+                    what, total - best_kept, total, limit)
+    return best_text
 
 
 def score_move(delta: float, volume: float) -> float:

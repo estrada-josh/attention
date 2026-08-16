@@ -2,14 +2,21 @@
 
 Verified 2026-08-16:
   GET /trade-api/v2/markets?status=open&mve_filter=exclude&limit=1000&cursor=
-      -> {"cursor": str, "markets": [...]}; ~56k markets, ~57 pages, ~10 s.
-      Fields: ticker, event_ticker, title, yes_sub_title, last_price_dollars,
-      previous_price_dollars (0 for markets younger than 24h), volume_24h_fp,
-      volume_fp, open_interest_fp, liquidity_dollars, close_time, open_time,
-      status ("active"), result ("" until settled).
+      -> {"cursor": str, "markets": [...]}; ~80k markets, ~80 pages, ~10 s.
+      The list is ordered by open_time DESC, so the last page holds the
+      long-dated election markets. Fields: ticker, event_ticker, title,
+      yes_sub_title, last_price_dollars, previous_price_dollars (0 for markets
+      younger than 24h), volume_24h_fp, volume_fp, open_interest_fp,
+      liquidity_dollars, close_time, open_time, status ("active"),
+      result ("" until settled).
   GET /trade-api/v2/markets?status=settled&mve_filter=exclude&limit=1000
-      -> sorted by close_time DESC; status "finalized"; result yes/no;
-      settlement_ts present.
+      -> status "finalized"; result yes/no; settlement_ts and open_time present.
+      The list is NOT sorted by close_time (measured 2026-08-16: 342 close_time
+      inversions in one page), so pagination must not stop on the last item of
+      a page. Pass min_close_ts=<epoch> to filter server-side instead.
+  GET /trade-api/v2/markets?tickers=A,B,C&limit=100
+      -> the named markets only (verified 2026-08-16). Used to fetch watchlist
+      markets that the paged list scan missed.
   GET /trade-api/v2/series?limit=1000 -> all series with category (one call).
       Market category = series category; series = event_ticker before "-".
 Without mve_filter=exclude, ~29k multivariate parlay legs flood the list.
@@ -44,12 +51,12 @@ class KalshiSource(Source):
         super().__init__(cfg, http)
         self.base = cfg.get("base_url", BASE)
         self.page_sleep = float(cfg.get("page_sleep", 0.3))
-        self.max_pages = int(cfg.get("max_pages", 90))
+        self.max_pages = int(cfg.get("max_pages", 150))
         self._categories: dict[str, str] | None = None
         self._event_titles: dict[str, str] = {}
 
     # ------------------------------------------------------------ helpers
-    def _paginate(self, path: str, params: dict, key: str, stop=None):
+    def _paginate(self, path: str, params: dict, key: str):
         cursor = ""
         pages = 0
         while True:
@@ -62,9 +69,11 @@ class KalshiSource(Source):
             for it in items:
                 yield it
             cursor = d.get("cursor") or ""
-            if stop is not None and items and stop(items[-1]):
+            if not cursor:
                 return
-            if not cursor or pages >= self.max_pages:
+            if pages >= self.max_pages:
+                log.warning("kalshi: page cap %d hit on %s %s; the list is truncated",
+                            self.max_pages, path, params.get("status", ""))
                 return
             time.sleep(self.page_sleep)
 
@@ -103,6 +112,7 @@ class KalshiSource(Source):
             open_interest=_f(m.get("open_interest_fp")),
             liquidity=_f(m.get("liquidity_dollars")),
             close_time=m.get("close_time"),
+            open_time=m.get("open_time"),
             url=f"https://kalshi.com/markets/{m.get('event_ticker', '').lower()}",
             status=status,
             result=(m.get("result") or None) if status == "settled" else None,
@@ -145,21 +155,45 @@ class KalshiSource(Source):
             seen.add(m["ticker"])
             r = self._row(m, "open")
             r.extra_prev = _f(m.get("previous_price_dollars"))          # type: ignore[attr-defined]
-            r.extra_open_time = m.get("open_time")                       # type: ignore[attr-defined]
             rows.append(r)
         log.info("kalshi: %d open markets", len(rows))
         return rows
 
     def fetch_settled(self, since: datetime) -> list[MarketRow]:
+        """Every settled market with close_time >= `since`.
+
+        The settled list is not sorted by close_time, so the walk cannot stop on
+        an old item. min_close_ts filters server-side; the client-side compare
+        below is the defense in depth.
+        """
         self.event_categories()
-        cutoff = since.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+        since = since.astimezone(timezone.utc)
+        cutoff = since.isoformat().replace("+00:00", "Z")
+        params = {"status": "settled", "mve_filter": "exclude", "limit": 1000,
+                  "min_close_ts": int(since.timestamp())}
         rows = []
-        for m in self._paginate("/markets", {"status": "settled", "mve_filter": "exclude", "limit": 1000},
-                                "markets", stop=lambda last: (last.get("close_time") or "") < cutoff):
+        for m in self._paginate("/markets", params, "markets"):
             if (m.get("close_time") or "") < cutoff:
                 continue
             if m.get("result") not in ("yes", "no"):
                 continue
             rows.append(self._row(m, "settled"))
         log.info("kalshi: %d settled since %s", len(rows), cutoff)
+        return rows
+
+    def fetch_by_ids(self, ids: list[str]) -> list[MarketRow]:
+        """The named markets, 100 tickers per request."""
+        self.event_categories()
+        rows = []
+        for i in range(0, len(ids), 100):
+            chunk = ids[i:i + 100]
+            d = self.http.get_json(f"{self.base}/markets",
+                                   {"tickers": ",".join(chunk), "limit": 100}, tries=2)
+            for m in d.get("markets") or []:
+                r = self._row(m, "open")
+                r.extra_prev = _f(m.get("previous_price_dollars"))       # type: ignore[attr-defined]
+                rows.append(r)
+            if i + 100 < len(ids):
+                time.sleep(self.page_sleep)
+        log.info("kalshi: fetched %d/%d markets by ticker", len(rows), len(ids))
         return rows

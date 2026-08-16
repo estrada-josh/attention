@@ -25,6 +25,7 @@ class MarketRow:
     open_interest: Optional[float] = None
     liquidity: Optional[float] = None
     close_time: Optional[str] = None        # ISO-8601 UTC
+    open_time: Optional[str] = None         # ISO-8601 UTC; when the market opened
     url: str = ""
     status: str = "open"                    # open | settled
     result: Optional[str] = None            # yes | no | None

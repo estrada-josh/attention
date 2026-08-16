@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Generic Cloudflare Worker. It serves one audience site from a public GitHub repo.",
+  "description": "Generic Cloudflare Worker. It serves one audience site from KV, uploaded by the engine.",
   "scripts": {
     "check": "tsc --noEmit"
   },

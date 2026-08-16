@@ -13,6 +13,8 @@
 <table><tr><th>Priced (24h before)</th><th>n</th><th>Resolved YES</th><th>Rate</th></tr>
 {% for b in buckets %}<tr><td>{{ b.bucket }}</td><td>{{ b.n }}</td><td>{{ b.yes }}</td><td>{{ '%.0f%%' % (b.rate*100) if b.rate is not none else '—' }}</td></tr>{% endfor %}
 </table>
-<p>Raw ledger: <a href="/data/resolutions.csv">resolutions.csv</a> (CC BY 4.0).</p>
+<p>Raw ledger: <a href="/data/resolutions.csv">resolutions.csv</a> (last 90 days, CC BY 4.0).
+The numbers above use the full ledger. Download the full history from the
+<a href="https://github.com/{{ a.repo }}">repo</a>.</p>
 </article>
 {% endblock %}

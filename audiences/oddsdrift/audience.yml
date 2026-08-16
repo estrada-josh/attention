@@ -13,12 +13,14 @@ nostr_pubkey_hex: c09cf90d14c41c2503647a7b85a31646daafb269a43ab9305361df8e99041d
 sources:
   - type: kalshi
     note: "public REST API, no key; multivariate parlay legs excluded (mve_filter=exclude)"
+    max_pages: 150                  # ~80 pages of open markets today; the cap logs a warning
   - type: polymarket
-    note: "public Gamma API, no key; top ~2,100 markets by 24h volume (API offset cap)"
+    note: "public Gamma API, no key; top ~2,100 markets by 24h volume (API offset cap); watchlist markets are fetched by slug"
+    settled_volume_min: 10000       # server-side floor on the settled scan; matches settled_min_volume
 
 thresholds:
   exclude_categories: [Sports]        # in-game props dominate volume; keep the feed about the world
-  exclude_title_regex: "Up or Down|Higher or Lower|\\b(CS2|Dota|LoL|Valorant|esports|EWC)\\b|\\bvs\\.?\\b"
+  exclude_title_regex: "Up or Down|Higher or Lower|price up in next|next \\d+ mins|\\b(CS2|Dota|LoL|Valorant|esports|EWC)\\b|\\bvs\\.?\\b"
   min_hours_to_close: 12              # skip markets about to resolve (already-decided noise)
   movers_min_points: 8
   movers_top_n: 4
@@ -34,8 +36,11 @@ thresholds:
   snapshot_min_volume_24h: 250      # rows kept per snapshot (24h reference prices)
   snapshot_min_open_interest: 1500
   resolution_min_volume_24h: 100
+  settled_min_lifetime_hours: 30      # a 15-minute market has no price 24h before it settled
   snapshot_keep_days: 45
+  slot_grace_minutes: 240             # how late a cron tick may be and still post the slot
   breaker_failures: 3
+  breaker_cooldown_hours: 12          # after this the breaker goes half-open and retries
 
 shapes:
   - { slot: am, type: movers, at: "13:17" }                       # 9:17 AM EDT / 8:17 AM EST
@@ -51,38 +56,34 @@ shapes:
     tags: [Midterms2026, PredictionMarkets]
     min_found: 2
     watch:
-      - name: "Senate control (D)"
+      - name: "Senate (D)"
         match:
           - { venue: kalshi, ticker: CONTROLS-2026-D }
-          - { venue: polymarket, title_regex: "^Will the Democratic Party control the (U\\.S\\. )?Senate after the 2026" }
-      - name: "House control (D)"
+          - { venue: polymarket, ticker: will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections }
+      - name: "House (D)"
         match:
           - { venue: kalshi, ticker: CONTROLH-2026-D }
           - { venue: polymarket, ticker: will-the-democratic-party-control-the-house-after-the-2026-midterm-elections }
-      - name: "TX Senate (D)"
+      - name: "TX Sen (D)"
         match:
           - { venue: kalshi, ticker: SENATETX-26-D }
           - { venue: polymarket, ticker: will-the-democrats-win-the-texas-senate-race-in-2026 }
-      - name: "MI Senate (D)"
+      - name: "MI Sen (D)"
         match:
           - { venue: kalshi, ticker: SENATEMI-26-D }
           - { venue: polymarket, ticker: will-the-democrats-win-the-michigan-senate-race-in-2026 }
-      - name: "OH Senate (D)"
+      - name: "OH Sen (D)"
         match:
           - { venue: kalshi, ticker: SENATEOHS-26-D }
           - { venue: polymarket, ticker: will-the-democrats-win-the-ohio-senate-race-in-2026 }
-      - name: "GA Senate (D)"
+      - name: "GA Sen (D)"
         match:
           - { venue: kalshi, ticker: SENATEGA-26-D }
-          - { venue: polymarket, title_regex: "^Will the Democrats win the Georgia Senate race in 2026" }
-      - name: "NC Senate (D)"
-        match:
-          - { venue: kalshi, ticker: SENATENC-26-D }
-          - { venue: polymarket, title_regex: "^Will the Democrats win the North Carolina Senate race in 2026" }
-      - name: "ME Senate (D)"
+          - { venue: polymarket, ticker: will-the-democrats-win-the-georgia-senate-race-in-2026 }
+      - name: "ME Sen (D)"
         match:
           - { venue: kalshi, ticker: SENATEME-26-D }
-          - { venue: polymarket, title_regex: "^Will the Democrats win the Maine Senate race in 2026" }
+          - { venue: polymarket, ticker: will-the-democrats-win-the-maine-senate-race-in-2026 }
   - { slot: sunday, type: scorecard, at: "15:17", days: [6], window_days: 7, min_resolved: 20 }
 
 channels:
@@ -96,5 +97,9 @@ follow_links:
   - { label: "RSS", href: "https://oddsdrift.joshestrada.com/feed.xml" }
   - { label: "GitHub", href: "https://github.com/estrada-josh/attention" }
   - { label: "Nostr", href: "https://njump.me/npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27" }
+healthcheck:
+  max_post_age_hours: 30              # slots run daily; older than this means the feed stopped
+  max_run_age_hours: 30
+
 nav_links:
   - { label: "Calibration", href: "/calibration" }

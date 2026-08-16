@@ -1,8 +1,12 @@
 """Channel plugins: publish a Post that is already live on the site.
 
-Each channel gets (audience, post, env) and returns a dict record. A channel
-must be idempotent per post id (the engine records channel results in
-state.json['published'][post_id][channel]). Add new channels here.
+Each channel gets (audience, post, env, prev) and returns a dict record. `prev`
+is the record the same channel wrote for the same post on an earlier run, or an
+empty dict. A channel must be idempotent per post id (the engine records channel
+results in state.json['published'][post_id][channel]).
+
+Record keys the engine reads: `ok` (True stops every later attempt) and
+`gave_up` (True also stops later attempts). Add new channels here.
 """
 from .base import Channel
 from .bridgy import BridgyChannel

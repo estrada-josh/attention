@@ -11,7 +11,7 @@
 // Usage:
 //   node engine/channels/nostr_publish.mjs keygen
 //   node engine/channels/nostr_publish.mjs profile --name "Bot" --about "..."
-//   node engine/channels/nostr_publish.mjs note --content "hello"
+//   node engine/channels/nostr_publish.mjs note --content "hello" [--created-at 1755350220]
 //   node engine/channels/nostr_publish.mjs article --title T --summary S \
 //     --content-file post.md --identifier slug
 //   node engine/channels/nostr_publish.mjs verify --id <event-id>
@@ -294,10 +294,24 @@ async function commandNote(pool, relays, secretKey, flags) {
 
   return publishEvent(pool, relays, secretKey, {
     kind: 1,
-    created_at: Math.floor(Date.now() / 1000),
+    created_at: readCreatedAt(flags),
     tags,
     content,
   })
+}
+
+/**
+ * Read --created-at as a Unix second count. Fall back to the current time.
+ * A caller that repeats the same value gets the same event id, so a relay
+ * drops the repeat instead of storing a second note.
+ */
+function readCreatedAt(flags) {
+  const raw = flag(flags, 'created-at')
+  if (raw === undefined) return Math.floor(Date.now() / 1000)
+  if (!/^[0-9]{1,10}$/.test(raw)) {
+    throw new UsageError('--created-at must be a Unix time in seconds')
+  }
+  return Number(raw)
 }
 
 /** Publish a kind 30023 long article (NIP-23). */
@@ -372,7 +386,7 @@ const USAGE = `nostr_publish.mjs <command> [flags]
 Commands:
   keygen
   profile --name N [--about A] [--picture URL] [--website URL] [--nip05 ID] [--banner URL]
-  note    --content TEXT|- [--image URL] [--url URL] [--tag T ...]
+  note    --content TEXT|- [--image URL] [--url URL] [--tag T ...] [--created-at EPOCH]
   article --title T --summary S --content-file PATH --identifier SLUG [--image URL] [--url URL]
   verify  --id EVENT_ID
 

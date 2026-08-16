@@ -58,11 +58,13 @@ def movers_chart(rows: list[dict], title: str, subtitle: str, watermark: str, pa
     ys = list(range(len(rows)))[::-1]
     for y, r in zip(ys, rows):
         prev, now = (r["prev"] or 0) * 100, (r["now"] or 0) * 100
+        # print the delta of the rounded endpoints, so the label adds up
+        pv, nv = round(prev), round(now)
         color = UP if now >= prev else DOWN
         ax.plot([prev, now], [y, y], color=color, linewidth=6, solid_capstyle="round", zorder=2)
         ax.scatter([prev], [y], color=MUTED, s=60, zorder=3)
         ax.scatter([now], [y], color=color, s=90, zorder=4)
-        ax.text(now + (2.5 if now >= prev else -2.5), y, f"{prev:.0f}→{now:.0f}¢ ({now-prev:+.0f})",
+        ax.text(now + (2.5 if now >= prev else -2.5), y, f"{pv:d}→{nv:d}¢ ({nv - pv:+d})",
                 va="center", ha="left" if now >= prev else "right", fontsize=11, color=INK)
         ax.text(-0.03, y, f"{r.get('label','')} · {_label(r)}", va="center", ha="right", fontsize=11.5, color=INK,
                 transform=ax.get_yaxis_transform())
@@ -87,7 +89,7 @@ def settled_chart(rows: list[dict], title: str, subtitle: str, watermark: str, p
         color = UP if yes else DOWN
         ax.barh(y, p, color=color, height=0.55, zorder=2, alpha=0.9)
         tag = "UPSET · " if r.get("upset") else ""
-        ax.text(p + 1.5, y, f"{tag}{p:.0f}¢ → {'YES' if yes else 'NO'}", va="center", ha="left", fontsize=11, color=INK)
+        ax.text(p + 1.5, y, f"{tag}{round(p):d}¢ → {'YES' if yes else 'NO'}", va="center", ha="left", fontsize=11, color=INK)
         ax.text(-0.03, y, f"{r.get('label','')} · {_label(r)}", va="center", ha="right", fontsize=11.5, color=INK,
                 transform=ax.get_yaxis_transform())
     ax.set_xlim(0, 100)
@@ -118,8 +120,16 @@ def board_chart(rows: list[dict], title: str, subtitle: str, watermark: str, pat
         x = (r.get("now") or 0) * 100
         c = VENUE_COLORS.get(r["venue"], INK)
         ax.scatter([x], [y], color=c, s=140, zorder=3)
+        # the delta of the rounded endpoints, so the label agrees with the price
+        prev = r.get("prev")
         d = r.get("delta")
-        ax.text(x, y + 0.28, f"{r.get('label','')} {x:.0f}¢" + (f" ({d*100:+.0f})" if d is not None else ""),
+        if prev is not None:
+            move = f" ({round(x) - round(prev * 100):+d})"
+        elif d is not None:
+            move = f" ({round(d * 100):+d})"
+        else:
+            move = ""
+        ax.text(x, y + 0.28, f"{r.get('label','')} {round(x):d}¢" + move,
                 ha="center", va="bottom", fontsize=10.5, color=c)
     for n, y in ys.items():
         ax.text(-0.03, y, n, va="center", ha="right", fontsize=12, color=INK, transform=ax.get_yaxis_transform())
