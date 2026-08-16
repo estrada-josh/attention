@@ -126,15 +126,22 @@ sync_site, sources/, shapes/, channels/, templates/), `audiences/oddsdrift/`
 `tools/mastodon.mjs`, `tests/test_engine.py` (9 green), README.md, SETUP.md, LICENSE,
 DATA_LICENSE, CITATION.cff, `.claude/napkin.md`.
 
-### Current state at session end
+### Current state at session end (updated 21:50 UTC / 5:50 PM EDT)
 
-- **Working:** full local pipeline (`run` for am/pm/board), site render with valid mf2 and
-  Atom, tests green, Worker typechecks, uploader dry-run enumerates 24 files, repo pushed
-  (private), secrets set, inbox live, Nostr keys made.
-- **Not yet live:** the Worker (deploy blocked), the workflows (push blocked by token
-  scope), the Bridgy bridge (needs the live site), Nostr profile (publish blocked).
-- **Next:** Josh runs `SETUP.md` steps 1–3 (about two minutes). Then: watch the first two
-  days of posts on Bluesky, check the Bridgy status page, tune thresholds; after 14 stable
-  days consider the Mastodon account (`tools/mastodon.mjs signup`), the email digest, and
-  the second audience. Adversarial review workflow (`attention-review`) findings are
-  applied below this entry if it finishes in-session.
+- **LIVE, unattended.** Josh said "make the repo public then do the stuff" — so: repo
+  public (`github.com/estrada-josh/attention`); Worker deployed with `SYNC_TOKEN`
+  (`oddsdrift.joshestrada.com`, KV-served); `gh auth refresh -s workflow` completed
+  through Josh's logged-in Chrome (device code + his phone approval for sudo mode);
+  workflows pushed; first `workflow_dispatch` run green end to end (engine → commit → KV
+  upload → publish → records); Bridgy Fed web bridge enabled; **Bluesky account
+  `@oddsdrift.joshestrada.com`** (did:plc:u5nytek7da3v7y7doykzszet, custom handle via
+  our `/.well-known/atproto-did` redirect + Bridgy update-profile) with 3 posts + charts;
+  fediverse `@oddsdrift.joshestrada.com@web.brid.gy`; Nostr profile + 3 notes on
+  damus/nos.lol/primal.
+- **Schedule:** publish.yml at 13:17/17:17/22:17 UTC (+ :47 retry) and Sunday 15:17 UTC;
+  healthcheck.yml daily 14:30 UTC (10:30 AM EDT / 9:30 AM EST).
+- **Watch next:** first scheduled ticks (Aug 17 13:17 UTC = 9:17 AM EDT); Bridgy status
+  page for warnings (webfinger redirect is intentionally not set); Bluesky follower
+  growth in `data/metrics.csv`; whether the movers post gets 4 lines once own snapshots
+  exist (day 2). Phase 2 after 14 stable days: Mastodon native account, email digest,
+  second audience.

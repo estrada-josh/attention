@@ -64,3 +64,12 @@ the decisions; do not wait on me." No human steps: no phone, no CAPTCHA, no card
 - Ids/urls: KV `92bbd6b143154c2d9b39d4568e12a6ee`; inbox oddsdrift@agentmail.to; Nostr
   npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27; SYNC_TOKEN in Actions
   secret + session scratchpad (Josh must set the same value as the Worker secret).
+
+## Live state (2026-08-16 21:50 UTC)
+- EVERYTHING LIVE. Bluesky @oddsdrift.joshestrada.com (did:plc:u5nytek7da3v7y7doykzszet),
+  Worker oddsdrift.joshestrada.com, workflows scheduled, Nostr live, repo public.
+- gh token now has `workflow` scope; git uses `gh auth setup-git` credential helper.
+- GitHub OAuth "Authorize" button ignores instant automated clicks: wait ~6 s, hover, then
+  click. Sudo mode needed Josh's phone (GitHub Mobile number match) — always his step.
+- Bridgy custom handle: our /.well-known/atproto-did redirect + POST /web/<domain>/update-profile
+  was enough; "[Unofficial]" disappeared once the handle switched.

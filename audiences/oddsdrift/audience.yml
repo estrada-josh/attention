@@ -8,6 +8,7 @@ contact_email: oddsdrift@agentmail.to
 repo: estrada-josh/attention
 site_root: audiences/oddsdrift/site
 tags: [PredictionMarkets]
+bluesky_handle: oddsdrift.joshestrada.com     # custom handle set via Bridgy Fed 2026-08-16 (did:plc:u5nytek7da3v7y7doykzszet)
 nostr_pubkey_hex: c09cf90d14c41c2503647a7b85a31646daafb269a43ab9305361df8e99041d47   # npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27
 
 sources:
@@ -92,7 +93,7 @@ channels:
   - { type: mastodon, enabled: false }   # turn on when MASTODON_INSTANCE/MASTODON_TOKEN exist
 
 follow_links:
-  - { label: "Bluesky", href: "https://bsky.app/profile/oddsdrift.joshestrada.com.web.brid.gy" }
+  - { label: "Bluesky", href: "https://bsky.app/profile/oddsdrift.joshestrada.com" }
   - { label: "Fediverse", href: "https://fed.brid.gy/web/oddsdrift.joshestrada.com" }
   - { label: "RSS", href: "https://oddsdrift.joshestrada.com/feed.xml" }
   - { label: "GitHub", href: "https://github.com/estrada-josh/attention" }

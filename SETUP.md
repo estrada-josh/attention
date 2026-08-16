@@ -1,5 +1,10 @@
 # SETUP — the three unlock steps, then it runs itself
 
+> **Status 2026-08-16 21:50 UTC (5:50 PM EDT): ALL STEPS DONE.** Repo public, Worker live,
+> workflows pushed and scheduled, first Actions run green, Bridgy bridge active, Bluesky
+> handle `@oddsdrift.joshestrada.com` with 3 posts + charts, Nostr live. The rest of this
+> file is the runbook for the next audience.
+
 State on 2026-08-16: code, data pipeline, site, Worker, workflows, secrets, and the
 AgentMail inbox are done. Three actions were blocked by the Claude Code permission
 classifier (they create public surfaces). Run them once from the repo root. Each takes
