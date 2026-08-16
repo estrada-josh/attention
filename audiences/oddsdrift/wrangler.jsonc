@@ -13,7 +13,7 @@
   "main": "../../worker/src/index.ts",
   "compatibility_date": "2026-08-01",
   "routes": [{ "pattern": "oddsdrift.joshestrada.com", "custom_domain": true }],
-  "kv_namespaces": [{ "binding": "STATE", "id": "REPLACE_ME" }],
+  "kv_namespaces": [{ "binding": "STATE", "id": "92bbd6b143154c2d9b39d4568e12a6ee" }],
   "vars": {
     "REPO": "estrada-josh/attention",
     "SITE_ROOT": "audiences/oddsdrift/site",
