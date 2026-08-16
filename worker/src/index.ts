@@ -27,10 +27,21 @@ export interface Env {
   SITE_ROOT: string
   /** Branch to serve when KV holds no SHA. */
   DEFAULT_BRANCH: string
-  /** Public site URL, for example "https://oddsdrift.joshestrada.com". */
+  /** Public site URL, for example "https://odds-drift.com". */
   SITE_URL: string
-  /** Bare domain for Bridgy Fed, for example "oddsdrift.joshestrada.com". */
+  /** Bare domain for Bridgy Fed, for example "odds-drift.com". */
   BRIDGY_WEB_ID: string
+  /**
+   * Canonical host, for example "odds-drift.com". Optional. When set, any other
+   * host that reaches this Worker (an old domain, "www.") is redirected here with
+   * 301, except "/" on a host listed in LEGACY_NOBRIDGE_HOSTS.
+   */
+  CANONICAL_HOST?: string
+  /**
+   * Comma-separated old hosts whose "/" must serve an h-card with "#nobridge" so
+   * Bridgy Fed retires their bridged accounts. Optional.
+   */
+  LEGACY_NOBRIDGE_HOSTS?: string
   /**
    * "true" turns on the raw.githubusercontent.com fallback. Set it only when
    * the repo is public. A private repo always answers 404, so the fetch only
@@ -556,6 +567,20 @@ export default {
 
     const url = new URL(request.url)
     const method = request.method
+
+    // Old or alternate hosts: retire the old Bridgy Fed account, then redirect.
+    if (env.CANONICAL_HOST && url.hostname !== env.CANONICAL_HOST) {
+      const legacy = (env.LEGACY_NOBRIDGE_HOSTS ?? '').split(',').map((h) => h.trim()).filter(Boolean)
+      if (legacy.includes(url.hostname) && (url.pathname === '/' || url.pathname === '/index.html')) {
+        const html =
+          '<!doctype html><html lang="en"><meta charset="utf-8"><title>Moved</title>' +
+          `<body class="h-card"><h1 class="p-name">Moved</h1><p class="p-note">#nobridge This site moved to ` +
+          `<a class="u-url" href="https://${env.CANONICAL_HOST}/">${env.CANONICAL_HOST}</a>.</p></body></html>`
+        return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } })
+      }
+      const target = `https://${env.CANONICAL_HOST}${url.pathname}${url.search}`
+      return new Response(null, { status: 301, headers: { location: target, 'cache-control': 'public, max-age=3600' } })
+    }
 
     if (method === 'POST') {
       if (url.pathname === '/hooks/sync') return handleSync(request, env)

@@ -12,14 +12,20 @@
   "name": "oddsdrift-site",
   "main": "../../worker/src/index.ts",
   "compatibility_date": "2026-08-01",
-  "routes": [{ "pattern": "oddsdrift.joshestrada.com", "custom_domain": true }],
+  "routes": [
+    { "pattern": "odds-drift.com", "custom_domain": true },
+    { "pattern": "www.odds-drift.com", "custom_domain": true },
+    { "pattern": "oddsdrift.joshestrada.com", "custom_domain": true }
+  ],
   "kv_namespaces": [{ "binding": "STATE", "id": "92bbd6b143154c2d9b39d4568e12a6ee" }],
   "vars": {
     "REPO": "estrada-josh/attention",
     "SITE_ROOT": "audiences/oddsdrift/site",
     "DEFAULT_BRANCH": "main",
-    "SITE_URL": "https://oddsdrift.joshestrada.com",
-    "BRIDGY_WEB_ID": "oddsdrift.joshestrada.com",
+    "SITE_URL": "https://odds-drift.com",
+    "BRIDGY_WEB_ID": "odds-drift.com",
+    "CANONICAL_HOST": "odds-drift.com",
+    "LEGACY_NOBRIDGE_HOSTS": "oddsdrift.joshestrada.com",
 
     // "true" only when the GitHub repo is public. A private repo makes the
     // raw.githubusercontent.com fallback answer 404 for every KV miss.

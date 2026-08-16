@@ -2,7 +2,7 @@
 
 > **Status 2026-08-16 21:50 UTC (5:50 PM EDT): ALL STEPS DONE.** Repo public, Worker live,
 > workflows pushed and scheduled, first Actions run green, Bridgy bridge active, Bluesky
-> handle `@oddsdrift.joshestrada.com` with 3 posts + charts, Nostr live. The rest of this
+> handle `@odds-drift.com` with 3 posts + charts, Nostr live. The rest of this
 > file is the runbook for the next audience.
 
 State on 2026-08-16: code, data pipeline, site, Worker, workflows, secrets, and the
@@ -32,7 +32,7 @@ secret `SYNC_TOKEN` (`gh secret list`). If you lost it: generate a new one with
 `python3 -c "import secrets; print(secrets.token_urlsafe(32))"` and set it in both places
 (`gh secret set SYNC_TOKEN` and `wrangler secret put SYNC_TOKEN`).
 
-Verify: `curl -sI https://oddsdrift.joshestrada.com/health.json | head -1` returns 200.
+Verify: `curl -sI https://odds-drift.com/health.json | head -1` returns 200.
 
 ## 3. Bridge the site FIRST, then run the pipeline
 
@@ -40,7 +40,7 @@ Order matters. `POST /webmention` returns 400 "No user found for domain" when th
 never enabled, so the first post would fail and Bridgy Fed would bridge the feed instead.
 
 ```
-curl -sS -X POST -d "url=oddsdrift.joshestrada.com" https://fed.brid.gy/web-site
+curl -sS -X POST -d "url=odds-drift.com" https://fed.brid.gy/web-site
 gh workflow run publish.yml -f audience=oddsdrift -f slot=am -f force=true
 gh run watch
 ```
@@ -51,15 +51,15 @@ Every entry carries `activity:object-type = note`, so a feed-poll entry becomes 
 an article.
 
 The run fetches data, builds a post, uploads the site to the Worker, and publishes
-(Bridgy webmention + Nostr). Bridgy Fed then creates `@oddsdrift.joshestrada.com.web.brid.gy`
-on Bluesky. Check: `https://bsky.app/profile/oddsdrift.joshestrada.com.web.brid.gy` and
-`https://fed.brid.gy/web/oddsdrift.joshestrada.com` (status page names any markup fix).
+(Bridgy webmention + Nostr). Bridgy Fed then creates `@odds-drift.com.web.brid.gy`
+on Bluesky. Check: `https://bsky.app/profile/odds-drift.com.web.brid.gy` and
+`https://fed.brid.gy/web/odds-drift.com` (status page names any markup fix).
 
 Optional, custom Bluesky handle. The `/.well-known/atproto-did` redirect alone does not
-change the handle. The account stays `@oddsdrift.joshestrada.com.web.brid.gy` until you open
-`https://fed.brid.gy/web/oddsdrift.joshestrada.com` and press the set-handle button next to
-the Bluesky account. Verify with `curl -sL https://oddsdrift.joshestrada.com/.well-known/atproto-did`
-(it prints `did:plc:...`) and `https://bsky-debug.app/handle?handle=oddsdrift.joshestrada.com`.
+change the handle. The account stays `@odds-drift.com.web.brid.gy` until you open
+`https://fed.brid.gy/web/odds-drift.com` and press the set-handle button next to
+the Bluesky account. Verify with `curl -sL https://odds-drift.com/.well-known/atproto-did`
+(it prints `did:plc:...`) and `https://bsky-debug.app/handle?handle=odds-drift.com`.
 After the switch, update `follow_links` in `audiences/oddsdrift/audience.yml`, which holds the
 handle as literal text.
 

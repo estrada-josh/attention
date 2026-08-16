@@ -5,7 +5,7 @@ Rotation: keep near 150 lines; move resolved notes to `.claude/napkin-archive/YY
 
 ## WHAT THIS PROJECT IS
 
-An autonomous audience-building mechanism. Josh gave one brief (2026-08-16):
+An autonomous audience-building mechanism. the operator gave one brief (2026-08-16):
 "research and build a mechanism that can build me an audience; topic is open;
 use the tools you have; sign up for services with the AgentMail API; make all
 the decisions; do not wait on me." No human steps: no phone, no CAPTCHA, no card.
@@ -13,14 +13,14 @@ the decisions; do not wait on me." No human steps: no phone, no CAPTCHA, no card
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
-| 2026-08-16 | user | Bash reads of `.env` files got denied | Josh allowed bash commands for .env files mid-session; proceed |
+| 2026-08-16 | user | Bash reads of `.env` files got denied | the operator allowed bash commands for .env files mid-session; proceed |
 | 2026-08-16 | self | `git reset --hard origin/main` to reorder commits wiped UNSTAGED edits from a fix agent (.github workflows) | Never reset --hard with a dirty tree; `git stash` first or commit everything, then reorder |
 | 2026-08-16 | self | Watchlist regexes matched candidate markets; Kalshi settled list assumed sorted | Probe live data before trusting an ordering or a match; prefer exact tickers/slugs |
 
 ## User Preferences
-- Josh wants zero involvement. Find another way before asking. (2026-08-16)
+- the operator wants zero involvement. Find another way before asking. (2026-08-16)
 - Deploys to Cloudflare are pre-authorized (assay precedent, 2026-08-09).
-- REUSABLE ENGINE (Josh, 2026-08-16): build so it can grow OTHER audiences on OTHER
+- REUSABLE ENGINE (the operator, 2026-08-16): build so it can grow OTHER audiences on OTHER
   platforms later. Pluggable sources + pluggable channels + one config per audience.
   The first topic/channel set is only the first instance, never hard-wired.
 
@@ -29,7 +29,7 @@ the decisions; do not wait on me." No human steps: no phone, no CAPTCHA, no card
   `assay@` and `squeeze-watcher@` exist → ONE slot left. No custom domains.
 - Cloudflare: wrangler OAuth logged in (estrada.josh@gmail.com, acct
   60caaa34483e66aa91d7cd45ea4fcfe3, workers.dev subdomain `estrada-josh`).
-  Zones: joshestrada.com, hushbug.dev, clickswar.com, kibitzshare.com,
+  Zones: (personal domain, retired), hushbug.dev, clickswar.com, kibitzshare.com,
   coastal-spotlight.com, bellaefloraservices.com. Plan level unknown (assume free).
 - GitHub CLI: logged in as estrada-josh (repo scope).
 - Higgsfield: ~66 credits, no TikTok connected → not a lever.
@@ -49,7 +49,7 @@ the decisions; do not wait on me." No human steps: no phone, no CAPTCHA, no card
 - Auto-mode classifier BLOCKS in this repo: `gh repo create --public`, `wrangler deploy`,
   `wrangler secret put`, Nostr publish, compound heredoc writes of workflow files. It does
   not block: private repo create, git push (non-workflow files), gh secret set, KV create.
-  Do not self-grant permissions. Use SETUP.md for Josh's unlock steps. Josh may allowlist
+  Do not self-grant permissions. Use SETUP.md for the operator's unlock steps. the operator may allowlist
   `Bash(npx wrangler *)`, `Bash(gh *)` in `.claude/settings.local.json` (assay precedent).
 - The `gh` OAuth token lacks the `workflow` scope -> cannot push .github/workflows. Local
   commit "ci: publish + healthcheck workflows" waits for `gh auth refresh -s workflow`.
@@ -63,13 +63,22 @@ the decisions; do not wait on me." No human steps: no phone, no CAPTCHA, no card
 - Repo size discipline: snapshots 7 columns non-sports vol>=250|OI>=1500 (~150 KB/run pair).
 - Ids/urls: KV `92bbd6b143154c2d9b39d4568e12a6ee`; inbox oddsdrift@agentmail.to; Nostr
   npub1czw0jrg5cswz2qmy0factgckgmd2lvnf5satjvznv80caxgyr4rs39ht27; SYNC_TOKEN in Actions
-  secret + session scratchpad (Josh must set the same value as the Worker secret).
+  secret + session scratchpad (the operator must set the same value as the Worker secret).
 
 ## Live state (2026-08-16 21:50 UTC)
-- EVERYTHING LIVE. Bluesky @oddsdrift.joshestrada.com (did:plc:u5nytek7da3v7y7doykzszet),
-  Worker oddsdrift.joshestrada.com, workflows scheduled, Nostr live, repo public.
+- EVERYTHING LIVE. Bluesky @odds-drift.com (did:plc:u5nytek7da3v7y7doykzszet),
+  Worker odds-drift.com, workflows scheduled, Nostr live, repo public.
 - gh token now has `workflow` scope; git uses `gh auth setup-git` credential helper.
 - GitHub OAuth "Authorize" button ignores instant automated clicks: wait ~6 s, hover, then
-  click. Sudo mode needed Josh's phone (GitHub Mobile number match) — always his step.
+  click. Sudo mode needed the operator's phone (GitHub Mobile number match) — always his step.
 - Bridgy custom handle: our /.well-known/atproto-did redirect + POST /web/<domain>/update-profile
   was enough; "[Unofficial]" disappeared once the handle switched.
+
+## Domain move (2026-08-16 22:00 UTC)
+- Canonical site: https://odds-drift.com (Cloudflare zone ddfc3dacaf9ed322f95982a826c2cbb2).
+- Bluesky: @odds-drift.com = did:plc:xizsq2jlzzz4ubme4vvlt457 (new Bridgy web user; the
+  first bridged account did:plc:u5nytek7… was retired with #nobridge).
+- The operator wants NO personal-name references anywhere in this repo. Keep it that way.
+- Bridgy migration = new user per domain; reset `published[*].bridgy` in state.json so posts
+  re-bridge; Nostr records stay (no duplicates).
+- New custom domains take a few minutes for TLS (curl exit 35 until then).

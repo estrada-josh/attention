@@ -4,7 +4,7 @@
 
 ### Summary
 
-Josh's brief: research and build a mechanism that builds an audience; topic open; use
+the operator's brief: research and build a mechanism that builds an audience; topic open; use
 the tools at hand; sign up for services with AgentMail; make every decision; do not wait
 on him. Mid-session addition: build it so it can grow other audiences on other platforms.
 
@@ -63,14 +63,14 @@ scope). I did not route around these gates. `SETUP.md` lists the three unlock st
 
 ### Key decisions
 
-- **Reusable engine first** (Josh's note): every audience-specific value lives in
+- **Reusable engine first** (the operator's note): every audience-specific value lives in
   `audience.yml`; sources/shapes/channels are registries; the Worker is generic per
   audience via wrangler vars.
-- **Domain: `oddsdrift.joshestrada.com`.** All six zones host live projects; a subdomain
-  of Josh's own name accrues the audience to him. Per-audience domain is config.
+- **Domain: `odds-drift.com`.** All six zones host live projects; a subdomain
+  of the operator's own name accrues the audience to him. Per-audience domain is config.
 - **Private repo + KV upload instead of public raw proxy.** Public repo creation was
   blocked; the KV path also removes the raw cache lag the judges worried about. Public
-  visibility is a one-line optional step for Josh.
+  visibility is a one-line optional step for the operator.
 - **No native social accounts at launch.** Bridgy Fed web bridge (Bluesky + fediverse) +
   Nostr + site/RSS. Mastodon channel exists but is off; `tools/mastodon.mjs` can sign up an
   account by API when wanted.
@@ -117,6 +117,20 @@ now writes meta keys once per sync, memoizes reads, never 500s on KV errors, and
 raw fallback for private repos (`RAW_FALLBACK`). Own mistake logged: a `git reset --hard`
 discarded unstaged workflow edits, which I rewrote by hand.
 
+
+### Domain move (same session, ~21:50–22:10 UTC / 5:50–6:10 PM EDT)
+
+The operator bought `odds-drift.com` on Cloudflare and asked that nothing carry the
+personal domain. Done: Worker routes `odds-drift.com` + `www` (canonical host redirect
++ legacy `#nobridge` card so Bridgy Fed retires the old bridged account); site re-rendered
+and re-uploaded with the new URLs; new Bridgy web user `odds-drift.com` → **new Bluesky
+account `@odds-drift.com` (did:plc:xizsq2jlzzz4ubme4vvlt457)**, 3 posts re-bridged;
+fediverse `@odds-drift.com@web.brid.gy`; Nostr profile → new site + NIP-05
+`_@odds-drift.com`. Name references scrubbed from config, docs, LICENSE, CITATION
+(the GitHub owner `estrada-josh` and the git author history remain; moving the repo to
+an org would be the way to remove those). The old bridged account was set to
+`#nobridge` and is being deactivated; the legacy route is removed once that lands.
+
 ### Files
 
 New: `engine/` (model, config, http, state, run, render, publish, charts, healthcheck,
@@ -128,15 +142,15 @@ DATA_LICENSE, CITATION.cff, `.claude/napkin.md`.
 
 ### Current state at session end (updated 21:50 UTC / 5:50 PM EDT)
 
-- **LIVE, unattended.** Josh said "make the repo public then do the stuff" — so: repo
+- **LIVE, unattended.** the operator said "make the repo public then do the stuff" — so: repo
   public (`github.com/estrada-josh/attention`); Worker deployed with `SYNC_TOKEN`
-  (`oddsdrift.joshestrada.com`, KV-served); `gh auth refresh -s workflow` completed
-  through Josh's logged-in Chrome (device code + his phone approval for sudo mode);
+  (`odds-drift.com`, KV-served); `gh auth refresh -s workflow` completed
+  through the operator's logged-in Chrome (device code + his phone approval for sudo mode);
   workflows pushed; first `workflow_dispatch` run green end to end (engine → commit → KV
   upload → publish → records); Bridgy Fed web bridge enabled; **Bluesky account
-  `@oddsdrift.joshestrada.com`** (did:plc:u5nytek7da3v7y7doykzszet, custom handle via
+  `@odds-drift.com`** (did:plc:u5nytek7da3v7y7doykzszet, custom handle via
   our `/.well-known/atproto-did` redirect + Bridgy update-profile) with 3 posts + charts;
-  fediverse `@oddsdrift.joshestrada.com@web.brid.gy`; Nostr profile + 3 notes on
+  fediverse `@odds-drift.com@web.brid.gy`; Nostr profile + 3 notes on
   damus/nos.lol/primal.
 - **Schedule:** publish.yml at 13:17/17:17/22:17 UTC (+ :47 retry) and Sunday 15:17 UTC;
   healthcheck.yml daily 14:30 UTC (10:30 AM EDT / 9:30 AM EST).

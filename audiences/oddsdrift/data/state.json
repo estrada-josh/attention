@@ -31,12 +31,14 @@
     "2026-08-16-am": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-08-16T21:45:39+00:00",
-        "at_uri": "at://did:plc:u5nytek7da3v7y7doykzszet/app.bsky.feed.post/3mta5hhzwey52",
+        "at": "2026-08-16T21:53:07+00:00",
+        "at_uri": "at://did:plc:xizsq2jlzzz4ubme4vvlt457/app.bsky.feed.post/3mta6dgo2try2",
         "attempts": 1,
+        "body": "Added webmention 66247626904058225961 now",
         "ok": true,
-        "source": "https://oddsdrift.joshestrada.com/p/2026-08-16-am",
-        "verified_at": "2026-08-16T21:45:39+00:00"
+        "source": "https://odds-drift.com/p/2026-08-16-am",
+        "status": 202,
+        "verified_at": "2026-08-16T21:53:07+00:00"
       },
       "nostr": {
         "at": "2026-08-16T21:29:06+00:00",
@@ -60,12 +62,14 @@
     "2026-08-16-board": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-08-16T21:45:40+00:00",
-        "at_uri": "at://did:plc:u5nytek7da3v7y7doykzszet/app.bsky.feed.post/3mta5haav7yo2",
+        "at": "2026-08-16T21:53:08+00:00",
+        "at_uri": "at://did:plc:xizsq2jlzzz4ubme4vvlt457/app.bsky.feed.post/3mta6dc4db252",
         "attempts": 1,
+        "body": "Added webmention 1589616006264707813 now",
         "ok": true,
-        "source": "https://oddsdrift.joshestrada.com/p/2026-08-16-board",
-        "verified_at": "2026-08-16T21:45:40+00:00"
+        "source": "https://odds-drift.com/p/2026-08-16-board",
+        "status": 202,
+        "verified_at": "2026-08-16T21:53:08+00:00"
       },
       "nostr": {
         "at": "2026-08-16T21:30:29+00:00",
@@ -85,12 +89,14 @@
     "2026-08-16-pm": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-08-16T21:45:40+00:00",
-        "at_uri": "at://did:plc:u5nytek7da3v7y7doykzszet/app.bsky.feed.post/3mta5hertlu52",
+        "at": "2026-08-16T21:53:09+00:00",
+        "at_uri": "at://did:plc:xizsq2jlzzz4ubme4vvlt457/app.bsky.feed.post/3mta6d5q5kbc2",
         "attempts": 1,
+        "body": "Added webmention 4780342806685913091 now",
         "ok": true,
-        "source": "https://oddsdrift.joshestrada.com/p/2026-08-16-pm",
-        "verified_at": "2026-08-16T21:45:40+00:00"
+        "source": "https://odds-drift.com/p/2026-08-16-pm",
+        "status": 202,
+        "verified_at": "2026-08-16T21:53:09+00:00"
       },
       "nostr": {
         "at": "2026-08-16T21:29:47+00:00",
