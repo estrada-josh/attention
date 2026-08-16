@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-08-16-pm",
+  "slot": "pm",
+  "shape": "settled",
+  "title": "Settled & surprised \u2014 Aug 16, 2026",
+  "text": "Settled in the last 24h\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 NO \u00b7 was 3\u00a2 ~24h before \u00b7 $157k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 97\u00a2 ~24h before \u00b7 $143k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 99\u00a2 ~24h before \u00b7 $141k\n#PredictionMarkets #Polymarket",
+  "published_at": "2026-08-16T21:43:24Z",
+  "tags": [
+   "PredictionMarkets",
+   "Polymarket"
+  ],
+  "chart": "/charts/2026-08-16-pm.png",
+  "chart_alt": "Settled in the last 24h\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 NO \u00b7 was 3\u00a2 ~24h before \u00b7 $157k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 97\u00a2 ~24h before \u00b7 $143k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 99\u00a2 ~24h before \u00b7 $141k\n#PredictionMarkets #Polymarket",
+  "url": "https://oddsdrift.joshestrada.com/p/2026-08-16-pm"
+ },
+ {
   "id": "2026-08-16-board",
   "slot": "board",
   "shape": "watchlist",
@@ -13,21 +28,6 @@
   "chart": "/charts/2026-08-16-board.png",
   "chart_alt": "Midterms 2026 odds board (D = Democrats win) \u00b7 78 days to Election Day\nSenate (D): K 48\u00a2 (+0) \u00b7 P 52\u00a2\nHouse (D): K 85\u00a2 (-1) \u00b7 P 88\u00a2\nTX Sen (D): K 49\u00a2 (-2) \u00b7 P 52\u00a2\nMI Sen (D): K 57\u00a2 (+1) \u00b7 P 56\u00a2 (+1)\nOH Sen (D): K 51\u00a2 (-3) \u00b7 P 52\u00a2 (-5)\n#Midterms2026 #PredictionMarkets",
   "url": "https://oddsdrift.joshestrada.com/p/2026-08-16-board"
- },
- {
-  "id": "2026-08-16-pm",
-  "slot": "pm",
-  "shape": "settled",
-  "title": "Settled & surprised \u2014 Aug 16, 2026",
-  "text": "Settled in the last 24h\nP \u00b7 Another Frontier Math Problem Solved by Sep\u2026 \u2192 YES \u00b7 was 97\u00a2 24h before \u00b7 $23k\nP \u00b7 Another Frontier Math Problem Solved by Dec\u2026 \u2192 YES \u00b7 was 95\u00a2 24h before \u00b7 $11k\n#PredictionMarkets #Polymarket",
-  "published_at": "2026-08-16T19:57:17Z",
-  "tags": [
-   "PredictionMarkets",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-08-16-pm.png",
-  "chart_alt": "Settled in the last 24h\nP \u00b7 Another Frontier Math Problem Solved by Sep\u2026 \u2192 YES \u00b7 was 97\u00a2 24h before \u00b7 $23k\nP \u00b7 Another Frontier Math Problem Solved by Dec\u2026 \u2192 YES \u00b7 was 95\u00a2 24h before \u00b7 $11k\n#PredictionMarkets #Polymarket",
-  "url": "https://oddsdrift.joshestrada.com/p/2026-08-16-pm"
  },
  {
   "id": "2026-08-16-am",
