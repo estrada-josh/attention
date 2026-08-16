@@ -1,7 +1,7 @@
 # OddsDrift — data
 
 Automated prediction-market odds tracker. Site: https://odds-drift.com
-Follow on Bluesky: `@odds-drift.com.web.brid.gy` (custom handle pending) · RSS: `/feed.xml`
+Follow on Bluesky: `@odds-drift.com` · RSS: `/feed.xml`
 
 ## Files
 - `data/snapshots/<venue>/<UTC>.csv.gz` — per-run price snapshots (non-sports, active markets; 45-day window)

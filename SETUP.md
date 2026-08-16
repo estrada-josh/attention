@@ -51,8 +51,9 @@ Every entry carries `activity:object-type = note`, so a feed-poll entry becomes 
 an article.
 
 The run fetches data, builds a post, uploads the site to the Worker, and publishes
-(Bridgy webmention + Nostr). Bridgy Fed then creates `@odds-drift.com.web.brid.gy`
-on Bluesky. Check: `https://bsky.app/profile/odds-drift.com.web.brid.gy` and
+(Bridgy webmention + Nostr). Bridgy Fed then creates the Bluesky account (first as
+`@<domain>.web.brid.gy`, then `@odds-drift.com` after the handle step below). Check:
+`https://bsky.app/profile/odds-drift.com` and
 `https://fed.brid.gy/web/odds-drift.com` (status page names any markup fix).
 
 Optional, custom Bluesky handle. The `/.well-known/atproto-did` redirect alone does not

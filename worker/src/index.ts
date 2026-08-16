@@ -572,10 +572,12 @@ export default {
     if (env.CANONICAL_HOST && url.hostname !== env.CANONICAL_HOST) {
       const legacy = (env.LEGACY_NOBRIDGE_HOSTS ?? '').split(',').map((h) => h.trim()).filter(Boolean)
       if (legacy.includes(url.hostname) && (url.pathname === '/' || url.pathname === '/index.html')) {
+        const self = `https://${url.hostname}/`
         const html =
-          '<!doctype html><html lang="en"><meta charset="utf-8"><title>Moved</title>' +
-          `<body class="h-card"><h1 class="p-name">Moved</h1><p class="p-note">#nobridge This site moved to ` +
-          `<a class="u-url" href="https://${env.CANONICAL_HOST}/">${env.CANONICAL_HOST}</a>.</p></body></html>`
+          '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title>' +
+          `<link rel="me" href="${self}"><link rel="canonical" href="${self}"></head>` +
+          `<body><div class="h-card"><a class="u-url u-uid p-name" rel="me" href="${self}">Moved</a>` +
+          `<p class="p-note">#nobridge #nobot This site moved to https://${env.CANONICAL_HOST}/</p></div></body></html>`
         return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } })
       }
       const target = `https://${env.CANONICAL_HOST}${url.pathname}${url.search}`
