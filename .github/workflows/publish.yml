@@ -1,10 +1,12 @@
-# Publish pipeline: fetch data -> build post -> render site -> commit -> sync Worker -> publish to channels.
+# Publish pipeline: fetch data -> build post -> render site -> commit -> upload site to Worker (KV) -> publish to channels.
 # Runs for every audience under audiences/*/audience.yml. Each audience decides on its own
 # (from its shapes[].at) whether a slot is due at this tick; a non-due tick still stores a snapshot.
+# A late tick still posts: resolve_slot accepts a slot up to `slot_grace_minutes` (default 240) after its time.
 name: publish
 on:
   schedule:
     # Union of all audiences' slot times, in UTC, plus a 30-min retry minute for delayed runners.
+    # KEEP IN SYNC with audiences/*/audience.yml shapes[].at — the "Check cron coverage" step warns on drift.
     - cron: '17,47 13 * * *'      # AM movers    (9:17 AM EDT / 8:17 AM EST)
     - cron: '17,47 17 * * 1-6'    # board Mon-Sat (1:17 PM EDT / 12:17 PM EST)
     - cron: '17,47 22 * * *'      # PM settled   (6:17 PM EDT / 5:17 PM EST)
@@ -23,7 +25,7 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 1 }
@@ -33,22 +35,48 @@ jobs:
         with: { node-version: "22" }
       - run: uv sync --frozen --no-dev
       - run: npm ci --ignore-scripts
+      - name: Check cron coverage
+        run: |
+          uv run python - <<'PY'
+          import glob, re, yaml
+          wf = yaml.safe_load(open(".github/workflows/publish.yml"))
+          crons = [c["cron"] for c in (wf.get("on") or wf.get(True))["schedule"]]
+          covered = set()
+          for c in crons:
+              minute, hour = c.split()[:2]
+              for h in hour.split(","):
+                  for m in minute.split(","):
+                      if h.isdigit() and m.isdigit():
+                          covered.add(f"{int(h):02d}:{int(m):02d}")
+          for f in glob.glob("audiences/*/audience.yml"):
+              for s in yaml.safe_load(open(f)).get("shapes") or []:
+                  at = s.get("at")
+                  if at and at not in covered:
+                      print(f"::warning file={f}::slot {s.get('slot')} at {at} UTC has no matching cron entry in publish.yml")
+          PY
       - name: Run engine
         id: run
+        # Never fail-fast across audiences: one crash must not stop the others or the commit.
+        # The last step turns the job red when failed=1.
         env:
           AUDIENCE: ${{ github.event.inputs.audience || 'ALL' }}
           SLOT: ${{ github.event.inputs.slot || 'auto' }}
           FORCE: ${{ github.event.inputs.force == 'true' && '--force' || '' }}
         run: |
-          set -euo pipefail
+          set -uo pipefail
           if [ "$AUDIENCE" = "ALL" ]; then AUDS=$(ls audiences); else AUDS="$AUDIENCE"; fi
           echo "auds=$(echo $AUDS | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
+          failed=0
           for a in $AUDS; do
             [ -f "audiences/$a/audience.yml" ] || continue
             echo "::group::run $a"
-            uv run python -m engine run --audience "$a" --slot "$SLOT" $FORCE
+            if ! uv run python -m engine run --audience "$a" --slot "$SLOT" $FORCE; then
+              echo "::error::engine run failed for $a"
+              failed=1
+            fi
             echo "::endgroup::"
           done
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
       - name: Commit data + site
         id: commit
         env:
@@ -60,22 +88,34 @@ jobs:
           git add -A audiences/*/data audiences/*/site
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           git commit -m "chore(data): $(date -u +%Y-%m-%dT%H:%MZ) $SLOT run" -q
-          for i in 1 2 3; do git pull --rebase -q && git push -q && break || sleep 10; done
+          ok=0
+          for i in 1 2 3; do
+            if git pull --rebase -q && git push -q; then ok=1; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          [ "$ok" = 1 ]
           echo "changed=true" >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - name: Upload site to Workers (KV)
+        id: sync
         env:
           SHA: ${{ steps.commit.outputs.sha }}
           SYNC_TOKEN: ${{ secrets.SYNC_TOKEN }}
           AUDS: ${{ steps.run.outputs.auds }}
         run: |
           set -uo pipefail
+          failed=0
           for a in $AUDS; do
             [ -f "audiences/$a/audience.yml" ] || continue
-            uv run python -m engine.sync_site --audience "$a" ${SHA:+--sha $SHA} || echo "sync $a failed (logged)"
+            if ! uv run python -m engine.sync_site --audience "$a" ${SHA:+--sha $SHA}; then
+              echo "::error::site upload failed for $a"; failed=1
+            fi
           done
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
       - name: Publish to channels
         if: ${{ github.event.inputs.publish != 'false' }}
+        timeout-minutes: 15
         env:
           NOSTR_NSEC: ${{ secrets.NOSTR_NSEC }}
           MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
@@ -84,7 +124,8 @@ jobs:
         run: |
           set -uo pipefail
           for a in $AUDS; do
-            uv run python -m engine publish --audience "$a" || echo "publish $a failed (logged)"
+            [ -f "audiences/$a/audience.yml" ] || continue
+            uv run python -m engine publish --audience "$a" || echo "::warning::publish reported channel failures for $a (see log)"
           done
       - name: Commit publish records
         if: ${{ github.event.inputs.publish != 'false' }}
@@ -93,4 +134,15 @@ jobs:
           git add -A audiences/*/data
           git diff --cached --quiet && exit 0
           git commit -m "chore(state): publish records" -q
-          for i in 1 2 3; do git pull --rebase -q && git push -q && break || sleep 10; done
+          ok=0
+          for i in 1 2 3; do
+            if git pull --rebase -q && git push -q; then ok=1; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          [ "$ok" = 1 ]
+      - name: Fail when the engine or the sync reported a failure
+        if: steps.run.outputs.failed == '1' || steps.sync.outputs.failed == '1'
+        run: |
+          echo "::error::engine failed=${{ steps.run.outputs.failed }} sync failed=${{ steps.sync.outputs.failed }}"
+          exit 1
