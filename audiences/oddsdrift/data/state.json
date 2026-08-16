@@ -27,6 +27,87 @@
       "max_abs": 0.875
     }
   ],
+  "published": {
+    "2026-08-16-am": {
+      "bridgy": {
+        "accepted": true,
+        "at": "2026-08-16T21:29:05+00:00",
+        "attempts": 1,
+        "body": "Added webmention 32050679601437774181 now",
+        "ok": false,
+        "source": "https://oddsdrift.joshestrada.com/p/2026-08-16-am",
+        "status": 202
+      },
+      "nostr": {
+        "at": "2026-08-16T21:29:06+00:00",
+        "created_at": 1786909785,
+        "error": null,
+        "failed": [
+          {
+            "error": "connection failure: connection failed",
+            "relay": "wss://relay.damus.io"
+          }
+        ],
+        "id": "990cd79a5f13b105ad193e1eec28ea89e6629c8297974771433fbe407771aad9",
+        "ok": true,
+        "raw": null,
+        "relays_ok": [
+          "wss://nos.lol",
+          "wss://relay.primal.net"
+        ]
+      }
+    },
+    "2026-08-16-board": {
+      "bridgy": {
+        "accepted": true,
+        "at": "2026-08-16T21:30:28+00:00",
+        "attempts": 1,
+        "body": "Added webmention 30773151114908471021 now",
+        "ok": false,
+        "source": "https://oddsdrift.joshestrada.com/p/2026-08-16-board",
+        "status": 202
+      },
+      "nostr": {
+        "at": "2026-08-16T21:30:29+00:00",
+        "created_at": 1786915048,
+        "error": null,
+        "failed": [],
+        "id": "f16e9ffa000a4169488b0edd078d0f92d90835113cd2af0d0964514a56bf5618",
+        "ok": true,
+        "raw": null,
+        "relays_ok": [
+          "wss://relay.damus.io",
+          "wss://nos.lol",
+          "wss://relay.primal.net"
+        ]
+      }
+    },
+    "2026-08-16-pm": {
+      "bridgy": {
+        "accepted": true,
+        "at": "2026-08-16T21:29:47+00:00",
+        "attempts": 1,
+        "body": "Added webmention 9001363071686778446 now",
+        "ok": false,
+        "source": "https://oddsdrift.joshestrada.com/p/2026-08-16-pm",
+        "status": 202
+      },
+      "nostr": {
+        "at": "2026-08-16T21:29:47+00:00",
+        "created_at": 1786910237,
+        "error": null,
+        "failed": [],
+        "id": "9d78222011402b306a45a2228af84a8f60b0349aa4681f28d28e85dbef27170e",
+        "ok": true,
+        "raw": null,
+        "relays_ok": [
+          "wss://relay.damus.io",
+          "wss://nos.lol",
+          "wss://relay.primal.net"
+        ]
+      }
+    }
+  },
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
     "2026-08-16-board": "2026-08-16T21:17:28.137967+00:00",

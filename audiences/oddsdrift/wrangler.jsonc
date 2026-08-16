@@ -23,7 +23,7 @@
 
     // "true" only when the GitHub repo is public. A private repo makes the
     // raw.githubusercontent.com fallback answer 404 for every KV miss.
-    "RAW_FALLBACK": "false"
+    "RAW_FALLBACK": "true"
   },
   "observability": { "enabled": true }
 }
