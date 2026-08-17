@@ -1,5 +1,21 @@
 [
  {
+  "id": "2026-08-17-pm",
+  "slot": "pm",
+  "shape": "settled",
+  "title": "Settled & surprised \u2014 Aug 17, 2026",
+  "text": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be betw\u2026 \u2192 YES \u00b7 was 10\u00a2 ~24h before \u00b7 $28k\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 12\u00a2 ~24h before \u00b7 $282k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 5\n#PredictionMarkets #Kalshi #Polymarket",
+  "published_at": "2026-08-17T22:41:53Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi",
+   "Polymarket"
+  ],
+  "chart": "/charts/2026-08-17-pm.png",
+  "chart_alt": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be betw\u2026 \u2192 YES \u00b7 was 10\u00a2 ~24h before \u00b7 $28k\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 12\u00a2 ~24h before \u00b7 $282k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 5\n#PredictionMarkets #Kalshi #Polymarket",
+  "url": "https://odds-drift.com/p/2026-08-17-pm"
+ },
+ {
   "id": "2026-08-17-board",
   "slot": "board",
   "shape": "watchlist",

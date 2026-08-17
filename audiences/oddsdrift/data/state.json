@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-08-17T18:15:08.823100+00:00",
+    "at": "2026-08-17T22:41:53.101345+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 79116,
-    "post": null,
-    "settled_rows": 76774,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 85460,
+    "post": "2026-08-17-pm",
+    "settled_rows": 75368,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -196,10 +196,14 @@
     }
   },
   "settled_featured": {
+    "kalshi:KXBRENTD-26AUG1717-T91": "2026-08-17",
+    "kalshi:KXINXU-26AUG17H1600-T7749.9999": "2026-08-17",
     "polymarket:bitcoin-above-60k-on-august-16-2026": "2026-08-16",
     "polymarket:bitcoin-above-62k-on-august-16-2026": "2026-08-16",
     "polymarket:bitcoin-above-64k-on-august-16-2026": "2026-08-16",
-    "polymarket:us-announces-end-of-iranian-blockade-by-august-15-2026-20260713152715083-347-987-697-628-574-676": "2026-08-16"
+    "polymarket:bitcoin-above-64k-on-august-17-2026": "2026-08-17",
+    "polymarket:us-announces-end-of-iranian-blockade-by-august-15-2026-20260713152715083-347-987-697-628-574-676": "2026-08-16",
+    "polymarket:will-the-price-of-bitcoin-be-between-64000-66000-on-august-17-2026": "2026-08-17"
   },
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
@@ -207,6 +211,7 @@
     "2026-08-16-pm": "2026-08-16T21:43:24.003534+00:00",
     "2026-08-16-sunday": "2026-08-16T22:37:11.156179+00:00 (skipped)",
     "2026-08-17-am": "2026-08-17T13:54:53.824652+00:00",
-    "2026-08-17-board": "2026-08-17T17:45:32.848756+00:00"
+    "2026-08-17-board": "2026-08-17T17:45:32.848756+00:00",
+    "2026-08-17-pm": "2026-08-17T22:41:53.101345+00:00"
   }
 }
