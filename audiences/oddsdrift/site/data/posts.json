@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-08-17-board",
+  "slot": "board",
+  "shape": "watchlist",
+  "title": "Midterms 2026 odds board \u2014 Aug 17, 2026",
+  "text": "Midterms 2026 odds board \u00b7 77 days to Election Day\nSenate (D): K 48\u00a2 (+0) \u00b7 P 50\u00a2 (-2)\nHouse (D): K 86\u00a2 (+0) \u00b7 P 88\u00a2\nTX Sen (D): K 49\u00a2 (+0) \u00b7 P 52\u00a2\nMI Sen (D): K 58\u00a2 (+1) \u00b7 P 58\u00a2 (+2)\nOH Sen (D): K 53\u00a2 (+2) \u00b7 P 52\u00a2\n#Midterms2026 #PredictionMarkets",
+  "published_at": "2026-08-17T17:45:32Z",
+  "tags": [
+   "Midterms2026",
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-08-17-board.png",
+  "chart_alt": "Midterms 2026 odds board \u00b7 77 days to Election Day\nSenate (D): K 48\u00a2 (+0) \u00b7 P 50\u00a2 (-2)\nHouse (D): K 86\u00a2 (+0) \u00b7 P 88\u00a2\nTX Sen (D): K 49\u00a2 (+0) \u00b7 P 52\u00a2\nMI Sen (D): K 58\u00a2 (+1) \u00b7 P 58\u00a2 (+2)\nOH Sen (D): K 53\u00a2 (+2) \u00b7 P 52\u00a2\n#Midterms2026 #PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-08-17-board"
+ },
+ {
   "id": "2026-08-17-am",
   "slot": "am",
   "shape": "movers",
