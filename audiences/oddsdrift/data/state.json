@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-08-18T18:04:30.656757+00:00",
+    "at": "2026-08-18T22:41:42.741511+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 88970,
-    "post": null,
-    "settled_rows": 76120,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 97645,
+    "post": "2026-08-18-pm",
+    "settled_rows": 73886,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -282,7 +282,11 @@
   },
   "settled_featured": {
     "kalshi:KXBRENTD-26AUG1717-T91": "2026-08-17",
+    "kalshi:KXGOLDD-26AUG1817-T4355": "2026-08-18",
     "kalshi:KXINXU-26AUG17H1600-T7749.9999": "2026-08-17",
+    "kalshi:KXLOWTATL-26AUG17-B75.5": "2026-08-18",
+    "kalshi:KXLOWTATL-26AUG17-B77.5": "2026-08-18",
+    "kalshi:KXRAIN-26AUG17-ATL": "2026-08-18",
     "polymarket:bitcoin-above-60k-on-august-16-2026": "2026-08-16",
     "polymarket:bitcoin-above-62k-on-august-16-2026": "2026-08-16",
     "polymarket:bitcoin-above-64k-on-august-16-2026": "2026-08-16",
@@ -299,6 +303,7 @@
     "2026-08-17-board": "2026-08-17T17:45:32.848756+00:00",
     "2026-08-17-pm": "2026-08-17T22:41:53.101345+00:00",
     "2026-08-18-am": "2026-08-18T13:58:58.547096+00:00",
-    "2026-08-18-board": "2026-08-18T17:44:04.279887+00:00"
+    "2026-08-18-board": "2026-08-18T17:44:04.279887+00:00",
+    "2026-08-18-pm": "2026-08-18T22:41:42.741511+00:00"
   }
 }

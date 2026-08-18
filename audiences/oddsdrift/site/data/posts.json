@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-08-18-pm",
+  "slot": "pm",
+  "shape": "settled",
+  "title": "Settled & surprised \u2014 Aug 18, 2026",
+  "text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the minimum temperature be 7\u2026 \u2192 NO \u00b7 was 97\u00a2 ~24h before \u00b7 $14k\nUPSET \u00b7 K \u00b7 Will the minimum temperature be 7\u2026 \u2192 YES \u00b7 was 5\u00a2 ~24h before \u00b7 $14k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 15\n#PredictionMarkets #Kalshi",
+  "published_at": "2026-08-18T22:41:42Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi"
+  ],
+  "chart": "/charts/2026-08-18-pm.png",
+  "chart_alt": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the minimum temperature be 7\u2026 \u2192 NO \u00b7 was 97\u00a2 ~24h before \u00b7 $14k\nUPSET \u00b7 K \u00b7 Will the minimum temperature be 7\u2026 \u2192 YES \u00b7 was 5\u00a2 ~24h before \u00b7 $14k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 15\n#PredictionMarkets #Kalshi",
+  "url": "https://odds-drift.com/p/2026-08-18-pm"
+ },
+ {
   "id": "2026-08-18-board",
   "slot": "board",
   "shape": "watchlist",
