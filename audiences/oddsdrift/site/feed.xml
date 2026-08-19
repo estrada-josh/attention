@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-08-19T17:42:04Z</updated>
+  <updated>2026-08-19T22:42:14Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Settled &amp; surprised — Aug 19, 2026</title>
+    <link href="https://odds-drift.com/p/2026-08-19-pm"/>
+    <id>https://odds-drift.com/p/2026-08-19-pm</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-08-19T22:42:14Z</published>
+    <updated>2026-08-19T22:42:14Z</updated>
+<category term="PredictionMarkets"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
+UPSET · P · Will the price of Bitcoin be betw… → YES · was 0¢ ~24h before · $24k
+UPSET · P · Will the price of Bitcoin be abov… → YES · was 0¢ ~24h before · $584k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 43
+#PredictionMarkets #Polymarket</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+UPSET · P · Will the price of Bitcoin be betw… → YES · was 0¢ ~24h before · $24k&lt;br&gt;
+UPSET · P · Will the price of Bitcoin be abov… → YES · was 0¢ ~24h before · $584k&lt;br&gt;
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 43&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-19-pm.png&#34; alt=&#34;Settled in the last 24h
+UPSET · P · Will the price of Bitcoin be betw… → YES · was 0¢ ~24h before · $24k
+UPSET · P · Will the price of Bitcoin be abov… → YES · was 0¢ ~24h before · $584k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 43
+#PredictionMarkets #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Aug 19, 2026</title>
     <link href="https://odds-drift.com/p/2026-08-19-board"/>
