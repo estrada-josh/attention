@@ -5,8 +5,35 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-08-19T22:42:14Z</updated>
+  <updated>2026-08-20T14:01:43Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Aug 20, 2026</title>
+    <link href="https://odds-drift.com/p/2026-08-20-am"/>
+    <id>https://odds-drift.com/p/2026-08-20-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-08-20T14:01:43Z</published>
+    <updated>2026-08-20T14:01:43Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
+P · Will Bitcoin reach $72,500… 4¢→82¢ (+78) · $510k
+P · Will the price of Bitcoin b… 2¢→96¢ (+94) · $47k
+K · Ethereum price at Aug 21, 2… 1¢→95¢ (+94) · $42k
+Largest 24h swing in 30 days: +96
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+P · Will Bitcoin reach $72,500… 4¢→82¢ (+78) · $510k&lt;br&gt;
+P · Will the price of Bitcoin b… 2¢→96¢ (+94) · $47k&lt;br&gt;
+K · Ethereum price at Aug 21, 2… 1¢→95¢ (+94) · $42k&lt;br&gt;
+Largest 24h swing in 30 days: +96&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-20-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+P · Will Bitcoin reach $72,500… 4¢→82¢ (+78) · $510k
+P · Will the price of Bitcoin b… 2¢→96¢ (+94) · $47k
+K · Ethereum price at Aug 21, 2… 1¢→95¢ (+94) · $42k
+Largest 24h swing in 30 days: +96
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Settled &amp; surprised — Aug 19, 2026</title>
     <link href="https://odds-drift.com/p/2026-08-19-pm"/>
