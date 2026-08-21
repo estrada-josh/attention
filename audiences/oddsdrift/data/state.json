@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-08-21T18:15:39.519900+00:00",
+    "at": "2026-08-21T22:42:14.663415+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 103965,
-    "post": null,
-    "settled_rows": 80272,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 110240,
+    "post": "2026-08-21-pm",
+    "settled_rows": 76505,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -552,18 +552,18 @@
     }
   },
   "settled_featured": {
-    "kalshi:KXGOLDD-26AUG1817-T4355": "2026-08-18",
-    "kalshi:KXLOWTATL-26AUG17-B75.5": "2026-08-18",
-    "kalshi:KXLOWTATL-26AUG17-B77.5": "2026-08-18",
-    "kalshi:KXRAIN-26AUG17-ATL": "2026-08-18",
+    "kalshi:KXHIGHLAX-26AUG20-B77.5": "2026-08-21",
     "polymarket:bitcoin-above-68k-on-august-19-2026": "2026-08-19",
     "polymarket:bitcoin-above-68k-on-august-20-2026": "2026-08-20",
     "polymarket:bitcoin-above-70k-on-august-20-2026": "2026-08-20",
     "polymarket:bitcoin-above-72k-on-august-20-2026": "2026-08-20",
     "polymarket:ethereum-above-2000-on-august-19-2026": "2026-08-19",
     "polymarket:ethereum-above-2300-on-august-20-2026": "2026-08-20",
+    "polymarket:will-bitcoin-reach-78k-august-17-23-2026": "2026-08-21",
     "polymarket:will-ethereum-reach-2300-august-17-23-2026": "2026-08-19",
-    "polymarket:will-the-price-of-bitcoin-be-between-68000-70000-on-august-19-2026": "2026-08-19"
+    "polymarket:will-the-price-of-bitcoin-be-between-68000-70000-on-august-19-2026": "2026-08-19",
+    "polymarket:will-xrp-reach-1pt4-in-august-2026": "2026-08-21",
+    "polymarket:xrp-above-1pt4-on-august-21-2026": "2026-08-21"
   },
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
@@ -583,6 +583,7 @@
     "2026-08-20-board": "2026-08-20T17:46:39.045043+00:00",
     "2026-08-20-pm": "2026-08-20T22:45:39.001898+00:00",
     "2026-08-21-am": "2026-08-21T14:00:00.305251+00:00",
-    "2026-08-21-board": "2026-08-21T17:46:19.196818+00:00"
+    "2026-08-21-board": "2026-08-21T17:46:19.196818+00:00",
+    "2026-08-21-pm": "2026-08-21T22:42:14.663415+00:00"
   }
 }
