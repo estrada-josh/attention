@@ -5,8 +5,35 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-08-21T22:42:14Z</updated>
+  <updated>2026-08-22T13:45:51Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Aug 22, 2026</title>
+    <link href="https://odds-drift.com/p/2026-08-22-am"/>
+    <id>https://odds-drift.com/p/2026-08-22-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-08-22T13:45:51Z</published>
+    <updated>2026-08-22T13:45:51Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Biggest odds swings, last 24h
+K · Will BTC trimmed mean be ab… 98¢→2¢ (-96) · $20k
+K · Will the average temperatur… 90¢→1¢ (-89) · $24k
+K · Will Donald Trump make abov… 4¢→92¢ (+88) · $25k
+K · Will Lost Weekend by Phoebe… 6¢→99¢ (+93) · $5k
+#PredictionMarkets #Kalshi</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+K · Will BTC trimmed mean be ab… 98¢→2¢ (-96) · $20k&lt;br&gt;
+K · Will the average temperatur… 90¢→1¢ (-89) · $24k&lt;br&gt;
+K · Will Donald Trump make abov… 4¢→92¢ (+88) · $25k&lt;br&gt;
+K · Will Lost Weekend by Phoebe… 6¢→99¢ (+93) · $5k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-22-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+K · Will BTC trimmed mean be ab… 98¢→2¢ (-96) · $20k
+K · Will the average temperatur… 90¢→1¢ (-89) · $24k
+K · Will Donald Trump make abov… 4¢→92¢ (+88) · $25k
+K · Will Lost Weekend by Phoebe… 6¢→99¢ (+93) · $5k
+#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Settled &amp; surprised — Aug 21, 2026</title>
     <link href="https://odds-drift.com/p/2026-08-21-pm"/>
