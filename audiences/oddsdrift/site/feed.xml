@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-08-22T17:36:36Z</updated>
+  <updated>2026-08-22T22:38:32Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Settled &amp; surprised — Aug 22, 2026</title>
+    <link href="https://odds-drift.com/p/2026-08-22-pm"/>
+    <id>https://odds-drift.com/p/2026-08-22-pm</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-08-22T22:38:32Z</published>
+    <updated>2026-08-22T22:38:32Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
+UPSET · P · Will XRP reach $1.60 in August? → YES · was 7¢ ~24h before · $15k
+UPSET · P · Israel military action against Sy… → YES · was 10¢ ~24h before · $32k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 99
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+UPSET · P · Will XRP reach $1.60 in August? → YES · was 7¢ ~24h before · $15k&lt;br&gt;
+UPSET · P · Israel military action against Sy… → YES · was 10¢ ~24h before · $32k&lt;br&gt;
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 99&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-22-pm.png&#34; alt=&#34;Settled in the last 24h
+UPSET · P · Will XRP reach $1.60 in August? → YES · was 7¢ ~24h before · $15k
+UPSET · P · Israel military action against Sy… → YES · was 10¢ ~24h before · $32k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 99
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Aug 22, 2026</title>
     <link href="https://odds-drift.com/p/2026-08-22-board"/>
