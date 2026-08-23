@@ -5,8 +5,38 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-08-23T13:47:25Z</updated>
+  <updated>2026-08-23T15:36:38Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Calibration scorecard — week 34, 2026</title>
+    <link href="https://odds-drift.com/p/2026-08-23-sunday"/>
+    <id>https://odds-drift.com/p/2026-08-23-sunday</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-08-23T15:36:38Z</published>
+    <updated>2026-08-23T15:36:38Z</updated>
+<category term="PredictionMarkets"/>    <summary type="text">Calibration scorecard, week 34
+Resolved: 1525 K, 300 P
+Priced ≥90¢ the day before: 235/240 resolved YES
+Priced ≤10¢: 54/664 resolved YES
+Weekly Brier: K 0.133 · P 0.188 (running K 0.133 · P 0.185)
+odds-drift.com/calibration
+#PredictionMarkets</summary>
+    <content type="html">&lt;p&gt;Calibration scorecard, week 34&lt;br&gt;
+Resolved: 1525 K, 300 P&lt;br&gt;
+Priced ≥90¢ the day before: 235/240 resolved YES&lt;br&gt;
+Priced ≤10¢: 54/664 resolved YES&lt;br&gt;
+Weekly Brier: K 0.133 · P 0.188 (running K 0.133 · P 0.185)&lt;br&gt;
+&lt;a href=&#34;https://odds-drift.com/calibration&#34;&gt;odds-drift.com/calibration&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-23-sunday.png&#34; alt=&#34;Calibration scorecard, week 34
+Resolved: 1525 K, 300 P
+Priced ≥90¢ the day before: 235/240 resolved YES
+Priced ≤10¢: 54/664 resolved YES
+Weekly Brier: K 0.133 · P 0.188 (running K 0.133 · P 0.185)
+odds-drift.com/calibration
+#PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Biggest odds swings — Aug 23, 2026</title>
     <link href="https://odds-drift.com/p/2026-08-23-am"/>

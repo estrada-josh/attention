@@ -7,6 +7,17 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-08-23-sunday",
+   "url": "https://odds-drift.com/p/2026-08-23-sunday",
+   "title": "Calibration scorecard \u2014 week 34, 2026",
+   "content_text": "Calibration scorecard, week 34\nResolved: 1525 K, 300 P\nPriced \u226590\u00a2 the day before: 235/240 resolved YES\nPriced \u226410\u00a2: 54/664 resolved YES\nWeekly Brier: K 0.133 \u00b7 P 0.188 (running K 0.133 \u00b7 P 0.185)\nodds-drift.com/calibration\n#PredictionMarkets",
+   "date_published": "2026-08-23T15:36:38Z",
+   "tags": [
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-08-23-sunday.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-08-23-am",
    "url": "https://odds-drift.com/p/2026-08-23-am",
    "title": "Biggest odds swings \u2014 Aug 23, 2026",
