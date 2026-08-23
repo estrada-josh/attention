@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-08-23T15:36:38Z</updated>
+  <updated>2026-08-23T22:38:42Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Settled &amp; surprised — Aug 23, 2026</title>
+    <link href="https://odds-drift.com/p/2026-08-23-pm"/>
+    <id>https://odds-drift.com/p/2026-08-23-pm</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-08-23T22:38:42Z</published>
+    <updated>2026-08-23T22:38:42Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
+UPSET · K · Will Donald Trump make between 22… → YES · was 9¢ ~24h before · $16k
+UPSET · K · Will Donald Trump make above 240… → NO · was 88¢ ~24h before · $13k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 102
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+UPSET · K · Will Donald Trump make between 22… → YES · was 9¢ ~24h before · $16k&lt;br&gt;
+UPSET · K · Will Donald Trump make above 240… → NO · was 88¢ ~24h before · $13k&lt;br&gt;
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 102&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-23-pm.png&#34; alt=&#34;Settled in the last 24h
+UPSET · K · Will Donald Trump make between 22… → YES · was 9¢ ~24h before · $16k
+UPSET · K · Will Donald Trump make above 240… → NO · was 88¢ ~24h before · $13k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 102
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Calibration scorecard — week 34, 2026</title>
     <link href="https://odds-drift.com/p/2026-08-23-sunday"/>

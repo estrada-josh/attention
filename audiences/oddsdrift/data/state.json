@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-08-23T15:58:34.021812+00:00",
+    "at": "2026-08-23T22:38:42.543881+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 100449,
-    "post": null,
-    "settled_rows": 79012,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 97747,
+    "post": "2026-08-23-pm",
+    "settled_rows": 80648,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -744,11 +744,11 @@
   "settled_featured": {
     "kalshi:KXHIGHLAX-26AUG20-B77.5": "2026-08-21",
     "kalshi:KXRAIN-26AUG21-DEN": "2026-08-22",
-    "polymarket:bitcoin-above-68k-on-august-20-2026": "2026-08-20",
-    "polymarket:bitcoin-above-70k-on-august-20-2026": "2026-08-20",
-    "polymarket:bitcoin-above-72k-on-august-20-2026": "2026-08-20",
+    "kalshi:KXRAIN-26AUG22-DEN": "2026-08-23",
+    "kalshi:KXTRUTHSOCIAL-26AUG22-B230": "2026-08-23",
+    "kalshi:KXTRUTHSOCIAL-26AUG22-T240": "2026-08-23",
     "polymarket:bitcoin-above-72k-on-august-22-2026": "2026-08-22",
-    "polymarket:ethereum-above-2300-on-august-20-2026": "2026-08-20",
+    "polymarket:bitcoin-above-74k-on-august-23-2026": "2026-08-23",
     "polymarket:israel-military-action-against-syria-by-august-31-2026": "2026-08-22",
     "polymarket:will-bitcoin-reach-78k-august-17-23-2026": "2026-08-21",
     "polymarket:will-xrp-reach-1pt4-in-august-2026": "2026-08-21",
@@ -779,6 +779,7 @@
     "2026-08-22-board": "2026-08-22T17:36:36.062711+00:00",
     "2026-08-22-pm": "2026-08-22T22:38:32.895934+00:00",
     "2026-08-23-am": "2026-08-23T13:47:25.131497+00:00",
+    "2026-08-23-pm": "2026-08-23T22:38:42.543881+00:00",
     "2026-08-23-sunday": "2026-08-23T15:36:38.041727+00:00"
   }
 }
