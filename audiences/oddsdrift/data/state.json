@@ -709,6 +709,37 @@
         ]
       }
     },
+    "2026-08-23-pm": {
+      "bridgy": {
+        "accepted": true,
+        "at": "2026-08-23T22:41:28+00:00",
+        "at_uri": "at://did:plc:xizsq2jlzzz4ubme4vvlt457/app.bsky.feed.post/3mtruci2gjcv2",
+        "attempts": 1,
+        "body": "Added webmention 168593490609192286 now",
+        "ok": true,
+        "source": "https://odds-drift.com/p/2026-08-23-pm",
+        "status": 202,
+        "verified_at": "2026-08-23T22:41:28+00:00"
+      },
+      "nostr": {
+        "at": "2026-08-23T22:41:29+00:00",
+        "created_at": 1787524722,
+        "error": null,
+        "failed": [
+          {
+            "error": "connection failure: connection failed",
+            "relay": "wss://relay.damus.io"
+          }
+        ],
+        "id": "36c90b9781b785b1db3dac301297ce988d914e4a2a8f8f9904baf6cbd383d373",
+        "ok": true,
+        "raw": null,
+        "relays_ok": [
+          "wss://nos.lol",
+          "wss://relay.primal.net"
+        ]
+      }
+    },
     "2026-08-23-sunday": {
       "bridgy": {
         "accepted": true,
