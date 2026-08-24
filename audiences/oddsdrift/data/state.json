@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-08-24T17:48:04.034607+00:00",
+    "at": "2026-08-24T22:44:38.988874+00:00",
     "failed_sources": [],
     "no_post_reason": null,
-    "open_rows": 97516,
-    "post": "2026-08-24-board",
-    "settled_rows": 79982,
-    "slot": "board"
+    "open_rows": 102435,
+    "post": "2026-08-24-pm",
+    "settled_rows": 78639,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -831,18 +831,18 @@
     }
   },
   "settled_featured": {
-    "kalshi:KXHIGHLAX-26AUG20-B77.5": "2026-08-21",
     "kalshi:KXRAIN-26AUG21-DEN": "2026-08-22",
     "kalshi:KXRAIN-26AUG22-DEN": "2026-08-23",
+    "kalshi:KXTRUMPSAY-26AUG24-JD": "2026-08-24",
     "kalshi:KXTRUTHSOCIAL-26AUG22-B230": "2026-08-23",
     "kalshi:KXTRUTHSOCIAL-26AUG22-T240": "2026-08-23",
     "polymarket:bitcoin-above-72k-on-august-22-2026": "2026-08-22",
+    "polymarket:bitcoin-above-72k-on-august-24-2026": "2026-08-24",
     "polymarket:bitcoin-above-74k-on-august-23-2026": "2026-08-23",
+    "polymarket:bitcoin-above-74k-on-august-24-2026": "2026-08-24",
     "polymarket:israel-military-action-against-syria-by-august-31-2026": "2026-08-22",
-    "polymarket:will-bitcoin-reach-78k-august-17-23-2026": "2026-08-21",
-    "polymarket:will-xrp-reach-1pt4-in-august-2026": "2026-08-21",
-    "polymarket:will-xrp-reach-1pt6-in-august-2026": "2026-08-22",
-    "polymarket:xrp-above-1pt4-on-august-21-2026": "2026-08-21"
+    "polymarket:will-bitcoin-reach-80k-in-august-2026": "2026-08-24",
+    "polymarket:will-xrp-reach-1pt6-in-august-2026": "2026-08-22"
   },
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
@@ -871,6 +871,7 @@
     "2026-08-23-pm": "2026-08-23T22:38:42.543881+00:00",
     "2026-08-23-sunday": "2026-08-23T15:36:38.041727+00:00",
     "2026-08-24-am": "2026-08-24T14:04:33.622239+00:00",
-    "2026-08-24-board": "2026-08-24T17:48:04.034607+00:00"
+    "2026-08-24-board": "2026-08-24T17:48:04.034607+00:00",
+    "2026-08-24-pm": "2026-08-24T22:44:38.988874+00:00"
   }
 }
