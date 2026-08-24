@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-08-24T22:44:38.988874+00:00",
+    "at": "2026-08-24T23:03:46.657280+00:00",
     "failed_sources": [],
-    "no_post_reason": null,
-    "open_rows": 102435,
-    "post": "2026-08-24-pm",
-    "settled_rows": 78639,
-    "slot": "pm"
+    "no_post_reason": "no slot due",
+    "open_rows": 102407,
+    "post": null,
+    "settled_rows": 78827,
+    "slot": "snapshot"
   },
   "movers_history": [
     {
