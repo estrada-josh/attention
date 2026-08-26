@@ -5,8 +5,38 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-08-26T14:05:29Z</updated>
+  <updated>2026-08-26T19:19:45Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Midterms 2026 odds board — Aug 26, 2026</title>
+    <link href="https://odds-drift.com/p/2026-08-26-board"/>
+    <id>https://odds-drift.com/p/2026-08-26-board</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-08-26T19:19:45Z</published>
+    <updated>2026-08-26T19:19:45Z</updated>
+<category term="Midterms2026"/><category term="PredictionMarkets"/>    <summary type="text">Midterms 2026 odds board · 68 days to Election Day
+Senate (D): K 48¢ (+0) · P 50¢ (+0)
+House (D): K 85¢ (+0) · P 88¢ (+0)
+TX Sen (D): K 51¢ (+1) · P 50¢ (+0)
+MI Sen (D): K 60¢ (-1) · P 63¢ (+1)
+OH Sen (D): K 54¢ (-1) · P 55¢ (+0)
+#Midterms2026 #PredictionMarkets</summary>
+    <content type="html">&lt;p&gt;Midterms 2026 odds board · 68 days to Election Day&lt;br&gt;
+Senate (D): K 48¢ (+0) · P 50¢ (+0)&lt;br&gt;
+House (D): K 85¢ (+0) · P 88¢ (+0)&lt;br&gt;
+TX Sen (D): K 51¢ (+1) · P 50¢ (+0)&lt;br&gt;
+MI Sen (D): K 60¢ (-1) · P 63¢ (+1)&lt;br&gt;
+OH Sen (D): K 54¢ (-1) · P 55¢ (+0)&lt;br&gt;
+&lt;a href=&#34;/tag/midterms2026&#34;&gt;#Midterms2026&lt;/a&gt; &lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-26-board.png&#34; alt=&#34;Midterms 2026 odds board · 68 days to Election Day
+Senate (D): K 48¢ (+0) · P 50¢ (+0)
+House (D): K 85¢ (+0) · P 88¢ (+0)
+TX Sen (D): K 51¢ (+1) · P 50¢ (+0)
+MI Sen (D): K 60¢ (-1) · P 63¢ (+1)
+OH Sen (D): K 54¢ (-1) · P 55¢ (+0)
+#Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Biggest odds swings — Aug 26, 2026</title>
     <link href="https://odds-drift.com/p/2026-08-26-am"/>
@@ -777,35 +807,5 @@ P · Will the price of Bitcoin be abov… → NO · was 3¢ ~24h before · $157k
 P · Will the price of Bitcoin be abov… → YES · was 97¢ ~24h before · $143k
 P · Will the price of Bitcoin be abov… → YES · was 99¢ ~24h before · $141k
 #PredictionMarkets #Polymarket&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Midterms 2026 odds board (D = Democrats win) — Aug 16, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-16-board"/>
-    <id>https://odds-drift.com/p/2026-08-16-board</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-16T21:17:28Z</published>
-    <updated>2026-08-16T21:17:28Z</updated>
-<category term="Midterms2026"/><category term="PredictionMarkets"/>    <summary type="text">Midterms 2026 odds board (D = Democrats win) · 78 days to Election Day
-Senate (D): K 48¢ (+0) · P 52¢
-House (D): K 85¢ (-1) · P 88¢
-TX Sen (D): K 49¢ (-2) · P 52¢
-MI Sen (D): K 57¢ (+1) · P 56¢ (+1)
-OH Sen (D): K 51¢ (-3) · P 52¢ (-5)
-#Midterms2026 #PredictionMarkets</summary>
-    <content type="html">&lt;p&gt;Midterms 2026 odds board (D = Democrats win) · 78 days to Election Day&lt;br&gt;
-Senate (D): K 48¢ (+0) · P 52¢&lt;br&gt;
-House (D): K 85¢ (-1) · P 88¢&lt;br&gt;
-TX Sen (D): K 49¢ (-2) · P 52¢&lt;br&gt;
-MI Sen (D): K 57¢ (+1) · P 56¢ (+1)&lt;br&gt;
-OH Sen (D): K 51¢ (-3) · P 52¢ (-5)&lt;br&gt;
-&lt;a href=&#34;/tag/midterms2026&#34;&gt;#Midterms2026&lt;/a&gt; &lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-16-board.png&#34; alt=&#34;Midterms 2026 odds board (D = Democrats win) · 78 days to Election Day
-Senate (D): K 48¢ (+0) · P 52¢
-House (D): K 85¢ (-1) · P 88¢
-TX Sen (D): K 49¢ (-2) · P 52¢
-MI Sen (D): K 57¢ (+1) · P 56¢ (+1)
-OH Sen (D): K 51¢ (-3) · P 52¢ (-5)
-#Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-08-26-board",
+   "url": "https://odds-drift.com/p/2026-08-26-board",
+   "title": "Midterms 2026 odds board \u2014 Aug 26, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 68 days to Election Day\nSenate (D): K 48\u00a2 (+0) \u00b7 P 50\u00a2 (+0)\nHouse (D): K 85\u00a2 (+0) \u00b7 P 88\u00a2 (+0)\nTX Sen (D): K 51\u00a2 (+1) \u00b7 P 50\u00a2 (+0)\nMI Sen (D): K 60\u00a2 (-1) \u00b7 P 63\u00a2 (+1)\nOH Sen (D): K 54\u00a2 (-1) \u00b7 P 55\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-08-26T19:19:45Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-08-26-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-08-26-am",
    "url": "https://odds-drift.com/p/2026-08-26-am",
    "title": "Biggest odds swings \u2014 Aug 26, 2026",
@@ -365,18 +377,6 @@
     "Polymarket"
    ],
    "image": "https://odds-drift.com/charts/2026-08-16-pm.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-08-16-board",
-   "url": "https://odds-drift.com/p/2026-08-16-board",
-   "title": "Midterms 2026 odds board (D = Democrats win) \u2014 Aug 16, 2026",
-   "content_text": "Midterms 2026 odds board (D = Democrats win) \u00b7 78 days to Election Day\nSenate (D): K 48\u00a2 (+0) \u00b7 P 52\u00a2\nHouse (D): K 85\u00a2 (-1) \u00b7 P 88\u00a2\nTX Sen (D): K 49\u00a2 (-2) \u00b7 P 52\u00a2\nMI Sen (D): K 57\u00a2 (+1) \u00b7 P 56\u00a2 (+1)\nOH Sen (D): K 51\u00a2 (-3) \u00b7 P 52\u00a2 (-5)\n#Midterms2026 #PredictionMarkets",
-   "date_published": "2026-08-16T21:17:28Z",
-   "tags": [
-    "Midterms2026",
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-08-16-board.png"
   }
  ]
 }
