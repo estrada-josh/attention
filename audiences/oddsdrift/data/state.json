@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-08-27T03:18:59.639893+00:00",
+    "at": "2026-08-27T22:58:24.428688+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 108481,
-    "post": null,
-    "settled_rows": 86363,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 110483,
+    "post": "2026-08-27-pm",
+    "settled_rows": 73714,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -1010,17 +1010,13 @@
   },
   "settled_featured": {
     "kalshi:KXBTCMAXMON-BTC-26AUG31-8000000": "2026-08-25",
-    "kalshi:KXRAIN-26AUG22-DEN": "2026-08-23",
+    "kalshi:KXLOWTDAL-26AUG26-T83": "2026-08-27",
     "kalshi:KXRAIN-26AUG24-PHX": "2026-08-25",
-    "kalshi:KXTRUMPSAY-26AUG24-JD": "2026-08-24",
-    "kalshi:KXTRUTHSOCIAL-26AUG22-B230": "2026-08-23",
-    "kalshi:KXTRUTHSOCIAL-26AUG22-T240": "2026-08-23",
     "kalshi:KXYTVIEWSW-TAY26AUG23-14.0M": "2026-08-25",
-    "polymarket:bitcoin-above-72k-on-august-24-2026": "2026-08-24",
-    "polymarket:bitcoin-above-74k-on-august-23-2026": "2026-08-23",
-    "polymarket:bitcoin-above-74k-on-august-24-2026": "2026-08-24",
     "polymarket:bitcoin-above-76k-on-august-25-2026": "2026-08-25",
-    "polymarket:will-bitcoin-reach-80k-in-august-2026": "2026-08-24"
+    "polymarket:will-mrbeasts-next-video-get-between-63-and-64-million-views-on-day-5-20260827": "2026-08-27",
+    "polymarket:will-solana-reach-110-in-august-2026": "2026-08-27",
+    "polymarket:will-the-price-of-bitcoin-be-between-80000-82000-on-august-27-2026": "2026-08-27"
   },
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
@@ -1055,6 +1051,9 @@
     "2026-08-25-board": "2026-08-25T17:46:57.790826+00:00",
     "2026-08-25-pm": "2026-08-25T22:45:34.291250+00:00",
     "2026-08-26-am": "2026-08-26T14:05:29.810399+00:00",
-    "2026-08-26-board": "2026-08-26T19:19:45.332465+00:00"
+    "2026-08-26-board": "2026-08-26T19:19:45.332465+00:00",
+    "2026-08-27-am": "2026-08-27T22:58:24.428688+00:00 (skipped)",
+    "2026-08-27-board": "2026-08-27T22:58:24.428688+00:00 (skipped)",
+    "2026-08-27-pm": "2026-08-27T22:58:24.428688+00:00"
   }
 }
