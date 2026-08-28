@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-08-28T06:07:30.832354+00:00",
+    "at": "2026-08-28T23:03:45.283753+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 110152,
-    "post": null,
-    "settled_rows": 71273,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 116597,
+    "post": "2026-08-28-pm",
+    "settled_rows": 81477,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -1036,11 +1036,11 @@
     }
   },
   "settled_featured": {
-    "kalshi:KXBTCMAXMON-BTC-26AUG31-8000000": "2026-08-25",
+    "kalshi:KXGOLDW-26AUG2817-T4456.99": "2026-08-28",
+    "kalshi:KXGOLDW-26AUG2817-T4476.99": "2026-08-28",
+    "kalshi:KXGOLDW-26AUG2817-T4496.99": "2026-08-28",
     "kalshi:KXLOWTDAL-26AUG26-T83": "2026-08-27",
-    "kalshi:KXRAIN-26AUG24-PHX": "2026-08-25",
-    "kalshi:KXYTVIEWSW-TAY26AUG23-14.0M": "2026-08-25",
-    "polymarket:bitcoin-above-76k-on-august-25-2026": "2026-08-25",
+    "kalshi:KXSILVERW-26AUG2817-T66.99": "2026-08-28",
     "polymarket:will-mrbeasts-next-video-get-between-63-and-64-million-views-on-day-5-20260827": "2026-08-27",
     "polymarket:will-solana-reach-110-in-august-2026": "2026-08-27",
     "polymarket:will-the-price-of-bitcoin-be-between-80000-82000-on-august-27-2026": "2026-08-27"
@@ -1081,6 +1081,9 @@
     "2026-08-26-board": "2026-08-26T19:19:45.332465+00:00",
     "2026-08-27-am": "2026-08-27T22:58:24.428688+00:00 (skipped)",
     "2026-08-27-board": "2026-08-27T22:58:24.428688+00:00 (skipped)",
-    "2026-08-27-pm": "2026-08-27T22:58:24.428688+00:00"
+    "2026-08-27-pm": "2026-08-27T22:58:24.428688+00:00",
+    "2026-08-28-am": "2026-08-28T23:03:45.283753+00:00 (skipped)",
+    "2026-08-28-board": "2026-08-28T23:03:45.283753+00:00 (skipped)",
+    "2026-08-28-pm": "2026-08-28T23:03:45.283753+00:00"
   }
 }

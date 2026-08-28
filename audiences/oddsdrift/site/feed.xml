@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-08-27T22:58:24Z</updated>
+  <updated>2026-08-28T23:03:45Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Settled &amp; surprised — Aug 28, 2026</title>
+    <link href="https://odds-drift.com/p/2026-08-28-pm"/>
+    <id>https://odds-drift.com/p/2026-08-28-pm</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-08-28T23:03:45Z</published>
+    <updated>2026-08-28T23:03:45Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Settled in the last 24h
+UPSET · K · Will the gold close price be abov… → NO · was 97¢ ~24h before · $20k
+UPSET · K · Will the gold close price be abov… → NO · was 95¢ ~24h before · $20k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 143
+#PredictionMarkets #Kalshi</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+UPSET · K · Will the gold close price be abov… → NO · was 97¢ ~24h before · $20k&lt;br&gt;
+UPSET · K · Will the gold close price be abov… → NO · was 95¢ ~24h before · $20k&lt;br&gt;
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 143&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-28-pm.png&#34; alt=&#34;Settled in the last 24h
+UPSET · K · Will the gold close price be abov… → NO · was 97¢ ~24h before · $20k
+UPSET · K · Will the gold close price be abov… → NO · was 95¢ ~24h before · $20k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 143
+#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Settled &amp; surprised — Aug 27, 2026</title>
     <link href="https://odds-drift.com/p/2026-08-27-pm"/>
@@ -780,32 +804,5 @@ TX Sen (D): K 49¢ (+0) · P 52¢
 MI Sen (D): K 58¢ (+1) · P 58¢ (+2)
 OH Sen (D): K 53¢ (+2) · P 52¢
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Biggest odds swings — Aug 17, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-17-am"/>
-    <id>https://odds-drift.com/p/2026-08-17-am</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-17T13:54:53Z</published>
-    <updated>2026-08-17T13:54:53Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
-K · Will Conversations with a K… 5¢→95¢ (+90) · $29k
-P · Will &#34;Conversations with a… 4¢→96¢ (+92) · $19k
-K · Will WILD by KATSEYE have a… 18¢→81¢ (+63) · $6k
-Largest 24h swing in 30 days: +92
-#PredictionMarkets #Kalshi #Polymarket</summary>
-    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
-K · Will Conversations with a K… 5¢→95¢ (+90) · $29k&lt;br&gt;
-P · Will &#34;Conversations with a… 4¢→96¢ (+92) · $19k&lt;br&gt;
-K · Will WILD by KATSEYE have a… 18¢→81¢ (+63) · $6k&lt;br&gt;
-Largest 24h swing in 30 days: +92&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-17-am.png&#34; alt=&#34;Biggest odds swings, last 24h
-K · Will Conversations with a K… 5¢→95¢ (+90) · $29k
-P · Will &#34;Conversations with a… 4¢→96¢ (+92) · $19k
-K · Will WILD by KATSEYE have a… 18¢→81¢ (+63) · $6k
-Largest 24h swing in 30 days: +92
-#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
