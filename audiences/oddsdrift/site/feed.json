@@ -7,6 +7,17 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-08-30-sunday",
+   "url": "https://odds-drift.com/p/2026-08-30-sunday",
+   "title": "Calibration scorecard \u2014 week 35, 2026",
+   "content_text": "Calibration scorecard, week 35\nResolved: 1548 K, 255 P\nPriced \u226590\u00a2 the day before: 257/270 resolved YES\nPriced \u226410\u00a2: 14/606 resolved YES\nWeekly Brier: K 0.121 \u00b7 P 0.064 (running K 0.126 \u00b7 P 0.128)\nodds-drift.com/calibration\n#PredictionMarkets",
+   "date_published": "2026-08-30T17:31:58Z",
+   "tags": [
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-08-30-sunday.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-08-29-board",
    "url": "https://odds-drift.com/p/2026-08-29-board",
    "title": "Midterms 2026 odds board \u2014 Aug 29, 2026",
@@ -364,18 +375,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-08-18-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-08-18-am",
-   "url": "https://odds-drift.com/p/2026-08-18-am",
-   "title": "Biggest odds swings \u2014 Aug 18, 2026",
-   "content_text": "Biggest odds swings, last 24h\nK \u00b7 Will it rain in New York Ci\u2026 15\u00a2\u219299\u00a2 (+84) \u00b7 $23k\nK \u00b7 Will Klarna Group PLC repor\u2026 90\u00a2\u219214\u00a2 (-76) \u00b7 $6k\nK \u00b7 Will Amir Ohana win the top\u2026 77\u00a2\u21921\u00a2 (-76) \u00b7 $6k\nK \u00b7 What will Amer Sports, Inc.\u2026 21\u00a2\u219297\u00a2 (+76) \u00b7 $6k\n#PredictionMarkets #Kalshi",
-   "date_published": "2026-08-18T13:58:58Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi"
-   ],
-   "image": "https://odds-drift.com/charts/2026-08-18-am.png"
   }
  ]
 }

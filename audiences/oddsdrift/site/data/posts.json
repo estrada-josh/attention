@@ -1,5 +1,19 @@
 [
  {
+  "id": "2026-08-30-sunday",
+  "slot": "sunday",
+  "shape": "scorecard",
+  "title": "Calibration scorecard \u2014 week 35, 2026",
+  "text": "Calibration scorecard, week 35\nResolved: 1548 K, 255 P\nPriced \u226590\u00a2 the day before: 257/270 resolved YES\nPriced \u226410\u00a2: 14/606 resolved YES\nWeekly Brier: K 0.121 \u00b7 P 0.064 (running K 0.126 \u00b7 P 0.128)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "published_at": "2026-08-30T17:31:58Z",
+  "tags": [
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-08-30-sunday.png",
+  "chart_alt": "Calibration scorecard, week 35\nResolved: 1548 K, 255 P\nPriced \u226590\u00a2 the day before: 257/270 resolved YES\nPriced \u226410\u00a2: 14/606 resolved YES\nWeekly Brier: K 0.121 \u00b7 P 0.064 (running K 0.126 \u00b7 P 0.128)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-08-30-sunday"
+ },
+ {
   "id": "2026-08-29-board",
   "slot": "board",
   "shape": "watchlist",

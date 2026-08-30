@@ -1,5 +1,92 @@
 [
  {
+  "id": "2026-08-30-sunday",
+  "slot": "sunday",
+  "shape": "scorecard",
+  "title": "Calibration scorecard \u2014 week 35, 2026",
+  "text": "Calibration scorecard, week 35\nResolved: 1548 K, 255 P\nPriced \u226590\u00a2 the day before: 257/270 resolved YES\nPriced \u226410\u00a2: 14/606 resolved YES\nWeekly Brier: K 0.121 \u00b7 P 0.064 (running K 0.126 \u00b7 P 0.128)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "published_at": "2026-08-30T17:31:58Z",
+  "tags": [
+   "PredictionMarkets"
+  ],
+  "rows": [
+   {
+    "bucket": "0-10\u00a2",
+    "n": 606,
+    "yes": 14,
+    "rate": 0.0231023102310231
+   },
+   {
+    "bucket": "10-20\u00a2",
+    "n": 180,
+    "yes": 26,
+    "rate": 0.14444444444444443
+   },
+   {
+    "bucket": "20-30\u00a2",
+    "n": 150,
+    "yes": 40,
+    "rate": 0.26666666666666666
+   },
+   {
+    "bucket": "30-40\u00a2",
+    "n": 139,
+    "yes": 39,
+    "rate": 0.2805755395683453
+   },
+   {
+    "bucket": "40-50\u00a2",
+    "n": 122,
+    "yes": 52,
+    "rate": 0.4262295081967213
+   },
+   {
+    "bucket": "50-60\u00a2",
+    "n": 97,
+    "yes": 56,
+    "rate": 0.5773195876288659
+   },
+   {
+    "bucket": "60-70\u00a2",
+    "n": 87,
+    "yes": 49,
+    "rate": 0.5632183908045977
+   },
+   {
+    "bucket": "70-80\u00a2",
+    "n": 76,
+    "yes": 54,
+    "rate": 0.7105263157894737
+   },
+   {
+    "bucket": "80-90\u00a2",
+    "n": 76,
+    "yes": 65,
+    "rate": 0.8552631578947368
+   },
+   {
+    "bucket": "90-100\u00a2",
+    "n": 270,
+    "yes": 257,
+    "rate": 0.9518518518518518
+   }
+  ],
+  "chart": "/charts/2026-08-30-sunday.png",
+  "chart_alt": "Calibration scorecard, week 35\nResolved: 1548 K, 255 P\nPriced \u226590\u00a2 the day before: 257/270 resolved YES\nPriced \u226410\u00a2: 14/606 resolved YES\nWeekly Brier: K 0.121 \u00b7 P 0.064 (running K 0.126 \u00b7 P 0.128)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "extra": {
+   "chart_kind": "scorecard",
+   "brier_week": {
+    "polymarket": 0.06448378333333334,
+    "kalshi": 0.1212318055555561
+   },
+   "brier_all": {
+    "kalshi": 0.1264135149373593,
+    "polymarket": 0.1276429307491289
+   },
+   "n_week": 1803
+  }
+ },
+ {
   "id": "2026-08-29-board",
   "slot": "board",
   "shape": "watchlist",
