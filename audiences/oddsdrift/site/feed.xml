@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-01T17:20:21Z</updated>
+  <updated>2026-09-02T17:11:08Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Sep 2, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-02-am"/>
+    <id>https://odds-drift.com/p/2026-09-02-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-02T17:11:08Z</published>
+    <updated>2026-09-02T17:11:08Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
+K · Will Trump endorse at least 15 peop… 10¢→99¢ (+89) · $8k
+P · Will OpenAI’s Astra model be releas… 11¢→82¢ (+71) · $45k
+P · Will Iran target Iraq by September… 29¢→98¢ (+69) · $21k
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+K · Will Trump endorse at least 15 peop… 10¢→99¢ (+89) · $8k&lt;br&gt;
+P · Will OpenAI’s Astra model be releas… 11¢→82¢ (+71) · $45k&lt;br&gt;
+P · Will Iran target Iraq by September… 29¢→98¢ (+69) · $21k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-02-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+K · Will Trump endorse at least 15 peop… 10¢→99¢ (+89) · $8k
+P · Will OpenAI’s Astra model be releas… 11¢→82¢ (+71) · $45k
+P · Will Iran target Iraq by September… 29¢→98¢ (+69) · $21k
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Sep 1, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-01-board"/>
@@ -795,32 +819,5 @@ TX Sen (D): K 48¢ (-2) · P 52¢ (+0)
 MI Sen (D): K 59¢ (+2) · P 60¢ (+2)
 OH Sen (D): K 52¢ (+0) · P 52¢ (+0)
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Biggest odds swings — Aug 19, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-19-am"/>
-    <id>https://odds-drift.com/p/2026-08-19-am</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-19T13:59:32Z</published>
-    <updated>2026-08-19T13:59:32Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
-K · Will Byron Donalds receive… 80¢→1¢ (-79) · $61k
-K · Will Dan Bilzerian receive… 10¢→99¢ (+89) · $14k
-P · Will Russia capture Kostyan… 20¢→94¢ (+74) · $93k
-Largest 24h swing in 30 days: +94
-#PredictionMarkets #Kalshi #Polymarket</summary>
-    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
-K · Will Byron Donalds receive… 80¢→1¢ (-79) · $61k&lt;br&gt;
-K · Will Dan Bilzerian receive… 10¢→99¢ (+89) · $14k&lt;br&gt;
-P · Will Russia capture Kostyan… 20¢→94¢ (+74) · $93k&lt;br&gt;
-Largest 24h swing in 30 days: +94&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-19-am.png&#34; alt=&#34;Biggest odds swings, last 24h
-K · Will Byron Donalds receive… 80¢→1¢ (-79) · $61k
-K · Will Dan Bilzerian receive… 10¢→99¢ (+89) · $14k
-P · Will Russia capture Kostyan… 20¢→94¢ (+74) · $93k
-Largest 24h swing in 30 days: +94
-#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
