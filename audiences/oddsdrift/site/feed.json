@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-09-03-board",
+   "url": "https://odds-drift.com/p/2026-09-03-board",
+   "title": "Midterms 2026 odds board \u2014 Sep 3, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 60 days to Election Day\nSenate (D): K 47\u00a2 (-1) \u00b7 P 52\u00a2 (+0)\nHouse (D): K 84\u00a2 (-1) \u00b7 P 90\u00a2 (+0)\nTX Sen (D): K 49\u00a2 (+0) \u00b7 P 50\u00a2 (+0)\nMI Sen (D): K 63\u00a2 (-1) \u00b7 P 64\u00a2 (-2)\nOH Sen (D): K 53\u00a2 (+0) \u00b7 P 56\u00a2 (+1)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-09-03T19:51:21Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-09-03-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-09-03-am",
    "url": "https://odds-drift.com/p/2026-09-03-am",
    "title": "Biggest odds swings \u2014 Sep 3, 2026",
@@ -363,19 +375,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-08-20-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-08-20-am",
-   "url": "https://odds-drift.com/p/2026-08-20-am",
-   "title": "Biggest odds swings \u2014 Aug 20, 2026",
-   "content_text": "Biggest odds swings, last 24h\nP \u00b7 Will Bitcoin reach $72,500\u2026 4\u00a2\u219282\u00a2 (+78) \u00b7 $510k\nP \u00b7 Will the price of Bitcoin b\u2026 2\u00a2\u219296\u00a2 (+94) \u00b7 $47k\nK \u00b7 Ethereum price at Aug 21, 2\u2026 1\u00a2\u219295\u00a2 (+94) \u00b7 $42k\nLargest 24h swing in 30 days: +96\n#PredictionMarkets #Kalshi #Polymarket",
-   "date_published": "2026-08-20T14:01:43Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi",
-    "Polymarket"
-   ],
-   "image": "https://odds-drift.com/charts/2026-08-20-am.png"
   }
  ]
 }
