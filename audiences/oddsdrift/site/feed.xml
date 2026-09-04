@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-03T19:51:21Z</updated>
+  <updated>2026-09-04T16:52:56Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Sep 4, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-04-am"/>
+    <id>https://odds-drift.com/p/2026-09-04-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-04T16:52:56Z</published>
+    <updated>2026-09-04T16:52:56Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
+K · Onslaught Rotten Tomatoes score? —… 95¢→7¢ (-88) · $28k
+K · What states will redistrict before… 90¢→17¢ (-73) · $26k
+K · Will Democratic win the House race… 21¢→84¢ (+63) · $18k
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+K · Onslaught Rotten Tomatoes score? —… 95¢→7¢ (-88) · $28k&lt;br&gt;
+K · What states will redistrict before… 90¢→17¢ (-73) · $26k&lt;br&gt;
+K · Will Democratic win the House race… 21¢→84¢ (+63) · $18k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-04-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+K · Onslaught Rotten Tomatoes score? —… 95¢→7¢ (-88) · $28k
+K · What states will redistrict before… 90¢→17¢ (-73) · $26k
+K · Will Democratic win the House race… 21¢→84¢ (+63) · $18k
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Sep 3, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-03-board"/>
@@ -792,35 +816,5 @@ UPSET · P · Will the price of Bitcoin be abov… → YES · was 0¢ ~24h befor
 UPSET · P · Will the price of Bitcoin be abov… → YES · was 0¢ ~24h before · $257k
 Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 67
 #PredictionMarkets #Polymarket&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Midterms 2026 odds board — Aug 20, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-20-board"/>
-    <id>https://odds-drift.com/p/2026-08-20-board</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-20T17:46:39Z</published>
-    <updated>2026-08-20T17:46:39Z</updated>
-<category term="Midterms2026"/><category term="PredictionMarkets"/>    <summary type="text">Midterms 2026 odds board · 74 days to Election Day
-Senate (D): K 46¢ (-1) · P 50¢ (+0)
-House (D): K 85¢ (+0) · P 88¢ (+0)
-TX Sen (D): K 50¢ (+1) · P 52¢ (+0)
-MI Sen (D): K 62¢ (+3) · P 64¢ (+4)
-OH Sen (D): K 52¢ (+0) · P 54¢ (+2)
-#Midterms2026 #PredictionMarkets</summary>
-    <content type="html">&lt;p&gt;Midterms 2026 odds board · 74 days to Election Day&lt;br&gt;
-Senate (D): K 46¢ (-1) · P 50¢ (+0)&lt;br&gt;
-House (D): K 85¢ (+0) · P 88¢ (+0)&lt;br&gt;
-TX Sen (D): K 50¢ (+1) · P 52¢ (+0)&lt;br&gt;
-MI Sen (D): K 62¢ (+3) · P 64¢ (+4)&lt;br&gt;
-OH Sen (D): K 52¢ (+0) · P 54¢ (+2)&lt;br&gt;
-&lt;a href=&#34;/tag/midterms2026&#34;&gt;#Midterms2026&lt;/a&gt; &lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-20-board.png&#34; alt=&#34;Midterms 2026 odds board · 74 days to Election Day
-Senate (D): K 46¢ (-1) · P 50¢ (+0)
-House (D): K 85¢ (+0) · P 88¢ (+0)
-TX Sen (D): K 50¢ (+1) · P 52¢ (+0)
-MI Sen (D): K 62¢ (+3) · P 64¢ (+4)
-OH Sen (D): K 52¢ (+0) · P 54¢ (+2)
-#Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
