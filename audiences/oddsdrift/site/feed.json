@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-09-04-board",
+   "url": "https://odds-drift.com/p/2026-09-04-board",
+   "title": "Midterms 2026 odds board \u2014 Sep 4, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 59 days to Election Day\nSenate (D): K 47\u00a2 (+0) \u00b7 P 52\u00a2 (+0)\nHouse (D): K 85\u00a2 (+1) \u00b7 P 88\u00a2 (-2)\nTX Sen (D): K 49\u00a2 (+0) \u00b7 P 50\u00a2 (+0)\nMI Sen (D): K 64\u00a2 (+1) \u00b7 P 64\u00a2 (+0)\nOH Sen (D): K 54\u00a2 (+1) \u00b7 P 56\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-09-04T19:36:55Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-09-04-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-09-04-am",
    "url": "https://odds-drift.com/p/2026-09-04-am",
    "title": "Biggest odds swings \u2014 Sep 4, 2026",
@@ -364,18 +376,6 @@
     "Polymarket"
    ],
    "image": "https://odds-drift.com/charts/2026-08-21-am.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-08-20-pm",
-   "url": "https://odds-drift.com/p/2026-08-20-pm",
-   "title": "Settled & surprised \u2014 Aug 20, 2026",
-   "content_text": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 0\u00a2 ~24h before \u00b7 $440k\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 0\u00a2 ~24h before \u00b7 $257k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 67\n#PredictionMarkets #Polymarket",
-   "date_published": "2026-08-20T22:45:39Z",
-   "tags": [
-    "PredictionMarkets",
-    "Polymarket"
-   ],
-   "image": "https://odds-drift.com/charts/2026-08-20-pm.png"
   }
  ]
 }
