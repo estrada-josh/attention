@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-09-05T19:02:26.928539+00:00",
+    "at": "2026-09-05T23:54:32.369619+00:00",
     "failed_sources": [],
     "no_post_reason": null,
-    "open_rows": 116161,
-    "post": "2026-09-05-board",
-    "settled_rows": 82070,
-    "slot": "board"
+    "open_rows": 113835,
+    "post": "2026-09-05-pm",
+    "settled_rows": 84248,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -1470,14 +1470,10 @@
     }
   },
   "settled_featured": {
-    "kalshi:KXGOLDW-26AUG2817-T4456.99": "2026-08-28",
-    "kalshi:KXGOLDW-26AUG2817-T4476.99": "2026-08-28",
-    "kalshi:KXGOLDW-26AUG2817-T4496.99": "2026-08-28",
-    "kalshi:KXLOWTDAL-26AUG26-T83": "2026-08-27",
-    "kalshi:KXSILVERW-26AUG2817-T66.99": "2026-08-28",
-    "polymarket:will-mrbeasts-next-video-get-between-63-and-64-million-views-on-day-5-20260827": "2026-08-27",
-    "polymarket:will-solana-reach-110-in-august-2026": "2026-08-27",
-    "polymarket:will-the-price-of-bitcoin-be-between-80000-82000-on-august-27-2026": "2026-08-27"
+    "polymarket:bitcoin-above-76k-on-september-5-2026": "2026-09-05",
+    "polymarket:bitcoin-above-78k-on-september-5-2026": "2026-09-05",
+    "polymarket:bitcoin-above-80k-on-september-5-2026": "2026-09-05",
+    "polymarket:bitcoin-above-82k-on-september-5-2026": "2026-09-05"
   },
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
@@ -1534,6 +1530,7 @@
     "2026-09-04-am": "2026-09-04T16:52:56.078399+00:00",
     "2026-09-04-board": "2026-09-04T19:36:55.248390+00:00",
     "2026-09-05-am": "2026-09-05T16:06:16.791636+00:00",
-    "2026-09-05-board": "2026-09-05T19:02:26.928539+00:00"
+    "2026-09-05-board": "2026-09-05T19:02:26.928539+00:00",
+    "2026-09-05-pm": "2026-09-05T23:54:32.369619+00:00"
   }
 }
