@@ -7,6 +7,19 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-09-05-am",
+   "url": "https://odds-drift.com/p/2026-09-05-am",
+   "title": "Biggest odds swings \u2014 Sep 5, 2026",
+   "content_text": "Biggest odds swings, last 24h\nK \u00b7 Will inflation in Brazil be below 4\u2026 5\u00a2\u219298\u00a2 (+93) \u00b7 $39k\nP \u00b7 Israel closes its airspace by Septe\u2026 10\u00a2\u219273\u00a2 (+63) \u00b7 $591k\nK \u00b7 Will Trump say \"Who are you with /\u2026 11\u00a2\u219299\u00a2 (+88) \u00b7 $9k\n#PredictionMarkets #Kalshi #Polymarket",
+   "date_published": "2026-09-05T16:06:16Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "image": "https://odds-drift.com/charts/2026-09-05-am.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-09-04-board",
    "url": "https://odds-drift.com/p/2026-09-04-board",
    "title": "Midterms 2026 odds board \u2014 Sep 4, 2026",
@@ -363,19 +376,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-08-21-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-08-21-am",
-   "url": "https://odds-drift.com/p/2026-08-21-am",
-   "title": "Biggest odds swings \u2014 Aug 21, 2026",
-   "content_text": "Biggest odds swings, last 24h\nK \u00b7 Will BTC trimmed mean be above $775\u2026 24\u00a2\u219299\u00a2 (+75) \u00b7 $250k\nK \u00b7 What will Sanjay Mehrotra say durin\u2026 20\u00a2\u219299\u00a2 (+79) \u00b7 $14k\nP \u00b7 Will the price of XRP be above $1.3\u2026 9\u00a2\u219291\u00a2 (+82) \u00b7 $11k\n#PredictionMarkets #Kalshi #Polymarket",
-   "date_published": "2026-08-21T14:00:00Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi",
-    "Polymarket"
-   ],
-   "image": "https://odds-drift.com/charts/2026-08-21-am.png"
   }
  ]
 }

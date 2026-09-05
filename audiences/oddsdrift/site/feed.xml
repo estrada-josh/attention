@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-04T19:36:55Z</updated>
+  <updated>2026-09-05T16:06:16Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Sep 5, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-05-am"/>
+    <id>https://odds-drift.com/p/2026-09-05-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-05T16:06:16Z</published>
+    <updated>2026-09-05T16:06:16Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
+K · Will inflation in Brazil be below 4… 5¢→98¢ (+93) · $39k
+P · Israel closes its airspace by Septe… 10¢→73¢ (+63) · $591k
+K · Will Trump say &#34;Who are you with /… 11¢→99¢ (+88) · $9k
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+K · Will inflation in Brazil be below 4… 5¢→98¢ (+93) · $39k&lt;br&gt;
+P · Israel closes its airspace by Septe… 10¢→73¢ (+63) · $591k&lt;br&gt;
+K · Will Trump say &#34;Who are you with /… 11¢→99¢ (+88) · $9k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-05-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+K · Will inflation in Brazil be below 4… 5¢→98¢ (+93) · $39k
+P · Israel closes its airspace by Septe… 10¢→73¢ (+63) · $591k
+K · Will Trump say &#34;Who are you with /… 11¢→99¢ (+88) · $9k
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Sep 4, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-04-board"/>
@@ -798,29 +822,5 @@ TX Sen (D): K 49¢ (-1) · P 52¢ (+0)
 MI Sen (D): K 62¢ (+0) · P 64¢ (+0)
 OH Sen (D): K 52¢ (+0) · P 54¢ (+0)
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Biggest odds swings — Aug 21, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-21-am"/>
-    <id>https://odds-drift.com/p/2026-08-21-am</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-21T14:00:00Z</published>
-    <updated>2026-08-21T14:00:00Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
-K · Will BTC trimmed mean be above $775… 24¢→99¢ (+75) · $250k
-K · What will Sanjay Mehrotra say durin… 20¢→99¢ (+79) · $14k
-P · Will the price of XRP be above $1.3… 9¢→91¢ (+82) · $11k
-#PredictionMarkets #Kalshi #Polymarket</summary>
-    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
-K · Will BTC trimmed mean be above $775… 24¢→99¢ (+75) · $250k&lt;br&gt;
-K · What will Sanjay Mehrotra say durin… 20¢→99¢ (+79) · $14k&lt;br&gt;
-P · Will the price of XRP be above $1.3… 9¢→91¢ (+82) · $11k&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-21-am.png&#34; alt=&#34;Biggest odds swings, last 24h
-K · Will BTC trimmed mean be above $775… 24¢→99¢ (+75) · $250k
-K · What will Sanjay Mehrotra say durin… 20¢→99¢ (+79) · $14k
-P · Will the price of XRP be above $1.3… 9¢→91¢ (+82) · $11k
-#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
