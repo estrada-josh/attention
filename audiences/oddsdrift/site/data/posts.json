@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-09-06-pm",
+  "slot": "pm",
+  "shape": "settled",
+  "title": "Settled & surprised \u2014 Sep 6, 2026",
+  "text": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will MrBeast's next video get between 35 an\u2026 \u2192 YES \u00b7 was 6\u00a2 ~24h before \u00b7 $40k\nP \u00b7 Will the price of Bitcoin be above $82,000\u2026 \u2192 NO \u00b7 was 2\u00a2 ~24h before \u00b7 $120k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 214\n#PredictionMarkets #Polymarket",
+  "published_at": "2026-09-06T23:54:36Z",
+  "tags": [
+   "PredictionMarkets",
+   "Polymarket"
+  ],
+  "chart": "/charts/2026-09-06-pm.png",
+  "chart_alt": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will MrBeast's next video get between 35 an\u2026 \u2192 YES \u00b7 was 6\u00a2 ~24h before \u00b7 $40k\nP \u00b7 Will the price of Bitcoin be above $82,000\u2026 \u2192 NO \u00b7 was 2\u00a2 ~24h before \u00b7 $120k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 214\n#PredictionMarkets #Polymarket",
+  "url": "https://odds-drift.com/p/2026-09-06-pm"
+ },
+ {
   "id": "2026-09-06-sunday",
   "slot": "sunday",
   "shape": "scorecard",
@@ -748,21 +763,5 @@
   "chart": "/charts/2026-08-16-board.png",
   "chart_alt": "Midterms 2026 odds board (D = Democrats win) \u00b7 78 days to Election Day\nSenate (D): K 48\u00a2 (+0) \u00b7 P 52\u00a2\nHouse (D): K 85\u00a2 (-1) \u00b7 P 88\u00a2\nTX Sen (D): K 49\u00a2 (-2) \u00b7 P 52\u00a2\nMI Sen (D): K 57\u00a2 (+1) \u00b7 P 56\u00a2 (+1)\nOH Sen (D): K 51\u00a2 (-3) \u00b7 P 52\u00a2 (-5)\n#Midterms2026 #PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-08-16-board"
- },
- {
-  "id": "2026-08-16-am",
-  "slot": "am",
-  "shape": "movers",
-  "title": "Biggest odds swings \u2014 Aug 16, 2026",
-  "text": "Biggest odds swings, last 24h\nP \u00b7 Will \"Conversations with a Killer: The Charles\u2026 5\u00a2\u219292\u00a2 (+88) \u00b7 $19k\nK \u00b7 Will Conversations with a Killer: The Charles M\u2026 6\u00a2\u219291\u00a2 (+85) \u00b7 $24k\n#PredictionMarkets #Kalshi #Polymarket",
-  "published_at": "2026-08-16T19:49:45Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-08-16-am.png",
-  "chart_alt": "Biggest odds swings, last 24h\nP \u00b7 Will \"Conversations with a Killer: The Charles\u2026 5\u00a2\u219292\u00a2 (+88) \u00b7 $19k\nK \u00b7 Will Conversations with a Killer: The Charles M\u2026 6\u00a2\u219291\u00a2 (+85) \u00b7 $24k\n#PredictionMarkets #Kalshi #Polymarket",
-  "url": "https://odds-drift.com/p/2026-08-16-am"
  }
 ]
