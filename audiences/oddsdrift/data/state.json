@@ -1526,6 +1526,35 @@
         ]
       }
     },
+    "2026-09-06-pm": {
+      "bridgy": {
+        "accepted": true,
+        "at": "2026-09-06T23:57:55+00:00",
+        "attempts": 1,
+        "body": "Added webmention 37542500487233857771 now",
+        "ok": false,
+        "source": "https://odds-drift.com/p/2026-09-06-pm",
+        "status": 202
+      },
+      "nostr": {
+        "at": "2026-09-06T23:57:56+00:00",
+        "created_at": 1788738876,
+        "error": null,
+        "failed": [
+          {
+            "error": "connection failure: connection failed",
+            "relay": "wss://relay.damus.io"
+          }
+        ],
+        "id": "2c5d4ae754e577947dcc8b0d887c9ea7f5cbeda518a8e4ff32884298b77c13e5",
+        "ok": true,
+        "raw": null,
+        "relays_ok": [
+          "wss://nos.lol",
+          "wss://relay.primal.net"
+        ]
+      }
+    },
     "2026-09-06-sunday": {
       "bridgy": {
         "accepted": true,
