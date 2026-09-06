@@ -1,5 +1,19 @@
 [
  {
+  "id": "2026-09-06-sunday",
+  "slot": "sunday",
+  "shape": "scorecard",
+  "title": "Calibration scorecard \u2014 week 36, 2026",
+  "text": "Calibration scorecard, week 36\nResolved: 1630 K, 371 P\nPriced \u226590\u00a2 the day before: 246/253 resolved YES\nPriced \u226410\u00a2: 30/734 resolved YES\nWeekly Brier: K 0.126 \u00b7 P 0.075 (running K 0.126 \u00b7 P 0.107)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "published_at": "2026-09-06T17:36:50Z",
+  "tags": [
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-09-06-sunday.png",
+  "chart_alt": "Calibration scorecard, week 36\nResolved: 1630 K, 371 P\nPriced \u226590\u00a2 the day before: 246/253 resolved YES\nPriced \u226410\u00a2: 30/734 resolved YES\nWeekly Brier: K 0.126 \u00b7 P 0.075 (running K 0.126 \u00b7 P 0.107)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-09-06-sunday"
+ },
+ {
   "id": "2026-09-06-am",
   "slot": "am",
   "shape": "movers",
