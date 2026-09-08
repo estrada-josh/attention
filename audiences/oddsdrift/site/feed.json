@@ -7,6 +7,19 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-09-08-am",
+   "url": "https://odds-drift.com/p/2026-09-08-am",
+   "title": "Biggest odds swings \u2014 Sep 8, 2026",
+   "content_text": "Biggest odds swings, last 24h\nK \u00b7 Practical Magic 2 Rotten To\u2026 66\u00a2\u21925\u00a2 (-61) \u00b7 $21k\nK \u00b7 Will average **gas prices**\u2026 15\u00a2\u219268\u00a2 (+53) \u00b7 $7k\nP \u00b7 Trump declassifies new UFO\u2026 69\u00a2\u219222\u00a2 (-47) \u00b7 $11k\nK \u00b7 Will the minimum temperatur\u2026 51\u00a2\u21921\u00a2 (-50) \u00b7 $7k\n#PredictionMarkets #Kalshi #Polymarket",
+   "date_published": "2026-09-08T17:16:10Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "image": "https://odds-drift.com/charts/2026-09-08-am.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-09-07-board",
    "url": "https://odds-drift.com/p/2026-09-07-board",
    "title": "Midterms 2026 odds board \u2014 Sep 7, 2026",
@@ -362,17 +375,6 @@
     "Polymarket"
    ],
    "image": "https://odds-drift.com/charts/2026-08-23-pm.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-08-23-sunday",
-   "url": "https://odds-drift.com/p/2026-08-23-sunday",
-   "title": "Calibration scorecard \u2014 week 34, 2026",
-   "content_text": "Calibration scorecard, week 34\nResolved: 1525 K, 300 P\nPriced \u226590\u00a2 the day before: 235/240 resolved YES\nPriced \u226410\u00a2: 54/664 resolved YES\nWeekly Brier: K 0.133 \u00b7 P 0.188 (running K 0.133 \u00b7 P 0.185)\nodds-drift.com/calibration\n#PredictionMarkets",
-   "date_published": "2026-08-23T15:36:38Z",
-   "tags": [
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-08-23-sunday.png"
   }
  ]
 }
