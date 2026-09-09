@@ -5,8 +5,35 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-08T19:54:53Z</updated>
+  <updated>2026-09-09T17:10:26Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Sep 9, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-09-am"/>
+    <id>https://odds-drift.com/p/2026-09-09-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-09T17:10:26Z</published>
+    <updated>2026-09-09T17:10:26Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Biggest odds swings, last 24h
+K · Will average **gas prices**… 13¢→99¢ (+86) · $11k
+K · Will there be at least 9 pr… 6¢→97¢ (+91) · $5k
+K · Will Mamdani sign above 0 e… 13¢→98¢ (+85) · $8k
+K · Will the copper close price… 17¢→96¢ (+79) · $6k
+#PredictionMarkets #Kalshi</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+K · Will average **gas prices**… 13¢→99¢ (+86) · $11k&lt;br&gt;
+K · Will there be at least 9 pr… 6¢→97¢ (+91) · $5k&lt;br&gt;
+K · Will Mamdani sign above 0 e… 13¢→98¢ (+85) · $8k&lt;br&gt;
+K · Will the copper close price… 17¢→96¢ (+79) · $6k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-09-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+K · Will average **gas prices**… 13¢→99¢ (+86) · $11k
+K · Will there be at least 9 pr… 6¢→97¢ (+91) · $5k
+K · Will Mamdani sign above 0 e… 13¢→98¢ (+85) · $8k
+K · Will the copper close price… 17¢→96¢ (+79) · $6k
+#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Sep 8, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-08-board"/>
@@ -801,32 +828,5 @@ TX Sen (D): K 49¢ (+1) · P 50¢ (-2)
 MI Sen (D): K 59¢ (-1) · P 62¢ (+0)
 OH Sen (D): K 51¢ (-1) · P 54¢ (+0)
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Biggest odds swings — Aug 24, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-24-am"/>
-    <id>https://odds-drift.com/p/2026-08-24-am</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-24T14:04:33Z</published>
-    <updated>2026-08-24T14:04:33Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
-K · Will it rain in Phoenix on… 18¢→99¢ (+81) · $86k
-K · What will Joe Manchin say d… 87¢→1¢ (-86) · $5k
-P · Houthis successfully target… 40¢→86¢ (+46) · $16k
-P · Will the total domestic gro… 8¢→40¢ (+32) · $13k
-#PredictionMarkets #Kalshi #Polymarket</summary>
-    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
-K · Will it rain in Phoenix on… 18¢→99¢ (+81) · $86k&lt;br&gt;
-K · What will Joe Manchin say d… 87¢→1¢ (-86) · $5k&lt;br&gt;
-P · Houthis successfully target… 40¢→86¢ (+46) · $16k&lt;br&gt;
-P · Will the total domestic gro… 8¢→40¢ (+32) · $13k&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-24-am.png&#34; alt=&#34;Biggest odds swings, last 24h
-K · Will it rain in Phoenix on… 18¢→99¢ (+81) · $86k
-K · What will Joe Manchin say d… 87¢→1¢ (-86) · $5k
-P · Houthis successfully target… 40¢→86¢ (+46) · $16k
-P · Will the total domestic gro… 8¢→40¢ (+32) · $13k
-#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
