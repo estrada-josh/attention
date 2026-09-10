@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-09T19:46:38Z</updated>
+  <updated>2026-09-10T17:01:29Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Sep 10, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-10-am"/>
+    <id>https://odds-drift.com/p/2026-09-10-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-10T17:01:29Z</published>
+    <updated>2026-09-10T17:01:29Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
+K · Will Elaine Pelino be the Republica… 81¢→1¢ (-80) · $84k
+P · Will an AI lab announce another Mil… 6¢→66¢ (+60) · $33k
+P · Will OpenAI announce another Millen… 10¢→67¢ (+57) · $23k
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+K · Will Elaine Pelino be the Republica… 81¢→1¢ (-80) · $84k&lt;br&gt;
+P · Will an AI lab announce another Mil… 6¢→66¢ (+60) · $33k&lt;br&gt;
+P · Will OpenAI announce another Millen… 10¢→67¢ (+57) · $23k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-10-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+K · Will Elaine Pelino be the Republica… 81¢→1¢ (-80) · $84k
+P · Will an AI lab announce another Mil… 6¢→66¢ (+60) · $33k
+P · Will OpenAI announce another Millen… 10¢→67¢ (+57) · $23k
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Sep 9, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-09-board"/>
@@ -803,30 +827,6 @@ K · The Dog Stars Rotten Tomatoes score… 65¢→19¢ (-46) · $6k&lt;br&gt;
 P · Will the price of Solana be above $… 50¢→98¢ (+48) · $37k
 P · Kanye West performs in Russia by Oc… 74¢→30¢ (-44) · $23k
 K · The Dog Stars Rotten Tomatoes score… 65¢→19¢ (-46) · $6k
-#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Settled &amp; surprised — Aug 24, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-24-pm"/>
-    <id>https://odds-drift.com/p/2026-08-24-pm</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-24T22:44:38Z</published>
-    <updated>2026-08-24T22:44:38Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
-P · Will Bitcoin reach $80,00… → YES · was 61¢ ~24h before · $341k
-K · Will Trump say &#34;JD / Vanc… → YES · was 94¢ ~24h before · $321k
-P · Will the price of Bitcoin… → YES · was 95¢ ~24h before · $199k
-#PredictionMarkets #Kalshi #Polymarket</summary>
-    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
-P · Will Bitcoin reach $80,00… → YES · was 61¢ ~24h before · $341k&lt;br&gt;
-K · Will Trump say &#34;JD / Vanc… → YES · was 94¢ ~24h before · $321k&lt;br&gt;
-P · Will the price of Bitcoin… → YES · was 95¢ ~24h before · $199k&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-24-pm.png&#34; alt=&#34;Settled in the last 24h
-P · Will Bitcoin reach $80,00… → YES · was 61¢ ~24h before · $341k
-K · Will Trump say &#34;JD / Vanc… → YES · was 94¢ ~24h before · $321k
-P · Will the price of Bitcoin… → YES · was 95¢ ~24h before · $199k
 #PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
