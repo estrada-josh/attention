@@ -5,8 +5,35 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-11T19:44:03Z</updated>
+  <updated>2026-09-12T16:21:02Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Sep 12, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-12-am"/>
+    <id>https://odds-drift.com/p/2026-09-12-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-12T16:21:02Z</published>
+    <updated>2026-09-12T16:21:02Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Biggest odds swings, last 24h
+K · What will Donald Trump say… 4¢→99¢ (+95) · $10k
+K · Will Trump say &#34;Kamala&#34; bef… 8¢→99¢ (+91) · $9k
+K · What will Donald Trump say… 16¢→99¢ (+83) · $14k
+K · Will it be reported by Metr… 83¢→17¢ (-66) · $141k
+#PredictionMarkets #Kalshi</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+K · What will Donald Trump say… 4¢→99¢ (+95) · $10k&lt;br&gt;
+K · Will Trump say &#34;Kamala&#34; bef… 8¢→99¢ (+91) · $9k&lt;br&gt;
+K · What will Donald Trump say… 16¢→99¢ (+83) · $14k&lt;br&gt;
+K · Will it be reported by Metr… 83¢→17¢ (-66) · $141k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-12-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+K · What will Donald Trump say… 4¢→99¢ (+95) · $10k
+K · Will Trump say &#34;Kamala&#34; bef… 8¢→99¢ (+91) · $9k
+K · What will Donald Trump say… 16¢→99¢ (+83) · $14k
+K · Will it be reported by Metr… 83¢→17¢ (-66) · $141k
+#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Sep 11, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-11-board"/>
@@ -813,29 +840,5 @@ TX Sen (D): K 51¢ (+1) · P 50¢ (+0)
 MI Sen (D): K 60¢ (-1) · P 63¢ (+1)
 OH Sen (D): K 54¢ (-1) · P 55¢ (+0)
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Biggest odds swings — Aug 26, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-26-am"/>
-    <id>https://odds-drift.com/p/2026-08-26-am</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-26T14:05:29Z</published>
-    <updated>2026-08-26T14:05:29Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
-K · Will the margin of victory for Darl… 14¢→99¢ (+85) · $237k
-P · Will Tropical Storm Saudel make lan… 81¢→3¢ (-78) · $50k
-K · Will the total vote count for all p… 33¢→99¢ (+66) · $127k
-#PredictionMarkets #Kalshi #Polymarket</summary>
-    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
-K · Will the margin of victory for Darl… 14¢→99¢ (+85) · $237k&lt;br&gt;
-P · Will Tropical Storm Saudel make lan… 81¢→3¢ (-78) · $50k&lt;br&gt;
-K · Will the total vote count for all p… 33¢→99¢ (+66) · $127k&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-26-am.png&#34; alt=&#34;Biggest odds swings, last 24h
-K · Will the margin of victory for Darl… 14¢→99¢ (+85) · $237k
-P · Will Tropical Storm Saudel make lan… 81¢→3¢ (-78) · $50k
-K · Will the total vote count for all p… 33¢→99¢ (+66) · $127k
-#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
