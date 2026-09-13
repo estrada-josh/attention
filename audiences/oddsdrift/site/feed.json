@@ -7,6 +7,17 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-09-13-sunday",
+   "url": "https://odds-drift.com/p/2026-09-13-sunday",
+   "title": "Calibration scorecard \u2014 week 37, 2026",
+   "content_text": "Calibration scorecard, week 37\nResolved: 1665 K, 298 P\nPriced \u226590\u00a2 the day before: 204/214 resolved YES\nPriced \u226410\u00a2: 12/646 resolved YES\nWeekly Brier: K 0.129 \u00b7 P 0.088 (running K 0.127 \u00b7 P 0.103)\nodds-drift.com/calibration\n#PredictionMarkets",
+   "date_published": "2026-09-13T18:12:37Z",
+   "tags": [
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-09-13-sunday.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-09-13-am",
    "url": "https://odds-drift.com/p/2026-09-13-am",
    "title": "Biggest odds swings \u2014 Sep 13, 2026",
@@ -358,18 +369,6 @@
     "Kalshi"
    ],
    "image": "https://odds-drift.com/charts/2026-08-29-am.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-08-28-pm",
-   "url": "https://odds-drift.com/p/2026-08-28-pm",
-   "title": "Settled & surprised \u2014 Aug 28, 2026",
-   "content_text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the gold close price be abov\u2026 \u2192 NO \u00b7 was 97\u00a2 ~24h before \u00b7 $20k\nUPSET \u00b7 K \u00b7 Will the gold close price be abov\u2026 \u2192 NO \u00b7 was 95\u00a2 ~24h before \u00b7 $20k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 143\n#PredictionMarkets #Kalshi",
-   "date_published": "2026-08-28T23:03:45Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi"
-   ],
-   "image": "https://odds-drift.com/charts/2026-08-28-pm.png"
   }
  ]
 }

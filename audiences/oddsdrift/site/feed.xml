@@ -5,8 +5,38 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-13T16:58:35Z</updated>
+  <updated>2026-09-13T18:12:37Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Calibration scorecard — week 37, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-13-sunday"/>
+    <id>https://odds-drift.com/p/2026-09-13-sunday</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-13T18:12:37Z</published>
+    <updated>2026-09-13T18:12:37Z</updated>
+<category term="PredictionMarkets"/>    <summary type="text">Calibration scorecard, week 37
+Resolved: 1665 K, 298 P
+Priced ≥90¢ the day before: 204/214 resolved YES
+Priced ≤10¢: 12/646 resolved YES
+Weekly Brier: K 0.129 · P 0.088 (running K 0.127 · P 0.103)
+odds-drift.com/calibration
+#PredictionMarkets</summary>
+    <content type="html">&lt;p&gt;Calibration scorecard, week 37&lt;br&gt;
+Resolved: 1665 K, 298 P&lt;br&gt;
+Priced ≥90¢ the day before: 204/214 resolved YES&lt;br&gt;
+Priced ≤10¢: 12/646 resolved YES&lt;br&gt;
+Weekly Brier: K 0.129 · P 0.088 (running K 0.127 · P 0.103)&lt;br&gt;
+&lt;a href=&#34;https://odds-drift.com/calibration&#34;&gt;odds-drift.com/calibration&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-13-sunday.png&#34; alt=&#34;Calibration scorecard, week 37
+Resolved: 1665 K, 298 P
+Priced ≥90¢ the day before: 204/214 resolved YES
+Priced ≤10¢: 12/646 resolved YES
+Weekly Brier: K 0.129 · P 0.088 (running K 0.127 · P 0.103)
+odds-drift.com/calibration
+#PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Biggest odds swings — Sep 13, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-13-am"/>
@@ -818,30 +848,6 @@ K · Will the President sign mor… 3¢→96¢ (+93) · $19k
 K · Will Taylor Swift have abov… 16¢→96¢ (+80) · $11k
 K · Who will win Alaska&#39;s top-f… 9¢→77¢ (+68) · $37k
 K · Will Donald Trump make abov… 38¢→99¢ (+61) · $26k
-#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Settled &amp; surprised — Aug 28, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-28-pm"/>
-    <id>https://odds-drift.com/p/2026-08-28-pm</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-28T23:03:45Z</published>
-    <updated>2026-08-28T23:03:45Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Settled in the last 24h
-UPSET · K · Will the gold close price be abov… → NO · was 97¢ ~24h before · $20k
-UPSET · K · Will the gold close price be abov… → NO · was 95¢ ~24h before · $20k
-Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 143
-#PredictionMarkets #Kalshi</summary>
-    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
-UPSET · K · Will the gold close price be abov… → NO · was 97¢ ~24h before · $20k&lt;br&gt;
-UPSET · K · Will the gold close price be abov… → NO · was 95¢ ~24h before · $20k&lt;br&gt;
-Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 143&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-28-pm.png&#34; alt=&#34;Settled in the last 24h
-UPSET · K · Will the gold close price be abov… → NO · was 97¢ ~24h before · $20k
-UPSET · K · Will the gold close price be abov… → NO · was 95¢ ~24h before · $20k
-Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 143
 #PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
