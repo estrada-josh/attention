@@ -5,8 +5,38 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-13T18:12:37Z</updated>
+  <updated>2026-09-14T18:39:26Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Midterms 2026 odds board — Sep 14, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-14-board"/>
+    <id>https://odds-drift.com/p/2026-09-14-board</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-14T18:39:26Z</published>
+    <updated>2026-09-14T18:39:26Z</updated>
+<category term="Midterms2026"/><category term="PredictionMarkets"/>    <summary type="text">Midterms 2026 odds board · 49 days to Election Day
+Senate (D): K 50¢ (+1) · P 52¢ (+0)
+House (D): K 85¢ (-1) · P 88¢ (+2)
+TX Sen (D): K 52¢ (+2) · P 50¢ (+2)
+MI Sen (D): K 61¢ (-1) · P 62¢ (+0)
+OH Sen (D): K 54¢ (+1) · P 54¢ (+2)
+#Midterms2026 #PredictionMarkets</summary>
+    <content type="html">&lt;p&gt;Midterms 2026 odds board · 49 days to Election Day&lt;br&gt;
+Senate (D): K 50¢ (+1) · P 52¢ (+0)&lt;br&gt;
+House (D): K 85¢ (-1) · P 88¢ (+2)&lt;br&gt;
+TX Sen (D): K 52¢ (+2) · P 50¢ (+2)&lt;br&gt;
+MI Sen (D): K 61¢ (-1) · P 62¢ (+0)&lt;br&gt;
+OH Sen (D): K 54¢ (+1) · P 54¢ (+2)&lt;br&gt;
+&lt;a href=&#34;/tag/midterms2026&#34;&gt;#Midterms2026&lt;/a&gt; &lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-14-board.png&#34; alt=&#34;Midterms 2026 odds board · 49 days to Election Day
+Senate (D): K 50¢ (+1) · P 52¢ (+0)
+House (D): K 85¢ (-1) · P 88¢ (+2)
+TX Sen (D): K 52¢ (+2) · P 50¢ (+2)
+MI Sen (D): K 61¢ (-1) · P 62¢ (+0)
+OH Sen (D): K 54¢ (+1) · P 54¢ (+2)
+#Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Calibration scorecard — week 37, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-13-sunday"/>
@@ -822,32 +852,5 @@ MI Sen (D): K 62¢ (+1) · P 64¢
 OH Sen (D): K 55¢ (+0) · P 55¢ (-1)
 GA Sen (D): K 93¢ (+0) · P 94¢
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Biggest odds swings — Aug 29, 2026</title>
-    <link href="https://odds-drift.com/p/2026-08-29-am"/>
-    <id>https://odds-drift.com/p/2026-08-29-am</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-08-29T17:10:40Z</published>
-    <updated>2026-08-29T17:10:40Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Biggest odds swings, last 24h
-K · Will the President sign mor… 3¢→96¢ (+93) · $19k
-K · Will Taylor Swift have abov… 16¢→96¢ (+80) · $11k
-K · Who will win Alaska&#39;s top-f… 9¢→77¢ (+68) · $37k
-K · Will Donald Trump make abov… 38¢→99¢ (+61) · $26k
-#PredictionMarkets #Kalshi</summary>
-    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
-K · Will the President sign mor… 3¢→96¢ (+93) · $19k&lt;br&gt;
-K · Will Taylor Swift have abov… 16¢→96¢ (+80) · $11k&lt;br&gt;
-K · Who will win Alaska&#39;s top-f… 9¢→77¢ (+68) · $37k&lt;br&gt;
-K · Will Donald Trump make abov… 38¢→99¢ (+61) · $26k&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-08-29-am.png&#34; alt=&#34;Biggest odds swings, last 24h
-K · Will the President sign mor… 3¢→96¢ (+93) · $19k
-K · Will Taylor Swift have abov… 16¢→96¢ (+80) · $11k
-K · Who will win Alaska&#39;s top-f… 9¢→77¢ (+68) · $37k
-K · Will Donald Trump make abov… 38¢→99¢ (+61) · $26k
-#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
