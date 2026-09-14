@@ -16,14 +16,14 @@
     "consecutive_failures": 0,
     "last": {
       "bsky_followers": 0,
-      "bsky_posts": 63,
-      "date": "2026-09-13",
+      "bsky_posts": 65,
+      "date": "2026-09-14",
       "gh_forks": 0,
       "gh_stars": 0,
       "gh_watchers": 0,
-      "posts_total": 63,
+      "posts_total": 65,
       "problems": "",
-      "repo_size_kb": 36827,
+      "repo_size_kb": 39900,
       "site_ok": true
     }
   },
