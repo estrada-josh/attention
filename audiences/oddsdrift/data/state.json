@@ -2053,6 +2053,33 @@
           "wss://relay.primal.net"
         ]
       }
+    },
+    "2026-09-17-board": {
+      "bridgy": {
+        "accepted": true,
+        "at": "2026-09-17T17:41:06+00:00",
+        "at_uri": "at://did:plc:xizsq2jlzzz4ubme4vvlt457/app.bsky.feed.post/3mvq76fuzg6k2",
+        "attempts": 1,
+        "body": "Added webmention 70499186397661344131 now",
+        "ok": true,
+        "source": "https://odds-drift.com/p/2026-09-17-board",
+        "status": 202,
+        "verified_at": "2026-09-17T17:41:06+00:00"
+      },
+      "nostr": {
+        "at": "2026-09-17T17:41:07+00:00",
+        "created_at": 1789666707,
+        "error": null,
+        "failed": [],
+        "id": "17518d6c1b326af8257099cb520552bb8a0546287e9e977f6007eea1cf7eca50",
+        "ok": true,
+        "raw": null,
+        "relays_ok": [
+          "wss://relay.damus.io",
+          "wss://nos.lol",
+          "wss://relay.primal.net"
+        ]
+      }
     }
   },
   "settled_featured": {
