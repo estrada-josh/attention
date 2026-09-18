@@ -2072,6 +2072,31 @@
           "wss://relay.primal.net"
         ]
       }
+    },
+    "2026-09-18-am": {
+      "bridgy": {
+        "accepted": true,
+        "at": "2026-09-18T17:09:32+00:00",
+        "attempts": 1,
+        "body": "Added webmention 025233847518187716 now",
+        "ok": false,
+        "source": "https://odds-drift.com/p/2026-09-18-am",
+        "status": 202
+      },
+      "nostr": {
+        "at": "2026-09-18T17:09:33+00:00",
+        "created_at": 1789751162,
+        "error": null,
+        "failed": [],
+        "id": "2480ea3b6729267e90678b800f6a35ab13cf2f8e86a1129a06471e5639edf8f6",
+        "ok": true,
+        "raw": null,
+        "relays_ok": [
+          "wss://relay.damus.io",
+          "wss://nos.lol",
+          "wss://relay.primal.net"
+        ]
+      }
     }
   },
   "settled_featured": {
