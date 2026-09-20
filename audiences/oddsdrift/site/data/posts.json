@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-09-20-am",
+  "slot": "am",
+  "shape": "movers",
+  "title": "Biggest odds swings \u2014 Sep 20, 2026",
+  "text": "Biggest odds swings, last 24h\nK \u00b7 Will the number of distinct\u2026 13\u00a2\u219286\u00a2 (+73) \u00b7 $10k\nK \u00b7 Will Drake have above 15M d\u2026 9\u00a2\u219271\u00a2 (+62) \u00b7 $13k\nK \u00b7 Will the maximum temperatur\u2026 38\u00a2\u219297\u00a2 (+59) \u00b7 $9k\nK \u00b7 Resident Evil Rotten Tomato\u2026 20\u00a2\u219266\u00a2 (+46) \u00b7 $22k\n#PredictionMarkets #Kalshi",
+  "published_at": "2026-09-20T16:50:01Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi"
+  ],
+  "chart": "/charts/2026-09-20-am.png",
+  "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will the number of distinct\u2026 13\u00a2\u219286\u00a2 (+73) \u00b7 $10k\nK \u00b7 Will Drake have above 15M d\u2026 9\u00a2\u219271\u00a2 (+62) \u00b7 $13k\nK \u00b7 Will the maximum temperatur\u2026 38\u00a2\u219297\u00a2 (+59) \u00b7 $9k\nK \u00b7 Resident Evil Rotten Tomato\u2026 20\u00a2\u219266\u00a2 (+46) \u00b7 $22k\n#PredictionMarkets #Kalshi",
+  "url": "https://odds-drift.com/p/2026-09-20-am"
+ },
+ {
   "id": "2026-09-19-board",
   "slot": "board",
   "shape": "watchlist",
@@ -746,19 +761,5 @@
   "chart": "/charts/2026-08-23-pm.png",
   "chart_alt": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will Donald Trump make between 22\u2026 \u2192 YES \u00b7 was 9\u00a2 ~24h before \u00b7 $16k\nUPSET \u00b7 K \u00b7 Will Donald Trump make above 240\u2026 \u2192 NO \u00b7 was 88\u00a2 ~24h before \u00b7 $13k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 102\n#PredictionMarkets #Kalshi #Polymarket",
   "url": "https://odds-drift.com/p/2026-08-23-pm"
- },
- {
-  "id": "2026-08-23-sunday",
-  "slot": "sunday",
-  "shape": "scorecard",
-  "title": "Calibration scorecard \u2014 week 34, 2026",
-  "text": "Calibration scorecard, week 34\nResolved: 1525 K, 300 P\nPriced \u226590\u00a2 the day before: 235/240 resolved YES\nPriced \u226410\u00a2: 54/664 resolved YES\nWeekly Brier: K 0.133 \u00b7 P 0.188 (running K 0.133 \u00b7 P 0.185)\nodds-drift.com/calibration\n#PredictionMarkets",
-  "published_at": "2026-08-23T15:36:38Z",
-  "tags": [
-   "PredictionMarkets"
-  ],
-  "chart": "/charts/2026-08-23-sunday.png",
-  "chart_alt": "Calibration scorecard, week 34\nResolved: 1525 K, 300 P\nPriced \u226590\u00a2 the day before: 235/240 resolved YES\nPriced \u226410\u00a2: 54/664 resolved YES\nWeekly Brier: K 0.133 \u00b7 P 0.188 (running K 0.133 \u00b7 P 0.185)\nodds-drift.com/calibration\n#PredictionMarkets",
-  "url": "https://odds-drift.com/p/2026-08-23-sunday"
  }
 ]
