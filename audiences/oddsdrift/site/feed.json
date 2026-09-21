@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-09-21-board",
+   "url": "https://odds-drift.com/p/2026-09-21-board",
+   "title": "Midterms 2026 odds board \u2014 Sep 21, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 42 days to Election Day\nSenate (D): K 61\u00a2 (+2) \u00b7 P 64\u00a2 (+4)\nHouse (D): K 91\u00a2 (+1) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 59\u00a2 (+0) \u00b7 P 60\u00a2 (+0)\nMI Sen (D): K 66\u00a2 (+0) \u00b7 P 67\u00a2 (+1)\nOH Sen (D): K 62\u00a2 (+6) \u00b7 P 60\u00a2 (+5)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-09-21T18:45:03Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-09-21-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-09-20-sunday",
    "url": "https://odds-drift.com/p/2026-09-20-sunday",
    "title": "Calibration scorecard \u2014 week 38, 2026",
@@ -356,18 +368,6 @@
     "Polymarket"
    ],
    "image": "https://odds-drift.com/charts/2026-09-05-am.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-04-board",
-   "url": "https://odds-drift.com/p/2026-09-04-board",
-   "title": "Midterms 2026 odds board \u2014 Sep 4, 2026",
-   "content_text": "Midterms 2026 odds board \u00b7 59 days to Election Day\nSenate (D): K 47\u00a2 (+0) \u00b7 P 52\u00a2 (+0)\nHouse (D): K 85\u00a2 (+1) \u00b7 P 88\u00a2 (-2)\nTX Sen (D): K 49\u00a2 (+0) \u00b7 P 50\u00a2 (+0)\nMI Sen (D): K 64\u00a2 (+1) \u00b7 P 64\u00a2 (+0)\nOH Sen (D): K 54\u00a2 (+1) \u00b7 P 56\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
-   "date_published": "2026-09-04T19:36:55Z",
-   "tags": [
-    "Midterms2026",
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-04-board.png"
   }
  ]
 }
