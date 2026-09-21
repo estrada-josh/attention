@@ -2201,12 +2201,12 @@
     "2026-09-20-sunday": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-09-21T18:49:44+00:00",
+        "at": "2026-09-21T21:08:50+00:00",
         "attempts": 3,
-        "body": "Added webmention 30680733254766803931 now",
+        "error": "not verified after 3 attempts",
+        "gave_up": true,
         "ok": false,
-        "source": "https://odds-drift.com/p/2026-09-20-sunday",
-        "status": 202
+        "source": "https://odds-drift.com/p/2026-09-20-sunday"
       },
       "nostr": {
         "at": "2026-09-20T18:17:30+00:00",
@@ -2230,9 +2230,9 @@
     "2026-09-21-board": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-09-21T18:50:25+00:00",
-        "attempts": 1,
-        "body": "Added webmention 36562936061569569611 now",
+        "at": "2026-09-21T21:10:11+00:00",
+        "attempts": 2,
+        "body": "Added webmention 1522504513601869191 now",
         "ok": false,
         "source": "https://odds-drift.com/p/2026-09-21-board",
         "status": 202
