@@ -2176,12 +2176,12 @@
     "2026-09-20-am": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-09-21T00:21:19+00:00",
+        "at": "2026-09-21T18:48:23+00:00",
         "attempts": 3,
-        "body": "Added webmention 8186293761735272349 now",
+        "error": "not verified after 3 attempts",
+        "gave_up": true,
         "ok": false,
-        "source": "https://odds-drift.com/p/2026-09-20-am",
-        "status": 202
+        "source": "https://odds-drift.com/p/2026-09-20-am"
       },
       "nostr": {
         "at": "2026-09-20T16:55:24+00:00",
@@ -2201,9 +2201,9 @@
     "2026-09-20-sunday": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-09-21T00:22:39+00:00",
-        "attempts": 2,
-        "body": "Added webmention 10074974153016254601 now",
+        "at": "2026-09-21T18:49:44+00:00",
+        "attempts": 3,
+        "body": "Added webmention 30680733254766803931 now",
         "ok": false,
         "source": "https://odds-drift.com/p/2026-09-20-sunday",
         "status": 202
@@ -2222,6 +2222,31 @@
         "ok": true,
         "raw": null,
         "relays_ok": [
+          "wss://nos.lol",
+          "wss://relay.primal.net"
+        ]
+      }
+    },
+    "2026-09-21-board": {
+      "bridgy": {
+        "accepted": true,
+        "at": "2026-09-21T18:50:25+00:00",
+        "attempts": 1,
+        "body": "Added webmention 36562936061569569611 now",
+        "ok": false,
+        "source": "https://odds-drift.com/p/2026-09-21-board",
+        "status": 202
+      },
+      "nostr": {
+        "at": "2026-09-21T18:50:25+00:00",
+        "created_at": 1790016303,
+        "error": null,
+        "failed": [],
+        "id": "2edc778d02b0dfb58317734941aaffb2b5b25a9c75ad6f2830bff8d6a4dbb8a2",
+        "ok": true,
+        "raw": null,
+        "relays_ok": [
+          "wss://relay.damus.io",
           "wss://nos.lol",
           "wss://relay.primal.net"
         ]
