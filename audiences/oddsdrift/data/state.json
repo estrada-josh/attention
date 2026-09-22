@@ -2255,12 +2255,12 @@
     "2026-09-22-board": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-09-22T17:43:14+00:00",
+        "at": "2026-09-22T20:14:40+00:00",
+        "at_uri": "at://did:plc:xizsq2jlzzz4ubme4vvlt457/app.bsky.feed.post/3mw4rm7j7m5b2",
         "attempts": 1,
-        "body": "Added webmention 4236397289138460908 now",
-        "ok": false,
+        "ok": true,
         "source": "https://odds-drift.com/p/2026-09-22-board",
-        "status": 202
+        "verified_at": "2026-09-22T20:14:40+00:00"
       },
       "nostr": {
         "at": "2026-09-22T17:43:15+00:00",
