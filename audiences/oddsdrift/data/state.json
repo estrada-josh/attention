@@ -2230,9 +2230,9 @@
     "2026-09-21-board": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-09-21T21:10:11+00:00",
-        "attempts": 2,
-        "body": "Added webmention 1522504513601869191 now",
+        "at": "2026-09-22T00:54:24+00:00",
+        "attempts": 3,
+        "body": "Added webmention 8252691971050752736 now",
         "ok": false,
         "source": "https://odds-drift.com/p/2026-09-21-board",
         "status": 202
