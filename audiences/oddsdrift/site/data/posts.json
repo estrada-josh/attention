@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-09-23-board",
+  "slot": "board",
+  "shape": "watchlist",
+  "title": "Midterms 2026 odds board \u2014 Sep 23, 2026",
+  "text": "Midterms 2026 odds board \u00b7 40 days to Election Day\nSenate (D): K 63\u00a2 (+2) \u00b7 P 66\u00a2 (+0)\nHouse (D): K 91\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 59\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\nMI Sen (D): K 74\u00a2 (+4) \u00b7 P 72\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (-2) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+  "published_at": "2026-09-23T17:52:07Z",
+  "tags": [
+   "Midterms2026",
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-09-23-board.png",
+  "chart_alt": "Midterms 2026 odds board \u00b7 40 days to Election Day\nSenate (D): K 63\u00a2 (+2) \u00b7 P 66\u00a2 (+0)\nHouse (D): K 91\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 59\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\nMI Sen (D): K 74\u00a2 (+4) \u00b7 P 72\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (-2) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-09-23-board"
+ },
+ {
   "id": "2026-09-22-board",
   "slot": "board",
   "shape": "watchlist",
@@ -742,21 +757,5 @@
   "chart": "/charts/2026-08-25-am.png",
   "chart_alt": "Biggest odds swings, last 24h\nP \u00b7 Will the price of Solana be above $\u2026 50\u00a2\u219298\u00a2 (+48) \u00b7 $37k\nP \u00b7 Kanye West performs in Russia by Oc\u2026 74\u00a2\u219230\u00a2 (-44) \u00b7 $23k\nK \u00b7 The Dog Stars Rotten Tomatoes score\u2026 65\u00a2\u219219\u00a2 (-46) \u00b7 $6k\n#PredictionMarkets #Kalshi #Polymarket",
   "url": "https://odds-drift.com/p/2026-08-25-am"
- },
- {
-  "id": "2026-08-24-pm",
-  "slot": "pm",
-  "shape": "settled",
-  "title": "Settled & surprised \u2014 Aug 24, 2026",
-  "text": "Settled in the last 24h\nP \u00b7 Will Bitcoin reach $80,00\u2026 \u2192 YES \u00b7 was 61\u00a2 ~24h before \u00b7 $341k\nK \u00b7 Will Trump say \"JD / Vanc\u2026 \u2192 YES \u00b7 was 94\u00a2 ~24h before \u00b7 $321k\nP \u00b7 Will the price of Bitcoin\u2026 \u2192 YES \u00b7 was 95\u00a2 ~24h before \u00b7 $199k\n#PredictionMarkets #Kalshi #Polymarket",
-  "published_at": "2026-08-24T22:44:38Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-08-24-pm.png",
-  "chart_alt": "Settled in the last 24h\nP \u00b7 Will Bitcoin reach $80,00\u2026 \u2192 YES \u00b7 was 61\u00a2 ~24h before \u00b7 $341k\nK \u00b7 Will Trump say \"JD / Vanc\u2026 \u2192 YES \u00b7 was 94\u00a2 ~24h before \u00b7 $321k\nP \u00b7 Will the price of Bitcoin\u2026 \u2192 YES \u00b7 was 95\u00a2 ~24h before \u00b7 $199k\n#PredictionMarkets #Kalshi #Polymarket",
-  "url": "https://odds-drift.com/p/2026-08-24-pm"
  }
 ]
