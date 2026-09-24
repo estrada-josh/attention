@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-09-24-board",
+   "url": "https://odds-drift.com/p/2026-09-24-board",
+   "title": "Midterms 2026 odds board \u2014 Sep 24, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 39 days to Election Day\nSenate (D): K 61\u00a2 (-2) \u00b7 P 62\u00a2 (-4)\nHouse (D): K 92\u00a2 (+1) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 59\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\nMI Sen (D): K 74\u00a2 (+0) \u00b7 P 72\u00a2 (+0)\nOH Sen (D): K 60\u00a2 (+1) \u00b7 P 58\u00a2 (-4)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-09-24T17:52:29Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-09-24-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-09-23-board",
    "url": "https://odds-drift.com/p/2026-09-23-board",
    "title": "Midterms 2026 odds board \u2014 Sep 23, 2026",
@@ -355,18 +367,6 @@
     "Kalshi"
    ],
    "image": "https://odds-drift.com/charts/2026-09-06-am.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-05-pm",
-   "url": "https://odds-drift.com/p/2026-09-05-pm",
-   "title": "Settled & surprised \u2014 Sep 5, 2026",
-   "content_text": "Settled in the last 24h\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 99\u00a2 ~24h before \u00b7 $192k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 NO \u00b7 was 42\u00a2 ~24h before \u00b7 $125k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 NO \u00b7 was 4\u00a2 ~24h before \u00b7 $98k\n#PredictionMarkets #Polymarket",
-   "date_published": "2026-09-05T23:54:32Z",
-   "tags": [
-    "PredictionMarkets",
-    "Polymarket"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-05-pm.png"
   }
  ]
 }
