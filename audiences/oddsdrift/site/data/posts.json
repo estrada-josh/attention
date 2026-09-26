@@ -1,5 +1,21 @@
 [
  {
+  "id": "2026-09-26-am",
+  "slot": "am",
+  "shape": "movers",
+  "title": "Biggest odds swings \u2014 Sep 26, 2026",
+  "text": "Biggest odds swings, last 24h\nP \u00b7 Will Xiaomi have the best C\u2026 1\u00a2\u219287\u00a2 (+86) \u00b7 $35k\nK \u00b7 Top Chinese AI Company week\u2026 2\u00a2\u219290\u00a2 (+88) \u00b7 $13k\nK \u00b7 Top Chinese AI Company week\u2026 1\u00a2\u219290\u00a2 (+89) \u00b7 $5k\nK \u00b7 Top Chinese AI Company this\u2026 2\u00a2\u219284\u00a2 (+82) \u00b7 $8k\n#PredictionMarkets #Kalshi #Polymarket",
+  "published_at": "2026-09-26T17:12:52Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi",
+   "Polymarket"
+  ],
+  "chart": "/charts/2026-09-26-am.png",
+  "chart_alt": "Biggest odds swings, last 24h\nP \u00b7 Will Xiaomi have the best C\u2026 1\u00a2\u219287\u00a2 (+86) \u00b7 $35k\nK \u00b7 Top Chinese AI Company week\u2026 2\u00a2\u219290\u00a2 (+88) \u00b7 $13k\nK \u00b7 Top Chinese AI Company week\u2026 1\u00a2\u219290\u00a2 (+89) \u00b7 $5k\nK \u00b7 Top Chinese AI Company this\u2026 2\u00a2\u219284\u00a2 (+82) \u00b7 $8k\n#PredictionMarkets #Kalshi #Polymarket",
+  "url": "https://odds-drift.com/p/2026-09-26-am"
+ },
+ {
   "id": "2026-09-25-board",
   "slot": "board",
   "shape": "watchlist",
@@ -740,21 +756,5 @@
   "chart": "/charts/2026-08-26-am.png",
   "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will the margin of victory for Darl\u2026 14\u00a2\u219299\u00a2 (+85) \u00b7 $237k\nP \u00b7 Will Tropical Storm Saudel make lan\u2026 81\u00a2\u21923\u00a2 (-78) \u00b7 $50k\nK \u00b7 Will the total vote count for all p\u2026 33\u00a2\u219299\u00a2 (+66) \u00b7 $127k\n#PredictionMarkets #Kalshi #Polymarket",
   "url": "https://odds-drift.com/p/2026-08-26-am"
- },
- {
-  "id": "2026-08-25-pm",
-  "slot": "pm",
-  "shape": "settled",
-  "title": "Settled & surprised \u2014 Aug 25, 2026",
-  "text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will Taylor Swift have above 14M\u2026 \u2192 NO \u00b7 was 99\u00a2 ~24h before \u00b7 $12k\nK \u00b7 Will it rain in Phoenix on Aug 24\u2026 \u2192 YES \u00b7 was 99\u00a2 ~24h before \u00b7 $310k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 108\n#PredictionMarkets #Kalshi #Polymarket",
-  "published_at": "2026-08-25T22:45:34Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-08-25-pm.png",
-  "chart_alt": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will Taylor Swift have above 14M\u2026 \u2192 NO \u00b7 was 99\u00a2 ~24h before \u00b7 $12k\nK \u00b7 Will it rain in Phoenix on Aug 24\u2026 \u2192 YES \u00b7 was 99\u00a2 ~24h before \u00b7 $310k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 108\n#PredictionMarkets #Kalshi #Polymarket",
-  "url": "https://odds-drift.com/p/2026-08-25-pm"
  }
 ]

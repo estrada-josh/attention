@@ -5,8 +5,35 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-25T17:58:01Z</updated>
+  <updated>2026-09-26T17:12:52Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Sep 26, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-26-am"/>
+    <id>https://odds-drift.com/p/2026-09-26-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-26T17:12:52Z</published>
+    <updated>2026-09-26T17:12:52Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Biggest odds swings, last 24h
+P · Will Xiaomi have the best C… 1¢→87¢ (+86) · $35k
+K · Top Chinese AI Company week… 2¢→90¢ (+88) · $13k
+K · Top Chinese AI Company week… 1¢→90¢ (+89) · $5k
+K · Top Chinese AI Company this… 2¢→84¢ (+82) · $8k
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+P · Will Xiaomi have the best C… 1¢→87¢ (+86) · $35k&lt;br&gt;
+K · Top Chinese AI Company week… 2¢→90¢ (+88) · $13k&lt;br&gt;
+K · Top Chinese AI Company week… 1¢→90¢ (+89) · $5k&lt;br&gt;
+K · Top Chinese AI Company this… 2¢→84¢ (+82) · $8k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-26-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+P · Will Xiaomi have the best C… 1¢→87¢ (+86) · $35k
+K · Top Chinese AI Company week… 2¢→90¢ (+88) · $13k
+K · Top Chinese AI Company week… 1¢→90¢ (+89) · $5k
+K · Top Chinese AI Company this… 2¢→84¢ (+82) · $8k
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Sep 25, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-25-board"/>
@@ -834,35 +861,5 @@ UPSET · P · Will MrBeast&#39;s next video get between 35 an… → YES · was 
 P · Will the price of Bitcoin be above $82,000… → NO · was 2¢ ~24h before · $120k
 Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 214
 #PredictionMarkets #Polymarket&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Calibration scorecard — week 36, 2026</title>
-    <link href="https://odds-drift.com/p/2026-09-06-sunday"/>
-    <id>https://odds-drift.com/p/2026-09-06-sunday</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-09-06T17:36:50Z</published>
-    <updated>2026-09-06T17:36:50Z</updated>
-<category term="PredictionMarkets"/>    <summary type="text">Calibration scorecard, week 36
-Resolved: 1630 K, 371 P
-Priced ≥90¢ the day before: 246/253 resolved YES
-Priced ≤10¢: 30/734 resolved YES
-Weekly Brier: K 0.126 · P 0.075 (running K 0.126 · P 0.107)
-odds-drift.com/calibration
-#PredictionMarkets</summary>
-    <content type="html">&lt;p&gt;Calibration scorecard, week 36&lt;br&gt;
-Resolved: 1630 K, 371 P&lt;br&gt;
-Priced ≥90¢ the day before: 246/253 resolved YES&lt;br&gt;
-Priced ≤10¢: 30/734 resolved YES&lt;br&gt;
-Weekly Brier: K 0.126 · P 0.075 (running K 0.126 · P 0.107)&lt;br&gt;
-&lt;a href=&#34;https://odds-drift.com/calibration&#34;&gt;odds-drift.com/calibration&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-06-sunday.png&#34; alt=&#34;Calibration scorecard, week 36
-Resolved: 1630 K, 371 P
-Priced ≥90¢ the day before: 246/253 resolved YES
-Priced ≤10¢: 30/734 resolved YES
-Weekly Brier: K 0.126 · P 0.075 (running K 0.126 · P 0.107)
-odds-drift.com/calibration
-#PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
