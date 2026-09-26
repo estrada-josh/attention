@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-09-26-board",
+  "slot": "board",
+  "shape": "watchlist",
+  "title": "Midterms 2026 odds board \u2014 Sep 26, 2026",
+  "text": "Midterms 2026 odds board \u00b7 37 days to Election Day\nSenate (D): K 62\u00a2 (+1) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 61\u00a2 (+0) \u00b7 P 60\u00a2 (-2)\nMI Sen (D): K 72\u00a2 (-1) \u00b7 P 70\u00a2 (-2)\nOH Sen (D): K 59\u00a2 (+0) \u00b7 P 57\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+  "published_at": "2026-09-26T19:52:34Z",
+  "tags": [
+   "Midterms2026",
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-09-26-board.png",
+  "chart_alt": "Midterms 2026 odds board \u00b7 37 days to Election Day\nSenate (D): K 62\u00a2 (+1) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 61\u00a2 (+0) \u00b7 P 60\u00a2 (-2)\nMI Sen (D): K 72\u00a2 (-1) \u00b7 P 70\u00a2 (-2)\nOH Sen (D): K 59\u00a2 (+0) \u00b7 P 57\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-09-26-board"
+ },
+ {
   "id": "2026-09-26-am",
   "slot": "am",
   "shape": "movers",
@@ -740,21 +755,5 @@
   "chart": "/charts/2026-08-26-board.png",
   "chart_alt": "Midterms 2026 odds board \u00b7 68 days to Election Day\nSenate (D): K 48\u00a2 (+0) \u00b7 P 50\u00a2 (+0)\nHouse (D): K 85\u00a2 (+0) \u00b7 P 88\u00a2 (+0)\nTX Sen (D): K 51\u00a2 (+1) \u00b7 P 50\u00a2 (+0)\nMI Sen (D): K 60\u00a2 (-1) \u00b7 P 63\u00a2 (+1)\nOH Sen (D): K 54\u00a2 (-1) \u00b7 P 55\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-08-26-board"
- },
- {
-  "id": "2026-08-26-am",
-  "slot": "am",
-  "shape": "movers",
-  "title": "Biggest odds swings \u2014 Aug 26, 2026",
-  "text": "Biggest odds swings, last 24h\nK \u00b7 Will the margin of victory for Darl\u2026 14\u00a2\u219299\u00a2 (+85) \u00b7 $237k\nP \u00b7 Will Tropical Storm Saudel make lan\u2026 81\u00a2\u21923\u00a2 (-78) \u00b7 $50k\nK \u00b7 Will the total vote count for all p\u2026 33\u00a2\u219299\u00a2 (+66) \u00b7 $127k\n#PredictionMarkets #Kalshi #Polymarket",
-  "published_at": "2026-08-26T14:05:29Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-08-26-am.png",
-  "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will the margin of victory for Darl\u2026 14\u00a2\u219299\u00a2 (+85) \u00b7 $237k\nP \u00b7 Will Tropical Storm Saudel make lan\u2026 81\u00a2\u21923\u00a2 (-78) \u00b7 $50k\nK \u00b7 Will the total vote count for all p\u2026 33\u00a2\u219299\u00a2 (+66) \u00b7 $127k\n#PredictionMarkets #Kalshi #Polymarket",
-  "url": "https://odds-drift.com/p/2026-08-26-am"
  }
 ]
