@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-09-28T20:08:11Z</updated>
+  <updated>2026-09-28T22:33:10Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Settled &amp; surprised — Sep 28, 2026</title>
+    <link href="https://odds-drift.com/p/2026-09-28-pm"/>
+    <id>https://odds-drift.com/p/2026-09-28-pm</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-09-28T22:33:10Z</published>
+    <updated>2026-09-28T22:33:10Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
+UPSET · P · Will MrBeast Gaming&#39;s next video… → YES · was 3¢ ~24h before · $14k
+UPSET · K · Will the maximum temperature be &gt;… → YES · was 9¢ ~24h before · $23k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 238
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+UPSET · P · Will MrBeast Gaming&#39;s next video… → YES · was 3¢ ~24h before · $14k&lt;br&gt;
+UPSET · K · Will the maximum temperature be &amp;gt;… → YES · was 9¢ ~24h before · $23k&lt;br&gt;
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 238&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-28-pm.png&#34; alt=&#34;Settled in the last 24h
+UPSET · P · Will MrBeast Gaming&#39;s next video… → YES · was 3¢ ~24h before · $14k
+UPSET · K · Will the maximum temperature be &gt;… → YES · was 9¢ ~24h before · $23k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 238
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Sep 28, 2026</title>
     <link href="https://odds-drift.com/p/2026-09-28-board"/>
@@ -840,35 +864,5 @@ K · Will there be at least 9 pr… 6¢→97¢ (+91) · $5k
 K · Will Mamdani sign above 0 e… 13¢→98¢ (+85) · $8k
 K · Will the copper close price… 17¢→96¢ (+79) · $6k
 #PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Midterms 2026 odds board — Sep 8, 2026</title>
-    <link href="https://odds-drift.com/p/2026-09-08-board"/>
-    <id>https://odds-drift.com/p/2026-09-08-board</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-09-08T19:54:53Z</published>
-    <updated>2026-09-08T19:54:53Z</updated>
-<category term="Midterms2026"/><category term="PredictionMarkets"/>    <summary type="text">Midterms 2026 odds board · 55 days to Election Day
-Senate (D): K 48¢ (+0) · P 52¢ (+0)
-House (D): K 85¢ (+0) · P 86¢ (-2)
-TX Sen (D): K 48¢ (-1) · P 50¢ (+0)
-MI Sen (D): K 64¢ (+0) · P 66¢ (+0)
-OH Sen (D): K 54¢ (+0) · P 56¢ (+0)
-#Midterms2026 #PredictionMarkets</summary>
-    <content type="html">&lt;p&gt;Midterms 2026 odds board · 55 days to Election Day&lt;br&gt;
-Senate (D): K 48¢ (+0) · P 52¢ (+0)&lt;br&gt;
-House (D): K 85¢ (+0) · P 86¢ (-2)&lt;br&gt;
-TX Sen (D): K 48¢ (-1) · P 50¢ (+0)&lt;br&gt;
-MI Sen (D): K 64¢ (+0) · P 66¢ (+0)&lt;br&gt;
-OH Sen (D): K 54¢ (+0) · P 56¢ (+0)&lt;br&gt;
-&lt;a href=&#34;/tag/midterms2026&#34;&gt;#Midterms2026&lt;/a&gt; &lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-08-board.png&#34; alt=&#34;Midterms 2026 odds board · 55 days to Election Day
-Senate (D): K 48¢ (+0) · P 52¢ (+0)
-House (D): K 85¢ (+0) · P 86¢ (-2)
-TX Sen (D): K 48¢ (-1) · P 50¢ (+0)
-MI Sen (D): K 64¢ (+0) · P 66¢ (+0)
-OH Sen (D): K 54¢ (+0) · P 56¢ (+0)
-#Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
