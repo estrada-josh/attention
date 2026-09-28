@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-09-28-board",
+  "slot": "board",
+  "shape": "watchlist",
+  "title": "Midterms 2026 odds board \u2014 Sep 28, 2026",
+  "text": "Midterms 2026 odds board \u00b7 35 days to Election Day\nSenate (D): K 61\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 60\u00a2 (-1) \u00b7 P 60\u00a2 (+0)\nMI Sen (D): K 72\u00a2 (+0) \u00b7 P 70\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (+2) \u00b7 P 57\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+  "published_at": "2026-09-28T20:08:11Z",
+  "tags": [
+   "Midterms2026",
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-09-28-board.png",
+  "chart_alt": "Midterms 2026 odds board \u00b7 35 days to Election Day\nSenate (D): K 61\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 60\u00a2 (-1) \u00b7 P 60\u00a2 (+0)\nMI Sen (D): K 72\u00a2 (+0) \u00b7 P 70\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (+2) \u00b7 P 57\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-09-28-board"
+ },
+ {
   "id": "2026-09-27-sunday",
   "slot": "sunday",
   "shape": "scorecard",
@@ -738,21 +753,5 @@
   "chart": "/charts/2026-08-28-pm.png",
   "chart_alt": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the gold close price be abov\u2026 \u2192 NO \u00b7 was 97\u00a2 ~24h before \u00b7 $20k\nUPSET \u00b7 K \u00b7 Will the gold close price be abov\u2026 \u2192 NO \u00b7 was 95\u00a2 ~24h before \u00b7 $20k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 143\n#PredictionMarkets #Kalshi",
   "url": "https://odds-drift.com/p/2026-08-28-pm"
- },
- {
-  "id": "2026-08-27-pm",
-  "slot": "pm",
-  "shape": "settled",
-  "title": "Settled & surprised \u2014 Aug 27, 2026",
-  "text": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be betw\u2026 \u2192 YES \u00b7 was 9\u00a2 ~24h before \u00b7 $14k\nUPSET \u00b7 P \u00b7 Will MrBeast's next video get bet\u2026 \u2192 YES \u00b7 was 10\u00a2 ~24h before \u00b7 $13k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 128\n#PredictionMarkets #Kalshi #Polymarket",
-  "published_at": "2026-08-27T22:58:24Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-08-27-pm.png",
-  "chart_alt": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be betw\u2026 \u2192 YES \u00b7 was 9\u00a2 ~24h before \u00b7 $14k\nUPSET \u00b7 P \u00b7 Will MrBeast's next video get bet\u2026 \u2192 YES \u00b7 was 10\u00a2 ~24h before \u00b7 $13k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 128\n#PredictionMarkets #Kalshi #Polymarket",
-  "url": "https://odds-drift.com/p/2026-08-27-pm"
  }
 ]
