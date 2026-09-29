@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-09-29-board",
+  "slot": "board",
+  "shape": "watchlist",
+  "title": "Midterms 2026 odds board \u2014 Sep 29, 2026",
+  "text": "Midterms 2026 odds board \u00b7 34 days to Election Day\nSenate (D): K 63\u00a2 (+2) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 60\u00a2 (+0) \u00b7 P 62\u00a2 (+2)\nMI Sen (D): K 73\u00a2 (+1) \u00b7 P 72\u00a2 (+2)\nOH Sen (D): K 60\u00a2 (+1) \u00b7 P 62\u00a2 (+5)\n#Midterms2026 #PredictionMarkets",
+  "published_at": "2026-09-29T18:39:37Z",
+  "tags": [
+   "Midterms2026",
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-09-29-board.png",
+  "chart_alt": "Midterms 2026 odds board \u00b7 34 days to Election Day\nSenate (D): K 63\u00a2 (+2) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 60\u00a2 (+0) \u00b7 P 62\u00a2 (+2)\nMI Sen (D): K 73\u00a2 (+1) \u00b7 P 72\u00a2 (+2)\nOH Sen (D): K 60\u00a2 (+1) \u00b7 P 62\u00a2 (+5)\n#Midterms2026 #PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-09-29-board"
+ },
+ {
   "id": "2026-09-28-pm",
   "slot": "pm",
   "shape": "settled",
@@ -739,20 +754,5 @@
   "chart": "/charts/2026-08-29-board.png",
   "chart_alt": "Midterms 2026 odds board \u00b7 65 days to Election Day\nSenate (D): K 48\u00a2 (-1) \u00b7 P 50\u00a2\nHouse (D): K 85\u00a2 (+0) \u00b7 P 88\u00a2\nTX Sen (D): K 50\u00a2 (+0) \u00b7 P 50\u00a2\nMI Sen (D): K 62\u00a2 (+1) \u00b7 P 64\u00a2\nOH Sen (D): K 55\u00a2 (+0) \u00b7 P 55\u00a2 (-1)\nGA Sen (D): K 93\u00a2 (+0) \u00b7 P 94\u00a2\n#Midterms2026 #PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-08-29-board"
- },
- {
-  "id": "2026-08-29-am",
-  "slot": "am",
-  "shape": "movers",
-  "title": "Biggest odds swings \u2014 Aug 29, 2026",
-  "text": "Biggest odds swings, last 24h\nK \u00b7 Will the President sign mor\u2026 3\u00a2\u219296\u00a2 (+93) \u00b7 $19k\nK \u00b7 Will Taylor Swift have abov\u2026 16\u00a2\u219296\u00a2 (+80) \u00b7 $11k\nK \u00b7 Who will win Alaska's top-f\u2026 9\u00a2\u219277\u00a2 (+68) \u00b7 $37k\nK \u00b7 Will Donald Trump make abov\u2026 38\u00a2\u219299\u00a2 (+61) \u00b7 $26k\n#PredictionMarkets #Kalshi",
-  "published_at": "2026-08-29T17:10:40Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi"
-  ],
-  "chart": "/charts/2026-08-29-am.png",
-  "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will the President sign mor\u2026 3\u00a2\u219296\u00a2 (+93) \u00b7 $19k\nK \u00b7 Will Taylor Swift have abov\u2026 16\u00a2\u219296\u00a2 (+80) \u00b7 $11k\nK \u00b7 Who will win Alaska's top-f\u2026 9\u00a2\u219277\u00a2 (+68) \u00b7 $37k\nK \u00b7 Will Donald Trump make abov\u2026 38\u00a2\u219299\u00a2 (+61) \u00b7 $26k\n#PredictionMarkets #Kalshi",
-  "url": "https://odds-drift.com/p/2026-08-29-am"
  }
 ]
