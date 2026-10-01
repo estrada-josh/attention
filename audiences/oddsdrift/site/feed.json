@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-01-board",
+   "url": "https://odds-drift.com/p/2026-10-01-board",
+   "title": "Midterms 2026 odds board \u2014 Oct 1, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 32 days to Election Day\nSenate (D): K 63\u00a2 (+1) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+1) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 64\u00a2 (+2) \u00b7 P 62\u00a2 (+0)\nMI Sen (D): K 73\u00a2 (+0) \u00b7 P 72\u00a2 (+0)\nOH Sen (D): K 60\u00a2 (+0) \u00b7 P 58\u00a2 (-2)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-10-01T18:54:44Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-01-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-09-30-board",
    "url": "https://odds-drift.com/p/2026-09-30-board",
    "title": "Midterms 2026 odds board \u2014 Sep 30, 2026",
@@ -355,19 +367,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-09-10-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-10-am",
-   "url": "https://odds-drift.com/p/2026-09-10-am",
-   "title": "Biggest odds swings \u2014 Sep 10, 2026",
-   "content_text": "Biggest odds swings, last 24h\nK \u00b7 Will Elaine Pelino be the Republica\u2026 81\u00a2\u21921\u00a2 (-80) \u00b7 $84k\nP \u00b7 Will an AI lab announce another Mil\u2026 6\u00a2\u219266\u00a2 (+60) \u00b7 $33k\nP \u00b7 Will OpenAI announce another Millen\u2026 10\u00a2\u219267\u00a2 (+57) \u00b7 $23k\n#PredictionMarkets #Kalshi #Polymarket",
-   "date_published": "2026-09-10T17:01:29Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi",
-    "Polymarket"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-10-am.png"
   }
  ]
 }
