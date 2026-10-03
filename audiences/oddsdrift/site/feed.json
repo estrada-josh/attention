@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-03-board",
+   "url": "https://odds-drift.com/p/2026-10-03-board",
+   "title": "Midterms 2026 odds board \u2014 Oct 3, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 30 days to Election Day\nSenate (D): K 65\u00a2 (+2) \u00b7 P 64\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 94\u00a2 (+2)\nTX Sen (D): K 65\u00a2 (+1) \u00b7 P 64\u00a2 (+2)\nMI Sen (D): K 72\u00a2 (+1) \u00b7 P 72\u00a2 (+0)\nOH Sen (D): K 61\u00a2 (+0) \u00b7 P 60\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-10-03T17:18:28Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-03-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-10-02-board",
    "url": "https://odds-drift.com/p/2026-10-02-board",
    "title": "Midterms 2026 odds board \u2014 Oct 2, 2026",
@@ -354,19 +366,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-09-11-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-11-am",
-   "url": "https://odds-drift.com/p/2026-09-11-am",
-   "title": "Biggest odds swings \u2014 Sep 11, 2026",
-   "content_text": "Biggest odds swings, last 24h\nK \u00b7 Will the copper close price\u2026 93\u00a2\u21922\u00a2 (-91) \u00b7 $7k\nP \u00b7 Will the price of Ethereum\u2026 25\u00a2\u219294\u00a2 (+69) \u00b7 $13k\nP \u00b7 Will \"Hope\" Opening Weekend\u2026 42\u00a2\u219297\u00a2 (+55) \u00b7 $41k\nP \u00b7 Will the price of Ethereum\u2026 29\u00a2\u219289\u00a2 (+60) \u00b7 $11k\n#PredictionMarkets #Kalshi #Polymarket",
-   "date_published": "2026-09-11T17:02:21Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi",
-    "Polymarket"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-11-am.png"
   }
  ]
 }
