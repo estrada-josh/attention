@@ -1,5 +1,19 @@
 [
  {
+  "id": "2026-10-04-sunday",
+  "slot": "sunday",
+  "shape": "scorecard",
+  "title": "Calibration scorecard \u2014 week 40, 2026",
+  "text": "Calibration scorecard, week 40\nResolved: 2041 K, 385 P\nPriced \u226590\u00a2 the day before: 316/327 resolved YES\nPriced \u226410\u00a2: 27/1033 resolved YES\nWeekly Brier: K 0.103 \u00b7 P 0.055 (running K 0.121 \u00b7 P 0.088)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "published_at": "2026-10-04T17:36:31Z",
+  "tags": [
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-10-04-sunday.png",
+  "chart_alt": "Calibration scorecard, week 40\nResolved: 2041 K, 385 P\nPriced \u226590\u00a2 the day before: 316/327 resolved YES\nPriced \u226410\u00a2: 27/1033 resolved YES\nWeekly Brier: K 0.103 \u00b7 P 0.055 (running K 0.121 \u00b7 P 0.088)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-10-04-sunday"
+ },
+ {
   "id": "2026-10-03-board",
   "slot": "board",
   "shape": "watchlist",
@@ -739,21 +753,5 @@
   "chart": "/charts/2026-09-02-board.png",
   "chart_alt": "Midterms 2026 odds board \u00b7 61 days to Election Day\nSenate (D): K 48\u00a2 (+0) \u00b7 P 52\u00a2 (+2)\nHouse (D): K 85\u00a2 (+0) \u00b7 P 90\u00a2 (+2)\nTX Sen (D): K 49\u00a2 (-1) \u00b7 P 50\u00a2 (+0)\nMI Sen (D): K 64\u00a2 (-1) \u00b7 P 66\u00a2 (+2)\nOH Sen (D): K 53\u00a2 (-2) \u00b7 P 55\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-09-02-board"
- },
- {
-  "id": "2026-09-02-am",
-  "slot": "am",
-  "shape": "movers",
-  "title": "Biggest odds swings \u2014 Sep 2, 2026",
-  "text": "Biggest odds swings, last 24h\nK \u00b7 Will Trump endorse at least 15 peop\u2026 10\u00a2\u219299\u00a2 (+89) \u00b7 $8k\nP \u00b7 Will OpenAI\u2019s Astra model be releas\u2026 11\u00a2\u219282\u00a2 (+71) \u00b7 $45k\nP \u00b7 Will Iran target Iraq by September\u2026 29\u00a2\u219298\u00a2 (+69) \u00b7 $21k\n#PredictionMarkets #Kalshi #Polymarket",
-  "published_at": "2026-09-02T17:11:08Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-09-02-am.png",
-  "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will Trump endorse at least 15 peop\u2026 10\u00a2\u219299\u00a2 (+89) \u00b7 $8k\nP \u00b7 Will OpenAI\u2019s Astra model be releas\u2026 11\u00a2\u219282\u00a2 (+71) \u00b7 $45k\nP \u00b7 Will Iran target Iraq by September\u2026 29\u00a2\u219298\u00a2 (+69) \u00b7 $21k\n#PredictionMarkets #Kalshi #Polymarket",
-  "url": "https://odds-drift.com/p/2026-09-02-am"
  }
 ]
