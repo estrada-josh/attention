@@ -15,15 +15,15 @@
   "healthcheck": {
     "consecutive_failures": 0,
     "last": {
-      "bsky_followers": 0,
-      "bsky_posts": 89,
-      "date": "2026-10-03",
+      "bsky_followers": 1,
+      "bsky_posts": 90,
+      "date": "2026-10-04",
       "gh_forks": 0,
       "gh_stars": 0,
       "gh_watchers": 0,
-      "posts_total": 89,
+      "posts_total": 90,
       "problems": "",
-      "repo_size_kb": 59338,
+      "repo_size_kb": 62687,
       "site_ok": true
     }
   },
