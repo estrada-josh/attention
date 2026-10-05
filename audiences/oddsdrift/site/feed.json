@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-05-board",
+   "url": "https://odds-drift.com/p/2026-10-05-board",
+   "title": "Midterms 2026 odds board \u2014 Oct 5, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 28 days to Election Day\nSenate (D): K 65\u00a2 (+2) \u00b7 P 66\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (-2)\nTX Sen (D): K 65\u00a2 (+1) \u00b7 P 64\u00a2 (+0)\nMI Sen (D): K 74\u00a2 (+3) \u00b7 P 74\u00a2 (+0)\nOH Sen (D): K 64\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-10-05T21:07:28Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-05-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-10-04-sunday",
    "url": "https://odds-drift.com/p/2026-10-04-sunday",
    "title": "Calibration scorecard \u2014 week 40, 2026",
@@ -353,18 +365,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-09-12-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-12-am",
-   "url": "https://odds-drift.com/p/2026-09-12-am",
-   "title": "Biggest odds swings \u2014 Sep 12, 2026",
-   "content_text": "Biggest odds swings, last 24h\nK \u00b7 What will Donald Trump say\u2026 4\u00a2\u219299\u00a2 (+95) \u00b7 $10k\nK \u00b7 Will Trump say \"Kamala\" bef\u2026 8\u00a2\u219299\u00a2 (+91) \u00b7 $9k\nK \u00b7 What will Donald Trump say\u2026 16\u00a2\u219299\u00a2 (+83) \u00b7 $14k\nK \u00b7 Will it be reported by Metr\u2026 83\u00a2\u219217\u00a2 (-66) \u00b7 $141k\n#PredictionMarkets #Kalshi",
-   "date_published": "2026-09-12T16:21:02Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-12-am.png"
   }
  ]
 }
