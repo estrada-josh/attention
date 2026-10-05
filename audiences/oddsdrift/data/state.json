@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-10-05T21:07:28.305757+00:00",
+    "at": "2026-10-05T23:10:16.150462+00:00",
     "failed_sources": [],
     "no_post_reason": null,
-    "open_rows": 115624,
-    "post": "2026-10-05-board",
-    "settled_rows": 97650,
-    "slot": "board"
+    "open_rows": 117064,
+    "post": "2026-10-05-pm",
+    "settled_rows": 94205,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -2691,10 +2691,10 @@
     }
   },
   "settled_featured": {
-    "kalshi:KXHIGHLAX-26SEP27-T83": "2026-09-28",
-    "kalshi:KXINXU-26SEP28H1000-T7704.9999": "2026-09-28",
-    "kalshi:KXINXU-26SEP28H1000-T7714.9999": "2026-09-28",
-    "polymarket:will-mrbeast-gamings-next-video-get-between-20-and-22-million-views-on-day-2-20260922": "2026-09-28"
+    "kalshi:KXHIGHTSFO-26OCT04-B83.5": "2026-10-05",
+    "polymarket:will-flavio-bolsonaro-win-the-most-votes-in-the-first-round-of-the-2026-brazil-presidential-election": "2026-10-05",
+    "polymarket:will-geraldo-alckmin-win-the-2026-brazilian-presidential-election": "2026-10-05",
+    "polymarket:will-lula-win-the-most-votes-in-the-first-round-of-the-2026-brazil-presidential-election": "2026-10-05"
   },
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
@@ -2814,6 +2814,7 @@
     "2026-10-04-am": "2026-10-04T17:36:31.087941+00:00 (skipped)",
     "2026-10-04-sunday": "2026-10-04T17:36:31.087941+00:00",
     "2026-10-05-am": "2026-10-05T21:07:28.305757+00:00 (skipped)",
-    "2026-10-05-board": "2026-10-05T21:07:28.305757+00:00"
+    "2026-10-05-board": "2026-10-05T21:07:28.305757+00:00",
+    "2026-10-05-pm": "2026-10-05T23:10:16.150462+00:00"
   }
 }

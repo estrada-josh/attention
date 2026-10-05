@@ -7,6 +7,19 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-05-pm",
+   "url": "https://odds-drift.com/p/2026-10-05-pm",
+   "title": "Settled & surprised \u2014 Oct 5, 2026",
+   "content_text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 8\u2026 \u2192 YES \u00b7 was 11\u00a2 ~24h before \u00b7 $21k\nP \u00b7 Will Geraldo Alckmin win the 2026\u2026 \u2192 NO \u00b7 was 0\u00a2 ~24h before \u00b7 $724k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 233\n#PredictionMarkets #Kalshi #Polymarket",
+   "date_published": "2026-10-05T23:10:16Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-05-pm.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-10-05-board",
    "url": "https://odds-drift.com/p/2026-10-05-board",
    "title": "Midterms 2026 odds board \u2014 Oct 5, 2026",
@@ -353,18 +366,6 @@
     "Kalshi"
    ],
    "image": "https://odds-drift.com/charts/2026-09-13-am.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-12-board",
-   "url": "https://odds-drift.com/p/2026-09-12-board",
-   "title": "Midterms 2026 odds board \u2014 Sep 12, 2026",
-   "content_text": "Midterms 2026 odds board \u00b7 51 days to Election Day\nSenate (D): K 49\u00a2 (+1) \u00b7 P 52\u00a2 (+0)\nHouse (D): K 86\u00a2 (+1) \u00b7 P 86\u00a2 (-2)\nTX Sen (D): K 50\u00a2 (-1) \u00b7 P 52\u00a2 (+0)\nMI Sen (D): K 63\u00a2 (+1) \u00b7 P 62\u00a2 (+0)\nOH Sen (D): K 53\u00a2 (+0) \u00b7 P 52\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
-   "date_published": "2026-09-12T19:22:57Z",
-   "tags": [
-    "Midterms2026",
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-12-board.png"
   }
  ]
 }

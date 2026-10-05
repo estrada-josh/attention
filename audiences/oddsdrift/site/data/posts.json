@@ -1,5 +1,21 @@
 [
  {
+  "id": "2026-10-05-pm",
+  "slot": "pm",
+  "shape": "settled",
+  "title": "Settled & surprised \u2014 Oct 5, 2026",
+  "text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 8\u2026 \u2192 YES \u00b7 was 11\u00a2 ~24h before \u00b7 $21k\nP \u00b7 Will Geraldo Alckmin win the 2026\u2026 \u2192 NO \u00b7 was 0\u00a2 ~24h before \u00b7 $724k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 233\n#PredictionMarkets #Kalshi #Polymarket",
+  "published_at": "2026-10-05T23:10:16Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi",
+   "Polymarket"
+  ],
+  "chart": "/charts/2026-10-05-pm.png",
+  "chart_alt": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 8\u2026 \u2192 YES \u00b7 was 11\u00a2 ~24h before \u00b7 $21k\nP \u00b7 Will Geraldo Alckmin win the 2026\u2026 \u2192 NO \u00b7 was 0\u00a2 ~24h before \u00b7 $724k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 233\n#PredictionMarkets #Kalshi #Polymarket",
+  "url": "https://odds-drift.com/p/2026-10-05-pm"
+ },
+ {
   "id": "2026-10-05-board",
   "slot": "board",
   "shape": "watchlist",
@@ -737,21 +753,5 @@
   "chart": "/charts/2026-09-03-board.png",
   "chart_alt": "Midterms 2026 odds board \u00b7 60 days to Election Day\nSenate (D): K 47\u00a2 (-1) \u00b7 P 52\u00a2 (+0)\nHouse (D): K 84\u00a2 (-1) \u00b7 P 90\u00a2 (+0)\nTX Sen (D): K 49\u00a2 (+0) \u00b7 P 50\u00a2 (+0)\nMI Sen (D): K 63\u00a2 (-1) \u00b7 P 64\u00a2 (-2)\nOH Sen (D): K 53\u00a2 (+0) \u00b7 P 56\u00a2 (+1)\n#Midterms2026 #PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-09-03-board"
- },
- {
-  "id": "2026-09-03-am",
-  "slot": "am",
-  "shape": "movers",
-  "title": "Biggest odds swings \u2014 Sep 3, 2026",
-  "text": "Biggest odds swings, last 24h\nK \u00b7 Bitcoin price on Sep 4, 2026? \u2014 $79\u2026 16\u00a2\u219282\u00a2 (+66) \u00b7 $67k\nP \u00b7 Will any AI model reach 1520 Overal\u2026 14\u00a2\u219286\u00a2 (+72) \u00b7 $24k\nP \u00b7 Will Bitcoin reach $82,000 August 3\u2026 8\u00a2\u219268\u00a2 (+60) \u00b7 $74k\n#PredictionMarkets #Kalshi #Polymarket",
-  "published_at": "2026-09-03T17:03:38Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-09-03-am.png",
-  "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Bitcoin price on Sep 4, 2026? \u2014 $79\u2026 16\u00a2\u219282\u00a2 (+66) \u00b7 $67k\nP \u00b7 Will any AI model reach 1520 Overal\u2026 14\u00a2\u219286\u00a2 (+72) \u00b7 $24k\nP \u00b7 Will Bitcoin reach $82,000 August 3\u2026 8\u00a2\u219268\u00a2 (+60) \u00b7 $74k\n#PredictionMarkets #Kalshi #Polymarket",
-  "url": "https://odds-drift.com/p/2026-09-03-am"
  }
 ]
