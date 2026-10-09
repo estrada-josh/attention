@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-10-09-board",
+  "slot": "board",
+  "shape": "watchlist",
+  "title": "Midterms 2026 odds board \u2014 Oct 9, 2026",
+  "text": "Midterms 2026 odds board \u00b7 24 days to Election Day\nSenate (D): K 61\u00a2 (-1) \u00b7 P 62\u00a2 (-2)\nHouse (D): K 90\u00a2 (+0) \u00b7 P 90\u00a2 (+0)\nTX Sen (D): K 62\u00a2 (-3) \u00b7 P 60\u00a2 (-4)\nMI Sen (D): K 66\u00a2 (-3) \u00b7 P 68\u00a2 (-4)\nOH Sen (D): K 62\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+  "published_at": "2026-10-09T18:50:28Z",
+  "tags": [
+   "Midterms2026",
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-10-09-board.png",
+  "chart_alt": "Midterms 2026 odds board \u00b7 24 days to Election Day\nSenate (D): K 61\u00a2 (-1) \u00b7 P 62\u00a2 (-2)\nHouse (D): K 90\u00a2 (+0) \u00b7 P 90\u00a2 (+0)\nTX Sen (D): K 62\u00a2 (-3) \u00b7 P 60\u00a2 (-4)\nMI Sen (D): K 66\u00a2 (-3) \u00b7 P 68\u00a2 (-4)\nOH Sen (D): K 62\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-10-09-board"
+ },
+ {
   "id": "2026-10-08-board",
   "slot": "board",
   "shape": "watchlist",
@@ -736,21 +751,5 @@
   "chart": "/charts/2026-09-05-board.png",
   "chart_alt": "Midterms 2026 odds board \u00b7 58 days to Election Day\nSenate (D): K 47\u00a2 (+0) \u00b7 P 52\u00a2 (+0)\nHouse (D): K 85\u00a2 (+0) \u00b7 P 88\u00a2 (+0)\nTX Sen (D): K 49\u00a2 (+0) \u00b7 P 50\u00a2 (+0)\nMI Sen (D): K 64\u00a2 (+0) \u00b7 P 66\u00a2 (+2)\nOH Sen (D): K 54\u00a2 (+0) \u00b7 P 56\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-09-05-board"
- },
- {
-  "id": "2026-09-05-am",
-  "slot": "am",
-  "shape": "movers",
-  "title": "Biggest odds swings \u2014 Sep 5, 2026",
-  "text": "Biggest odds swings, last 24h\nK \u00b7 Will inflation in Brazil be below 4\u2026 5\u00a2\u219298\u00a2 (+93) \u00b7 $39k\nP \u00b7 Israel closes its airspace by Septe\u2026 10\u00a2\u219273\u00a2 (+63) \u00b7 $591k\nK \u00b7 Will Trump say \"Who are you with /\u2026 11\u00a2\u219299\u00a2 (+88) \u00b7 $9k\n#PredictionMarkets #Kalshi #Polymarket",
-  "published_at": "2026-09-05T16:06:16Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-09-05-am.png",
-  "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will inflation in Brazil be below 4\u2026 5\u00a2\u219298\u00a2 (+93) \u00b7 $39k\nP \u00b7 Israel closes its airspace by Septe\u2026 10\u00a2\u219273\u00a2 (+63) \u00b7 $591k\nK \u00b7 Will Trump say \"Who are you with /\u2026 11\u00a2\u219299\u00a2 (+88) \u00b7 $9k\n#PredictionMarkets #Kalshi #Polymarket",
-  "url": "https://odds-drift.com/p/2026-09-05-am"
  }
 ]

@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-09-board",
+   "url": "https://odds-drift.com/p/2026-10-09-board",
+   "title": "Midterms 2026 odds board \u2014 Oct 9, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 24 days to Election Day\nSenate (D): K 61\u00a2 (-1) \u00b7 P 62\u00a2 (-2)\nHouse (D): K 90\u00a2 (+0) \u00b7 P 90\u00a2 (+0)\nTX Sen (D): K 62\u00a2 (-3) \u00b7 P 60\u00a2 (-4)\nMI Sen (D): K 66\u00a2 (-3) \u00b7 P 68\u00a2 (-4)\nOH Sen (D): K 62\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-10-09T18:50:28Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-09-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-10-08-board",
    "url": "https://odds-drift.com/p/2026-10-08-board",
    "title": "Midterms 2026 odds board \u2014 Oct 8, 2026",
@@ -355,18 +367,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-09-16-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-15-board",
-   "url": "https://odds-drift.com/p/2026-09-15-board",
-   "title": "Midterms 2026 odds board \u2014 Sep 15, 2026",
-   "content_text": "Midterms 2026 odds board \u00b7 48 days to Election Day\nSenate (D): K 53\u00a2 (+3) \u00b7 P 57\u00a2 (+5)\nHouse (D): K 86\u00a2 (+1) \u00b7 P 88\u00a2 (+0)\nTX Sen (D): K 53\u00a2 (+1) \u00b7 P 56\u00a2 (+6)\nMI Sen (D): K 62\u00a2 (+1) \u00b7 P 62\u00a2 (+0)\nOH Sen (D): K 55\u00a2 (+1) \u00b7 P 56\u00a2 (+2)\n#Midterms2026 #PredictionMarkets",
-   "date_published": "2026-09-15T17:40:57Z",
-   "tags": [
-    "Midterms2026",
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-15-board.png"
   }
  ]
 }
