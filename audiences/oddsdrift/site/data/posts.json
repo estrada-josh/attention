@@ -1,5 +1,19 @@
 [
  {
+  "id": "2026-10-11-sunday",
+  "slot": "sunday",
+  "shape": "scorecard",
+  "title": "Calibration scorecard \u2014 week 41, 2026",
+  "text": "Calibration scorecard, week 41\nResolved: 1839 K, 387 P\nPriced \u226590\u00a2 the day before: 270/276 resolved YES\nPriced \u226410\u00a2: 27/975 resolved YES\nWeekly Brier: K 0.094 \u00b7 P 0.106 (running K 0.118 \u00b7 P 0.091)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "published_at": "2026-10-11T18:06:26Z",
+  "tags": [
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-10-11-sunday.png",
+  "chart_alt": "Calibration scorecard, week 41\nResolved: 1839 K, 387 P\nPriced \u226590\u00a2 the day before: 270/276 resolved YES\nPriced \u226410\u00a2: 27/975 resolved YES\nWeekly Brier: K 0.094 \u00b7 P 0.106 (running K 0.118 \u00b7 P 0.091)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-10-11-sunday"
+ },
+ {
   "id": "2026-10-10-board",
   "slot": "board",
   "shape": "watchlist",
@@ -736,20 +750,5 @@
   "chart": "/charts/2026-09-06-am.png",
   "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will it rain in Boston on S\u2026 18\u00a2\u219299\u00a2 (+81) \u00b7 $35k\nK \u00b7 Will Trump say \"Moon\" befor\u2026 5\u00a2\u219284\u00a2 (+79) \u00b7 $26k\nK \u00b7 Will the #1 Movie on Netfli\u2026 10\u00a2\u219297\u00a2 (+87) \u00b7 $7k\nK \u00b7 Top Coding AI this month (A\u2026 18\u00a2\u219277\u00a2 (+59) \u00b7 $8k\n#PredictionMarkets #Kalshi",
   "url": "https://odds-drift.com/p/2026-09-06-am"
- },
- {
-  "id": "2026-09-05-pm",
-  "slot": "pm",
-  "shape": "settled",
-  "title": "Settled & surprised \u2014 Sep 5, 2026",
-  "text": "Settled in the last 24h\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 99\u00a2 ~24h before \u00b7 $192k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 NO \u00b7 was 42\u00a2 ~24h before \u00b7 $125k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 NO \u00b7 was 4\u00a2 ~24h before \u00b7 $98k\n#PredictionMarkets #Polymarket",
-  "published_at": "2026-09-05T23:54:32Z",
-  "tags": [
-   "PredictionMarkets",
-   "Polymarket"
-  ],
-  "chart": "/charts/2026-09-05-pm.png",
-  "chart_alt": "Settled in the last 24h\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 YES \u00b7 was 99\u00a2 ~24h before \u00b7 $192k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 NO \u00b7 was 42\u00a2 ~24h before \u00b7 $125k\nP \u00b7 Will the price of Bitcoin be abov\u2026 \u2192 NO \u00b7 was 4\u00a2 ~24h before \u00b7 $98k\n#PredictionMarkets #Polymarket",
-  "url": "https://odds-drift.com/p/2026-09-05-pm"
  }
 ]
