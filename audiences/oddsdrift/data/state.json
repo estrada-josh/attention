@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-10-12T21:45:05.741151+00:00",
+    "at": "2026-10-12T23:37:38.721356+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 122681,
-    "post": null,
-    "settled_rows": 98214,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 124459,
+    "post": "2026-10-12-pm",
+    "settled_rows": 93832,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -2892,10 +2892,10 @@
     }
   },
   "settled_featured": {
-    "kalshi:KXHIGHTSFO-26OCT04-B83.5": "2026-10-05",
-    "polymarket:will-flavio-bolsonaro-win-the-most-votes-in-the-first-round-of-the-2026-brazil-presidential-election": "2026-10-05",
-    "polymarket:will-geraldo-alckmin-win-the-2026-brazilian-presidential-election": "2026-10-05",
-    "polymarket:will-lula-win-the-most-votes-in-the-first-round-of-the-2026-brazil-presidential-election": "2026-10-05"
+    "kalshi:KXHIGHLAX-26OCT11-B74.5": "2026-10-12",
+    "kalshi:KXVHGCB-26OCT12-E8.4": "2026-10-12",
+    "polymarket:bitcoin-above-82k-on-october-12-2026": "2026-10-12",
+    "polymarket:us-x-iran-ceasefire-continues-through-october-12": "2026-10-12"
   },
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
@@ -3030,6 +3030,7 @@
     "2026-10-11-am": "2026-10-11T18:06:26.973890+00:00 (skipped)",
     "2026-10-11-sunday": "2026-10-11T18:06:26.973890+00:00",
     "2026-10-12-am": "2026-10-12T21:45:05.741151+00:00 (skipped)",
-    "2026-10-12-board": "2026-10-12T21:45:05.741151+00:00 (skipped)"
+    "2026-10-12-board": "2026-10-12T21:45:05.741151+00:00 (skipped)",
+    "2026-10-12-pm": "2026-10-12T23:37:38.721356+00:00"
   }
 }

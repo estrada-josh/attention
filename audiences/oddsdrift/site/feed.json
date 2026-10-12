@@ -7,6 +7,19 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-12-pm",
+   "url": "https://odds-drift.com/p/2026-10-12-pm",
+   "title": "Settled & surprised \u2014 Oct 12, 2026",
+   "content_text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the VoteHub 2026 generic bal\u2026 \u2192 YES \u00b7 was 5\u00a2 ~24h before \u00b7 $16k\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 7\u2026 \u2192 YES \u00b7 was 15\u00a2 ~24h before \u00b7 $32k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 239\n#PredictionMarkets #Kalshi #Polymarket",
+   "date_published": "2026-10-12T23:37:38Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-12-pm.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-10-11-sunday",
    "url": "https://odds-drift.com/p/2026-10-11-sunday",
    "title": "Calibration scorecard \u2014 week 41, 2026",
@@ -353,19 +366,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-09-18-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-18-am",
-   "url": "https://odds-drift.com/p/2026-09-18-am",
-   "title": "Biggest odds swings \u2014 Sep 18, 2026",
-   "content_text": "Biggest odds swings, last 24h\nP \u00b7 Will the price of Bitcoin be above\u2026 3\u00a2\u219279\u00a2 (+76) \u00b7 $63k\nK \u00b7 Will Trump say \"Barack Hussein Obam\u2026 19\u00a2\u219299\u00a2 (+80) \u00b7 $12k\nP \u00b7 US x Iran ceasefire continues throu\u2026 34\u00a2\u219296\u00a2 (+62) \u00b7 $15k\n#PredictionMarkets #Kalshi #Polymarket",
-   "date_published": "2026-09-18T17:06:02Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi",
-    "Polymarket"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-18-am.png"
   }
  ]
 }

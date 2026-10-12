@@ -1,5 +1,21 @@
 [
  {
+  "id": "2026-10-12-pm",
+  "slot": "pm",
+  "shape": "settled",
+  "title": "Settled & surprised \u2014 Oct 12, 2026",
+  "text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the VoteHub 2026 generic bal\u2026 \u2192 YES \u00b7 was 5\u00a2 ~24h before \u00b7 $16k\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 7\u2026 \u2192 YES \u00b7 was 15\u00a2 ~24h before \u00b7 $32k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 239\n#PredictionMarkets #Kalshi #Polymarket",
+  "published_at": "2026-10-12T23:37:38Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi",
+   "Polymarket"
+  ],
+  "chart": "/charts/2026-10-12-pm.png",
+  "chart_alt": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the VoteHub 2026 generic bal\u2026 \u2192 YES \u00b7 was 5\u00a2 ~24h before \u00b7 $16k\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 7\u2026 \u2192 YES \u00b7 was 15\u00a2 ~24h before \u00b7 $32k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 239\n#PredictionMarkets #Kalshi #Polymarket",
+  "url": "https://odds-drift.com/p/2026-10-12-pm"
+ },
+ {
   "id": "2026-10-11-sunday",
   "slot": "sunday",
   "shape": "scorecard",
@@ -735,20 +751,5 @@
   "chart": "/charts/2026-09-06-sunday.png",
   "chart_alt": "Calibration scorecard, week 36\nResolved: 1630 K, 371 P\nPriced \u226590\u00a2 the day before: 246/253 resolved YES\nPriced \u226410\u00a2: 30/734 resolved YES\nWeekly Brier: K 0.126 \u00b7 P 0.075 (running K 0.126 \u00b7 P 0.107)\nodds-drift.com/calibration\n#PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-09-06-sunday"
- },
- {
-  "id": "2026-09-06-am",
-  "slot": "am",
-  "shape": "movers",
-  "title": "Biggest odds swings \u2014 Sep 6, 2026",
-  "text": "Biggest odds swings, last 24h\nK \u00b7 Will it rain in Boston on S\u2026 18\u00a2\u219299\u00a2 (+81) \u00b7 $35k\nK \u00b7 Will Trump say \"Moon\" befor\u2026 5\u00a2\u219284\u00a2 (+79) \u00b7 $26k\nK \u00b7 Will the #1 Movie on Netfli\u2026 10\u00a2\u219297\u00a2 (+87) \u00b7 $7k\nK \u00b7 Top Coding AI this month (A\u2026 18\u00a2\u219277\u00a2 (+59) \u00b7 $8k\n#PredictionMarkets #Kalshi",
-  "published_at": "2026-09-06T16:18:36Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi"
-  ],
-  "chart": "/charts/2026-09-06-am.png",
-  "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will it rain in Boston on S\u2026 18\u00a2\u219299\u00a2 (+81) \u00b7 $35k\nK \u00b7 Will Trump say \"Moon\" befor\u2026 5\u00a2\u219284\u00a2 (+79) \u00b7 $26k\nK \u00b7 Will the #1 Movie on Netfli\u2026 10\u00a2\u219297\u00a2 (+87) \u00b7 $7k\nK \u00b7 Top Coding AI this month (A\u2026 18\u00a2\u219277\u00a2 (+59) \u00b7 $8k\n#PredictionMarkets #Kalshi",
-  "url": "https://odds-drift.com/p/2026-09-06-am"
  }
 ]
