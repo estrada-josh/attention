@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-14-board",
+   "url": "https://odds-drift.com/p/2026-10-14-board",
+   "title": "Midterms 2026 odds board \u2014 Oct 14, 2026",
+   "content_text": "Midterms 2026 odds board \u00b7 19 days to Election Day\nSenate (D): K 61\u00a2 (-1) \u00b7 P 64\u00a2 (+0)\nHouse (D): K 90\u00a2 (+0) \u00b7 P 90\u00a2 (+0)\nTX Sen (D): K 64\u00a2 (+0) \u00b7 P 62\u00a2 (-2)\nMI Sen (D): K 68\u00a2 (+0) \u00b7 P 70\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
+   "date_published": "2026-10-14T18:01:36Z",
+   "tags": [
+    "Midterms2026",
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-14-board.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-10-13-board",
    "url": "https://odds-drift.com/p/2026-10-13-board",
    "title": "Midterms 2026 odds board \u2014 Oct 13, 2026",
@@ -353,19 +365,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-09-19-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-19-am",
-   "url": "https://odds-drift.com/p/2026-09-19-am",
-   "title": "Biggest odds swings \u2014 Sep 19, 2026",
-   "content_text": "Biggest odds swings, last 24h\nP \u00b7 Trump x Greenland deal signed by De\u2026 15\u00a2\u219296\u00a2 (+81) \u00b7 $161k\nK \u00b7 Will Trump say \"Third Term\" before\u2026 6\u00a2\u219299\u00a2 (+93) \u00b7 $9k\nP \u00b7 Will \"Spider-Man: Brand New Day\" 8t\u2026 22\u00a2\u219294\u00a2 (+72) \u00b7 $18k\n#PredictionMarkets #Kalshi #Polymarket",
-   "date_published": "2026-09-19T16:31:56Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi",
-    "Polymarket"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-19-am.png"
   }
  ]
 }
