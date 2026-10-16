@@ -5,8 +5,38 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-10-15T17:47:18Z</updated>
+  <updated>2026-10-16T17:27:16Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Midterms 2026 odds board — Oct 16, 2026</title>
+    <link href="https://odds-drift.com/p/2026-10-16-board"/>
+    <id>https://odds-drift.com/p/2026-10-16-board</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-10-16T17:27:16Z</published>
+    <updated>2026-10-16T17:27:16Z</updated>
+<category term="Midterms2026"/><category term="PredictionMarkets"/>    <summary type="text">Midterms 2026 odds board · 17 days to Election Day
+Senate (D): K 63¢ (+2) · P 64¢ (+0)
+House (D): K 90¢ (+0) · P 90¢ (+0)
+TX Sen (D): K 62¢ (-1) · P 62¢ (+0)
+MI Sen (D): K 69¢ (+1) · P 68¢ (-2)
+OH Sen (D): K 63¢ (+4) · P 64¢ (+2)
+#Midterms2026 #PredictionMarkets</summary>
+    <content type="html">&lt;p&gt;Midterms 2026 odds board · 17 days to Election Day&lt;br&gt;
+Senate (D): K 63¢ (+2) · P 64¢ (+0)&lt;br&gt;
+House (D): K 90¢ (+0) · P 90¢ (+0)&lt;br&gt;
+TX Sen (D): K 62¢ (-1) · P 62¢ (+0)&lt;br&gt;
+MI Sen (D): K 69¢ (+1) · P 68¢ (-2)&lt;br&gt;
+OH Sen (D): K 63¢ (+4) · P 64¢ (+2)&lt;br&gt;
+&lt;a href=&#34;/tag/midterms2026&#34;&gt;#Midterms2026&lt;/a&gt; &lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-10-16-board.png&#34; alt=&#34;Midterms 2026 odds board · 17 days to Election Day
+Senate (D): K 63¢ (+2) · P 64¢ (+0)
+House (D): K 90¢ (+0) · P 90¢ (+0)
+TX Sen (D): K 62¢ (-1) · P 62¢ (+0)
+MI Sen (D): K 69¢ (+1) · P 68¢ (-2)
+OH Sen (D): K 63¢ (+4) · P 64¢ (+2)
+#Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Oct 15, 2026</title>
     <link href="https://odds-drift.com/p/2026-10-15-board"/>
@@ -858,32 +888,5 @@ Priced ≤10¢: 37/812 resolved YES
 Weekly Brier: K 0.123 · P 0.072 (running K 0.126 · P 0.097)
 odds-drift.com/calibration
 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Biggest odds swings — Sep 20, 2026</title>
-    <link href="https://odds-drift.com/p/2026-09-20-am"/>
-    <id>https://odds-drift.com/p/2026-09-20-am</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-09-20T16:50:01Z</published>
-    <updated>2026-09-20T16:50:01Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Biggest odds swings, last 24h
-K · Will the number of distinct… 13¢→86¢ (+73) · $10k
-K · Will Drake have above 15M d… 9¢→71¢ (+62) · $13k
-K · Will the maximum temperatur… 38¢→97¢ (+59) · $9k
-K · Resident Evil Rotten Tomato… 20¢→66¢ (+46) · $22k
-#PredictionMarkets #Kalshi</summary>
-    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
-K · Will the number of distinct… 13¢→86¢ (+73) · $10k&lt;br&gt;
-K · Will Drake have above 15M d… 9¢→71¢ (+62) · $13k&lt;br&gt;
-K · Will the maximum temperatur… 38¢→97¢ (+59) · $9k&lt;br&gt;
-K · Resident Evil Rotten Tomato… 20¢→66¢ (+46) · $22k&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-20-am.png&#34; alt=&#34;Biggest odds swings, last 24h
-K · Will the number of distinct… 13¢→86¢ (+73) · $10k
-K · Will Drake have above 15M d… 9¢→71¢ (+62) · $13k
-K · Will the maximum temperatur… 38¢→97¢ (+59) · $9k
-K · Resident Evil Rotten Tomato… 20¢→66¢ (+46) · $22k
-#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
