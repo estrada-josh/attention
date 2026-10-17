@@ -5,8 +5,35 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-10-16T17:27:16Z</updated>
+  <updated>2026-10-17T16:27:35Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Biggest odds swings — Oct 17, 2026</title>
+    <link href="https://odds-drift.com/p/2026-10-17-am"/>
+    <id>https://odds-drift.com/p/2026-10-17-am</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-10-17T16:27:35Z</published>
+    <updated>2026-10-17T16:27:35Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Biggest odds swings, last 24h
+K · Will the maximum temperatur… 89¢→8¢ (-81) · $73k
+K · Will the President sign mor… 10¢→99¢ (+89) · $14k
+K · Will the maximum temperatur… 19¢→95¢ (+76) · $16k
+K · Will it rain in Lexington o… 28¢→99¢ (+71) · $27k
+#PredictionMarkets #Kalshi</summary>
+    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
+K · Will the maximum temperatur… 89¢→8¢ (-81) · $73k&lt;br&gt;
+K · Will the President sign mor… 10¢→99¢ (+89) · $14k&lt;br&gt;
+K · Will the maximum temperatur… 19¢→95¢ (+76) · $16k&lt;br&gt;
+K · Will it rain in Lexington o… 28¢→99¢ (+71) · $27k&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-10-17-am.png&#34; alt=&#34;Biggest odds swings, last 24h
+K · Will the maximum temperatur… 89¢→8¢ (-81) · $73k
+K · Will the President sign mor… 10¢→99¢ (+89) · $14k
+K · Will the maximum temperatur… 19¢→95¢ (+76) · $16k
+K · Will it rain in Lexington o… 28¢→99¢ (+71) · $27k
+#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Midterms 2026 odds board — Oct 16, 2026</title>
     <link href="https://odds-drift.com/p/2026-10-16-board"/>
@@ -858,35 +885,5 @@ TX Sen (D): K 59¢ (+0) · P 60¢ (+0)
 MI Sen (D): K 66¢ (+0) · P 67¢ (+1)
 OH Sen (D): K 62¢ (+6) · P 60¢ (+5)
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Calibration scorecard — week 38, 2026</title>
-    <link href="https://odds-drift.com/p/2026-09-20-sunday"/>
-    <id>https://odds-drift.com/p/2026-09-20-sunday</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-09-20T18:12:08Z</published>
-    <updated>2026-09-20T18:12:08Z</updated>
-<category term="PredictionMarkets"/>    <summary type="text">Calibration scorecard, week 38
-Resolved: 1772 K, 330 P
-Priced ≥90¢ the day before: 252/257 resolved YES
-Priced ≤10¢: 37/812 resolved YES
-Weekly Brier: K 0.123 · P 0.072 (running K 0.126 · P 0.097)
-odds-drift.com/calibration
-#PredictionMarkets</summary>
-    <content type="html">&lt;p&gt;Calibration scorecard, week 38&lt;br&gt;
-Resolved: 1772 K, 330 P&lt;br&gt;
-Priced ≥90¢ the day before: 252/257 resolved YES&lt;br&gt;
-Priced ≤10¢: 37/812 resolved YES&lt;br&gt;
-Weekly Brier: K 0.123 · P 0.072 (running K 0.126 · P 0.097)&lt;br&gt;
-&lt;a href=&#34;https://odds-drift.com/calibration&#34;&gt;odds-drift.com/calibration&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-09-20-sunday.png&#34; alt=&#34;Calibration scorecard, week 38
-Resolved: 1772 K, 330 P
-Priced ≥90¢ the day before: 252/257 resolved YES
-Priced ≤10¢: 37/812 resolved YES
-Weekly Brier: K 0.123 · P 0.072 (running K 0.126 · P 0.097)
-odds-drift.com/calibration
-#PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

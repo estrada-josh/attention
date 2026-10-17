@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-17-am",
+   "url": "https://odds-drift.com/p/2026-10-17-am",
+   "title": "Biggest odds swings \u2014 Oct 17, 2026",
+   "content_text": "Biggest odds swings, last 24h\nK \u00b7 Will the maximum temperatur\u2026 89\u00a2\u21928\u00a2 (-81) \u00b7 $73k\nK \u00b7 Will the President sign mor\u2026 10\u00a2\u219299\u00a2 (+89) \u00b7 $14k\nK \u00b7 Will the maximum temperatur\u2026 19\u00a2\u219295\u00a2 (+76) \u00b7 $16k\nK \u00b7 Will it rain in Lexington o\u2026 28\u00a2\u219299\u00a2 (+71) \u00b7 $27k\n#PredictionMarkets #Kalshi",
+   "date_published": "2026-10-17T16:27:35Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-17-am.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-10-16-board",
    "url": "https://odds-drift.com/p/2026-10-16-board",
    "title": "Midterms 2026 odds board \u2014 Oct 16, 2026",
@@ -354,17 +366,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-09-21-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-20-sunday",
-   "url": "https://odds-drift.com/p/2026-09-20-sunday",
-   "title": "Calibration scorecard \u2014 week 38, 2026",
-   "content_text": "Calibration scorecard, week 38\nResolved: 1772 K, 330 P\nPriced \u226590\u00a2 the day before: 252/257 resolved YES\nPriced \u226410\u00a2: 37/812 resolved YES\nWeekly Brier: K 0.123 \u00b7 P 0.072 (running K 0.126 \u00b7 P 0.097)\nodds-drift.com/calibration\n#PredictionMarkets",
-   "date_published": "2026-09-20T18:12:08Z",
-   "tags": [
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-20-sunday.png"
   }
  ]
 }
