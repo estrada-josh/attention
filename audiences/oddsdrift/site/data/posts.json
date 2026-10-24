@@ -1,5 +1,21 @@
 [
  {
+  "id": "2026-10-24-am",
+  "slot": "am",
+  "shape": "movers",
+  "title": "Biggest odds swings \u2014 Oct 24, 2026",
+  "text": "Biggest odds swings, last 24h\nP \u00b7 Will Bitcoin reach $82,000\u2026 90\u00a2\u219212\u00a2 (-78) \u00b7 $24k\nK \u00b7 Will Xavier be categorized\u2026 92\u00a2\u21923\u00a2 (-89) \u00b7 $6k\nP \u00b7 Will \"You Can See Everythin\u2026 80\u00a2\u219212\u00a2 (-68) \u00b7 $15k\nK \u00b7 Will Dopamine Chamber by Fo\u2026 24\u00a2\u219297\u00a2 (+73) \u00b7 $6k\n#PredictionMarkets #Kalshi #Polymarket",
+  "published_at": "2026-10-24T16:37:38Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi",
+   "Polymarket"
+  ],
+  "chart": "/charts/2026-10-24-am.png",
+  "chart_alt": "Biggest odds swings, last 24h\nP \u00b7 Will Bitcoin reach $82,000\u2026 90\u00a2\u219212\u00a2 (-78) \u00b7 $24k\nK \u00b7 Will Xavier be categorized\u2026 92\u00a2\u21923\u00a2 (-89) \u00b7 $6k\nP \u00b7 Will \"You Can See Everythin\u2026 80\u00a2\u219212\u00a2 (-68) \u00b7 $15k\nK \u00b7 Will Dopamine Chamber by Fo\u2026 24\u00a2\u219297\u00a2 (+73) \u00b7 $6k\n#PredictionMarkets #Kalshi #Polymarket",
+  "url": "https://odds-drift.com/p/2026-10-24-am"
+ },
+ {
   "id": "2026-10-23-board",
   "slot": "board",
   "shape": "watchlist",
@@ -733,20 +749,5 @@
   "chart": "/charts/2026-09-13-sunday.png",
   "chart_alt": "Calibration scorecard, week 37\nResolved: 1665 K, 298 P\nPriced \u226590\u00a2 the day before: 204/214 resolved YES\nPriced \u226410\u00a2: 12/646 resolved YES\nWeekly Brier: K 0.129 \u00b7 P 0.088 (running K 0.127 \u00b7 P 0.103)\nodds-drift.com/calibration\n#PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-09-13-sunday"
- },
- {
-  "id": "2026-09-13-am",
-  "slot": "am",
-  "shape": "movers",
-  "title": "Biggest odds swings \u2014 Sep 13, 2026",
-  "text": "Biggest odds swings, last 24h\nK \u00b7 Will it rain in Oklahoma Ci\u2026 6\u00a2\u219299\u00a2 (+93) \u00b7 $25k\nK \u00b7 Will Trump say \"Bibi / Neta\u2026 8\u00a2\u219299\u00a2 (+91) \u00b7 $23k\nK \u00b7 Practical Magic 2 Rotten To\u2026 17\u00a2\u219296\u00a2 (+79) \u00b7 $6k\nK \u00b7 What will Mike Johnson say\u2026 45\u00a2\u21921\u00a2 (-44) \u00b7 $10k\n#PredictionMarkets #Kalshi",
-  "published_at": "2026-09-13T16:58:35Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi"
-  ],
-  "chart": "/charts/2026-09-13-am.png",
-  "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will it rain in Oklahoma Ci\u2026 6\u00a2\u219299\u00a2 (+93) \u00b7 $25k\nK \u00b7 Will Trump say \"Bibi / Neta\u2026 8\u00a2\u219299\u00a2 (+91) \u00b7 $23k\nK \u00b7 Practical Magic 2 Rotten To\u2026 17\u00a2\u219296\u00a2 (+79) \u00b7 $6k\nK \u00b7 What will Mike Johnson say\u2026 45\u00a2\u21921\u00a2 (-44) \u00b7 $10k\n#PredictionMarkets #Kalshi",
-  "url": "https://odds-drift.com/p/2026-09-13-am"
  }
 ]

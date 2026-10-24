@@ -7,6 +7,19 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-24-am",
+   "url": "https://odds-drift.com/p/2026-10-24-am",
+   "title": "Biggest odds swings \u2014 Oct 24, 2026",
+   "content_text": "Biggest odds swings, last 24h\nP \u00b7 Will Bitcoin reach $82,000\u2026 90\u00a2\u219212\u00a2 (-78) \u00b7 $24k\nK \u00b7 Will Xavier be categorized\u2026 92\u00a2\u21923\u00a2 (-89) \u00b7 $6k\nP \u00b7 Will \"You Can See Everythin\u2026 80\u00a2\u219212\u00a2 (-68) \u00b7 $15k\nK \u00b7 Will Dopamine Chamber by Fo\u2026 24\u00a2\u219297\u00a2 (+73) \u00b7 $6k\n#PredictionMarkets #Kalshi #Polymarket",
+   "date_published": "2026-10-24T16:37:38Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-24-am.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-10-23-board",
    "url": "https://odds-drift.com/p/2026-10-23-board",
    "title": "Midterms 2026 odds board \u2014 Oct 23, 2026",
@@ -353,18 +366,6 @@
     "Polymarket"
    ],
    "image": "https://odds-drift.com/charts/2026-09-28-pm.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-28-board",
-   "url": "https://odds-drift.com/p/2026-09-28-board",
-   "title": "Midterms 2026 odds board \u2014 Sep 28, 2026",
-   "content_text": "Midterms 2026 odds board \u00b7 35 days to Election Day\nSenate (D): K 61\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 60\u00a2 (-1) \u00b7 P 60\u00a2 (+0)\nMI Sen (D): K 72\u00a2 (+0) \u00b7 P 70\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (+2) \u00b7 P 57\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
-   "date_published": "2026-09-28T20:08:11Z",
-   "tags": [
-    "Midterms2026",
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-28-board.png"
   }
  ]
 }
