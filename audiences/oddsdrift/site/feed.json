@@ -7,6 +7,17 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-10-25-sunday",
+   "url": "https://odds-drift.com/p/2026-10-25-sunday",
+   "title": "Calibration scorecard \u2014 week 43, 2026",
+   "content_text": "Calibration scorecard, week 43\nResolved: 1743 K, 405 P\nPriced \u226590\u00a2 the day before: 305/313 resolved YES\nPriced \u226410\u00a2: 26/821 resolved YES\nWeekly Brier: K 0.117 \u00b7 P 0.112 (running K 0.117 \u00b7 P 0.092)\nodds-drift.com/calibration\n#PredictionMarkets",
+   "date_published": "2026-10-25T18:24:30Z",
+   "tags": [
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-10-25-sunday.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-10-25-am",
    "url": "https://odds-drift.com/p/2026-10-25-am",
    "title": "Biggest odds swings \u2014 Oct 25, 2026",
@@ -353,18 +364,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-10-01-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-09-30-board",
-   "url": "https://odds-drift.com/p/2026-09-30-board",
-   "title": "Midterms 2026 odds board \u2014 Sep 30, 2026",
-   "content_text": "Midterms 2026 odds board \u00b7 33 days to Election Day\nSenate (D): K 62\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 91\u00a2 (-1) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 62\u00a2 (+2) \u00b7 P 62\u00a2 (+0)\nMI Sen (D): K 73\u00a2 (+0) \u00b7 P 72\u00a2 (+0)\nOH Sen (D): K 60\u00a2 (+0) \u00b7 P 60\u00a2 (-2)\n#Midterms2026 #PredictionMarkets",
-   "date_published": "2026-09-30T18:27:32Z",
-   "tags": [
-    "Midterms2026",
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-09-30-board.png"
   }
  ]
 }
