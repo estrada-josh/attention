@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-10-26-board",
+  "slot": "board",
+  "shape": "watchlist",
+  "title": "Midterms 2026 odds board \u2014 Oct 26, 2026",
+  "text": "Midterms 2026 odds board \u00b7 7 days to Election Day\nSenate (D): K 64\u00a2 (+1) \u00b7 P 64\u00a2 (-2)\nHouse (D): K 90\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 64\u00a2 (+0) \u00b7 P 64\u00a2 (+0)\nMI Sen (D): K 66\u00a2 (-2) \u00b7 P 68\u00a2 (-4)\nOH Sen (D): K 68\u00a2 (+0) \u00b7 P 68\u00a2 (+1)\n#Midterms2026 #PredictionMarkets",
+  "published_at": "2026-10-26T19:21:16Z",
+  "tags": [
+   "Midterms2026",
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-10-26-board.png",
+  "chart_alt": "Midterms 2026 odds board \u00b7 7 days to Election Day\nSenate (D): K 64\u00a2 (+1) \u00b7 P 64\u00a2 (-2)\nHouse (D): K 90\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 64\u00a2 (+0) \u00b7 P 64\u00a2 (+0)\nMI Sen (D): K 66\u00a2 (-2) \u00b7 P 68\u00a2 (-4)\nOH Sen (D): K 68\u00a2 (+0) \u00b7 P 68\u00a2 (+1)\n#Midterms2026 #PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-10-26-board"
+ },
+ {
   "id": "2026-10-25-sunday",
   "slot": "sunday",
   "shape": "scorecard",
@@ -734,20 +749,5 @@
   "chart": "/charts/2026-09-17-board.png",
   "chart_alt": "Midterms 2026 odds board \u00b7 46 days to Election Day\nSenate (D): K 58\u00a2 (+3) \u00b7 P 60\u00a2 (+3)\nHouse (D): K 89\u00a2 (+2) \u00b7 P 90\u00a2 (+2)\nTX Sen (D): K 55\u00a2 (+1) \u00b7 P 57\u00a2 (+1)\nMI Sen (D): K 65\u00a2 (+3) \u00b7 P 66\u00a2 (+4)\nOH Sen (D): K 54\u00a2 (-1) \u00b7 P 55\u00a2 (-1)\n#Midterms2026 #PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-09-17-board"
- },
- {
-  "id": "2026-09-16-board",
-  "slot": "board",
-  "shape": "watchlist",
-  "title": "Midterms 2026 odds board \u2014 Sep 16, 2026",
-  "text": "Midterms 2026 odds board \u00b7 47 days to Election Day\nSenate (D): K 55\u00a2 (+2) \u00b7 P 57\u00a2 (+0)\nHouse (D): K 87\u00a2 (+1) \u00b7 P 88\u00a2 (+0)\nTX Sen (D): K 54\u00a2 (+1) \u00b7 P 56\u00a2 (+0)\nMI Sen (D): K 62\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\nOH Sen (D): K 55\u00a2 (+0) \u00b7 P 56\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
-  "published_at": "2026-09-16T17:38:20Z",
-  "tags": [
-   "Midterms2026",
-   "PredictionMarkets"
-  ],
-  "chart": "/charts/2026-09-16-board.png",
-  "chart_alt": "Midterms 2026 odds board \u00b7 47 days to Election Day\nSenate (D): K 55\u00a2 (+2) \u00b7 P 57\u00a2 (+0)\nHouse (D): K 87\u00a2 (+1) \u00b7 P 88\u00a2 (+0)\nTX Sen (D): K 54\u00a2 (+1) \u00b7 P 56\u00a2 (+0)\nMI Sen (D): K 62\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\nOH Sen (D): K 55\u00a2 (+0) \u00b7 P 56\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
-  "url": "https://odds-drift.com/p/2026-09-16-board"
  }
 ]
