@@ -3436,12 +3436,12 @@
     "2026-10-29-board": {
       "bridgy": {
         "accepted": true,
-        "at": "2026-10-29T19:01:30+00:00",
+        "at": "2026-10-29T21:51:57+00:00",
+        "at_uri": "at://did:plc:xizsq2jlzzz4ubme4vvlt457/app.bsky.feed.post/3myzxj3hgl4d2",
         "attempts": 1,
-        "body": "Added webmention 85429811723594880411 now",
-        "ok": false,
+        "ok": true,
         "source": "https://odds-drift.com/p/2026-10-29-board",
-        "status": 202
+        "verified_at": "2026-10-29T21:51:57+00:00"
       },
       "nostr": {
         "at": "2026-10-29T19:01:35+00:00",
