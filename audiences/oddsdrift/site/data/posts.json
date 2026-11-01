@@ -1,5 +1,19 @@
 [
  {
+  "id": "2026-11-01-sunday",
+  "slot": "sunday",
+  "shape": "scorecard",
+  "title": "Calibration scorecard \u2014 week 44, 2026",
+  "text": "Calibration scorecard, week 44\nResolved: 1893 K, 675 P\nPriced \u226590\u00a2 the day before: 280/312 resolved YES\nPriced \u226410\u00a2: 51/929 resolved YES\nWeekly Brier: K 0.135 \u00b7 P 0.128 (running K 0.119 \u00b7 P 0.098)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "published_at": "2026-11-01T18:26:16Z",
+  "tags": [
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-11-01-sunday.png",
+  "chart_alt": "Calibration scorecard, week 44\nResolved: 1893 K, 675 P\nPriced \u226590\u00a2 the day before: 280/312 resolved YES\nPriced \u226410\u00a2: 51/929 resolved YES\nWeekly Brier: K 0.135 \u00b7 P 0.128 (running K 0.119 \u00b7 P 0.098)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-11-01-sunday"
+ },
+ {
   "id": "2026-10-31-board",
   "slot": "board",
   "shape": "watchlist",
@@ -732,20 +746,5 @@
   "chart": "/charts/2026-09-20-sunday.png",
   "chart_alt": "Calibration scorecard, week 38\nResolved: 1772 K, 330 P\nPriced \u226590\u00a2 the day before: 252/257 resolved YES\nPriced \u226410\u00a2: 37/812 resolved YES\nWeekly Brier: K 0.123 \u00b7 P 0.072 (running K 0.126 \u00b7 P 0.097)\nodds-drift.com/calibration\n#PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-09-20-sunday"
- },
- {
-  "id": "2026-09-20-am",
-  "slot": "am",
-  "shape": "movers",
-  "title": "Biggest odds swings \u2014 Sep 20, 2026",
-  "text": "Biggest odds swings, last 24h\nK \u00b7 Will the number of distinct\u2026 13\u00a2\u219286\u00a2 (+73) \u00b7 $10k\nK \u00b7 Will Drake have above 15M d\u2026 9\u00a2\u219271\u00a2 (+62) \u00b7 $13k\nK \u00b7 Will the maximum temperatur\u2026 38\u00a2\u219297\u00a2 (+59) \u00b7 $9k\nK \u00b7 Resident Evil Rotten Tomato\u2026 20\u00a2\u219266\u00a2 (+46) \u00b7 $22k\n#PredictionMarkets #Kalshi",
-  "published_at": "2026-09-20T16:50:01Z",
-  "tags": [
-   "PredictionMarkets",
-   "Kalshi"
-  ],
-  "chart": "/charts/2026-09-20-am.png",
-  "chart_alt": "Biggest odds swings, last 24h\nK \u00b7 Will the number of distinct\u2026 13\u00a2\u219286\u00a2 (+73) \u00b7 $10k\nK \u00b7 Will Drake have above 15M d\u2026 9\u00a2\u219271\u00a2 (+62) \u00b7 $13k\nK \u00b7 Will the maximum temperatur\u2026 38\u00a2\u219297\u00a2 (+59) \u00b7 $9k\nK \u00b7 Resident Evil Rotten Tomato\u2026 20\u00a2\u219266\u00a2 (+46) \u00b7 $22k\n#PredictionMarkets #Kalshi",
-  "url": "https://odds-drift.com/p/2026-09-20-am"
  }
 ]
