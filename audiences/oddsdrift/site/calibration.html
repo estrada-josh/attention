@@ -31,13 +31,13 @@
 <article class="prose">
 <h1>Calibration</h1>
 <p>For every market that resolved, we look at the YES price 24 hours before settlement (from our own snapshots) and compare it with the outcome. A perfectly calibrated venue resolves YES 70% of the time when priced at 70¢. Brier score: lower is better (0 = perfect, 0.25 = coin flip).</p>
-<p>Resolved markets with a 24h-before price: <b>23515</b> (last 7 days: 2463).</p>
+<p>Resolved markets with a 24h-before price: <b>23558</b> (last 7 days: 2426).</p>
 <h2>Running Brier score by venue</h2>
 <table><tr><th>Venue</th><th>n</th><th>Brier</th></tr>
-<tr><td>kalshi</td><td>19310</td><td>0.119</td></tr><tr><td>polymarket</td><td>4205</td><td>0.098</td></tr></table>
+<tr><td>kalshi</td><td>19339</td><td>0.118</td></tr><tr><td>polymarket</td><td>4219</td><td>0.098</td></tr></table>
 <h2>Reliability table (all time)</h2>
 <table><tr><th>Priced (24h before)</th><th>n</th><th>Resolved YES</th><th>Rate</th></tr>
-<tr><td>0-10¢</td><td>8808</td><td>318</td><td>4%</td></tr><tr><td>10-20¢</td><td>2390</td><td>384</td><td>16%</td></tr><tr><td>20-30¢</td><td>1911</td><td>514</td><td>27%</td></tr><tr><td>30-40¢</td><td>1664</td><td>621</td><td>37%</td></tr><tr><td>40-50¢</td><td>1469</td><td>670</td><td>46%</td></tr><tr><td>50-60¢</td><td>1169</td><td>642</td><td>55%</td></tr><tr><td>60-70¢</td><td>1048</td><td>675</td><td>64%</td></tr><tr><td>70-80¢</td><td>896</td><td>650</td><td>73%</td></tr><tr><td>80-90¢</td><td>1070</td><td>896</td><td>84%</td></tr><tr><td>90-100¢</td><td>3090</td><td>2976</td><td>96%</td></tr></table>
+<tr><td>0-10¢</td><td>8816</td><td>318</td><td>4%</td></tr><tr><td>10-20¢</td><td>2392</td><td>384</td><td>16%</td></tr><tr><td>20-30¢</td><td>1915</td><td>514</td><td>27%</td></tr><tr><td>30-40¢</td><td>1669</td><td>621</td><td>37%</td></tr><tr><td>40-50¢</td><td>1473</td><td>671</td><td>46%</td></tr><tr><td>50-60¢</td><td>1170</td><td>643</td><td>55%</td></tr><tr><td>60-70¢</td><td>1049</td><td>675</td><td>64%</td></tr><tr><td>70-80¢</td><td>899</td><td>652</td><td>73%</td></tr><tr><td>80-90¢</td><td>1075</td><td>900</td><td>84%</td></tr><tr><td>90-100¢</td><td>3100</td><td>2986</td><td>96%</td></tr></table>
 <p>Raw ledger: <a href="/data/resolutions.csv">resolutions.csv</a> (last 90 days, CC BY 4.0).
 The numbers above use the full ledger. Download the full history from the
 <a href="https://github.com/estrada-josh/attention">repo</a>.</p>
