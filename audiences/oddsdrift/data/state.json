@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-11-03T20:08:16.425456+00:00",
+    "at": "2026-11-03T22:18:10.061601+00:00",
     "failed_sources": [],
     "no_post_reason": null,
-    "open_rows": 152072,
-    "post": "2026-11-03-board",
-    "settled_rows": 120448,
-    "slot": "board"
+    "open_rows": 152107,
+    "post": "2026-11-03-pm",
+    "settled_rows": 120453,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -3609,7 +3609,11 @@
   "settled_featured": {
     "kalshi:KXTRUMPMENTION-26NOV01-GREE": "2026-11-02",
     "polymarket:bitcoin-above-90k-on-november-2-2026": "2026-11-02",
+    "polymarket:elon-musk-of-tweets-october-27-november-3-2026-380-399": "2026-11-03",
+    "polymarket:highest-temperature-in-shenzhen-on-november-3-2026-28c": "2026-11-03",
     "polymarket:us-imposes-new-sanctions-on-china-by-october-31": "2026-11-02",
+    "polymarket:us-iran-ceasefire-continues-through-the-midterms": "2026-11-03",
+    "polymarket:us-x-iran-ceasefire-continues-through-november-4": "2026-11-03",
     "polymarket:will-bitcoin-dip-to-77pt5k-in-november-2026": "2026-11-02"
   },
   "slots_done": {
@@ -3791,6 +3795,7 @@
     "2026-11-02-board": "2026-11-02T22:20:27.889841+00:00 (skipped)",
     "2026-11-02-pm": "2026-11-02T22:20:27.889841+00:00",
     "2026-11-03-am": "2026-11-03T20:08:16.425456+00:00 (skipped)",
-    "2026-11-03-board": "2026-11-03T20:08:16.425456+00:00"
+    "2026-11-03-board": "2026-11-03T20:08:16.425456+00:00",
+    "2026-11-03-pm": "2026-11-03T22:18:10.061601+00:00"
   }
 }
