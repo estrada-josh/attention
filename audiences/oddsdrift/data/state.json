@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-11-05T20:41:15.212942+00:00",
+    "at": "2026-11-05T22:40:55.106488+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
+    "no_post_reason": null,
     "open_rows": 152107,
-    "post": null,
-    "settled_rows": 106987,
-    "slot": "snapshot"
+    "post": "2026-11-05-pm",
+    "settled_rows": 105512,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -3661,17 +3661,17 @@
     }
   },
   "settled_featured": {
-    "kalshi:KXTRUMPMENTION-26NOV01-GREE": "2026-11-02",
+    "polymarket:bitcoin-above-78k-on-november-5-2026": "2026-11-05",
     "polymarket:bitcoin-above-80k-on-november-4-2026": "2026-11-04",
-    "polymarket:bitcoin-above-90k-on-november-2-2026": "2026-11-02",
     "polymarket:elon-musk-of-tweets-october-27-november-3-2026-380-399": "2026-11-03",
+    "polymarket:ethereum-above-2300-on-november-5-2026": "2026-11-05",
     "polymarket:ethereum-above-2400-on-november-4-2026": "2026-11-04",
     "polymarket:highest-temperature-in-shenzhen-on-november-3-2026-28c": "2026-11-03",
+    "polymarket:spy-closes-above-740-on-november-5-2026": "2026-11-05",
     "polymarket:spy-closes-above-765-on-november-4-2026": "2026-11-04",
-    "polymarket:us-imposes-new-sanctions-on-china-by-october-31": "2026-11-02",
     "polymarket:us-iran-ceasefire-continues-through-the-midterms": "2026-11-03",
     "polymarket:us-x-iran-ceasefire-continues-through-november-4": "2026-11-03",
-    "polymarket:will-bitcoin-dip-to-77pt5k-in-november-2026": "2026-11-02",
+    "polymarket:will-the-price-of-bitcoin-be-between-76000-78000-on-november-5-2026": "2026-11-05",
     "polymarket:will-the-price-of-bitcoin-be-between-80000-82000-on-november-4-2026": "2026-11-04"
   },
   "slots_done": {
@@ -3857,6 +3857,7 @@
     "2026-11-03-pm": "2026-11-03T22:18:10.061601+00:00",
     "2026-11-04-am": "2026-11-04T20:26:26.048218+00:00 (skipped)",
     "2026-11-04-pm": "2026-11-04T22:38:04.262942+00:00",
-    "2026-11-05-am": "2026-11-05T20:41:15.212942+00:00 (skipped)"
+    "2026-11-05-am": "2026-11-05T20:41:15.212942+00:00 (skipped)",
+    "2026-11-05-pm": "2026-11-05T22:40:55.106488+00:00"
   }
 }

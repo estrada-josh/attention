@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-11-04T22:38:04Z</updated>
+  <updated>2026-11-05T22:40:55Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Settled &amp; surprised — Nov 5, 2026</title>
+    <link href="https://odds-drift.com/p/2026-11-05-pm"/>
+    <id>https://odds-drift.com/p/2026-11-05-pm</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-11-05T22:40:55Z</published>
+    <updated>2026-11-05T22:40:55Z</updated>
+<category term="PredictionMarkets"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
+UPSET · P · Will the price of Ethereum be abo… → NO · was 99¢ ~24h before · $59k
+UPSET · P · Will the price of Bitcoin be betw… → YES · was 6¢ ~24h before · $25k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 297
+#PredictionMarkets #Polymarket</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+UPSET · P · Will the price of Ethereum be abo… → NO · was 99¢ ~24h before · $59k&lt;br&gt;
+UPSET · P · Will the price of Bitcoin be betw… → YES · was 6¢ ~24h before · $25k&lt;br&gt;
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 297&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-11-05-pm.png&#34; alt=&#34;Settled in the last 24h
+UPSET · P · Will the price of Ethereum be abo… → NO · was 99¢ ~24h before · $59k
+UPSET · P · Will the price of Bitcoin be betw… → YES · was 6¢ ~24h before · $25k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 297
+#PredictionMarkets #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Settled &amp; surprised — Nov 4, 2026</title>
     <link href="https://odds-drift.com/p/2026-11-04-pm"/>
@@ -843,35 +867,5 @@ UPSET · K · Will the VoteHub 2026 generic bal… → YES · was 5¢ ~24h befor
 UPSET · K · Will the maximum temperature be 7… → YES · was 15¢ ~24h before · $32k
 Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 239
 #PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Calibration scorecard — week 41, 2026</title>
-    <link href="https://odds-drift.com/p/2026-10-11-sunday"/>
-    <id>https://odds-drift.com/p/2026-10-11-sunday</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-10-11T18:06:26Z</published>
-    <updated>2026-10-11T18:06:26Z</updated>
-<category term="PredictionMarkets"/>    <summary type="text">Calibration scorecard, week 41
-Resolved: 1839 K, 387 P
-Priced ≥90¢ the day before: 270/276 resolved YES
-Priced ≤10¢: 27/975 resolved YES
-Weekly Brier: K 0.094 · P 0.106 (running K 0.118 · P 0.091)
-odds-drift.com/calibration
-#PredictionMarkets</summary>
-    <content type="html">&lt;p&gt;Calibration scorecard, week 41&lt;br&gt;
-Resolved: 1839 K, 387 P&lt;br&gt;
-Priced ≥90¢ the day before: 270/276 resolved YES&lt;br&gt;
-Priced ≤10¢: 27/975 resolved YES&lt;br&gt;
-Weekly Brier: K 0.094 · P 0.106 (running K 0.118 · P 0.091)&lt;br&gt;
-&lt;a href=&#34;https://odds-drift.com/calibration&#34;&gt;odds-drift.com/calibration&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-10-11-sunday.png&#34; alt=&#34;Calibration scorecard, week 41
-Resolved: 1839 K, 387 P
-Priced ≥90¢ the day before: 270/276 resolved YES
-Priced ≤10¢: 27/975 resolved YES
-Weekly Brier: K 0.094 · P 0.106 (running K 0.118 · P 0.091)
-odds-drift.com/calibration
-#PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
