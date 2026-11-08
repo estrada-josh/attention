@@ -13,17 +13,17 @@
   },
   "created": "2026-08-16T19:49:45.840184+00:00",
   "healthcheck": {
-    "consecutive_failures": 1,
+    "consecutive_failures": 0,
     "last": {
       "bsky_followers": 5,
-      "bsky_posts": 128,
-      "date": "2026-11-07",
+      "bsky_posts": 129,
+      "date": "2026-11-08",
       "gh_forks": 0,
       "gh_stars": 0,
       "gh_watchers": 0,
-      "posts_total": 128,
-      "problems": "newest post 44h old (limit 30h); last run reason: no slot due",
-      "repo_size_kb": 62874,
+      "posts_total": 129,
+      "problems": "",
+      "repo_size_kb": 65808,
       "site_ok": true
     }
   },
