@@ -7,6 +7,17 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-11-08-sunday",
+   "url": "https://odds-drift.com/p/2026-11-08-sunday",
+   "title": "Calibration scorecard \u2014 week 45, 2026",
+   "content_text": "Calibration scorecard, week 45\nResolved: 2140 K, 781 P\nPriced \u226590\u00a2 the day before: 433/444 resolved YES\nPriced \u226410\u00a2: 21/1118 resolved YES\nWeekly Brier: K 0.088 \u00b7 P 0.094 (running K 0.115 \u00b7 P 0.097)\nodds-drift.com/calibration\n#PredictionMarkets",
+   "date_published": "2026-11-08T18:22:35Z",
+   "tags": [
+    "PredictionMarkets"
+   ],
+   "image": "https://odds-drift.com/charts/2026-11-08-sunday.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-11-05-pm",
    "url": "https://odds-drift.com/p/2026-11-05-pm",
    "title": "Settled & surprised \u2014 Nov 5, 2026",
@@ -352,19 +363,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-10-13-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-10-12-pm",
-   "url": "https://odds-drift.com/p/2026-10-12-pm",
-   "title": "Settled & surprised \u2014 Oct 12, 2026",
-   "content_text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the VoteHub 2026 generic bal\u2026 \u2192 YES \u00b7 was 5\u00a2 ~24h before \u00b7 $16k\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 7\u2026 \u2192 YES \u00b7 was 15\u00a2 ~24h before \u00b7 $32k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 239\n#PredictionMarkets #Kalshi #Polymarket",
-   "date_published": "2026-10-12T23:37:38Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi",
-    "Polymarket"
-   ],
-   "image": "https://odds-drift.com/charts/2026-10-12-pm.png"
   }
  ]
 }

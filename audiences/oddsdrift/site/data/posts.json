@@ -1,5 +1,19 @@
 [
  {
+  "id": "2026-11-08-sunday",
+  "slot": "sunday",
+  "shape": "scorecard",
+  "title": "Calibration scorecard \u2014 week 45, 2026",
+  "text": "Calibration scorecard, week 45\nResolved: 2140 K, 781 P\nPriced \u226590\u00a2 the day before: 433/444 resolved YES\nPriced \u226410\u00a2: 21/1118 resolved YES\nWeekly Brier: K 0.088 \u00b7 P 0.094 (running K 0.115 \u00b7 P 0.097)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "published_at": "2026-11-08T18:22:35Z",
+  "tags": [
+   "PredictionMarkets"
+  ],
+  "chart": "/charts/2026-11-08-sunday.png",
+  "chart_alt": "Calibration scorecard, week 45\nResolved: 2140 K, 781 P\nPriced \u226590\u00a2 the day before: 433/444 resolved YES\nPriced \u226410\u00a2: 21/1118 resolved YES\nWeekly Brier: K 0.088 \u00b7 P 0.094 (running K 0.115 \u00b7 P 0.097)\nodds-drift.com/calibration\n#PredictionMarkets",
+  "url": "https://odds-drift.com/p/2026-11-08-sunday"
+ },
+ {
   "id": "2026-11-05-pm",
   "slot": "pm",
   "shape": "settled",
@@ -733,20 +747,5 @@
   "chart": "/charts/2026-09-26-am.png",
   "chart_alt": "Biggest odds swings, last 24h\nP \u00b7 Will Xiaomi have the best C\u2026 1\u00a2\u219287\u00a2 (+86) \u00b7 $35k\nK \u00b7 Top Chinese AI Company week\u2026 2\u00a2\u219290\u00a2 (+88) \u00b7 $13k\nK \u00b7 Top Chinese AI Company week\u2026 1\u00a2\u219290\u00a2 (+89) \u00b7 $5k\nK \u00b7 Top Chinese AI Company this\u2026 2\u00a2\u219284\u00a2 (+82) \u00b7 $8k\n#PredictionMarkets #Kalshi #Polymarket",
   "url": "https://odds-drift.com/p/2026-09-26-am"
- },
- {
-  "id": "2026-09-25-board",
-  "slot": "board",
-  "shape": "watchlist",
-  "title": "Midterms 2026 odds board \u2014 Sep 25, 2026",
-  "text": "Midterms 2026 odds board \u00b7 38 days to Election Day\nSenate (D): K 61\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 61\u00a2 (+2) \u00b7 P 62\u00a2 (+0)\nMI Sen (D): K 73\u00a2 (-1) \u00b7 P 72\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (-1) \u00b7 P 57\u00a2 (-1)\n#Midterms2026 #PredictionMarkets",
-  "published_at": "2026-09-25T17:58:01Z",
-  "tags": [
-   "Midterms2026",
-   "PredictionMarkets"
-  ],
-  "chart": "/charts/2026-09-25-board.png",
-  "chart_alt": "Midterms 2026 odds board \u00b7 38 days to Election Day\nSenate (D): K 61\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 61\u00a2 (+2) \u00b7 P 62\u00a2 (+0)\nMI Sen (D): K 73\u00a2 (-1) \u00b7 P 72\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (-1) \u00b7 P 57\u00a2 (-1)\n#Midterms2026 #PredictionMarkets",
-  "url": "https://odds-drift.com/p/2026-09-25-board"
  }
 ]

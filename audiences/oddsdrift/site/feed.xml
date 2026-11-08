@@ -5,8 +5,38 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-11-05T22:40:55Z</updated>
+  <updated>2026-11-08T18:22:35Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Calibration scorecard — week 45, 2026</title>
+    <link href="https://odds-drift.com/p/2026-11-08-sunday"/>
+    <id>https://odds-drift.com/p/2026-11-08-sunday</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-11-08T18:22:35Z</published>
+    <updated>2026-11-08T18:22:35Z</updated>
+<category term="PredictionMarkets"/>    <summary type="text">Calibration scorecard, week 45
+Resolved: 2140 K, 781 P
+Priced ≥90¢ the day before: 433/444 resolved YES
+Priced ≤10¢: 21/1118 resolved YES
+Weekly Brier: K 0.088 · P 0.094 (running K 0.115 · P 0.097)
+odds-drift.com/calibration
+#PredictionMarkets</summary>
+    <content type="html">&lt;p&gt;Calibration scorecard, week 45&lt;br&gt;
+Resolved: 2140 K, 781 P&lt;br&gt;
+Priced ≥90¢ the day before: 433/444 resolved YES&lt;br&gt;
+Priced ≤10¢: 21/1118 resolved YES&lt;br&gt;
+Weekly Brier: K 0.088 · P 0.094 (running K 0.115 · P 0.097)&lt;br&gt;
+&lt;a href=&#34;https://odds-drift.com/calibration&#34;&gt;odds-drift.com/calibration&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-11-08-sunday.png&#34; alt=&#34;Calibration scorecard, week 45
+Resolved: 2140 K, 781 P
+Priced ≥90¢ the day before: 433/444 resolved YES
+Priced ≤10¢: 21/1118 resolved YES
+Weekly Brier: K 0.088 · P 0.094 (running K 0.115 · P 0.097)
+odds-drift.com/calibration
+#PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Settled &amp; surprised — Nov 5, 2026</title>
     <link href="https://odds-drift.com/p/2026-11-05-pm"/>
@@ -843,29 +873,5 @@ TX Sen (D): K 64¢ (+0) · P 64¢ (+2)
 MI Sen (D): K 68¢ (+0) · P 70¢ (+0)
 OH Sen (D): K 60¢ (+0) · P 62¢ (+0)
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Settled &amp; surprised — Oct 12, 2026</title>
-    <link href="https://odds-drift.com/p/2026-10-12-pm"/>
-    <id>https://odds-drift.com/p/2026-10-12-pm</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-10-12T23:37:38Z</published>
-    <updated>2026-10-12T23:37:38Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
-UPSET · K · Will the VoteHub 2026 generic bal… → YES · was 5¢ ~24h before · $16k
-UPSET · K · Will the maximum temperature be 7… → YES · was 15¢ ~24h before · $32k
-Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 239
-#PredictionMarkets #Kalshi #Polymarket</summary>
-    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
-UPSET · K · Will the VoteHub 2026 generic bal… → YES · was 5¢ ~24h before · $16k&lt;br&gt;
-UPSET · K · Will the maximum temperature be 7… → YES · was 15¢ ~24h before · $32k&lt;br&gt;
-Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 239&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-10-12-pm.png&#34; alt=&#34;Settled in the last 24h
-UPSET · K · Will the VoteHub 2026 generic bal… → YES · was 5¢ ~24h before · $16k
-UPSET · K · Will the maximum temperature be 7… → YES · was 15¢ ~24h before · $32k
-Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 239
-#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
