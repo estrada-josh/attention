@@ -3719,6 +3719,40 @@
           "wss://relay.primal.net"
         ]
       }
+    },
+    "2026-11-09-pm": {
+      "bridgy": {
+        "accepted": true,
+        "at": "2026-11-09T23:02:56+00:00",
+        "at_uri": "at://did:plc:xizsq2jlzzz4ubme4vvlt457/app.bsky.feed.post/3mzvzuovcl532",
+        "attempts": 1,
+        "body": "Added webmention 16913864497975733501 now",
+        "ok": true,
+        "source": "https://odds-drift.com/p/2026-11-09-pm",
+        "status": 202,
+        "verified_at": "2026-11-09T23:02:56+00:00"
+      },
+      "nostr": {
+        "at": "2026-11-09T23:03:01+00:00",
+        "created_at": 1794265187,
+        "error": null,
+        "failed": [
+          {
+            "error": "connection failure: connection failed",
+            "relay": "wss://relay.damus.io"
+          },
+          {
+            "error": "publish timed out",
+            "relay": "wss://nos.lol"
+          }
+        ],
+        "id": "5e8e9f863288ba5d7a2703f1931b985cfa6dd99502895d48744a7526f1eadce8",
+        "ok": true,
+        "raw": null,
+        "relays_ok": [
+          "wss://relay.primal.net"
+        ]
+      }
     }
   },
   "settled_featured": {
