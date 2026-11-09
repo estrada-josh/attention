@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-11-09T01:43:59.231120+00:00",
+    "at": "2026-11-09T22:59:47.633528+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 152107,
-    "post": null,
-    "settled_rows": 137323,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 152091,
+    "post": "2026-11-09-pm",
+    "settled_rows": 127849,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -3722,18 +3722,10 @@
     }
   },
   "settled_featured": {
-    "polymarket:bitcoin-above-78k-on-november-5-2026": "2026-11-05",
-    "polymarket:bitcoin-above-80k-on-november-4-2026": "2026-11-04",
-    "polymarket:elon-musk-of-tweets-october-27-november-3-2026-380-399": "2026-11-03",
-    "polymarket:ethereum-above-2300-on-november-5-2026": "2026-11-05",
-    "polymarket:ethereum-above-2400-on-november-4-2026": "2026-11-04",
-    "polymarket:highest-temperature-in-shenzhen-on-november-3-2026-28c": "2026-11-03",
-    "polymarket:spy-closes-above-740-on-november-5-2026": "2026-11-05",
-    "polymarket:spy-closes-above-765-on-november-4-2026": "2026-11-04",
-    "polymarket:us-iran-ceasefire-continues-through-the-midterms": "2026-11-03",
-    "polymarket:us-x-iran-ceasefire-continues-through-november-4": "2026-11-03",
-    "polymarket:will-the-price-of-bitcoin-be-between-76000-78000-on-november-5-2026": "2026-11-05",
-    "polymarket:will-the-price-of-bitcoin-be-between-80000-82000-on-november-4-2026": "2026-11-04"
+    "kalshi:KXBRENTD-26NOV0917-T92": "2026-11-09",
+    "kalshi:KXTRUMPMENTION-26NOV08-CRYP": "2026-11-09",
+    "polymarket:elon-musk-of-tweets-november-7-november-9-2026-90-114": "2026-11-09",
+    "polymarket:next-fable-model-5pt2-released-by-november-9-2026": "2026-11-09"
   },
   "slots_done": {
     "2026-08-16-am": "2026-08-16T19:49:45.619688+00:00",
@@ -3923,6 +3915,8 @@
     "2026-11-06-am": "2026-11-06T19:57:56.262688+00:00 (skipped)",
     "2026-11-07-am": "2026-11-07T18:03:23.475217+00:00 (skipped)",
     "2026-11-08-am": "2026-11-08T18:22:35.701873+00:00 (skipped)",
-    "2026-11-08-sunday": "2026-11-08T18:22:35.701873+00:00"
+    "2026-11-08-sunday": "2026-11-08T18:22:35.701873+00:00",
+    "2026-11-09-am": "2026-11-09T22:59:47.633528+00:00 (skipped)",
+    "2026-11-09-pm": "2026-11-09T22:59:47.633528+00:00"
   }
 }
