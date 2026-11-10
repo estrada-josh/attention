@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-11-10T20:28:36.064174+00:00",
+    "at": "2026-11-10T22:23:07.915099+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 152107,
-    "post": null,
-    "settled_rows": 107780,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 152099,
+    "post": "2026-11-10-pm",
+    "settled_rows": 105206,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -3757,7 +3757,11 @@
   },
   "settled_featured": {
     "kalshi:KXBRENTD-26NOV0917-T92": "2026-11-09",
+    "kalshi:KXLOWTDEN-26NOV09-T41": "2026-11-10",
     "kalshi:KXTRUMPMENTION-26NOV08-CRYP": "2026-11-09",
+    "polymarket:bitcoin-above-72k-on-november-10-2026": "2026-11-10",
+    "polymarket:bitcoin-above-74k-on-november-10-2026": "2026-11-10",
+    "polymarket:elon-musk-of-tweets-november-3-november-10-2026-260-279": "2026-11-10",
     "polymarket:elon-musk-of-tweets-november-7-november-9-2026-90-114": "2026-11-09",
     "polymarket:next-fable-model-5pt2-released-by-november-9-2026": "2026-11-09"
   },
@@ -3952,6 +3956,7 @@
     "2026-11-08-sunday": "2026-11-08T18:22:35.701873+00:00",
     "2026-11-09-am": "2026-11-09T22:59:47.633528+00:00 (skipped)",
     "2026-11-09-pm": "2026-11-09T22:59:47.633528+00:00",
-    "2026-11-10-am": "2026-11-10T20:28:36.064174+00:00 (skipped)"
+    "2026-11-10-am": "2026-11-10T20:28:36.064174+00:00 (skipped)",
+    "2026-11-10-pm": "2026-11-10T22:23:07.915099+00:00"
   }
 }
