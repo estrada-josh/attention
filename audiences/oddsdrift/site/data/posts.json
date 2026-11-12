@@ -1,5 +1,21 @@
 [
  {
+  "id": "2026-11-12-pm",
+  "slot": "pm",
+  "shape": "settled",
+  "title": "Settled & surprised \u2014 Nov 12, 2026",
+  "text": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will the highest temperature in T\u2026 \u2192 YES \u00b7 was 4\u00a2 ~24h before \u00b7 $11k\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be betw\u2026 \u2192 YES \u00b7 was 5\u00a2 ~24h before \u00b7 $12k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 302\n#PredictionMarkets #Kalshi #Polymarket",
+  "published_at": "2026-11-12T22:44:06Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi",
+   "Polymarket"
+  ],
+  "chart": "/charts/2026-11-12-pm.png",
+  "chart_alt": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will the highest temperature in T\u2026 \u2192 YES \u00b7 was 4\u00a2 ~24h before \u00b7 $11k\nUPSET \u00b7 P \u00b7 Will the price of Bitcoin be betw\u2026 \u2192 YES \u00b7 was 5\u00a2 ~24h before \u00b7 $12k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 302\n#PredictionMarkets #Kalshi #Polymarket",
+  "url": "https://odds-drift.com/p/2026-11-12-pm"
+ },
+ {
   "id": "2026-11-11-pm",
   "slot": "pm",
   "shape": "settled",
@@ -735,20 +751,5 @@
   "chart": "/charts/2026-09-28-pm.png",
   "chart_alt": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will MrBeast Gaming's next video\u2026 \u2192 YES \u00b7 was 3\u00a2 ~24h before \u00b7 $14k\nUPSET \u00b7 K \u00b7 Will the maximum temperature be >\u2026 \u2192 YES \u00b7 was 9\u00a2 ~24h before \u00b7 $23k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 238\n#PredictionMarkets #Kalshi #Polymarket",
   "url": "https://odds-drift.com/p/2026-09-28-pm"
- },
- {
-  "id": "2026-09-28-board",
-  "slot": "board",
-  "shape": "watchlist",
-  "title": "Midterms 2026 odds board \u2014 Sep 28, 2026",
-  "text": "Midterms 2026 odds board \u00b7 35 days to Election Day\nSenate (D): K 61\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 60\u00a2 (-1) \u00b7 P 60\u00a2 (+0)\nMI Sen (D): K 72\u00a2 (+0) \u00b7 P 70\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (+2) \u00b7 P 57\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
-  "published_at": "2026-09-28T20:08:11Z",
-  "tags": [
-   "Midterms2026",
-   "PredictionMarkets"
-  ],
-  "chart": "/charts/2026-09-28-board.png",
-  "chart_alt": "Midterms 2026 odds board \u00b7 35 days to Election Day\nSenate (D): K 61\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (+0)\nTX Sen (D): K 60\u00a2 (-1) \u00b7 P 60\u00a2 (+0)\nMI Sen (D): K 72\u00a2 (+0) \u00b7 P 70\u00a2 (+0)\nOH Sen (D): K 59\u00a2 (+2) \u00b7 P 57\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
-  "url": "https://odds-drift.com/p/2026-09-28-board"
  }
 ]
