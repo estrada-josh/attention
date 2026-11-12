@@ -3801,27 +3801,22 @@
         "verified_at": "2026-11-11T23:31:29+00:00"
       },
       "nostr": {
-        "at": "2026-11-12T03:02:03+00:00",
+        "at": "2026-11-12T20:54:13+00:00",
         "created_at": 1794439678,
-        "error": "",
+        "error": null,
         "failed": [
-          {
-            "error": "connection failure: connection failed",
-            "relay": "wss://relay.damus.io"
-          },
           {
             "error": "publish timed out",
             "relay": "wss://nos.lol"
-          },
-          {
-            "error": "publish timed out",
-            "relay": "wss://relay.primal.net"
           }
         ],
         "id": "f7b10cc4a98c79efb5d4c9a847759f17c1c0be42981b3c1c18e753d0d33b9984",
-        "ok": false,
+        "ok": true,
         "raw": null,
-        "relays_ok": []
+        "relays_ok": [
+          "wss://relay.damus.io",
+          "wss://relay.primal.net"
+        ]
       }
     }
   },
