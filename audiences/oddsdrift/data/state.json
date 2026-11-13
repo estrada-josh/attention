@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-11-13T20:29:54.150389+00:00",
+    "at": "2026-11-13T22:38:59.814681+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 152107,
-    "post": null,
-    "settled_rows": 112492,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 152104,
+    "post": "2026-11-13-pm",
+    "settled_rows": 110040,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -3855,14 +3855,14 @@
     }
   },
   "settled_featured": {
+    "kalshi:KXBTC-26NOV1317-B68250": "2026-11-13",
+    "kalshi:KXBTCD-26NOV1317-T68499.99": "2026-11-13",
     "kalshi:KXDWTSELIMINATION-26NOV11-JDEW": "2026-11-11",
+    "kalshi:KXHIGHNY-26NOV12-B61.5": "2026-11-13",
     "kalshi:KXHIGHTSEA-26NOV10-B60.5": "2026-11-11",
     "kalshi:KXHIGHTSFO-26NOV11-T70": "2026-11-12",
-    "kalshi:KXLOWTDEN-26NOV09-T41": "2026-11-10",
-    "polymarket:bitcoin-above-72k-on-november-10-2026": "2026-11-10",
-    "polymarket:bitcoin-above-74k-on-november-10-2026": "2026-11-10",
+    "polymarket:bitcoin-above-70k-on-november-13-2026": "2026-11-13",
     "polymarket:dwts-35-week-9-elimination-jendew": "2026-11-11",
-    "polymarket:elon-musk-of-tweets-november-3-november-10-2026-260-279": "2026-11-10",
     "polymarket:elon-musk-of-tweets-november-9-november-11-2026-0-39": "2026-11-11",
     "polymarket:highest-temperature-in-taipei-on-november-12-2026-28c": "2026-11-12",
     "polymarket:will-gemini-carbon-debut-with-an-hle-diamond-score-of-65-or-higher": "2026-11-12",
@@ -4065,6 +4065,7 @@
     "2026-11-11-pm": "2026-11-11T23:27:58.838271+00:00",
     "2026-11-12-am": "2026-11-12T20:50:54.022973+00:00 (skipped)",
     "2026-11-12-pm": "2026-11-12T22:44:06.710258+00:00",
-    "2026-11-13-am": "2026-11-13T20:29:54.150389+00:00 (skipped)"
+    "2026-11-13-am": "2026-11-13T20:29:54.150389+00:00 (skipped)",
+    "2026-11-13-pm": "2026-11-13T22:38:59.814681+00:00"
   }
 }

@@ -7,6 +7,19 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-11-13-pm",
+   "url": "https://odds-drift.com/p/2026-11-13-pm",
+   "title": "Settled & surprised \u2014 Nov 13, 2026",
+   "content_text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Bitcoin price range on Nov 13, 20\u2026 \u2192 YES \u00b7 was 2\u00a2 ~24h before \u00b7 $68k\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 6\u2026 \u2192 YES \u00b7 was 3\u00a2 ~24h before \u00b7 $12k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 335\n#PredictionMarkets #Kalshi #Polymarket",
+   "date_published": "2026-11-13T22:38:59Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "image": "https://odds-drift.com/charts/2026-11-13-pm.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-11-12-pm",
    "url": "https://odds-drift.com/p/2026-11-12-pm",
    "title": "Settled & surprised \u2014 Nov 12, 2026",
@@ -355,18 +368,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-10-17-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-10-17-am",
-   "url": "https://odds-drift.com/p/2026-10-17-am",
-   "title": "Biggest odds swings \u2014 Oct 17, 2026",
-   "content_text": "Biggest odds swings, last 24h\nK \u00b7 Will the maximum temperatur\u2026 89\u00a2\u21928\u00a2 (-81) \u00b7 $73k\nK \u00b7 Will the President sign mor\u2026 10\u00a2\u219299\u00a2 (+89) \u00b7 $14k\nK \u00b7 Will the maximum temperatur\u2026 19\u00a2\u219295\u00a2 (+76) \u00b7 $16k\nK \u00b7 Will it rain in Lexington o\u2026 28\u00a2\u219299\u00a2 (+71) \u00b7 $27k\n#PredictionMarkets #Kalshi",
-   "date_published": "2026-10-17T16:27:35Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi"
-   ],
-   "image": "https://odds-drift.com/charts/2026-10-17-am.png"
   }
  ]
 }
