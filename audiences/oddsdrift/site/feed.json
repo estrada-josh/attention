@@ -7,6 +7,19 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-11-16-pm",
+   "url": "https://odds-drift.com/p/2026-11-16-pm",
+   "title": "Settled & surprised \u2014 Nov 16, 2026",
+   "content_text": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will Bitcoin dip to $62,000 Novem\u2026 \u2192 NO \u00b7 was 94\u00a2 ~24h before \u00b7 $32k\nUPSET \u00b7 P \u00b7 Will the USS Theodore Roosevelt a\u2026 \u2192 YES \u00b7 was 11\u00a2 ~24h before \u00b7 $14k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 335\n#PredictionMarkets #Kalshi #Polymarket",
+   "date_published": "2026-11-16T22:54:46Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "image": "https://odds-drift.com/charts/2026-11-16-pm.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-11-13-pm",
    "url": "https://odds-drift.com/p/2026-11-13-pm",
    "title": "Settled & surprised \u2014 Nov 13, 2026",
@@ -356,18 +369,6 @@
     "Kalshi"
    ],
    "image": "https://odds-drift.com/charts/2026-10-18-am.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-10-17-board",
-   "url": "https://odds-drift.com/p/2026-10-17-board",
-   "title": "Midterms 2026 odds board \u2014 Oct 17, 2026",
-   "content_text": "Midterms 2026 odds board \u00b7 16 days to Election Day\nSenate (D): K 63\u00a2 (+0) \u00b7 P 64\u00a2 (+0)\nHouse (D): K 90\u00a2 (+0) \u00b7 P 90\u00a2 (+0)\nTX Sen (D): K 62\u00a2 (+0) \u00b7 P 62\u00a2 (+0)\nMI Sen (D): K 68\u00a2 (+0) \u00b7 P 68\u00a2 (-2)\nOH Sen (D): K 65\u00a2 (+0) \u00b7 P 66\u00a2 (+1)\n#Midterms2026 #PredictionMarkets",
-   "date_published": "2026-10-17T19:25:23Z",
-   "tags": [
-    "Midterms2026",
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-10-17-board.png"
   }
  ]
 }
