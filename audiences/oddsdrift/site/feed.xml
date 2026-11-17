@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-11-16T22:54:46Z</updated>
+  <updated>2026-11-17T23:51:06Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Settled &amp; surprised — Nov 17, 2026</title>
+    <link href="https://odds-drift.com/p/2026-11-17-pm"/>
+    <id>https://odds-drift.com/p/2026-11-17-pm</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-11-17T23:51:06Z</published>
+    <updated>2026-11-17T23:51:06Z</updated>
+<category term="PredictionMarkets"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
+UPSET · P · Will Elon Musk post 300-319 tweet… → YES · was 11¢ ~24h before · $136k
+P · US x Iran Effective Ceasefire by… → NO · was 38¢ ~24h before · $205k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 343
+#PredictionMarkets #Polymarket</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+UPSET · P · Will Elon Musk post 300-319 tweet… → YES · was 11¢ ~24h before · $136k&lt;br&gt;
+P · US x Iran Effective Ceasefire by… → NO · was 38¢ ~24h before · $205k&lt;br&gt;
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 343&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-11-17-pm.png&#34; alt=&#34;Settled in the last 24h
+UPSET · P · Will Elon Musk post 300-319 tweet… → YES · was 11¢ ~24h before · $136k
+P · US x Iran Effective Ceasefire by… → NO · was 38¢ ~24h before · $205k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 343
+#PredictionMarkets #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Settled &amp; surprised — Nov 16, 2026</title>
     <link href="https://odds-drift.com/p/2026-11-16-pm"/>
@@ -813,32 +837,5 @@ Priced ≤10¢: 19/751 resolved YES
 Weekly Brier: K 0.110 · P 0.081 (running K 0.117 · P 0.090)
 odds-drift.com/calibration
 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Biggest odds swings — Oct 18, 2026</title>
-    <link href="https://odds-drift.com/p/2026-10-18-am"/>
-    <id>https://odds-drift.com/p/2026-10-18-am</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-10-18T16:34:07Z</published>
-    <updated>2026-10-18T16:34:07Z</updated>
-<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Biggest odds swings, last 24h
-K · DeepSeek market share this… 20¢→96¢ (+76) · $25k
-K · Will it rain in West Palm B… 95¢→45¢ (-50) · $42k
-K · Anthropic market share this… 55¢→99¢ (+44) · $29k
-K · Will the maximum temperatur… 44¢→91¢ (+47) · $11k
-#PredictionMarkets #Kalshi</summary>
-    <content type="html">&lt;p&gt;Biggest odds swings, last 24h&lt;br&gt;
-K · DeepSeek market share this… 20¢→96¢ (+76) · $25k&lt;br&gt;
-K · Will it rain in West Palm B… 95¢→45¢ (-50) · $42k&lt;br&gt;
-K · Anthropic market share this… 55¢→99¢ (+44) · $29k&lt;br&gt;
-K · Will the maximum temperatur… 44¢→91¢ (+47) · $11k&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-10-18-am.png&#34; alt=&#34;Biggest odds swings, last 24h
-K · DeepSeek market share this… 20¢→96¢ (+76) · $25k
-K · Will it rain in West Palm B… 95¢→45¢ (-50) · $42k
-K · Anthropic market share this… 55¢→99¢ (+44) · $29k
-K · Will the maximum temperatur… 44¢→91¢ (+47) · $11k
-#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

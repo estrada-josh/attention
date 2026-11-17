@@ -7,6 +7,18 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-11-17-pm",
+   "url": "https://odds-drift.com/p/2026-11-17-pm",
+   "title": "Settled & surprised \u2014 Nov 17, 2026",
+   "content_text": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will Elon Musk post 300-319 tweet\u2026 \u2192 YES \u00b7 was 11\u00a2 ~24h before \u00b7 $136k\nP \u00b7 US x Iran Effective Ceasefire by\u2026 \u2192 NO \u00b7 was 38\u00a2 ~24h before \u00b7 $205k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 343\n#PredictionMarkets #Polymarket",
+   "date_published": "2026-11-17T23:51:06Z",
+   "tags": [
+    "PredictionMarkets",
+    "Polymarket"
+   ],
+   "image": "https://odds-drift.com/charts/2026-11-17-pm.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-11-16-pm",
    "url": "https://odds-drift.com/p/2026-11-16-pm",
    "title": "Settled & surprised \u2014 Nov 16, 2026",
@@ -357,18 +369,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-10-18-sunday.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-10-18-am",
-   "url": "https://odds-drift.com/p/2026-10-18-am",
-   "title": "Biggest odds swings \u2014 Oct 18, 2026",
-   "content_text": "Biggest odds swings, last 24h\nK \u00b7 DeepSeek market share this\u2026 20\u00a2\u219296\u00a2 (+76) \u00b7 $25k\nK \u00b7 Will it rain in West Palm B\u2026 95\u00a2\u219245\u00a2 (-50) \u00b7 $42k\nK \u00b7 Anthropic market share this\u2026 55\u00a2\u219299\u00a2 (+44) \u00b7 $29k\nK \u00b7 Will the maximum temperatur\u2026 44\u00a2\u219291\u00a2 (+47) \u00b7 $11k\n#PredictionMarkets #Kalshi",
-   "date_published": "2026-10-18T16:34:07Z",
-   "tags": [
-    "PredictionMarkets",
-    "Kalshi"
-   ],
-   "image": "https://odds-drift.com/charts/2026-10-18-am.png"
   }
  ]
 }

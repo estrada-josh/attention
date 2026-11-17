@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-11-17T21:48:11.217075+00:00",
+    "at": "2026-11-17T23:51:06.511820+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 152106,
-    "post": null,
-    "settled_rows": 115206,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 152087,
+    "post": "2026-11-17-pm",
+    "settled_rows": 111247,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -3921,7 +3921,11 @@
   },
   "settled_featured": {
     "kalshi:KXIPOANTHROPIC-DATE-26NOV16": "2026-11-16",
+    "polymarket:elon-musk-of-tweets-november-10-november-17-2026-300-319": "2026-11-17",
+    "polymarket:elon-musk-of-tweets-november-10-november-17-2026-320-339": "2026-11-17",
     "polymarket:theo-james-announced-as-next-james-bond-893": "2026-11-16",
+    "polymarket:us-x-iran-effective-ceasefire-by-november-15-20261108": "2026-11-17",
+    "polymarket:us-x-iran-effective-ceasefire-by-november-8-20261108": "2026-11-17",
     "polymarket:will-bitcoin-dip-to-62k-november-9-15-2026": "2026-11-16",
     "polymarket:will-the-uss-theodore-roosevelt-arrive-in-centcom-by-november-15-2026": "2026-11-16"
   },
@@ -4129,6 +4133,7 @@
     "2026-11-15-sunday": "2026-11-15T19:23:29.536819+00:00 (skipped)",
     "2026-11-16-am": "2026-11-16T22:54:46.499150+00:00 (skipped)",
     "2026-11-16-pm": "2026-11-16T22:54:46.499150+00:00",
-    "2026-11-17-am": "2026-11-17T21:48:11.217075+00:00 (skipped)"
+    "2026-11-17-am": "2026-11-17T21:48:11.217075+00:00 (skipped)",
+    "2026-11-17-pm": "2026-11-17T23:51:06.511820+00:00"
   }
 }
