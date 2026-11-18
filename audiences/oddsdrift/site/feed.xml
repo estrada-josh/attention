@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-11-17T23:51:06Z</updated>
+  <updated>2026-11-18T23:23:53Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Settled &amp; surprised — Nov 18, 2026</title>
+    <link href="https://odds-drift.com/p/2026-11-18-pm"/>
+    <id>https://odds-drift.com/p/2026-11-18-pm</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-11-18T23:23:53Z</published>
+    <updated>2026-11-18T23:23:53Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/><category term="Polymarket"/>    <summary type="text">Settled in the last 24h
+UPSET · P · Will Trump and Xi hug at APEC? → YES · was 3¢ ~24h before · $97k
+UPSET · K · Will Harry Shum Jr. qualify for t… → NO · was 93¢ ~24h before · $50k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 343
+#PredictionMarkets #Kalshi #Polymarket</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+UPSET · P · Will Trump and Xi hug at APEC? → YES · was 3¢ ~24h before · $97k&lt;br&gt;
+UPSET · K · Will Harry Shum Jr. qualify for t… → NO · was 93¢ ~24h before · $50k&lt;br&gt;
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 343&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt; &lt;a href=&#34;/tag/polymarket&#34;&gt;#Polymarket&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-11-18-pm.png&#34; alt=&#34;Settled in the last 24h
+UPSET · P · Will Trump and Xi hug at APEC? → YES · was 3¢ ~24h before · $97k
+UPSET · K · Will Harry Shum Jr. qualify for t… → NO · was 93¢ ~24h before · $50k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 343
+#PredictionMarkets #Kalshi #Polymarket&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Settled &amp; surprised — Nov 17, 2026</title>
     <link href="https://odds-drift.com/p/2026-11-17-pm"/>
@@ -807,35 +831,5 @@ TX Sen (D): K 62¢ (+0) · P 62¢ (+0)
 MI Sen (D): K 68¢ (+0) · P 70¢ (+0)
 OH Sen (D): K 65¢ (-1) · P 64¢ (-4)
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Calibration scorecard — week 42, 2026</title>
-    <link href="https://odds-drift.com/p/2026-10-18-sunday"/>
-    <id>https://odds-drift.com/p/2026-10-18-sunday</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-10-18T18:06:21Z</published>
-    <updated>2026-10-18T18:06:21Z</updated>
-<category term="PredictionMarkets"/>    <summary type="text">Calibration scorecard, week 42
-Resolved: 1752 K, 281 P
-Priced ≥90¢ the day before: 259/267 resolved YES
-Priced ≤10¢: 19/751 resolved YES
-Weekly Brier: K 0.110 · P 0.081 (running K 0.117 · P 0.090)
-odds-drift.com/calibration
-#PredictionMarkets</summary>
-    <content type="html">&lt;p&gt;Calibration scorecard, week 42&lt;br&gt;
-Resolved: 1752 K, 281 P&lt;br&gt;
-Priced ≥90¢ the day before: 259/267 resolved YES&lt;br&gt;
-Priced ≤10¢: 19/751 resolved YES&lt;br&gt;
-Weekly Brier: K 0.110 · P 0.081 (running K 0.117 · P 0.090)&lt;br&gt;
-&lt;a href=&#34;https://odds-drift.com/calibration&#34;&gt;odds-drift.com/calibration&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-10-18-sunday.png&#34; alt=&#34;Calibration scorecard, week 42
-Resolved: 1752 K, 281 P
-Priced ≥90¢ the day before: 259/267 resolved YES
-Priced ≤10¢: 19/751 resolved YES
-Weekly Brier: K 0.110 · P 0.081 (running K 0.117 · P 0.090)
-odds-drift.com/calibration
-#PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

@@ -7,6 +7,19 @@
  "icon": "https://odds-drift.com/avatar.png",
  "items": [
   {
+   "id": "https://odds-drift.com/p/2026-11-18-pm",
+   "url": "https://odds-drift.com/p/2026-11-18-pm",
+   "title": "Settled & surprised \u2014 Nov 18, 2026",
+   "content_text": "Settled in the last 24h\nUPSET \u00b7 P \u00b7 Will Trump and Xi hug at APEC? \u2192 YES \u00b7 was 3\u00a2 ~24h before \u00b7 $97k\nUPSET \u00b7 K \u00b7 Will Harry Shum Jr. qualify for t\u2026 \u2192 NO \u00b7 was 93\u00a2 ~24h before \u00b7 $50k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 343\n#PredictionMarkets #Kalshi #Polymarket",
+   "date_published": "2026-11-18T23:23:53Z",
+   "tags": [
+    "PredictionMarkets",
+    "Kalshi",
+    "Polymarket"
+   ],
+   "image": "https://odds-drift.com/charts/2026-11-18-pm.png"
+  },
+  {
    "id": "https://odds-drift.com/p/2026-11-17-pm",
    "url": "https://odds-drift.com/p/2026-11-17-pm",
    "title": "Settled & surprised \u2014 Nov 17, 2026",
@@ -358,17 +371,6 @@
     "PredictionMarkets"
    ],
    "image": "https://odds-drift.com/charts/2026-10-19-board.png"
-  },
-  {
-   "id": "https://odds-drift.com/p/2026-10-18-sunday",
-   "url": "https://odds-drift.com/p/2026-10-18-sunday",
-   "title": "Calibration scorecard \u2014 week 42, 2026",
-   "content_text": "Calibration scorecard, week 42\nResolved: 1752 K, 281 P\nPriced \u226590\u00a2 the day before: 259/267 resolved YES\nPriced \u226410\u00a2: 19/751 resolved YES\nWeekly Brier: K 0.110 \u00b7 P 0.081 (running K 0.117 \u00b7 P 0.090)\nodds-drift.com/calibration\n#PredictionMarkets",
-   "date_published": "2026-10-18T18:06:21Z",
-   "tags": [
-    "PredictionMarkets"
-   ],
-   "image": "https://odds-drift.com/charts/2026-10-18-sunday.png"
   }
  ]
 }
