@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-11-20T21:09:30.572626+00:00",
+    "at": "2026-11-20T23:05:17.877191+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 152107,
-    "post": null,
-    "settled_rows": 115487,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 152086,
+    "post": "2026-11-20-pm",
+    "settled_rows": 114793,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -4013,17 +4013,17 @@
     }
   },
   "settled_featured": {
+    "kalshi:KXBTC-26NOV2017-B58750": "2026-11-20",
     "kalshi:KXDWTSELIMINATION-26NOV18-HSHU": "2026-11-18",
     "kalshi:KXDWTSFINALS-31DEC26-HSHU": "2026-11-18",
+    "kalshi:KXETH-26NOV2017-B1600": "2026-11-20",
+    "kalshi:KXETHD-26NOV2017-T1619.99": "2026-11-20",
+    "kalshi:KXETHD-26NOV2017-T1659.99": "2026-11-20",
     "kalshi:KXGOLDD-26NOV1917-T3662": "2026-11-19",
     "kalshi:KXGOLDD-26NOV1917-T3672": "2026-11-19",
     "kalshi:KXGOLDD-26NOV1917-T3682": "2026-11-19",
     "polymarket:anthropic-ipo-opening-price-110-120": "2026-11-19",
     "polymarket:dwts-35-week-10-elimination-harshu": "2026-11-18",
-    "polymarket:elon-musk-of-tweets-november-10-november-17-2026-300-319": "2026-11-17",
-    "polymarket:elon-musk-of-tweets-november-10-november-17-2026-320-339": "2026-11-17",
-    "polymarket:us-x-iran-effective-ceasefire-by-november-15-20261108": "2026-11-17",
-    "polymarket:us-x-iran-effective-ceasefire-by-november-8-20261108": "2026-11-17",
     "polymarket:will-trump-and-xi-hug-at-apec": "2026-11-18"
   },
   "slots_done": {
@@ -4236,6 +4236,7 @@
     "2026-11-18-pm": "2026-11-18T23:23:53.431335+00:00",
     "2026-11-19-am": "2026-11-19T21:38:00.074526+00:00 (skipped)",
     "2026-11-19-pm": "2026-11-19T23:35:23.809530+00:00",
-    "2026-11-20-am": "2026-11-20T21:09:30.572626+00:00 (skipped)"
+    "2026-11-20-am": "2026-11-20T21:09:30.572626+00:00 (skipped)",
+    "2026-11-20-pm": "2026-11-20T23:05:17.877191+00:00"
   }
 }

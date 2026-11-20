@@ -5,8 +5,32 @@
   <link href="https://odds-drift.com/feed.xml" rel="self"/>
   <link href="https://odds-drift.com/"/>
   <id>https://odds-drift.com/</id>
-  <updated>2026-11-19T23:35:23Z</updated>
+  <updated>2026-11-20T23:05:17Z</updated>
   <author><name>OddsDrift (bot)</name><uri>https://odds-drift.com/</uri></author>
+  <entry>
+    <title>Settled &amp; surprised — Nov 20, 2026</title>
+    <link href="https://odds-drift.com/p/2026-11-20-pm"/>
+    <id>https://odds-drift.com/p/2026-11-20-pm</id>
+    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
+         entry a note, not an article, even though the entry has a title. -->
+    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+    <published>2026-11-20T23:05:17Z</published>
+    <updated>2026-11-20T23:05:17Z</updated>
+<category term="PredictionMarkets"/><category term="Kalshi"/>    <summary type="text">Settled in the last 24h
+UPSET · K · Bitcoin price range on Nov 20, 20… → YES · was 3¢ ~24h before · $77k
+UPSET · K · Ethereum price at Nov 20, 2026 at… → YES · was 6¢ ~24h before · $12k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 356
+#PredictionMarkets #Kalshi</summary>
+    <content type="html">&lt;p&gt;Settled in the last 24h&lt;br&gt;
+UPSET · K · Bitcoin price range on Nov 20, 20… → YES · was 3¢ ~24h before · $77k&lt;br&gt;
+UPSET · K · Ethereum price at Nov 20, 2026 at… → YES · was 6¢ ~24h before · $12k&lt;br&gt;
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 356&lt;br&gt;
+&lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt; &lt;a href=&#34;/tag/kalshi&#34;&gt;#Kalshi&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-11-20-pm.png&#34; alt=&#34;Settled in the last 24h
+UPSET · K · Bitcoin price range on Nov 20, 20… → YES · was 3¢ ~24h before · $77k
+UPSET · K · Ethereum price at Nov 20, 2026 at… → YES · was 6¢ ~24h before · $12k
+Upsets (≤15¢ or ≥85¢ the day before) in 30 days: 356
+#PredictionMarkets #Kalshi&#34;&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Settled &amp; surprised — Nov 19, 2026</title>
     <link href="https://odds-drift.com/p/2026-11-19-pm"/>
@@ -794,36 +818,6 @@ House (D): K 91¢ (+1) · P 92¢ (+0)
 TX Sen (D): K 64¢ (+1) · P 64¢ (+0)
 MI Sen (D): K 69¢ (+1) · P 70¢ (+0)
 OH Sen (D): K 67¢ (+2) · P 68¢ (+4)
-#Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Midterms 2026 odds board — Oct 20, 2026</title>
-    <link href="https://odds-drift.com/p/2026-10-20-board"/>
-    <id>https://odds-drift.com/p/2026-10-20-board</id>
-    <!-- Bridgy Fed reads this feed when it polls. The object type keeps every
-         entry a note, not an article, even though the entry has a title. -->
-    <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-    <published>2026-10-20T17:59:44Z</published>
-    <updated>2026-10-20T17:59:44Z</updated>
-<category term="Midterms2026"/><category term="PredictionMarkets"/>    <summary type="text">Midterms 2026 odds board · 13 days to Election Day
-Senate (D): K 64¢ (+1) · P 64¢ (+0)
-House (D): K 90¢ (+0) · P 92¢ (+0)
-TX Sen (D): K 63¢ (+1) · P 64¢ (+2)
-MI Sen (D): K 68¢ (+0) · P 70¢ (+0)
-OH Sen (D): K 65¢ (+0) · P 64¢ (+0)
-#Midterms2026 #PredictionMarkets</summary>
-    <content type="html">&lt;p&gt;Midterms 2026 odds board · 13 days to Election Day&lt;br&gt;
-Senate (D): K 64¢ (+1) · P 64¢ (+0)&lt;br&gt;
-House (D): K 90¢ (+0) · P 92¢ (+0)&lt;br&gt;
-TX Sen (D): K 63¢ (+1) · P 64¢ (+2)&lt;br&gt;
-MI Sen (D): K 68¢ (+0) · P 70¢ (+0)&lt;br&gt;
-OH Sen (D): K 65¢ (+0) · P 64¢ (+0)&lt;br&gt;
-&lt;a href=&#34;/tag/midterms2026&#34;&gt;#Midterms2026&lt;/a&gt; &lt;a href=&#34;/tag/predictionmarkets&#34;&gt;#PredictionMarkets&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&#34;https://odds-drift.com/charts/2026-10-20-board.png&#34; alt=&#34;Midterms 2026 odds board · 13 days to Election Day
-Senate (D): K 64¢ (+1) · P 64¢ (+0)
-House (D): K 90¢ (+0) · P 92¢ (+0)
-TX Sen (D): K 63¢ (+1) · P 64¢ (+2)
-MI Sen (D): K 68¢ (+0) · P 70¢ (+0)
-OH Sen (D): K 65¢ (+0) · P 64¢ (+0)
 #Midterms2026 #PredictionMarkets&#34;&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
