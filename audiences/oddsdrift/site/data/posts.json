@@ -1,5 +1,21 @@
 [
  {
+  "id": "2026-11-24-pm",
+  "slot": "pm",
+  "shape": "settled",
+  "title": "Settled & surprised \u2014 Nov 24, 2026",
+  "text": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 5\u2026 \u2192 YES \u00b7 was 2\u00a2 ~24h before \u00b7 $15k\nUPSET \u00b7 K \u00b7 What will Zoom Communications, In\u2026 \u2192 YES \u00b7 was 9\u00a2 ~24h before \u00b7 $35k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 358\n#PredictionMarkets #Kalshi #Polymarket",
+  "published_at": "2026-11-24T23:01:54Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi",
+   "Polymarket"
+  ],
+  "chart": "/charts/2026-11-24-pm.png",
+  "chart_alt": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 5\u2026 \u2192 YES \u00b7 was 2\u00a2 ~24h before \u00b7 $15k\nUPSET \u00b7 K \u00b7 What will Zoom Communications, In\u2026 \u2192 YES \u00b7 was 9\u00a2 ~24h before \u00b7 $35k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 358\n#PredictionMarkets #Kalshi #Polymarket",
+  "url": "https://odds-drift.com/p/2026-11-24-pm"
+ },
+ {
   "id": "2026-11-20-pm",
   "slot": "pm",
   "shape": "settled",
@@ -740,19 +756,5 @@
   "chart": "/charts/2026-10-05-board.png",
   "chart_alt": "Midterms 2026 odds board \u00b7 28 days to Election Day\nSenate (D): K 65\u00a2 (+2) \u00b7 P 66\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (-2)\nTX Sen (D): K 65\u00a2 (+1) \u00b7 P 64\u00a2 (+0)\nMI Sen (D): K 74\u00a2 (+3) \u00b7 P 74\u00a2 (+0)\nOH Sen (D): K 64\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
   "url": "https://odds-drift.com/p/2026-10-05-board"
- },
- {
-  "id": "2026-10-04-sunday",
-  "slot": "sunday",
-  "shape": "scorecard",
-  "title": "Calibration scorecard \u2014 week 40, 2026",
-  "text": "Calibration scorecard, week 40\nResolved: 2041 K, 385 P\nPriced \u226590\u00a2 the day before: 316/327 resolved YES\nPriced \u226410\u00a2: 27/1033 resolved YES\nWeekly Brier: K 0.103 \u00b7 P 0.055 (running K 0.121 \u00b7 P 0.088)\nodds-drift.com/calibration\n#PredictionMarkets",
-  "published_at": "2026-10-04T17:36:31Z",
-  "tags": [
-   "PredictionMarkets"
-  ],
-  "chart": "/charts/2026-10-04-sunday.png",
-  "chart_alt": "Calibration scorecard, week 40\nResolved: 2041 K, 385 P\nPriced \u226590\u00a2 the day before: 316/327 resolved YES\nPriced \u226410\u00a2: 27/1033 resolved YES\nWeekly Brier: K 0.103 \u00b7 P 0.055 (running K 0.121 \u00b7 P 0.088)\nodds-drift.com/calibration\n#PredictionMarkets",
-  "url": "https://odds-drift.com/p/2026-10-04-sunday"
  }
 ]
