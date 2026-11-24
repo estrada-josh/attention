@@ -98,3 +98,4 @@ date,site_ok,bsky_followers,bsky_posts,gh_stars,gh_watchers,gh_forks,repo_size_k
 2026-11-20,True,5,138,0,0,0,81551,138,
 2026-11-21,True,5,139,0,0,0,88187,139,
 2026-11-22,True,5,139,0,0,0,91608,139,newest post 46h old (limit 30h); last run reason: no slot due; last 3 slots produced no post: 2026-11-21-am; 2026-11-22-am; 2026-11-22-sunday
+2026-11-24,True,5,139,0,0,0,73206,139,newest post 75h old (limit 30h); last run reason: no slot due; last 3 slots produced no post: 2026-11-21-am; 2026-11-22-am; 2026-11-22-sunday
