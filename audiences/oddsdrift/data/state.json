@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-11-25T04:53:32.019366+00:00",
+    "at": "2026-11-25T22:35:01.071830+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
+    "no_post_reason": null,
     "open_rows": 152107,
-    "post": null,
-    "settled_rows": 122967,
-    "slot": "snapshot"
+    "post": "2026-11-25-pm",
+    "settled_rows": 111276,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -4071,6 +4071,10 @@
     }
   },
   "settled_featured": {
+    "kalshi:KXDANCINGWITHTHESTARS-26DEC31-AGLE": "2026-11-25",
+    "kalshi:KXDANCINGWITHTHESTARS-26DEC31-CWOO": "2026-11-25",
+    "kalshi:KXDANCINGWITHTHESTARS-26DEC31-EFRE": "2026-11-25",
+    "kalshi:KXDANCINGWITHTHESTARS-26DEC31-TAT": "2026-11-25",
     "kalshi:KXEARNINGSMENTIONZM-26NOV23-AICO": "2026-11-24",
     "kalshi:KXHIGHTSDF-26NOV23-B52.5": "2026-11-24",
     "kalshi:KXRAIN-26NOV23-LAX": "2026-11-24",
@@ -4292,6 +4296,8 @@
     "2026-11-22-am": "2026-11-22T20:22:33.499837+00:00 (skipped)",
     "2026-11-22-sunday": "2026-11-22T20:22:33.499837+00:00 (skipped)",
     "2026-11-24-am": "2026-11-24T23:01:54.437360+00:00 (skipped)",
-    "2026-11-24-pm": "2026-11-24T23:01:54.437360+00:00"
+    "2026-11-24-pm": "2026-11-24T23:01:54.437360+00:00",
+    "2026-11-25-am": "2026-11-25T22:35:01.071830+00:00 (skipped)",
+    "2026-11-25-pm": "2026-11-25T22:35:01.071830+00:00"
   }
 }

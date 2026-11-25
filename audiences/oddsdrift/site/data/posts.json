@@ -1,5 +1,20 @@
 [
  {
+  "id": "2026-11-25-pm",
+  "slot": "pm",
+  "shape": "settled",
+  "title": "Settled & surprised \u2014 Nov 25, 2026",
+  "text": "Settled in the last 24h\nK \u00b7 Will Connor Wood win Dancing with\u2026 \u2192 NO \u00b7 was 19\u00a2 ~24h before \u00b7 $2.0M\nK \u00b7 Will Ezra Frech win Dancing with\u2026 \u2192 YES \u00b7 was 47\u00a2 ~24h before \u00b7 $1.9M\nK \u00b7 Will Amber Glenn win Dancing with\u2026 \u2192 NO \u00b7 was 27\u00a2 ~24h before \u00b7 $1.7M\n#PredictionMarkets #Kalshi",
+  "published_at": "2026-11-25T22:35:01Z",
+  "tags": [
+   "PredictionMarkets",
+   "Kalshi"
+  ],
+  "chart": "/charts/2026-11-25-pm.png",
+  "chart_alt": "Settled in the last 24h\nK \u00b7 Will Connor Wood win Dancing with\u2026 \u2192 NO \u00b7 was 19\u00a2 ~24h before \u00b7 $2.0M\nK \u00b7 Will Ezra Frech win Dancing with\u2026 \u2192 YES \u00b7 was 47\u00a2 ~24h before \u00b7 $1.9M\nK \u00b7 Will Amber Glenn win Dancing with\u2026 \u2192 NO \u00b7 was 27\u00a2 ~24h before \u00b7 $1.7M\n#PredictionMarkets #Kalshi",
+  "url": "https://odds-drift.com/p/2026-11-25-pm"
+ },
+ {
   "id": "2026-11-24-pm",
   "slot": "pm",
   "shape": "settled",
@@ -741,20 +756,5 @@
   "chart": "/charts/2026-10-05-pm.png",
   "chart_alt": "Settled in the last 24h\nUPSET \u00b7 K \u00b7 Will the maximum temperature be 8\u2026 \u2192 YES \u00b7 was 11\u00a2 ~24h before \u00b7 $21k\nP \u00b7 Will Geraldo Alckmin win the 2026\u2026 \u2192 NO \u00b7 was 0\u00a2 ~24h before \u00b7 $724k\nUpsets (\u226415\u00a2 or \u226585\u00a2 the day before) in 30 days: 233\n#PredictionMarkets #Kalshi #Polymarket",
   "url": "https://odds-drift.com/p/2026-10-05-pm"
- },
- {
-  "id": "2026-10-05-board",
-  "slot": "board",
-  "shape": "watchlist",
-  "title": "Midterms 2026 odds board \u2014 Oct 5, 2026",
-  "text": "Midterms 2026 odds board \u00b7 28 days to Election Day\nSenate (D): K 65\u00a2 (+2) \u00b7 P 66\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (-2)\nTX Sen (D): K 65\u00a2 (+1) \u00b7 P 64\u00a2 (+0)\nMI Sen (D): K 74\u00a2 (+3) \u00b7 P 74\u00a2 (+0)\nOH Sen (D): K 64\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
-  "published_at": "2026-10-05T21:07:28Z",
-  "tags": [
-   "Midterms2026",
-   "PredictionMarkets"
-  ],
-  "chart": "/charts/2026-10-05-board.png",
-  "chart_alt": "Midterms 2026 odds board \u00b7 28 days to Election Day\nSenate (D): K 65\u00a2 (+2) \u00b7 P 66\u00a2 (+0)\nHouse (D): K 92\u00a2 (+0) \u00b7 P 92\u00a2 (-2)\nTX Sen (D): K 65\u00a2 (+1) \u00b7 P 64\u00a2 (+0)\nMI Sen (D): K 74\u00a2 (+3) \u00b7 P 74\u00a2 (+0)\nOH Sen (D): K 64\u00a2 (-1) \u00b7 P 62\u00a2 (+0)\n#Midterms2026 #PredictionMarkets",
-  "url": "https://odds-drift.com/p/2026-10-05-board"
  }
 ]
