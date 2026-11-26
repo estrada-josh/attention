@@ -28,13 +28,13 @@
     }
   },
   "last_run": {
-    "at": "2026-11-26T04:09:39.612392+00:00",
+    "at": "2026-11-26T22:22:38.489796+00:00",
     "failed_sources": [],
-    "no_post_reason": "no slot due",
-    "open_rows": 152107,
-    "post": null,
-    "settled_rows": 119723,
-    "slot": "snapshot"
+    "no_post_reason": null,
+    "open_rows": 152104,
+    "post": "2026-11-26-pm",
+    "settled_rows": 103117,
+    "slot": "pm"
   },
   "movers_history": [
     {
@@ -4107,8 +4107,12 @@
     "kalshi:KXDANCINGWITHTHESTARS-26DEC31-EFRE": "2026-11-25",
     "kalshi:KXDANCINGWITHTHESTARS-26DEC31-TAT": "2026-11-25",
     "kalshi:KXEARNINGSMENTIONZM-26NOV23-AICO": "2026-11-24",
+    "kalshi:KXHIGHCHI-26NOV25-B41.5": "2026-11-26",
     "kalshi:KXHIGHTSDF-26NOV23-B52.5": "2026-11-24",
     "kalshi:KXRAIN-26NOV23-LAX": "2026-11-24",
+    "polymarket:bitcoin-above-58k-on-november-26-2026": "2026-11-26",
+    "polymarket:bitcoin-above-60k-on-november-26-2026": "2026-11-26",
+    "polymarket:bitcoin-above-62k-on-november-26-2026": "2026-11-26",
     "polymarket:will-the-price-of-bitcoin-be-between-58000-60000-on-november-24-2026": "2026-11-24"
   },
   "slots_done": {
@@ -4329,6 +4333,8 @@
     "2026-11-24-am": "2026-11-24T23:01:54.437360+00:00 (skipped)",
     "2026-11-24-pm": "2026-11-24T23:01:54.437360+00:00",
     "2026-11-25-am": "2026-11-25T22:35:01.071830+00:00 (skipped)",
-    "2026-11-25-pm": "2026-11-25T22:35:01.071830+00:00"
+    "2026-11-25-pm": "2026-11-25T22:35:01.071830+00:00",
+    "2026-11-26-am": "2026-11-26T22:22:38.489796+00:00 (skipped)",
+    "2026-11-26-pm": "2026-11-26T22:22:38.489796+00:00"
   }
 }
