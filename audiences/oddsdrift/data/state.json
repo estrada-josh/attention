@@ -28,12 +28,12 @@
     }
   },
   "last_run": {
-    "at": "2026-11-27T01:00:24.583231+00:00",
+    "at": "2026-11-27T04:15:36.177577+00:00",
     "failed_sources": [],
     "no_post_reason": "no slot due",
-    "open_rows": 152103,
+    "open_rows": 152107,
     "post": null,
-    "settled_rows": 98540,
+    "settled_rows": 102317,
     "slot": "snapshot"
   },
   "movers_history": [
