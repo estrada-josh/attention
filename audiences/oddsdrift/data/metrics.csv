@@ -103,3 +103,4 @@ date,site_ok,bsky_followers,bsky_posts,gh_stars,gh_watchers,gh_forks,repo_size_k
 2026-11-25,True,5,141,0,0,0,80432,141,
 2026-11-26,True,5,142,0,0,0,87422,142,
 2026-11-27,True,5,142,0,0,0,94451,142,
+2026-11-28,True,5,142,0,0,0,98032,142,newest post 47h old (limit 30h); last run reason: no slot due
